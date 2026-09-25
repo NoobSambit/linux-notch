@@ -380,11 +380,14 @@ K4.Lanzador {
   showing. **An animation that never ends must ask this**, because in Qt
   Quick an animation does not stop when its item stops being visible; see
   [PLUGINS.md](PLUGINS.md#an-animation-nobody-sees-still-runs).
-- The bar's edge and alignment belong to the user (Settings: top/bottom,
-  left/center/right). `K4.Isla.posicion` tells you the edge; and
-  `K4.Isla.colocar(id, fraction, durationMs)` slides the island along it
-  for the duration of a scene — a dodge, a paddle, stepping aside — and it
-  springs back on timeout, `soltar(id)`, or disable.
+- The bar's edge and alignment belong to the user. `K4.Isla.posicion` may
+  return `"arriba"`, `"abajo"`, `"izquierda"`, or `"derecha"`; plugins must not
+  assume only top/bottom placement. The host exposes all four edges, but
+  plugin rendering on left/right has not been fully validated. In Notchbar
+  v1, top/bottom are supported release paths; left/right remain
+  experimental/compatibility-only. `K4.Isla.colocar(id, fraction, durationMs)`
+  slides the island along its active edge — a dodge, a paddle, stepping aside
+  — and it springs back on timeout, `soltar(id)`, or disable.
 
 `ejemplos/efectos/` has every piece working, hand included.
 

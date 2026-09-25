@@ -652,19 +652,22 @@ hand, the pet climbing down. `ejemplos/efectos/` ships all three pieces
 working, hand included.
 
 And since the bar no longer lives only at the top — the edge is chosen in
-Settings — `K4.Isla.posicion` says which one it is (`"arriba"` or
-`"abajo"`). The host takes care of its side (anchoring, flipped silhouette,
-gestures pointing into the screen); your side is reading `rect` and
-`posicion` instead of assuming up is up.
+Settings — `K4.Isla.posicion` may return `"arriba"`, `"abajo"`,
+`"izquierda"`, or `"derecha"`. The host handles edge anchoring and silhouette,
+but your plugin must read `rect` and `posicion` rather than assume a vertical
+edge or that its own view fits on a side edge. Plugin rendering on left/right
+has not been fully validated. In Notchbar v1, top/bottom are supported release
+paths; left/right remain experimental/compatibility-only.
 
 **Sliding it along the edge.** The island is not nailed to the center
 either: the user picks its alignment in Settings, and a plugin can move it
-TEMPORARILY with `K4.Isla.colocar(tuId, fraccion, duracionMs)` — 0 flush
-left, 1 flush right, animated with the same spring as opening. It returns
-to the user's base on its own: on timeout, with `soltar(tuId)`, or when
-your plugin is disabled. It is for what a scene lasts — the island dodging
-a hit, playing paddle, stepping aside to show something behind — not for
-staying: the permanent position belongs to the user. `K4.Isla.colocacion`
+TEMPORARILY with `K4.Isla.colocar(tuId, fraccion, duracionMs)` — 0 at the
+start of the active edge, 1 at its end, animated with the same spring as
+opening. It returns to the user's base on its own: on timeout, with
+`soltar(tuId)`, or when your plugin is disabled. It is for what a scene lasts
+— the island dodging a hit, playing paddle, stepping aside to show something
+behind — not for staying: the permanent position belongs to the user.
+`K4.Isla.colocacion`
 tells the effective fraction right now.
 
 **And `K4.Isla`** to know whether you are on display: `abierta`,
