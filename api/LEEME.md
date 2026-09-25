@@ -2,9 +2,9 @@
 
 This is the quick reference. For complete guides see:
 
-- [Public API](../docs/API.md)
-- [Creating a plugin](../docs/PLUGINS.md)
-- [Creating a game plugin](../docs/GAMES.md)
+- [Public API](../docs/k4-reference/API.md)
+- [Creating a plugin](../docs/k4-reference/PLUGINS.md)
+- [Creating a game plugin](../docs/k4-reference/GAMES.md)
 
 > A plugin imports `QtQuick` and `K4`. Nothing else from the host.
 
@@ -113,7 +113,7 @@ that fails to compile is recorded with its error and the bar starts without
 it. Disabled means not instantiated.
 
 A plugin of your own goes in `~/.config/k4/plugins/<id>/` with a `plugin.json`
-manifest — nothing in this repository is touched. See `docs/PLUGINS.md`;
+manifest — nothing in this repository is touched. See `docs/k4-reference/PLUGINS.md`;
 `ejemplos/hola` and `ejemplos/snake` are complete, runnable examples.
 
 A plugin contributed to the repository goes under `plugins/` with a `qmldir`
@@ -129,13 +129,13 @@ python3 tools/api.py
 ```
 
 Third-party plugins are loaded, so read the honest security note in
-`docs/PLUGINS.md`: declared permissions are informed consent plus static
+`docs/k4-reference/PLUGINS.md`: declared permissions are informed consent plus static
 analysis, not a sandbox. QML runs in the bar's process.
 
 ## API changes
 
 If a plugin needs a capability that is missing, add it under `api/K4/` rather
 than importing a private Quickshell type in the plugin. Keep the wrapper small,
-document its signals and properties, and update `docs/API.md` with an example.
+document its signals and properties, and update `docs/k4-reference/API.md` with an example.
 Restart the bar after changing the `K4` module because QML caches imported
 modules.

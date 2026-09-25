@@ -422,4 +422,4 @@ Two doors stay shut on purpose: connecting to networks and pairing Bluetooth
 devices are read-only for plugins, with no permission that opens them.
 
 The full guide, kept current by `tools/api.py` and `tools/guia.py`, is
-`docs/PLUGINS.md`. New dependencies still go in `dependencias.tsv`.
+`docs/k4-reference/PLUGINS.md`. New dependencies still go in `dependencias.tsv`.

@@ -487,7 +487,7 @@ missing:
   restarted.
 
 The repo's dungeon (`plugins/Game/`) and the Digivice
-(`plugins/Digivice/`, see `docs/DIGIVICE.md`) are the proof it can go far.
+(`plugins/Digivice/`, see `docs/k4-reference/DIGIVICE.md`) are the proof it can go far.
 And what a game draws with is plain Qt: `AnimatedSprite`, `SpriteSequence`,
 `ParticleSystem`, `Shape`, `ShaderEffect` and `Canvas` are all importable —
 the rule is only that Quickshell stays hidden, not Qt.

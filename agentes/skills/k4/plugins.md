@@ -155,7 +155,7 @@ The entry QML is a `K4.Plugin`. From there you get the whole API under the
 **Using something without declaring it makes the plugin fail to load**, with
 the reason recorded — it is not a warning.
 
-The current list is in `docs/PLUGINS.md`; `procesos`, `red`, `ficheros`,
+The current list is in `docs/k4-reference/PLUGINS.md`; `procesos`, `red`, `ficheros`,
 `portapapeles`, `sonido` and `datos-personales` are the ones that come up
 most. Declare the smallest set that works.
 

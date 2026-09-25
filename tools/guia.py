@@ -37,8 +37,8 @@ RAIZ = pathlib.Path(__file__).resolve().parent.parent
 API = RAIZ / "api" / "K4"
 
 #  Los documentos que hablan de la API y por tanto pueden mentir sobre ella.
-DOCUMENTOS = ["docs/PLUGINS.md", "docs/API.md", "api/LEEME.md", "README.md",
-              "docs/GAMES.md"]
+DOCUMENTOS = ["docs/k4-reference/PLUGINS.md", "docs/k4-reference/API.md",
+              "api/LEEME.md", "README.md", "docs/k4-reference/GAMES.md"]
 
 #  Nombres que la documentación se INVENTA a propósito, porque está enseñando
 #  a crear algo que todavía no existe. Hay que listarlos a mano: no hay forma
@@ -102,7 +102,7 @@ def revisar_permisos(doc, texto):
 
     fallos = []
     #  Solo en la guía larga, que es la que lleva la tabla de permisos.
-    if doc != "docs/PLUGINS.md":
+    if doc != "docs/k4-reference/PLUGINS.md":
         return fallos
 
     #  Contra la TABLA, no contra el texto suelto: al probarlo quité una fila

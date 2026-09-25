@@ -236,7 +236,8 @@ runs inside the bar and can do what the bar can do. Install what you have read
 or what you trust — everything above exists to make that judgement possible,
 not to remove it.
 
-Full guide: [docs/PLUGINS.md](docs/PLUGINS.md) · API: [docs/API.md](docs/API.md)
+Full guide: [docs/k4-reference/PLUGINS.md](docs/k4-reference/PLUGINS.md) ·
+API: [docs/k4-reference/API.md](docs/k4-reference/API.md)
 
 ---
 
@@ -376,7 +377,7 @@ services/       persistent domain services and singletons
 widgets/        data-driven reusable widgets
 plugins/        one directory per built-in plugin
 agentes/        the skill coding agents read
-docs/           API, plugin and game guides
+docs/           product research and planning; k4-reference/ holds inherited guides
 tools/          helper scripts and validators
 hypr/           generated Hyprland integration
 ```
@@ -401,8 +402,9 @@ of an existing pair: if a file already has `abrir()`/`cerrar()`, extend that.
 The codebase predates the rule, so migrate names when you touch them, never in
 bulk.
 
-More: [docs/API.md](docs/API.md) · [docs/PLUGINS.md](docs/PLUGINS.md) ·
-[docs/GAMES.md](docs/GAMES.md) · [api/LEEME.md](api/LEEME.md)
+More: [docs/k4-reference/API.md](docs/k4-reference/API.md) ·
+[docs/k4-reference/PLUGINS.md](docs/k4-reference/PLUGINS.md) ·
+[docs/k4-reference/GAMES.md](docs/k4-reference/GAMES.md) · [api/LEEME.md](api/LEEME.md)
 
 </details>
 

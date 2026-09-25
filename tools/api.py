@@ -49,7 +49,7 @@ def revisar_documentacion():
     #  un plugin, y la tabla en inglés de api/LEEME.md, que es lo primero que
     #  mira quien llega al repositorio. Una API que solo está en una de las dos
     #  acaba contándose distinto en cada sitio.
-    for doc in ("docs/PLUGINS.md", "api/LEEME.md"):
+    for doc in ("docs/k4-reference/PLUGINS.md", "api/LEEME.md"):
         texto = (RAIZ / doc).read_text()
         for t in tipos:
             if not re.search(r"\bK4\.%s\b" % t, texto):
