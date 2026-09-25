@@ -1,5 +1,7 @@
 # k4
 
+> This fork is planning a distinct Linux notch/island/dock product. The inherited k4 description below documents the current code. See the [product planning index](docs/README.md) and [asset/data/IP release audit](docs/ASSET_LICENSE_AUDIT.md). Product implementation has not begun.
+
 **A Dynamic Island for Hyprland.** It sits collapsed at the edge of your
 screen and expands only when it has something to say — and everything it does,
 including the parts that look built in, is a plugin.
