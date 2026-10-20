@@ -40,7 +40,7 @@ behavior must be proven later by recording the running app. A static image alone
 
 ## Variants and revisions
 
-One text/image system; omit conditional file panel from implementation if MIME proof fails. Optional tighter row density in alternatives/r02, no new organizing taxonomy.
+One text/image system; omit conditional file panel from implementation if MIME proof fails. Optional tighter row density in the alternatives folder with revision r02, no new organizing taxonomy.
 Alternatives belong in **`review/cp-08-clipboard/references/alternatives/`**, with `r02`, `r03`, etc. in the filename.
 Use `review/cp-08-clipboard/references/NOTES.md` or a message to identify preferred files and what you like.
 For a proposed replacement, put a new revision in submitted/storyboards; never overwrite approved images.

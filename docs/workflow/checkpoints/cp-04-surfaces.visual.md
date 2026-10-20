@@ -40,7 +40,7 @@ behavior must be proven later by recording the running app. A static image alone
 
 ## Variants and revisions
 
-No new identity alternatives. One geometry solution per supported edge plus configurable alignment examples is sufficient; optional alternative control layout goes in alternatives/r02.
+No new identity alternatives. One geometry solution per supported edge plus configurable alignment examples is sufficient; optional alternative control layout goes in the alternatives folder with revision r02.
 Alternatives belong in **`review/cp-04-surfaces/references/alternatives/`**, with `r02`, `r03`, etc. in the filename.
 Use `review/cp-04-surfaces/references/NOTES.md` or a message to identify preferred files and what you like.
 For a proposed replacement, put a new revision in submitted/storyboards; never overwrite approved images.

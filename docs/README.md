@@ -1,6 +1,16 @@
 # Documentation map
 
-The Markdown files in this directory are research and planning for the proposed Linux notch/island/dock product. The architecture and v1 direction are approved; this final correction pass still needs implementation approval. These are not implementation instructions.
+The product files at this directory's root remain the authoritative research, architecture and v1 direction.
+Product implementation still requires approval. The new execution workflow organizes future work without
+changing those specifications or starting a product checkpoint.
+
+- **Project owner:** [Start here](../owner/README.md), [current progress](../owner/PROGRESS.md),
+  [visual references](../owner/VISUAL_REFERENCES.md), [testing](../owner/TESTING.md),
+  [recovery](../owner/RECOVERY.md) and [checkpoint notes](../owner/checkpoints/).
+- **Coding agents:** [workflow](workflow/README.md), [checkpoint contracts and visual briefs](workflow/checkpoints/),
+  [authoritative progress record](workflow/progress.json), [verification](workflow/VERIFICATION.md),
+  [safety](workflow/SAFETY.md), [record templates](workflow/TEMPLATES.md) and [setup review](workflow/SETUP_REVIEW.md).
+- **Review files:** [storage and Git policy](../review/README.md); conceptual images stay separate from runtime assets.
 
 - [k4 source audit](RESEARCH_K4.md), [Droppy research](RESEARCH_DROPPY.md), and [feature matrix](FEATURE_MATRIX.md) provide the evidence.
 - [V1 experience](V1_EXPERIENCE.md), [v1 specification](V1_SPEC.md), [UX direction](UX_DIRECTION.md), and [decision log](DECISIONS.md) define the proposal.

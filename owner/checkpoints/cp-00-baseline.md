@@ -16,7 +16,7 @@ Explicitly approve this workflow and authorize CP-00 only. Codex will check avai
 
 ## What will Codex do?
 
-Establish a reproducible, isolated original-k4 baseline and a rehearsed recovery path before changing product behavior. Codex handles setup, technical checks, debugging, evidence, Git commits and a safe
+Prepare a separate safe test copy, record how the original bar works and give you tested start, stop and restore actions. Codex handles setup, technical checks, debugging, evidence, Git commits and a safe
 Start/Stop/Restore handoff. You only test after Codex supplies a ready version labelled CP-00, its version
 and evidence run. Expect the visible results in the checklist below; any remaining limitation must be listed.
 
@@ -35,39 +35,76 @@ Missing equipment/software means **NOT TESTED — ENVIRONMENT LIMITATION** with 
 
 ### M01 — Start and stop safely
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Use Start CP-00 supplied by Codex. 2. Check the test label. 3. Use Stop CP-00. 4. Open an everyday app on your usual desktop.
-- **Expected result:** Only the test version closes; your usual desktop and notification app still work.
-- **Failure examples:** Both bars stop, personal settings change, or the desktop stops responding.
-- **Evidence:** Photo or screenshot of the label and affected desktop; tell Codex which action failed. Save in `review/cp-00-baseline/evidence/run-01/owner/` with test ID `M01`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Use Start CP-00 supplied by Codex.
+2. Check the test label.
+3. Use Stop CP-00.
+4. Open an everyday app on your usual desktop.
+
+**Expected result:** Only the test version closes; your usual desktop and notification app still work.
+
+**Failure examples:** Both bars stop, personal settings change, or the desktop stops responding.
+
+**Evidence:** Photo or screenshot of the label and affected desktop; tell Codex which action failed. Save in `review/cp-00-baseline/evidence/run-01/owner/` with test ID `M01`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M02 — Original everyday paths
 
-- **Before starting:** Test session, dummy music/text and a safe capture target prepared by Codex.
-- **What to do:** 1. Open the test launcher and settings. 2. Play a dummy/local music track. 3. Copy harmless text and open clipboard. 4. Try the supplied small capture sample.
-- **Expected result:** Codex records what currently works and any existing failures; no redesign is expected.
-- **Failure examples:** Missing entry point, frozen view, lost keyboard focus or capture does not finish.
-- **Evidence:** Capture the failing view and the step; avoid real clipboard secrets. Save in `review/cp-00-baseline/evidence/run-01/owner/` with test ID `M02`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** Test session, dummy music/text and a safe capture target prepared by Codex.
+
+**What to do:**
+
+1. Open the test launcher and settings.
+2. Play a dummy/local music track.
+3. Copy harmless text and open clipboard.
+4. Try the supplied small capture sample.
+
+**Expected result:** Codex records what currently works and any existing failures; no redesign is expected.
+
+**Failure examples:** Missing entry point, frozen view, lost keyboard focus or capture does not finish.
+
+**Evidence:** Capture the failing view and the step; avoid real clipboard secrets. Save in `review/cp-00-baseline/evidence/run-01/owner/` with test ID `M02`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M03 — Screen and fullscreen baseline
 
-- **Before starting:** Codex has prepared reversible placement choices; a second display is needed only for that part.
-- **What to do:** 1. In the test desktop try top and bottom. 2. Open an app fullscreen, then leave fullscreen. 3. If a second test display exists, repeat there.
-- **Expected result:** Current behavior is captured; known problems and unavailable display cases are recorded honestly.
-- **Failure examples:** Surface stays offscreen, blocks typing or never returns.
-- **Evidence:** One whole-screen capture with monitor arrangement and chosen edge. Save in `review/cp-00-baseline/evidence/run-01/owner/` with test ID `M03`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** Codex has prepared reversible placement choices; a second display is needed only for that part.
+
+**What to do:**
+
+1. In the test desktop try top and bottom.
+2. Open an app fullscreen, then leave fullscreen.
+3. If a second test display exists, repeat there.
+
+**Expected result:** Current behavior is captured; known problems and unavailable display cases are recorded honestly.
+
+**Failure examples:** Surface stays offscreen, blocks typing or never returns.
+
+**Evidence:** One whole-screen capture with monitor arrangement and chosen edge. Save in `review/cp-00-baseline/evidence/run-01/owner/` with test ID `M03`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M04 — Recovery rehearsal
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Ask Codex to demonstrate Restore previous. 2. Open settings and launcher in the restored test copy.
-- **Expected result:** The original captured version returns with its matching dummy settings.
-- **Failure examples:** Only the broken candidate launches, or settings vanish.
-- **Evidence:** Record what reopened and which setting differs. Save in `review/cp-00-baseline/evidence/run-01/owner/` with test ID `M04`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Ask Codex to demonstrate Restore previous.
+2. Open settings and launcher in the restored test copy.
+
+**Expected result:** The original captured version returns with its matching dummy settings.
+
+**Failure examples:** Only the broken candidate launches, or settings vanish.
+
+**Evidence:** Record what reopened and which setting differs. Save in `review/cp-00-baseline/evidence/run-01/owner/` with test ID `M04`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ## If something goes wrong
 

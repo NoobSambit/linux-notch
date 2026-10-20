@@ -79,6 +79,8 @@ evidence path and limitation. Never overwrite failure history. `latest_run` poin
 `reference_sets` retains every selected/superseded set. `gate_a` and `gate_b` store owner quote, date,
 chat/export or issue provenance, approved revision/run, and scope; an agent paraphrase is insufficient.
 Owner messages can be copied by Codex into this record; owners need not edit JSON.
+See [record fields and limitation handling](RECORD_FORMAT.md) for exact update conventions, subcases,
+superseded reference approvals and invalidating downstream acceptance after a regression.
 
 Before context loss record `next_agent_action`, `next_owner_action`, `blocked_reason`, branch,
 last-good SHA, current task and runtime handoff/evidence paths. On resume inspect actual Git/files,

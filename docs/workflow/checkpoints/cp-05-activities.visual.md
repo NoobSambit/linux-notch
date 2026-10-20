@@ -40,7 +40,7 @@ behavior must be proven later by recording the running app. A static image alone
 
 ## Variants and revisions
 
-One consistent policy sequence, no competing priority systems. Optional alternate HUD arrangement in alternatives/r02 only if the same hierarchy/stop visibility is preserved.
+One consistent policy sequence, no competing priority systems. Optional alternate HUD arrangement in the alternatives folder with revision r02 only if the same hierarchy/stop visibility is preserved.
 Alternatives belong in **`review/cp-05-activities/references/alternatives/`**, with `r02`, `r03`, etc. in the filename.
 Use `review/cp-05-activities/references/NOTES.md` or a message to identify preferred files and what you like.
 For a proposed replacement, put a new revision in submitted/storyboards; never overwrite approved images.

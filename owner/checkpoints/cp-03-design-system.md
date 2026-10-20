@@ -16,7 +16,7 @@ Yes, visual references are needed. Use [this complete brief](../../docs/workflow
 
 ## What will Codex do?
 
-Translate owner-selected original references into semantic tokens and shared QML states early, preserving public theme compatibility. Codex handles setup, technical checks, debugging, evidence, Git commits and a safe
+Use your chosen images to build shared colors, text, shapes and controls, then show you the real results in both themes. Codex handles setup, technical checks, debugging, evidence, Git commits and a safe
 Start/Stop/Restore handoff. You only test after Codex supplies a ready version labelled CP-03, its version
 and evidence run. Expect the visible results in the checklist below; any remaining limitation must be listed.
 
@@ -35,39 +35,75 @@ Missing equipment/software means **NOT TESTED — ENVIRONMENT LIMITATION** with 
 
 ### M01 — One visual family
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Compare Notch, Island, Dock, Hybrid and settings samples with your selected boards. 2. Switch between dark and light.
-- **Expected result:** Type, spacing, icons and materials feel related; settings stays a separate window.
-- **Failure examples:** Unapproved visual change, mixed styles, unreadable labels or clipped controls.
-- **Evidence:** Capture the mismatching sample and name the approved image. Save in `review/cp-03-design-system/evidence/run-01/owner/` with test ID `M01`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Compare Notch, Island, Dock, Hybrid and settings samples with your selected boards.
+2. Switch between dark and light.
+
+**Expected result:** Type, spacing, icons and materials feel related; settings stays a separate window.
+
+**Failure examples:** Unapproved visual change, mixed styles, unreadable labels or clipped controls.
+
+**Evidence:** Capture the mismatching sample and name the approved image. Save in `review/cp-03-design-system/evidence/run-01/owner/` with test ID `M01`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M02 — Keyboard and states
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Put the mouse aside. 2. Tab through sample controls. 3. Activate a button and change a slider. 4. Inspect disabled/error samples.
-- **Expected result:** Focus is easy to see; controls have readable labels and states do not rely only on color.
-- **Failure examples:** Invisible focus, keyboard trap or selected/disabled states look identical.
-- **Evidence:** Screenshot showing focus, or a short recording of the trapped key sequence. Save in `review/cp-03-design-system/evidence/run-01/owner/` with test ID `M02`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Put the mouse aside.
+2. Tab through sample controls.
+3. Activate a button and change a slider.
+4. Inspect disabled/error samples.
+
+**Expected result:** Focus is easy to see; controls have readable labels and states do not rely only on color.
+
+**Failure examples:** Invisible focus, keyboard trap or selected/disabled states look identical.
+
+**Evidence:** Screenshot showing focus, or a short recording of the trapped key sequence. Save in `review/cp-03-design-system/evidence/run-01/owner/` with test ID `M02`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M03 — Reading and background
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Use Codex’s larger-text setting. 2. View a long-label sample. 3. Try busy/light wallpaper and the opaque fallback.
-- **Expected result:** Text remains readable and no content overlaps or clips.
-- **Failure examples:** Low contrast, missing glyph, cropped label or unreadable blur.
-- **Evidence:** Capture whole sample and chosen text size/background. Save in `review/cp-03-design-system/evidence/run-01/owner/` with test ID `M03`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Use Codex’s larger-text setting.
+2. View a long-label sample.
+3. Try busy/light wallpaper and the opaque fallback.
+
+**Expected result:** Text remains readable and no content overlaps or clips.
+
+**Failure examples:** Low contrast, missing glyph, cropped label or unreadable blur.
+
+**Evidence:** Capture whole sample and chosen text size/background. Save in `review/cp-03-design-system/evidence/run-01/owner/` with test ID `M03`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M04 — Motion comfort
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Open and close the sample. 2. Enable reduced motion. 3. Repeat.
-- **Expected result:** Normal motion is calm; reduced motion keeps the same information with no decorative travel.
-- **Failure examples:** Wobble, flicker, lost controls or continued decorative motion.
-- **Evidence:** Short recording with normal and reduced-motion labels. Save in `review/cp-03-design-system/evidence/run-01/owner/` with test ID `M04`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Open and close the sample.
+2. Enable reduced motion.
+3. Repeat.
+
+**Expected result:** Normal motion is calm; reduced motion keeps the same information with no decorative travel.
+
+**Failure examples:** Wobble, flicker, lost controls or continued decorative motion.
+
+**Evidence:** Short recording with normal and reduced-motion labels. Save in `review/cp-03-design-system/evidence/run-01/owner/` with test ID `M04`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ## If something goes wrong
 

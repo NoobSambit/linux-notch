@@ -7,9 +7,10 @@ Choose one original visual grammar for all four forms and shared controls before
 ## Before generating
 
 Wait until Codex activates this checkpoint after its prerequisites are approved. Start from the approved desktop-instrument-rail intent in UX_DIRECTION, not the inherited k4 palette. No final palette/type/radius is selected yet. Later checkpoints inherit this accepted set.
-Codex lists exact prior approved sets/real-app captures in its activation message; if they are missing,
-ask Codex to recover them before generating. Give your external image tool this whole brief and those
-earlier images. Final palette/proportions are your selection, subject to feasibility and the approved scope.
+This checkpoint establishes the first visual direction; no earlier selected set is required.
+Give your external image tool this whole brief and the product direction Codex supplies. Later
+checkpoints will reuse your selected images. Final palette/proportions are your selection, subject
+to feasibility and the approved scope.
 
 ## Required static images
 
@@ -40,7 +41,7 @@ behavior must be proven later by recording the running app. A static image alone
 
 ## Variants and revisions
 
-One complete dark/light family is mandatory. Optionally explore one additional original family in alternatives/r02; do not generate many minor color variants. Owner chooses one coherent family, not incompatible fragments.
+One complete dark/light family is mandatory. Optionally explore one additional original family in the alternatives folder with revision r02; do not generate many minor color variants. Owner chooses one coherent family, not incompatible fragments.
 Alternatives belong in **`review/cp-03-design-system/references/alternatives/`**, with `r02`, `r03`, etc. in the filename.
 Use `review/cp-03-design-system/references/NOTES.md` or a message to identify preferred files and what you like.
 For a proposed replacement, put a new revision in submitted/storyboards; never overwrite approved images.

@@ -16,7 +16,7 @@ Yes, visual references are needed. Use [this complete brief](../../docs/workflow
 
 ## What will Codex do?
 
-Implement bounded four-mode geometry and safe display/fullscreen behavior using the existing host and approved visual language. Codex handles setup, technical checks, debugging, evidence, Git commits and a safe
+Build the four modes and screen settings, keep the surface within the screen and demonstrate recovery when a display disconnects. Codex handles setup, technical checks, debugging, evidence, Git commits and a safe
 Start/Stop/Restore handoff. You only test after Codex supplies a ready version labelled CP-04, its version
 and evidence run. Expect the visible results in the checklist below; any remaining limitation must be listed.
 
@@ -36,48 +36,94 @@ Missing equipment/software means **NOT TESTED — ENVIRONMENT LIMITATION** with 
 
 ### M01 — Modes and saved size
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Select each of the four modes. 2. Try top then bottom. 3. Change size and offset within supplied limits. 4. Restart.
-- **Expected result:** Chosen mode and size return; no clipping or unexplained jump; open work remains.
-- **Failure examples:** Wrong mode after restart, clipped controls or lost plugin session.
-- **Evidence:** Before/after whole-surface screenshots and settings value. Save in `review/cp-04-surfaces/evidence/run-01/owner/` with test ID `M01`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Select each of the four modes.
+2. Try top then bottom.
+3. Change size and offset within supplied limits.
+4. Restart.
+
+**Expected result:** Chosen mode and size return; no clipping or unexplained jump; open work remains.
+
+**Failure examples:** Wrong mode after restart, clipped controls or lost plugin session.
+
+**Evidence:** Before/after whole-surface screenshots and settings value. Save in `review/cp-04-surfaces/evidence/run-01/owner/` with test ID `M01`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M02 — Reserved space
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Open a normal app window. 2. Switch reserve space on, then overlay. 3. Change between Dock and Hybrid.
-- **Expected result:** App space changes only with the selected reserve choice; Hybrid parts remain reachable.
-- **Failure examples:** Unwanted empty strip, hidden app controls or huge reflow.
-- **Evidence:** Recording including app edges. Save in `review/cp-04-surfaces/evidence/run-01/owner/` with test ID `M02`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Open a normal app window.
+2. Switch reserve space on, then overlay.
+3. Change between Dock and Hybrid.
+
+**Expected result:** App space changes only with the selected reserve choice; Hybrid parts remain reachable.
+
+**Failure examples:** Unwanted empty strip, hidden app controls or huge reflow.
+
+**Evidence:** Recording including app edges. Save in `review/cp-04-surfaces/evidence/run-01/owner/` with test ID `M02`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M03 — Fullscreen
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Put an app fullscreen on one display. 2. Try each prepared fullscreen policy. 3. Use the supplied reveal shortcut and leave fullscreen.
-- **Expected result:** Only that display follows the policy; deliberate access works and the surface returns.
-- **Failure examples:** Wrong monitor hides, typing is stolen or no recovery path.
-- **Evidence:** Whole-screen recording naming policy and display. Save in `review/cp-04-surfaces/evidence/run-01/owner/` with test ID `M03`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Put an app fullscreen on one display.
+2. Try each prepared fullscreen policy.
+3. Use the supplied reveal shortcut and leave fullscreen.
+
+**Expected result:** Only that display follows the policy; deliberate access works and the surface returns.
+
+**Failure examples:** Wrong monitor hides, typing is stolen or no recovery path.
+
+**Evidence:** Whole-screen recording naming policy and display. Save in `review/cp-04-surfaces/evidence/run-01/owner/` with test ID `M03`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M04 — Display disconnect
 
-- **Before starting:** A second physical/test display; Codex prepares the reversible test. Otherwise NOT TESTED — ENVIRONMENT LIMITATION.
-- **What to do:** 1. Open a view on the second test display. 2. Disconnect that display as Codex instructs. 3. Use the view on the remaining display.
-- **Expected result:** The active view and keyboard focus move safely; staged work remains.
-- **Failure examples:** Offscreen view, duplicate expansion or lost focus.
-- **Evidence:** Recording of both screens before removal and remaining screen afterward. Save in `review/cp-04-surfaces/evidence/run-01/owner/` with test ID `M04`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** A second physical/test display; Codex prepares the reversible test. Otherwise NOT TESTED — ENVIRONMENT LIMITATION.
+
+**What to do:**
+
+1. Open a view on the second test display.
+2. Disconnect that display as Codex instructs.
+3. Use the view on the remaining display.
+
+**Expected result:** The active view and keyboard focus move safely; staged work remains.
+
+**Failure examples:** Offscreen view, duplicate expansion or lost focus.
+
+**Evidence:** Recording of both screens before removal and remaining screen afterward. Save in `review/cp-04-surfaces/evidence/run-01/owner/` with test ID `M04`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M05 — Large text and recovery
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Enable larger text and reduced motion. 2. Try the surface. 3. Watch Codex demonstrate invalid-size recovery using dummy settings.
-- **Expected result:** No clipped labels or travel effects; a usable size returns after bad settings.
-- **Failure examples:** Offscreen surface, lost settings or continued decorative motion.
-- **Evidence:** Capture the size, text setting and recovery result. Save in `review/cp-04-surfaces/evidence/run-01/owner/` with test ID `M05`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Enable larger text and reduced motion.
+2. Try the surface.
+3. Watch Codex demonstrate invalid-size recovery using dummy settings.
+
+**Expected result:** No clipped labels or travel effects; a usable size returns after bad settings.
+
+**Failure examples:** Offscreen surface, lost settings or continued decorative motion.
+
+**Evidence:** Capture the size, text setting and recovery result. Save in `review/cp-04-surfaces/evidence/run-01/owner/` with test ID `M05`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ## If something goes wrong
 

@@ -1,7 +1,8 @@
 # Review material, separate from runtime resources
 
-This tree is **not imported or packaged by the application**. It contains no approved references or
-actual app evidence at setup. Empty `.gitkeep` files only preserve convenient save locations.
+This tree is **review-only**; never import it as runtime resources or add it to distributable runtime
+asset lists. It contains no approved references or actual app evidence at setup. Empty `.gitkeep` files
+only preserve convenient save locations.
 The existing `screenshots/` tree is inherited k4 imagery, not proof of a Notchbar checkpoint.
 
 | Path within each checkpoint | Meaning |

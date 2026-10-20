@@ -16,7 +16,7 @@ Yes, visual references are needed. Use [this complete brief](../../docs/workflow
 
 ## What will Codex do?
 
-Extend the existing host arbitration for reliable interruption, expiry, restoration and deliberate input without a second owner. Codex handles setup, technical checks, debugging, evidence, Git commits and a safe
+Make brief indicators appear and return correctly, keep recording controls reachable and check that the surface does not steal your typing. Codex handles setup, technical checks, debugging, evidence, Git commits and a safe
 Start/Stop/Restore handoff. You only test after Codex supplies a ready version labelled CP-05, its version
 and evidence run. Expect the visible results in the checklist below; any remaining limitation must be listed.
 
@@ -36,48 +36,96 @@ Missing equipment/software means **NOT TESTED — ENVIRONMENT LIMITATION** with 
 
 ### M01 — Music and volume return
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Start the dummy music track. 2. Change volume several times. 3. Wait. 4. Repeat, then stop music while the indicator is visible.
-- **Expected result:** Volume updates briefly; playing music returns, stopped music does not reappear.
-- **Failure examples:** Stuck volume display, stale track or repeated old popups.
-- **Evidence:** Recording including music state and volume changes. Save in `review/cp-05-activities/evidence/run-01/owner/` with test ID `M01`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Start the dummy music track.
+2. Change volume several times.
+3. Wait.
+4. Repeat, then stop music while the indicator is visible.
+
+**Expected result:** Volume updates briefly; playing music returns, stopped music does not reappear.
+
+**Failure examples:** Stuck volume display, stale track or repeated old popups.
+
+**Evidence:** Recording including music state and volume changes. Save in `review/cp-05-activities/evidence/run-01/owner/` with test ID `M01`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M02 — Keep typing and dismiss
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Open the launcher by its test shortcut. 2. Type a search while Codex sends routine sample events. 3. Press Escape. 4. Try click-outside with its setting on and off.
-- **Expected result:** Typing stays in the launcher; closing order follows the chosen setting; dismissed views do not reopen from old events.
-- **Failure examples:** Typing moves elsewhere, clicks are swallowed unexpectedly or a closed view returns.
-- **Evidence:** Recording with keys used and chosen click-outside setting. Save in `review/cp-05-activities/evidence/run-01/owner/` with test ID `M02`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Open the launcher by its test shortcut.
+2. Type a search while Codex sends routine sample events.
+3. Press Escape.
+4. Try click-outside with its setting on and off.
+
+**Expected result:** Typing stays in the launcher; closing order follows the chosen setting; dismissed views do not reopen from old events.
+
+**Failure examples:** Typing moves elsewhere, clicks are swallowed unexpectedly or a closed view returns.
+
+**Evidence:** Recording with keys used and chosen click-outside setting. Save in `review/cp-05-activities/evidence/run-01/owner/` with test ID `M02`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M03 — Hover and recording stop
 
-- **Before starting:** Dummy capture target and recorder ready; use no personal content. Codex supplies an independent stop fallback.
-- **What to do:** 1. Type in another app while briefly hovering the surface. 2. Open the preview deliberately. 3. Start a short dummy recording. 4. Change volume and open another view, then stop recording.
-- **Expected result:** Casual hover never steals typing; preview is reachable; recording and its stop action remain reachable.
-- **Failure examples:** Focus is stolen, preview closes before you reach it or stop disappears.
-- **Evidence:** Video showing pointer and recording indicator. Save in `review/cp-05-activities/evidence/run-01/owner/` with test ID `M03`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** Dummy capture target and recorder ready; use no personal content. Codex supplies an independent stop fallback.
+
+**What to do:**
+
+1. Type in another app while briefly hovering the surface.
+2. Open the preview deliberately.
+3. Start a short dummy recording.
+4. Change volume and open another view, then stop recording.
+
+**Expected result:** Casual hover never steals typing; preview is reachable; recording and its stop action remain reachable.
+
+**Failure examples:** Focus is stolen, preview closes before you reach it or stop disappears.
+
+**Evidence:** Video showing pointer and recording indicator. Save in `review/cp-05-activities/evidence/run-01/owner/` with test ID `M03`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M04 — Notifications and real signals
 
-- **Before starting:** Codex prepares both notification environments and safe test signals; no real low-battery drain or network disruption required.
-- **What to do:** 1. In Own mode use the supplied sample notice and action. 2. In External mode repeat. 3. Review prepared battery/network/Bluetooth samples.
-- **Expected result:** Own supports its notice/history/action; External clearly says unavailable and leaves the other daemon alone; unsupported signals say so.
-- **Failure examples:** Fake mirrored history, lost daemon, invented brightness/camera state or stuck alert.
-- **Evidence:** Capture the selected mode and affected message. Save in `review/cp-05-activities/evidence/run-01/owner/` with test ID `M04`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** Codex prepares both notification environments and safe test signals; no real low-battery drain or network disruption required.
+
+**What to do:**
+
+1. In Own mode use the supplied sample notice and action.
+2. In External mode repeat.
+3. Review prepared battery/network/Bluetooth samples.
+
+**Expected result:** Own supports its notice/history/action; External clearly says unavailable and leaves the other daemon alone; unsupported signals say so.
+
+**Failure examples:** Fake mirrored history, lost daemon, invented brightness/camera state or stuck alert.
+
+**Evidence:** Capture the selected mode and affected message. Save in `review/cp-05-activities/evidence/run-01/owner/` with test ID `M04`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M05 — Modes and reduced motion
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Repeat a volume interruption in each mode. 2. Enable reduced motion. 3. Open/close a view and return from fullscreen.
-- **Expected result:** Dock keeps apps primary with activity reachable; other modes restore content calmly; reduced motion removes travel.
-- **Failure examples:** Lost dock tasks, wobble, flicker or stale overlay.
-- **Evidence:** Short recording naming mode and motion setting. Save in `review/cp-05-activities/evidence/run-01/owner/` with test ID `M05`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Repeat a volume interruption in each mode.
+2. Enable reduced motion.
+3. Open/close a view and return from fullscreen.
+
+**Expected result:** Dock keeps apps primary with activity reachable; other modes restore content calmly; reduced motion removes travel.
+
+**Failure examples:** Lost dock tasks, wobble, flicker or stale overlay.
+
+**Evidence:** Short recording naming mode and motion setting. Save in `review/cp-05-activities/evidence/run-01/owner/` with test ID `M05`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ## If something goes wrong
 

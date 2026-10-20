@@ -40,7 +40,7 @@ behavior must be proven later by recording the running app. A static image alone
 
 ## Variants and revisions
 
-One safe workflow, no new palette or Basket alternative. Optional compact list versus small-card layout in alternatives/r02 only if actions and long names remain usable.
+One safe workflow, no new palette or Basket alternative. Optional compact list versus small-card layout in the alternatives folder with revision r02 only if actions and long names remain usable.
 Alternatives belong in **`review/cp-07-shelf/references/alternatives/`**, with `r02`, `r03`, etc. in the filename.
 Use `review/cp-07-shelf/references/NOTES.md` or a message to identify preferred files and what you like.
 For a proposed replacement, put a new revision in submitted/storyboards; never overwrite approved images.

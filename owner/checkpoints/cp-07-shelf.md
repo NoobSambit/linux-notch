@@ -16,7 +16,7 @@ Yes, visual references are needed. Use [this complete brief](../../docs/workflow
 
 ## What will Codex do?
 
-Build the local staging Shelf only after the positive CP-02 proof, using safe references/copy semantics and existing host/shared components. Codex handles setup, technical checks, debugging, evidence, Git commits and a safe
+Build a local place to stage file references, prove originals stay safe and provide the same useful actions with the keyboard. Codex handles setup, technical checks, debugging, evidence, Git commits and a safe
 Start/Stop/Restore handoff. You only test after Codex supplies a ready version labelled CP-07, its version
 and evidence run. Expect the visible results in the checklist below; any remaining limitation must be listed.
 
@@ -36,48 +36,96 @@ Missing equipment/software means **NOT TESTED — ENVIRONMENT LIMITATION** with 
 
 ### M01 — Stage and copy onward
 
-- **Before starting:** Codex prepares dummy source/destination and the two CP-02-tested file managers.
-- **What to do:** 1. Drag a file, a folder and multiple dummy files into Shelf from the proven file managers. 2. Drag one into the destination app. 3. Check originals.
-- **Expected result:** Correct cards/count appear; destination gets copies; original paths remain.
-- **Failure examples:** Wrong count, source moved/deleted or stuck drag.
-- **Evidence:** Recording showing source, Shelf and destination. Save in `review/cp-07-shelf/evidence/run-01/owner/` with test ID `M01`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** Codex prepares dummy source/destination and the two CP-02-tested file managers.
+
+**What to do:**
+
+1. Drag a file, a folder and multiple dummy files into Shelf from the proven file managers.
+2. Drag one into the destination app.
+3. Check originals.
+
+**Expected result:** Correct cards/count appear; destination gets copies; original paths remain.
+
+**Failure examples:** Wrong count, source moved/deleted or stuck drag.
+
+**Evidence:** Recording showing source, Shelf and destination. Save in `review/cp-07-shelf/evidence/run-01/owner/` with test ID `M01`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M02 — Cancel, remove and clear
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Start a drag then press Escape. 2. Remove one staged card. 3. Clear the remaining unpinned cards using the confirmation shown. 4. Check source folder.
-- **Expected result:** Cancel adds nothing; remove/clear only remove staging entries; originals stay.
-- **Failure examples:** Original deletion, canceled entry added or unclear destructive wording.
-- **Evidence:** Video of confirmation and original folder. Save in `review/cp-07-shelf/evidence/run-01/owner/` with test ID `M02`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Start a drag then press Escape.
+2. Remove one staged card.
+3. Clear the remaining unpinned cards using the confirmation shown.
+4. Check source folder.
+
+**Expected result:** Cancel adds nothing; remove/clear only remove staging entries; originals stay.
+
+**Failure examples:** Original deletion, canceled entry added or unclear destructive wording.
+
+**Evidence:** Video of confirmation and original folder. Save in `review/cp-07-shelf/evidence/run-01/owner/` with test ID `M02`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M03 — Use actions without dragging
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Open Shelf by the supplied shortcut. 2. Add a dummy path using the keyboard route. 3. Select open, reveal and copy path. 4. Press Escape.
-- **Expected result:** Actions reach the right dummy file/folder; copied path is correct; focus returns safely.
-- **Failure examples:** Wrong file opens, path is corrupted or keyboard is trapped.
-- **Evidence:** Capture selected action and harmless pasted path. Save in `review/cp-07-shelf/evidence/run-01/owner/` with test ID `M03`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Open Shelf by the supplied shortcut.
+2. Add a dummy path using the keyboard route.
+3. Select open, reveal and copy path.
+4. Press Escape.
+
+**Expected result:** Actions reach the right dummy file/folder; copied path is correct; focus returns safely.
+
+**Failure examples:** Wrong file opens, path is corrupted or keyboard is trapped.
+
+**Evidence:** Capture selected action and harmless pasted path. Save in `review/cp-07-shelf/evidence/run-01/owner/` with test ID `M03`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M04 — Restart and missing source
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Stage two items and pin one. 2. Restart. 3. Ask Codex to remove/move one dummy source or deny its access. 4. Try its action.
-- **Expected result:** Retention follows the documented choice; pinned state survives; missing/unreadable item explains the problem and disables unsafe actions.
-- **Failure examples:** Silent empty action, lost pin or source copied into hidden storage without explanation.
-- **Evidence:** Before/after cards and missing/unavailable message. Save in `review/cp-07-shelf/evidence/run-01/owner/` with test ID `M04`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Stage two items and pin one.
+2. Restart.
+3. Ask Codex to remove/move one dummy source or deny its access.
+4. Try its action.
+
+**Expected result:** Retention follows the documented choice; pinned state survives; missing/unreadable item explains the problem and disables unsafe actions.
+
+**Failure examples:** Silent empty action, lost pin or source copied into hidden storage without explanation.
+
+**Evidence:** Before/after cards and missing/unavailable message. Save in `review/cp-07-shelf/evidence/run-01/owner/` with test ID `M04`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M05 — Approach and display comfort
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Drag toward the surface then away. 2. Open/collapse Shelf normally and with reduced motion. 3. Try fullscreen/reveal and second display if available.
-- **Expected result:** Drop target is clear; no global overlay steals other drops; Shelf stays reachable with readable cards.
-- **Failure examples:** Blocked desktop drops, clipping, stuck expansion or excessive travel.
-- **Evidence:** Recording naming mode, display and motion setting. Save in `review/cp-07-shelf/evidence/run-01/owner/` with test ID `M05`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Drag toward the surface then away.
+2. Open/collapse Shelf normally and with reduced motion.
+3. Try fullscreen/reveal and second display if available.
+
+**Expected result:** Drop target is clear; no global overlay steals other drops; Shelf stays reachable with readable cards.
+
+**Failure examples:** Blocked desktop drops, clipping, stuck expansion or excessive travel.
+
+**Evidence:** Recording naming mode, display and motion setting. Save in `review/cp-07-shelf/evidence/run-01/owner/` with test ID `M05`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ## If something goes wrong
 

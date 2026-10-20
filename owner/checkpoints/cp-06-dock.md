@@ -16,7 +16,7 @@ Yes, visual references are needed. Use [this complete brief](../../docs/workflow
 
 ## What will Codex do?
 
-Polish existing Dual dock/Hybrid behavior with approved shared visuals, stable task state and shorter default motion. Codex handles setup, technical checks, debugging, evidence, Git commits and a safe
+Polish the existing dock, preserve your pinned apps and make mode changes brief and comfortable. Codex handles setup, technical checks, debugging, evidence, Git commits and a safe
 Start/Stop/Restore handoff. You only test after Codex supplies a ready version labelled CP-06, its version
 and evidence run. Expect the visible results in the checklist below; any remaining limitation must be listed.
 
@@ -35,39 +35,80 @@ Missing equipment/software means **NOT TESTED — ENVIRONMENT LIMITATION** with 
 
 ### M01 — Pins and order
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Pin a prepared app. 2. Reorder it. 3. Switch to Notch and back. 4. Restart. 5. Unpin it using keyboard controls.
-- **Expected result:** Pin and order survive; keyboard action is reachable; unpin works.
-- **Failure examples:** Missing/duplicate pin, changed order or keyboard cannot reach action.
-- **Evidence:** Before/after dock captures. Save in `review/cp-06-dock/evidence/run-01/owner/` with test ID `M01`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Pin a prepared app.
+2. Reorder it.
+3. Switch to Notch and back.
+4. Restart.
+5. Unpin it using keyboard controls.
+
+**Expected result:** Pin and order survive; keyboard action is reachable; unpin works.
+
+**Failure examples:** Missing/duplicate pin, changed order or keyboard cannot reach action.
+
+**Evidence:** Before/after dock captures. Save in `review/cp-06-dock/evidence/run-01/owner/` with test ID `M01`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M02 — Tasks, drawer and Hybrid
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Open two windows of the test app. 2. Use dock preview/focus. 3. Open the drawer and launch another test app. 4. In Hybrid open music controls.
-- **Expected result:** Correct windows focus; drawer launches; tasks remain reachable beside activity.
-- **Failure examples:** Wrong window, stuck drawer or activity removes dock access.
-- **Evidence:** Recording including the app titles. Save in `review/cp-06-dock/evidence/run-01/owner/` with test ID `M02`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Open two windows of the test app.
+2. Use dock preview/focus.
+3. Open the drawer and launch another test app.
+4. In Hybrid open music controls.
+
+**Expected result:** Correct windows focus; drawer launches; tasks remain reachable beside activity.
+
+**Failure examples:** Wrong window, stuck drawer or activity removes dock access.
+
+**Evidence:** Recording including the app titles. Save in `review/cp-06-dock/evidence/run-01/owner/` with test ID `M02`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M03 — Transition and desktop input
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Switch modes repeatedly. 2. Cancel/reverse mid-transition using the supplied action. 3. Click and type in another app. 4. Try reserve/overlay and fullscreen.
-- **Expected result:** Modes settle predictably; no invisible window blocks input or wrong-screen reflow.
-- **Failure examples:** Click blocker, duplicate surface or stuck in-between shape.
-- **Evidence:** Whole-screen recording including a failed click/type. Save in `review/cp-06-dock/evidence/run-01/owner/` with test ID `M03`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Switch modes repeatedly.
+2. Cancel/reverse mid-transition using the supplied action.
+3. Click and type in another app.
+4. Try reserve/overlay and fullscreen.
+
+**Expected result:** Modes settle predictably; no invisible window blocks input or wrong-screen reflow.
+
+**Failure examples:** Click blocker, duplicate surface or stuck in-between shape.
+
+**Evidence:** Whole-screen recording including a failed click/type. Save in `review/cp-06-dock/evidence/run-01/owner/` with test ID `M03`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M04 — Motion and scale
 
-- **Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
-- **What to do:** 1. Try normal shorter transition. 2. Try optional expressive transition. 3. Enable reduced motion. 4. Read long app labels at larger text/scale.
-- **Expected result:** Default is brief; expressive is opt-in; reduced motion removes travel; labels and focus fit.
-- **Failure examples:** Always-slow travel, clipped labels or motion continues when reduced.
-- **Evidence:** Recording and capture with text/scale setting. Save in `review/cp-06-dock/evidence/run-01/owner/` with test ID `M04`.
-- **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+**Before starting:** The labelled test version and its Start/Stop/Restore instructions are ready.
+
+**What to do:**
+
+1. Try normal shorter transition.
+2. Try optional expressive transition.
+3. Enable reduced motion.
+4. Read long app labels at larger text/scale.
+
+**Expected result:** Default is brief; expressive is opt-in; reduced motion removes travel; labels and focus fit.
+
+**Failure examples:** Always-slow travel, clipped labels or motion continues when reduced.
+
+**Evidence:** Recording and capture with text/scale setting. Save in `review/cp-06-dock/evidence/run-01/owner/` with test ID `M04`.
+
+**Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ## If something goes wrong
 

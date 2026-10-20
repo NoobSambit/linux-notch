@@ -49,6 +49,8 @@ publish placeholders as working commands. No test is ready until Start/Stop/Rest
 ## Backups and last-good version
 
 - Preserve the previous accepted Git SHA and launchable checkout. Do not reset or overwrite the working tree.
+  CP-00 has no preceding accepted checkpoint: use the original source baseline recorded in progress.json
+  as its recovery target, with a separately captured matching disposable state snapshot.
 - Before each checkpoint run, stop the intended test instance and snapshot its state with UTC date,
   source paths, SHA and checksums under ignored `scratch/backups/<checkpoint>/<run>/`. Include settings,
   enabled-plugin state, per-plugin state and Shelf/clipboard dummy stores; restrict permissions.
