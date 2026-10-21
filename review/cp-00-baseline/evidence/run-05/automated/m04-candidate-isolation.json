@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python3",
+    "/lab/probe.py"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/lab/probe.py\", line 21, in <module>\n    assert os.environ['WAYLAND_DISPLAY'].startswith('wayland-')\n           ~~~~~~~~~~^^^^^^^^^^^^^^^^^^^\n  File \"<frozen os>\", line 709, in __getitem__\nKeyError: 'WAYLAND_DISPLAY'\n",
+  "date": "2026-10-21T12:00:30.971140+00:00"
+}

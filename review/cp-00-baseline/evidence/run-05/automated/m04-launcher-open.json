@@ -1,0 +1,30 @@
+[
+  {
+    "command": [
+      "python3",
+      "/lab/runtime_control.py",
+      "ipc",
+      "call",
+      "k4.settings",
+      "close"
+    ],
+    "exit_code": 0,
+    "stdout": "\n",
+    "stderr": "",
+    "date": "2026-10-21T12:04:29.396708+00:00"
+  },
+  {
+    "command": [
+      "python3",
+      "/lab/runtime_control.py",
+      "ipc",
+      "call",
+      "k4",
+      "toggleLauncher"
+    ],
+    "exit_code": 0,
+    "stdout": "\n",
+    "stderr": "",
+    "date": "2026-10-21T12:04:29.531128+00:00"
+  }
+]

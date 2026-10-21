@@ -1,0 +1,170 @@
+{
+  "date": "2026-10-21T12:04:15.473140+00:00",
+  "phase": "M04 restore preparation, not owner result",
+  "candidate_snapshot": "owner-before-m04-20261021-120008",
+  "candidate_snapshot_manifest": {
+    "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "stores": [
+      ".local/state/k4",
+      ".config/k4",
+      ".config/k4term"
+    ],
+    "files": {
+      ".local/state/k4/ajustes.json": "e642421ae88e537e1d364d354e40d84cca99dd88fb8a8c4bdea5c1bbc08f3edc",
+      ".local/state/k4/catalogo.json": "548502caf732c5e883b031b05578344006c22657b36e6ec109f7b266aaf8b44b",
+      ".local/state/k4/cp00-probe.txt": "8b3d5b3fc97aa03813dae485d04eae4e1fa05e7c1795fc30b7578cceb80a7ac8",
+      ".local/state/k4/partida.json": "59aba3c4419da8b61974845bf8caaadf35bad55357b80f4bf6679cc62f6cc1db",
+      ".local/state/k4/plugins/cp00-fixture/state.json": "bff789a2b3773765aa393a30b026f46dd823bc5b8ffa1ba138f71d73863cffd4",
+      ".local/state/k4/plugins/dual/estado.json": "be07efe41848637d7af809b41b64a727287baa4f186bc30ea0a76bc85c54388a",
+      ".local/state/k4/plugins.json": "37dfa235d4c61e2b4ad3eab8bbc19c21de7fce54d0276f6b5f597006f5b8916a",
+      ".local/state/k4/plugins.json.bak": "37dfa235d4c61e2b4ad3eab8bbc19c21de7fce54d0276f6b5f597006f5b8916a",
+      ".local/state/k4/portapapeles/datos/0066eaf72bb71d4e": "3e83c8dd990752cef3e0a77d30b262cc1eafe6894c23483ab515855f4363890f",
+      ".local/state/k4/portapapeles/datos/289145052baaf82a": "4b0fc96a2813362052492a1d79030750046ab0fb147b4e9e18a4b7cadd65a8ad",
+      ".local/state/k4/portapapeles/datos/45307d5f89b9d5fb": "a89d17a17a027ac3baf1ce6c72a81bb7251dcfcd353abf8f93e08111203aee56",
+      ".local/state/k4/portapapeles/indice.json": "d2022b4e98acfadb6bcfb41f8504bb6822366ca50873fab964070ca4e389aa70",
+      ".local/state/k4/shelf/dummy.json": "fc7fc2417d2515d6260c9c006e5952945c6f0333d50f4b7be6c2e565351778f1",
+      ".local/state/k4/tema.json": "38009e9b36e99126bd6642e6371afddbd2c89527c727f5ddf99924bea7819ef5",
+      ".local/state/k4/tokens-vigia.json": "8e3fceeb4f160b83abc32a0c8069bd90b1d43a7ddd23a18461b75164763aece5"
+    }
+  },
+  "restored_snapshot": "original-run03-complete",
+  "restored_snapshot_manifest": {
+    "revision": "ff520e33e136bbce11b7100c69888dedf42f7273",
+    "stores": [
+      ".local/state/k4",
+      ".config/k4",
+      ".config/k4term"
+    ],
+    "files": {
+      ".local/state/k4/ajustes.json": "680365e73ecdd588e79d39c7f9ca3f89caa5f68fde896cb010b7f7c27c4d7ad0",
+      ".local/state/k4/catalogo.json": "548502caf732c5e883b031b05578344006c22657b36e6ec109f7b266aaf8b44b",
+      ".local/state/k4/cp00-probe.txt": "8b3d5b3fc97aa03813dae485d04eae4e1fa05e7c1795fc30b7578cceb80a7ac8",
+      ".local/state/k4/partida.json": "6bed28aea798c21276560001b8a36418acd504873c9eb66d1cc2e3b5d85d492a",
+      ".local/state/k4/plugins/cp00-fixture/state.json": "bff789a2b3773765aa393a30b026f46dd823bc5b8ffa1ba138f71d73863cffd4",
+      ".local/state/k4/plugins.json": "37dfa235d4c61e2b4ad3eab8bbc19c21de7fce54d0276f6b5f597006f5b8916a",
+      ".local/state/k4/plugins.json.bak": "37dfa235d4c61e2b4ad3eab8bbc19c21de7fce54d0276f6b5f597006f5b8916a",
+      ".local/state/k4/portapapeles/datos/45307d5f89b9d5fb": "a89d17a17a027ac3baf1ce6c72a81bb7251dcfcd353abf8f93e08111203aee56",
+      ".local/state/k4/portapapeles/indice.json": "d5953ea0dd802017a036dddc1a62756f252ed8a7c9a3c8613dec4fbacebcccb2",
+      ".local/state/k4/shelf/dummy.json": "fc7fc2417d2515d6260c9c006e5952945c6f0333d50f4b7be6c2e565351778f1",
+      ".local/state/k4/tema.json": "38009e9b36e99126bd6642e6371afddbd2c89527c727f5ddf99924bea7819ef5",
+      ".local/state/k4/tokens-vigia.json": "8e3fceeb4f160b83abc32a0c8069bd90b1d43a7ddd23a18461b75164763aece5"
+    }
+  },
+  "payloads": {
+    "server": {
+      "pid": 164494,
+      "start_ticks": "2563153",
+      "exe": "/usr/bin/python3.14",
+      "pid_namespace": "pid:[4026533705]",
+      "argv": [
+        "python3",
+        "/control.py",
+        "_server"
+      ],
+      "date": "2026-10-21T12:03:03.736609+00:00"
+    },
+    "compositor": {
+      "pid": 164499,
+      "start_ticks": "2563164",
+      "exe": "/usr/bin/Hyprland",
+      "pid_namespace": "pid:[4026533762]",
+      "argv": [
+        "Hyprland",
+        "-c",
+        "/lab/hyprland.lua"
+      ],
+      "date": "2026-10-21T12:03:03.841535+00:00"
+    }
+  },
+  "personal_k4_paths_exist": {
+    "/home/noobsambit/.config/k4": false,
+    "/home/noobsambit/.local/state/k4": false,
+    "/home/noobsambit/.local/share/k4": false
+  },
+  "runtime_checks": [
+    {
+      "command": [
+        "python3",
+        "/lab/runtime_control.py",
+        "status"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"instance\": {\n    \"config_path\": \"/original/shell.qml\",\n    \"id\": \"k27ta9nt\",\n    \"launch_time\": \"2026-10-21T12:03:07\",\n    \"pid\": 92,\n    \"shell_id\": \"3c9ccbd9d073f80115714dfdfa978cf1\"\n  },\n  \"process\": {\n    \"pid\": 92,\n    \"start_ticks\": \"2563556\",\n    \"exe\": \"/usr/bin/quickshell\",\n    \"argv\": [\n      \"quickshell\",\n      \"-p\",\n      \"/original/shell.qml\",\n      \"--no-color\"\n    ],\n    \"pid_namespace\": \"pid:[4026533705]\"\n  },\n  \"environment\": {\n    \"WAYLAND_DISPLAY\": \"wayland-1\",\n    \"HYPRLAND_INSTANCE_SIGNATURE\": \"efb50993780079460b0cbed1363e2166a2de1d9f_1792584183_927252701\",\n    \"DBUS_SESSION_BUS_ADDRESS\": \"unix:path=/tmp/dbus-VRJ3QahhX6,guid=07bfb36d2f96a07dbd8644fa6ad8a9f7\",\n    \"XDG_RUNTIME_DIR\": \"/run/cp00\"\n  },\n  \"revision\": \"ff520e33e136bbce11b7100c69888dedf42f7273\",\n  \"log\": \"/lab/logs/k4-1792584187714445452.txt\"\n}\n",
+      "stderr": "",
+      "date": "2026-10-21T12:04:15.565822+00:00"
+    },
+    {
+      "command": [
+        "hyprctl",
+        "-j",
+        "monitors"
+      ],
+      "exit_code": 0,
+      "stdout": "[{\n    \"id\": 1,\n    \"name\": \"CP00-STABLE\",\n    \"description\": \"\",\n    \"make\": \"\",\n    \"model\": \"\",\n    \"serial\": \"\",\n    \"width\": 1280,\n    \"height\": 720,\n    \"physicalWidth\": 0,\n    \"physicalHeight\": 0,\n    \"refreshRate\": 60.00000,\n    \"x\": 0,\n    \"y\": 0,\n    \"activeWorkspace\": {\n        \"id\": 1,\n        \"name\": \"1\"\n    },\n    \"specialWorkspace\": {\n        \"id\": 0,\n        \"name\": \"\"\n    },\n    \"reserved\": [0, 34, 0, 0],\n    \"scale\": 1,\n    \"transform\": 0,\n    \"focused\": true,\n    \"dpmsStatus\": true,\n    \"vrr\": false,\n    \"solitary\": \"0\",\n    \"solitaryBlockedBy\": [\"WINDOWED\",\"CANDIDATE\"],\n    \"activelyTearing\": false,\n    \"tearingBlockedBy\": [\"NOT_TORN\",\"USER\",\"SUPPORT\",\"CANDIDATE\"],\n    \"directScanoutTo\": \"0\",\n    \"directScanoutBlockedBy\": [\"USER\",\"MIRROR\",\"SW\",\"CANDIDATE\"],\n    \"disabled\": false,\n    \"currentFormat\": \"XRGB8888\",\n    \"mirrorOf\": \"none\",\n    \"availableModes\": [\"1920x1080@60.00Hz\"],\n    \"colorManagementPreset\": \"srgb\",\n    \"sdrBrightness\": 1,\n    \"sdrSaturation\": 1,\n    \"sdrMinLuminance\": 0.2,\n    \"sdrMaxLuminance\": 80,\n    \"hardwareCursorsInUse\": true\n}]\n",
+      "stderr": "",
+      "date": "2026-10-21T12:04:15.571981+00:00"
+    },
+    {
+      "command": [
+        "hyprctl",
+        "configerrors"
+      ],
+      "exit_code": 0,
+      "stdout": "\n\n",
+      "stderr": "",
+      "date": "2026-10-21T12:04:15.577952+00:00"
+    },
+    {
+      "command": [
+        "python3",
+        "-c",
+        "import os,json;from pathlib import Path;print(json.dumps({\"namespaces\":{k:os.readlink(\"/proc/self/ns/\"+k) for k in [\"pid\",\"mnt\",\"ipc\",\"net\",\"user\"]},\"host_paths_absent\":{p:not Path(p).exists() for p in [\"/home/noobsambit\",\"/parent\",\"/run/user/1000\",\"/run/dbus/system_bus_socket\",\"/dev/snd\",\"/dev/input\"]}}))"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"namespaces\": {\"pid\": \"pid:[4026533705]\", \"mnt\": \"mnt:[4026533702]\", \"ipc\": \"ipc:[4026533704]\", \"net\": \"net:[4026533707]\", \"user\": \"user:[4026533757]\"}, \"host_paths_absent\": {\"/home/noobsambit\": true, \"/parent\": true, \"/run/user/1000\": true, \"/run/dbus/system_bus_socket\": true, \"/dev/snd\": true, \"/dev/input\": true}}\n",
+      "stderr": "",
+      "date": "2026-10-21T12:04:15.604396+00:00"
+    }
+  ],
+  "restored_settings": {
+    "posicionBarra": "arriba",
+    "reservaIsla": "reserva",
+    "accesosDirectos": [
+      "game",
+      "settings",
+      "system",
+      "clipboard"
+    ]
+  },
+  "postlaunch_changed_paths": [
+    ".local/state/k4/partida.json"
+  ],
+  "quickshell": {
+    "command": [
+      "quickshell",
+      "list",
+      "--all",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "[\n    {\n        \"config_path\": \"/home/noobsambit/.config/quickshell/end4-pC/shell.qml\",\n        \"id\": \"xzn1r8nt\",\n        \"launch_time\": \"2026-10-21T10:26:11\",\n        \"pid\": 1293,\n        \"shell_id\": \"962f75767314addec36fdeb1bbb48f35\"\n    }\n]\n",
+    "stderr": ""
+  },
+  "notifications": {
+    "command": [
+      "busctl",
+      "--user",
+      "call",
+      "org.freedesktop.DBus",
+      "/org/freedesktop/DBus",
+      "org.freedesktop.DBus",
+      "GetNameOwner",
+      "s",
+      "org.freedesktop.Notifications"
+    ],
+    "exit_code": 0,
+    "stdout": "s \":1.14\"\n",
+    "stderr": ""
+  },
+  "host_invariants_match": true
+}

@@ -1,0 +1,12 @@
+{
+  "command": [
+    "grim",
+    "-o",
+    "CP00-STABLE",
+    "/lab/m04-restored-settings.png"
+  ],
+  "exit_code": 0,
+  "stdout": "",
+  "stderr": "",
+  "date": "2026-10-21T12:04:29.172083+00:00"
+}

@@ -10,7 +10,8 @@ Check [Progress](../PROGRESS.md). If CP-00 is awaiting authorization, use the me
 **b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05.**
 Use the [tested handoff](../../review/cp-00-baseline/evidence/run-05/index.md) for exact
 Start, Stop, Restore and optional harmless test fixtures. For the current one-test-at-a-time
-session, use the [M03 preparation and simple steps](../../review/cp-00-baseline/evidence/run-05/owner/cp-00__M03__preparation__run-05.md).
+session, use the [M04 preparation and simple steps](../../review/cp-00-baseline/evidence/run-05/owner/cp-00__M04__preparation__run-05.md).
+M04 temporarily runs the original ff520e3 recovery copy; the b114d5a candidate and its dummy state are preserved.
 The current results and next action are in [the generated progress view](../PROGRESS.md).
 Gate B is still yours; no final approval has been recorded.
 
