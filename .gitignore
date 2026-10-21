@@ -15,3 +15,21 @@ recargas
 #  El banco de pruebas de un plugin: lo genera y lo borra
 #  tools/plugins.py --probar, pero si algo peta puede quedarse.
 .banco.qml
+
+# Notchbar review media: keep concepts and large/private material out of normal adds.
+/review/**/references/submitted/*
+/review/**/references/alternatives/*
+/review/**/references/storyboards/*
+!/review/**/references/submitted/.gitkeep
+!/review/**/references/alternatives/.gitkeep
+!/review/**/references/storyboards/.gitkeep
+/review/**/*.mp4
+/review/**/*.webm
+/review/**/*.mov
+/review/**/*.mkv
+/review/**/*.gif
+/review/**/*.zip
+/review/**/*.xcf
+/review/**/*.psd
+/review/**/*.tmp
+/review/**/private/

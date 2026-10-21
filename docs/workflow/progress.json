@@ -1,0 +1,1686 @@
+{
+  "schema_version": 1,
+  "workflow_status": "AWAITING WORKFLOW APPROVAL",
+  "active_checkpoint": null,
+  "next_checkpoint": "cp-00-baseline",
+  "baseline_sha": "ff520e3",
+  "setup_branch": "docs/notchbar-workflow",
+  "checkpoints": [
+    {
+      "id": "cp-00-baseline",
+      "title": "Safe environment and original k4 baseline",
+      "depends_on": [],
+      "visual": false,
+      "status": "PLANNED",
+      "authorization": null,
+      "gate_a": null,
+      "gate_b": null,
+      "reference_requirements": [],
+      "reference_sets": [],
+      "tasks": [
+        {
+          "id": "T01",
+          "title": "Inventory source baseline, versions, devices, state paths, daemon ownership and dependencies; identify isolation hazards from source.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T02",
+          "title": "Prepare and prove separate test code/home/bus/Wayland context; supply guarded Start/Stop/Restore actions and rehearse dummy-state backup/restore.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T03",
+          "title": "Capture original surface/dock top/bottom and compatibility-only sides, fullscreen and available displays; smoke media, clipboard, capture and plugin samples.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T04",
+          "title": "Measure idle/startup/media/dock and Atalaya effective enabled/closed costs; inventory provenance gaps and prepare baseline handoff.",
+          "status": "PENDING",
+          "evidence": []
+        }
+      ],
+      "tests": [
+        {
+          "id": "A01",
+          "kind": "automated",
+          "title": "Run existing gates and read-only capability/path audit; record missing tools and skipped qmllint separately.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R01",
+          "kind": "runtime",
+          "title": "Prove isolated paths/services, exact-instance termination, backup and previous-version restore using dummy state; host services unchanged.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R02",
+          "kind": "runtime",
+          "title": "Record original top/bottom/dock, experimental sides, fullscreen, one/two displays where available, media/clipboard/capture and examples hola/piezas/efectos/snake.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R03",
+          "kind": "runtime",
+          "title": "Measure startup/idle/active resources with workload/duration/hardware; record Atalaya saved override versus inherited catalog effective state and closed-state GPU activity.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M01",
+          "kind": "owner",
+          "title": "Start and stop safely",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M02",
+          "kind": "owner",
+          "title": "Original everyday paths",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M03",
+          "kind": "owner",
+          "title": "Screen and fullscreen baseline",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M04",
+          "kind": "owner",
+          "title": "Recovery rehearsal",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        }
+      ],
+      "runs": [],
+      "latest_run": null,
+      "branch": null,
+      "last_good_sha": null,
+      "current_task": null,
+      "blocked_reason": null,
+      "next_agent_action": "Wait for explicit workflow and CP-00 authorization; then inspect safe isolation options without launching product.",
+      "next_owner_action": "Approve workflow and authorize CP-00 only; no images yet.",
+      "contract": "docs/workflow/checkpoints/cp-00-baseline.md",
+      "visual_brief": "docs/workflow/checkpoints/cp-00-baseline.visual.md",
+      "owner_note": "owner/checkpoints/cp-00-baseline.md"
+    },
+    {
+      "id": "cp-01-safety",
+      "title": "Regression and safety gates",
+      "depends_on": [
+        "cp-00-baseline"
+      ],
+      "visual": false,
+      "status": "PLANNED",
+      "authorization": null,
+      "gate_a": null,
+      "gate_b": null,
+      "reference_requirements": [],
+      "reference_sets": [],
+      "tasks": [
+        {
+          "id": "T01",
+          "title": "Characterize settings, parser, existing activity and IPC/plugin lifecycle contracts; add targeted regression fixtures and CI invocation for those seams.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T02",
+          "title": "Implement/test D20 fresh owned/unowned selection, saved intent, migration, restart, loss/race/conflict fallback and safe Notifs facade.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T03",
+          "title": "Implement/test fresh versus migrated Atalaya effective-state preservation and safe invalid/truncated settings fallback.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T04",
+          "title": "Scope installer restarts to intended instance; check disclosure/control and offline cases for known network features; review compatibility and recovery.",
+          "status": "PENDING",
+          "evidence": []
+        }
+      ],
+      "tests": [
+        {
+          "id": "A01",
+          "kind": "automated",
+          "title": "Existing gates plus new focused settings/activity/backend-payload/IPC and plugin-lifecycle fixtures; missing plugin and failed/reloaded/disabled samples included.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "A02",
+          "kind": "automated",
+          "title": "D20 matrix: fresh occupied/unowned bus, saved Own/External, migrated no-choice, unknown owner, name loss/race, restart and explicit change; assert no daemon takeover.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "A03",
+          "kind": "automated",
+          "title": "D24 explicit on/off and inherited default migration, fresh off; malformed/truncated JSON recovery and stable IDs/aliases.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "A04",
+          "kind": "automated",
+          "title": "Installer process-scope fixture with unrelated Quickshell sentinel; offline/opt-in network behavior and safe unavailable dependencies.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R01",
+          "kind": "runtime",
+          "title": "Load/reload/disable/error test examples and verify IPC settings aliases; disabled plugins are uninstantiated.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R02",
+          "kind": "runtime",
+          "title": "Exercise D20 against a real test-bus daemon, including restart and intentional switching after owner control; External shows unavailable history/actions.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R03",
+          "kind": "runtime",
+          "title": "Demonstrate safe restart leaves unrelated test sentinel and real session untouched; inspect actual settings, network toggles and rollback.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M01",
+          "kind": "owner",
+          "title": "Notifications coexist",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M02",
+          "kind": "owner",
+          "title": "Settings survive",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M03",
+          "kind": "owner",
+          "title": "Safe update and missing services",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M04",
+          "kind": "owner",
+          "title": "Return to last good",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        }
+      ],
+      "runs": [],
+      "latest_run": null,
+      "branch": null,
+      "last_good_sha": null,
+      "current_task": null,
+      "blocked_reason": null,
+      "next_agent_action": "Wait for approved prerequisites and activation; then read this contract and current source.",
+      "next_owner_action": "Wait for Codex to activate this checkpoint.",
+      "contract": "docs/workflow/checkpoints/cp-01-safety.md",
+      "visual_brief": "docs/workflow/checkpoints/cp-01-safety.visual.md",
+      "owner_note": "owner/checkpoints/cp-01-safety.md"
+    },
+    {
+      "id": "cp-02-dnd-spike",
+      "title": "Isolated Shelf drag-and-drop feasibility",
+      "depends_on": [
+        "cp-01-safety"
+      ],
+      "visual": false,
+      "status": "PLANNED",
+      "authorization": null,
+      "gate_a": null,
+      "gate_b": null,
+      "reference_requirements": [],
+      "reference_sets": [],
+      "tasks": [
+        {
+          "id": "T01",
+          "title": "Record Qt/Quickshell/Hyprland/file-manager versions and prepare dummy original hashes plus test destination.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T02",
+          "title": "Build a disposable source/target with event logging outside product modules; test URI parsing and negotiation without changing originals.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T03",
+          "title": "Exercise drag-in/out/copy/move refusal/cancel/missing source/keyboard using at least two available common file managers and a destination app.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T04",
+          "title": "Run screen crossing where practical and write exact GO or RESCOPE conclusion, limitations and recoverable spike evidence.",
+          "status": "PENDING",
+          "evidence": []
+        }
+      ],
+      "tests": [
+        {
+          "id": "A01",
+          "kind": "automated",
+          "title": "Dummy-file hashes before/after, URI parsing cases (spaces/unicode/multiple lines/nonlocal/unsupported), copy-only action checks and cancellation logs; no network URI execution.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R01",
+          "kind": "runtime",
+          "title": "Version/MIME/action matrix for at least two common available file managers: file/folder/multiple files into layer-shell and drag-out to another app.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R02",
+          "kind": "runtime",
+          "title": "Requested copy/move, default copy, reject unsafe move, cancel before/after approach, missing source and equivalent keyboard route; originals remain intact.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R03",
+          "kind": "runtime",
+          "title": "Same-screen plus available cross-screen/fractional-scale cases; record exact go/rescope conclusion, not an assumed successful Shelf.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M01",
+          "kind": "owner",
+          "title": "Drop files in and out",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M02",
+          "kind": "owner",
+          "title": "Cancel and keep originals",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M03",
+          "kind": "owner",
+          "title": "Missing file and keyboard route",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M04",
+          "kind": "owner",
+          "title": "Screens and decision",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        }
+      ],
+      "runs": [],
+      "latest_run": null,
+      "branch": null,
+      "last_good_sha": null,
+      "current_task": null,
+      "blocked_reason": null,
+      "next_agent_action": "Wait for approved prerequisites and activation; then read this contract and current source.",
+      "next_owner_action": "Wait for Codex to activate this checkpoint.",
+      "contract": "docs/workflow/checkpoints/cp-02-dnd-spike.md",
+      "visual_brief": "docs/workflow/checkpoints/cp-02-dnd-spike.visual.md",
+      "owner_note": "owner/checkpoints/cp-02-dnd-spike.md"
+    },
+    {
+      "id": "cp-03-design-system",
+      "title": "Shared design system and original visual direction",
+      "depends_on": [
+        "cp-02-dnd-spike"
+      ],
+      "visual": true,
+      "status": "PLANNED",
+      "authorization": null,
+      "gate_a": null,
+      "gate_b": null,
+      "reference_requirements": [
+        {
+          "file": "cp-03__surface-family__dark__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-03__surface-family__light__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-03__controls-settings__both__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-03__expansion-motion__both__r01.png",
+          "folder": "storyboards",
+          "mandatory": true
+        }
+      ],
+      "reference_sets": [],
+      "tasks": [
+        {
+          "id": "T01",
+          "title": "Verify submitted boards and storyboard against UX scope/originality/feasibility; record owner Gate A with hashes and agreed token interpretation.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T02",
+          "title": "Extend existing Theme and shared components with semantic roles and interaction states while preserving public properties.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T03",
+          "title": "Apply approved grammar to core four-mode examples, settings-navigation sample and dock primitives; add reduced-motion resolution.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T04",
+          "title": "Capture dark/light/focus/large-text/opaque/motion examples, compare references and measure visual costs.",
+          "status": "PENDING",
+          "evidence": []
+        }
+      ],
+      "tests": [
+        {
+          "id": "A01",
+          "kind": "automated",
+          "title": "Existing gates plus semantic-token/state resolution, dark/light/reduced-motion fallback and legacy K4.Tema/sample-plugin regression checks; component geometry bounds.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R01",
+          "kind": "runtime",
+          "title": "Open each owner board/keyframe, inventory files/hashes, review feasibility and visual inheritance; Gate A is separately owner granted.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R02",
+          "kind": "runtime",
+          "title": "Rendered four-mode samples/settings/dock shared controls in dark/light, hover/pressed/focus/disabled/loading/error, long text/enlarged text and opaque fallback; keyboard and accessible-name review.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R03",
+          "kind": "runtime",
+          "title": "Real expansion/reduced-motion video, screenshots at laptop/external/fractional scale where available; compare concepts, contrast and CPU/GPU/frame costs to baseline.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M01",
+          "kind": "owner",
+          "title": "One visual family",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M02",
+          "kind": "owner",
+          "title": "Keyboard and states",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M03",
+          "kind": "owner",
+          "title": "Reading and background",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M04",
+          "kind": "owner",
+          "title": "Motion comfort",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        }
+      ],
+      "runs": [],
+      "latest_run": null,
+      "branch": null,
+      "last_good_sha": null,
+      "current_task": null,
+      "blocked_reason": null,
+      "next_agent_action": "Wait for approved prerequisites and activation; then read this contract and current source.",
+      "next_owner_action": "Wait for Codex to activate this checkpoint.",
+      "contract": "docs/workflow/checkpoints/cp-03-design-system.md",
+      "visual_brief": "docs/workflow/checkpoints/cp-03-design-system.visual.md",
+      "owner_note": "owner/checkpoints/cp-03-design-system.md"
+    },
+    {
+      "id": "cp-04-surfaces",
+      "title": "Four surface modes, geometry and displays",
+      "depends_on": [
+        "cp-03-design-system"
+      ],
+      "visual": true,
+      "status": "PLANNED",
+      "authorization": null,
+      "gate_a": null,
+      "gate_b": null,
+      "reference_requirements": [
+        {
+          "file": "cp-04__top-mode-geometry__dark__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-04__bottom-mode-geometry__light__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-04__display-fullscreen-settings__both__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-04__mode-and-display-motion__both__r01.png",
+          "folder": "storyboards",
+          "mandatory": true
+        }
+      ],
+      "reference_sets": [],
+      "tasks": [
+        {
+          "id": "T01",
+          "title": "Review owner geometry boards against CP-03 and feasible panel anchors; record Gate A and migration cases.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T02",
+          "title": "Add validated mode/geometry persistence with old settings/Dual mapping and last-good recovery; extract only testable needed seams.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T03",
+          "title": "Connect host/Dual/preview for modes, reserve/fullscreen/display focus and rehome; preserve plugin state and IPC.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T04",
+          "title": "Capture scale/hotplug/fullscreen and invalid-geometry recovery matrix; compare approved direction and retest focus.",
+          "status": "PENDING",
+          "evidence": []
+        }
+      ],
+      "tests": [
+        {
+          "id": "A01",
+          "kind": "automated",
+          "title": "Existing gates plus valid/range/invalid settings, old keys/Dual migration, unknown monitor, truncated JSON, last-good geometry and stable IPC IDs.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "A02",
+          "kind": "automated",
+          "title": "Recorded monitor/client payloads for focused/preferred/fullscreen policy and monitor removal; one expanded owner; mode changes preserve plugin work.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R01",
+          "kind": "runtime",
+          "title": "Inspect references and approved CP-03 lineage; record Gate A externally.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R02",
+          "kind": "runtime",
+          "title": "All four modes at top/bottom: width/height/offset/alignment/radius, reserve/overlay reflow and repeated switching with an open plugin.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R03",
+          "kind": "runtime",
+          "title": "Laptop/external/fractional scale, preferred/focused fallback, hotplug, per-display fullscreen stay/explicit-overlay/hide recovery; corrupt test settings only, not personal files.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M01",
+          "kind": "owner",
+          "title": "Modes and saved size",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M02",
+          "kind": "owner",
+          "title": "Reserved space",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M03",
+          "kind": "owner",
+          "title": "Fullscreen",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M04",
+          "kind": "owner",
+          "title": "Display disconnect",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M05",
+          "kind": "owner",
+          "title": "Large text and recovery",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        }
+      ],
+      "runs": [],
+      "latest_run": null,
+      "branch": null,
+      "last_good_sha": null,
+      "current_task": null,
+      "blocked_reason": null,
+      "next_agent_action": "Wait for approved prerequisites and activation; then read this contract and current source.",
+      "next_owner_action": "Wait for Codex to activate this checkpoint.",
+      "contract": "docs/workflow/checkpoints/cp-04-surfaces.md",
+      "visual_brief": "docs/workflow/checkpoints/cp-04-surfaces.visual.md",
+      "owner_note": "owner/checkpoints/cp-04-surfaces.md"
+    },
+    {
+      "id": "cp-05-activities",
+      "title": "Host Activity Policy and interactions",
+      "depends_on": [
+        "cp-04-surfaces"
+      ],
+      "visual": true,
+      "status": "PLANNED",
+      "authorization": null,
+      "gate_a": null,
+      "gate_b": null,
+      "reference_requirements": [
+        {
+          "file": "cp-05__media-volume-states__both__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-05__recording-user-status__both__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-05__notification-intent-states__both__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-05__media-volume-restore__both__r01.png",
+          "folder": "storyboards",
+          "mandatory": true
+        }
+      ],
+      "reference_sets": [],
+      "tasks": [
+        {
+          "id": "T01",
+          "title": "Verify activity layouts/storyboard and CP-03/04 inheritance; lock feasible differences with owner Gate A.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T02",
+          "title": "Add deterministic eligibility/expiry/restore/coalescing and legacy priority/view compatibility tests; implement within existing host.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T03",
+          "title": "Connect actual Linux signals and recording stop affordance; Own-only notifications and conditional real backlight; implement intent/focus rules.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T04",
+          "title": "Capture interruption/hidden-expiry/critical/focus/fullscreen/display matrix in four modes and reduced motion; profile changes.",
+          "status": "PENDING",
+          "evidence": []
+        }
+      ],
+      "tests": [
+        {
+          "id": "A01",
+          "kind": "automated",
+          "title": "Existing gates plus deterministic media\u2192HUD\u2192current-media restore, stopped-media no restore, hidden expiry/coalescing, dismissed-state no reopen, critical/user/persistent priority and legacy plugin mapping.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "A02",
+          "kind": "automated",
+          "title": "D20 owner/loss/restart guards, recording accessibility, hover never grabs keyboard, explicit shortcut/ESC/click-outside order and real-signal availability; no duplicate watcher.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R01",
+          "kind": "runtime",
+          "title": "Inspect approved state boards/keyframes; identify anchored regions and Gate A decision.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R02",
+          "kind": "runtime",
+          "title": "Music/volume bursts/current-source restore, recording stop behind user view, critical status dismissal, real Wi-Fi/Bluetooth/battery signals; hardware brightness only if verified.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R03",
+          "kind": "runtime",
+          "title": "Own/External real daemon matrix, open launcher while events arrive, hover versus click/shortcut/ESC, all modes/fullscreen/display rehome and reduced-motion video/frame costs.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M01",
+          "kind": "owner",
+          "title": "Music and volume return",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M02",
+          "kind": "owner",
+          "title": "Keep typing and dismiss",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M03",
+          "kind": "owner",
+          "title": "Hover and recording stop",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M04",
+          "kind": "owner",
+          "title": "Notifications and real signals",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M05",
+          "kind": "owner",
+          "title": "Modes and reduced motion",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        }
+      ],
+      "runs": [],
+      "latest_run": null,
+      "branch": null,
+      "last_good_sha": null,
+      "current_task": null,
+      "blocked_reason": null,
+      "next_agent_action": "Wait for approved prerequisites and activation; then read this contract and current source.",
+      "next_owner_action": "Wait for Codex to activate this checkpoint.",
+      "contract": "docs/workflow/checkpoints/cp-05-activities.md",
+      "visual_brief": "docs/workflow/checkpoints/cp-05-activities.visual.md",
+      "owner_note": "owner/checkpoints/cp-05-activities.md"
+    },
+    {
+      "id": "cp-06-dock",
+      "title": "Dock and Hybrid polish",
+      "depends_on": [
+        "cp-05-activities"
+      ],
+      "visual": true,
+      "status": "PLANNED",
+      "authorization": null,
+      "gate_a": null,
+      "gate_b": null,
+      "reference_requirements": [
+        {
+          "file": "cp-06__dock-task-states__dark__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-06__hybrid-activity__light__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-06__drawer-and-unavailable__both__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-06__notch-island-dock-hybrid__both__r01.png",
+          "folder": "storyboards",
+          "mandatory": true
+        }
+      ],
+      "reference_sets": [],
+      "tasks": [
+        {
+          "id": "T01",
+          "title": "Verify dock references and continuity with CP-03/04/05; record Gate A and intended default/optional motion.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T02",
+          "title": "Separate only necessary dock state and transition coupling; preserve pins/order/window activation and compatible IPC.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T03",
+          "title": "Apply shared tokens/states to drawer/previews/task feedback and Hybrid; implement short/default/reduced-motion transitions.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T04",
+          "title": "Check reflow, rapid transitions/cancel, display/fullscreen and resource/input traces; compare real implementation.",
+          "status": "PENDING",
+          "evidence": []
+        }
+      ],
+      "tests": [
+        {
+          "id": "A01",
+          "kind": "automated",
+          "title": "Existing gates plus pin/order persistence, app/window identity/parser/IPC, disabled-dock watcher behavior and rapid mode-change/cancel state transitions.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R01",
+          "kind": "runtime",
+          "title": "Read dock boards/storyboard and exact CP-03 lineage; owner Gate A.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R02",
+          "kind": "runtime",
+          "title": "Pin/unpin/reorder by pointer and keyboard route; multiple-window focus/previews/drawer and Hybrid simultaneous activity.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R03",
+          "kind": "runtime",
+          "title": "Top/bottom reserve/overlay/fullscreen/hotplug/scale; repeated/aborted mode transitions; no invisible input catcher; reduced motion and CPU/GPU/frame/hidden polling traces.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M01",
+          "kind": "owner",
+          "title": "Pins and order",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M02",
+          "kind": "owner",
+          "title": "Tasks, drawer and Hybrid",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M03",
+          "kind": "owner",
+          "title": "Transition and desktop input",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M04",
+          "kind": "owner",
+          "title": "Motion and scale",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        }
+      ],
+      "runs": [],
+      "latest_run": null,
+      "branch": null,
+      "last_good_sha": null,
+      "current_task": null,
+      "blocked_reason": null,
+      "next_agent_action": "Wait for approved prerequisites and activation; then read this contract and current source.",
+      "next_owner_action": "Wait for Codex to activate this checkpoint.",
+      "contract": "docs/workflow/checkpoints/cp-06-dock.md",
+      "visual_brief": "docs/workflow/checkpoints/cp-06-dock.visual.md",
+      "owner_note": "owner/checkpoints/cp-06-dock.md"
+    },
+    {
+      "id": "cp-07-shelf",
+      "title": "Local Shelf implementation",
+      "depends_on": [
+        "cp-06-dock"
+      ],
+      "visual": true,
+      "status": "PLANNED",
+      "authorization": null,
+      "gate_a": null,
+      "gate_b": null,
+      "reference_requirements": [
+        {
+          "file": "cp-07__shelf-empty-drop__dark__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-07__shelf-staged-actions__light__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-07__shelf-missing-and-confirm__both__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-07__shelf-approach-open-collapse__both__r01.png",
+          "folder": "storyboards",
+          "mandatory": true
+        }
+      ],
+      "reference_sets": [],
+      "tasks": [
+        {
+          "id": "T01",
+          "title": "Revalidate CP-02 matrix on current runtime; verify Shelf references against feasible semantics; record Gate A.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T02",
+          "title": "Implement atomic local reference metadata, validation/retention/pin and small safe action handlers; preserve originals.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T03",
+          "title": "Integrate visible drag target/cards/keyboard entry with one host and shared design; add copy-default in/out and clear/missing feedback.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T04",
+          "title": "Test crash/restart/cancel/unavailable sources and monitor/fullscreen/reduced motion; inspect network/local data and compare actual evidence.",
+          "status": "PENDING",
+          "evidence": []
+        }
+      ],
+      "tests": [
+        {
+          "id": "A01",
+          "kind": "automated",
+          "title": "Existing gates plus URI/security/file/folder/multiple/duplicate/path quoting, missing/unreadable/symlink cases, atomic writes, interrupted/corrupt store, pin/retention and action availability; original hashes unchanged.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "A02",
+          "kind": "automated",
+          "title": "Shelf actions create no network request themselves; store/metadata remain local, remove/clear do not unlink originals; disabled Shelf has no watcher work.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R01",
+          "kind": "runtime",
+          "title": "Positive CP-02 recheck with current versions; inspect owner references and Gate A.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R02",
+          "kind": "runtime",
+          "title": "Two proven file-manager flows drag in/out, copy/move negotiation, approach/cancel/collapse; open/reveal/copy path/remove/clear and keyboard equivalents.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R03",
+          "kind": "runtime",
+          "title": "Restart retention/pin, source deleted/moved/permission denied, interrupted copy/cancel, unsupported source, fullscreen/display rehome/scale/reduced-motion and original integrity.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M01",
+          "kind": "owner",
+          "title": "Stage and copy onward",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M02",
+          "kind": "owner",
+          "title": "Cancel, remove and clear",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M03",
+          "kind": "owner",
+          "title": "Use actions without dragging",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M04",
+          "kind": "owner",
+          "title": "Restart and missing source",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M05",
+          "kind": "owner",
+          "title": "Approach and display comfort",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        }
+      ],
+      "runs": [],
+      "latest_run": null,
+      "branch": null,
+      "last_good_sha": null,
+      "current_task": null,
+      "blocked_reason": null,
+      "next_agent_action": "Wait for approved prerequisites and activation; then read this contract and current source.",
+      "next_owner_action": "Wait for Codex to activate this checkpoint.",
+      "contract": "docs/workflow/checkpoints/cp-07-shelf.md",
+      "visual_brief": "docs/workflow/checkpoints/cp-07-shelf.visual.md",
+      "owner_note": "owner/checkpoints/cp-07-shelf.md"
+    },
+    {
+      "id": "cp-08-clipboard",
+      "title": "Clipboard and file-workflow polish",
+      "depends_on": [
+        "cp-07-shelf"
+      ],
+      "visual": true,
+      "status": "PLANNED",
+      "authorization": null,
+      "gate_a": null,
+      "gate_b": null,
+      "reference_requirements": [
+        {
+          "file": "cp-08__clipboard-text-search__dark__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-08__clipboard-images-pins__light__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-08__clipboard-empty-secret-file__both__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-08__clipboard-entry-feedback__both__r01.png",
+          "folder": "storyboards",
+          "mandatory": true
+        }
+      ],
+      "reference_sets": [],
+      "tasks": [
+        {
+          "id": "T01",
+          "title": "Verify clipboard boards and retained Shelf action grammar; record Gate A and conditional file-offer scope.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T02",
+          "title": "Add watcher/store/security/MIME fixtures; test actual harmless password-manager hints and file-manager offers before choosing file support.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T03",
+          "title": "Apply shared preview/search/pin/keyboard/feedback states on current storage; implement only proven file offers and small cross-workflow actions.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T04",
+          "title": "Capture missing/secret/empty/error and scale/motion states; measure writes/watchers and document conditional deferrals accurately.",
+          "status": "PENDING",
+          "evidence": []
+        }
+      ],
+      "tests": [
+        {
+          "id": "A01",
+          "kind": "automated",
+          "title": "Existing gates plus current text/image index/search/pin/retention/error behavior, MIME hint exclusion with disk/log checks, actual file offer versus plain path, malformed/nonlocal/missing URIs.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "A02",
+          "kind": "automated",
+          "title": "Keyboard/search/copy/pin regressions, stable store migration, no duplicate watcher, bounded write churn and no network added by clipboard/Shelf actions.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R01",
+          "kind": "runtime",
+          "title": "Inspect board and approved prior grammar; owner Gate A.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R02",
+          "kind": "runtime",
+          "title": "Actual test password managers with harmless tokens and MIME observations; verify absence from durable index/payloads/logs where exclusion is claimed. File-manager offers receive independent GO/defer decision.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R03",
+          "kind": "runtime",
+          "title": "Text/image search/pin/copy/paste/delete, keyboard focus/selection/ESC and missing file actions if supported.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R04",
+          "kind": "runtime",
+          "title": "Restart/large history/long text/image decode failure/missing dependency, empty/error and scale/contrast/reduced motion; observe watcher count and storage churn.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M01",
+          "kind": "owner",
+          "title": "Find text and images",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M02",
+          "kind": "owner",
+          "title": "Keyboard and pins",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M03",
+          "kind": "owner",
+          "title": "Honest sensitive-copy behavior",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M04",
+          "kind": "owner",
+          "title": "Files versus plain paths",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M05",
+          "kind": "owner",
+          "title": "Errors and reading comfort",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        }
+      ],
+      "runs": [],
+      "latest_run": null,
+      "branch": null,
+      "last_good_sha": null,
+      "current_task": null,
+      "blocked_reason": null,
+      "next_agent_action": "Wait for approved prerequisites and activation; then read this contract and current source.",
+      "next_owner_action": "Wait for Codex to activate this checkpoint.",
+      "contract": "docs/workflow/checkpoints/cp-08-clipboard.md",
+      "visual_brief": "docs/workflow/checkpoints/cp-08-clipboard.visual.md",
+      "owner_note": "owner/checkpoints/cp-08-clipboard.md"
+    },
+    {
+      "id": "cp-09-coherence",
+      "title": "Broader product and settings coherence",
+      "depends_on": [
+        "cp-08-clipboard"
+      ],
+      "visual": true,
+      "status": "PLANNED",
+      "authorization": null,
+      "gate_a": null,
+      "gate_b": null,
+      "reference_requirements": [
+        {
+          "file": "cp-09__settings-navigation__dark__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-09__settings-privacy-plugins__light__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-09__core-entry-states__both__r01.png",
+          "folder": "submitted",
+          "mandatory": true
+        },
+        {
+          "file": "cp-09__settings-and-entry-navigation__both__r01.png",
+          "folder": "storyboards",
+          "mandatory": true
+        }
+      ],
+      "reference_sets": [],
+      "tasks": [
+        {
+          "id": "T01",
+          "title": "Verify coherent screen references and previous design inheritance; approve feasible new states through Gate A.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T02",
+          "title": "Regroup existing settings/search/navigation with stable keys/aliases and migration/preview/recovery tests; preserve localization.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T03",
+          "title": "Apply shared entry-point states/privacy/dependency/plugin disclosure; optionally connect capture file to Shelf only through existing safe output.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T04",
+          "title": "Smoke core/supported/changed optional modules, focus/contrast/scale/reduced motion and actual setting persistence; compare references.",
+          "status": "PENDING",
+          "evidence": []
+        }
+      ],
+      "tests": [
+        {
+          "id": "A01",
+          "kind": "automated",
+          "title": "Existing gates plus stable setting IDs/IPC aliases, old/new grouping search and localized labels, saved values, malformed settings recovery and preview synchronization.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "A02",
+          "kind": "automated",
+          "title": "Missing optional dependency paths, network-toggle behavior, plugin security wording/disabled lifecycle, Own/External availability and conditional capture-path validation.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R01",
+          "kind": "runtime",
+          "title": "Inspect selected settings/entry boards against all earlier approved sets and record Gate A.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R02",
+          "kind": "runtime",
+          "title": "Keyboard settings/search/preview/save/restart/recovery, launcher/controls, Own center versus External unavailable and capture entry/cancel; optional capture\u2192Shelf preserves destination.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R03",
+          "kind": "runtime",
+          "title": "Tier-based smoke: editor/capture, Files, terminal/SSH if installed, wallpaper/theme/display tools in isolation, windows/workspaces, agents/session/plugin discovery; optional modules changed by this checkpoint; focus/contrast/text/motion.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M01",
+          "kind": "owner",
+          "title": "Find and save settings",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M02",
+          "kind": "owner",
+          "title": "Everyday core tools",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M03",
+          "kind": "owner",
+          "title": "Capture and cancel",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M04",
+          "kind": "owner",
+          "title": "Inherited tools and missing dependencies",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M05",
+          "kind": "owner",
+          "title": "Reading and recovery",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        }
+      ],
+      "runs": [],
+      "latest_run": null,
+      "branch": null,
+      "last_good_sha": null,
+      "current_task": null,
+      "blocked_reason": null,
+      "next_agent_action": "Wait for approved prerequisites and activation; then read this contract and current source.",
+      "next_owner_action": "Wait for Codex to activate this checkpoint.",
+      "contract": "docs/workflow/checkpoints/cp-09-coherence.md",
+      "visual_brief": "docs/workflow/checkpoints/cp-09-coherence.visual.md",
+      "owner_note": "owner/checkpoints/cp-09-coherence.md"
+    },
+    {
+      "id": "cp-10-release",
+      "title": "Compatibility, performance and release validation",
+      "depends_on": [
+        "cp-09-coherence"
+      ],
+      "visual": false,
+      "status": "PLANNED",
+      "authorization": null,
+      "gate_a": null,
+      "gate_b": null,
+      "reference_requirements": [],
+      "reference_sets": [],
+      "tasks": [
+        {
+          "id": "T01",
+          "title": "Freeze candidate SHA/environment; run existing/added suites and plugin samples/hot reload/error/disabled tests; review any upstream port provenance.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T02",
+          "title": "Run full daily core scenario/display/fullscreen/accessibility/notification/privacy matrix and tiered inherited checks.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T03",
+          "title": "Measure idle/media/dock/transition/closed optional-module costs against baseline and resolve resource regressions with evidence.",
+          "status": "PENDING",
+          "evidence": []
+        },
+        {
+          "id": "T04",
+          "title": "Resolve per-payload rights/notices or owner-approved release exclusion; rehearse manual install/dependency guide and rollback in isolation; request Gate B and separate publication decision.",
+          "status": "PENDING",
+          "evidence": []
+        }
+      ],
+      "tests": [
+        {
+          "id": "A01",
+          "kind": "automated",
+          "title": "All inherited and new focused gates on exact candidate; examples hola/piezas/efectos/snake and owner-supplied external plugin when available; hot reload/failure/disabled/IPC/settings contracts.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "A02",
+          "kind": "automated",
+          "title": "Local Shelf/clipboard durable-state/privacy/secret tests, no telemetry in core, network disclosure/control, migration defaults, owner loss/race and monitor parser coverage.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "A03",
+          "kind": "automated",
+          "title": "Per-file asset/data/font/icon/shader/source notices/provenance decisions and manual logical dependency list; unresolved payload cannot enter distributable artifact.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R01",
+          "kind": "runtime",
+          "title": "Actual plugin lifecycle/IPC/legacy theme compatibility and optional external plugin supplied by owner; missing external sample explicitly recorded.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R02",
+          "kind": "runtime",
+          "title": "Complete daily core flow across modes/top/bottom, one/two displays/fractional scale/fullscreen/hotplug, accessibility/reduced motion and real Own/External switching; supported/optional tier checks.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R03",
+          "kind": "runtime",
+          "title": "Matching baseline resource workloads/duration/hardware, idle/active/closed states and severe regression resolution; accepted real-app screenshot comparisons, frame/motion traces.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "R04",
+          "kind": "runtime",
+          "title": "Manual dependency/install path and missing optional tools in disposable environment; backup/stop/rollback rehearsal; verify final distributable inventory/notices without publishing.",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M01",
+          "kind": "owner",
+          "title": "Daily workflow",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M02",
+          "kind": "owner",
+          "title": "Displays and fullscreen",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M03",
+          "kind": "owner",
+          "title": "Services and old tools",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M04",
+          "kind": "owner",
+          "title": "Comfort and responsiveness",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        },
+        {
+          "id": "M05",
+          "kind": "owner",
+          "title": "Recovery and release decision",
+          "result": "NOT TESTED",
+          "reason": "Checkpoint has not started.",
+          "history": []
+        }
+      ],
+      "runs": [],
+      "latest_run": null,
+      "branch": null,
+      "last_good_sha": null,
+      "current_task": null,
+      "blocked_reason": null,
+      "next_agent_action": "Wait for approved prerequisites and activation; then read this contract and current source.",
+      "next_owner_action": "Wait for Codex to activate this checkpoint.",
+      "contract": "docs/workflow/checkpoints/cp-10-release.md",
+      "visual_brief": "docs/workflow/checkpoints/cp-10-release.visual.md",
+      "owner_note": "owner/checkpoints/cp-10-release.md"
+    }
+  ],
+  "workflow_review": {
+    "date": "2026-10-21T04:59:01Z",
+    "report": "docs/workflow/ENGINEERING_AUDIT.md",
+    "reviewed_revision": "3610e20a9997ab4c1b4f4c280985be3529d34028",
+    "compared_base": "ff520e33e136bbce11b7100c69888dedf42f7273",
+    "tested_code_revision": "0c666c6719c1b4beea4b4a52056f289c19d2e870",
+    "tested_files": {
+      "tools/workflow.py": "94889301e85ee67ba9e43d166fc0f7c38141aec8c8780bb757b295c44388802b",
+      "tools/test_workflow.py": "86495c05517df19520ab8779cfc2a1ba8fe5237cb8973aeacba406af289428f5",
+      ".github/workflows/validar.yml": "2e3dff0a8465ea84110831c57ecba44d08989c1840c251d87f25abf9668b098e"
+    },
+    "commands": [
+      {
+        "command": "python3 tools/test_workflow.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "30 tests passed"
+      },
+      {
+        "command": "python3 tools/workflow.py --base-ref 3610e20",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "record and base history consistent"
+      },
+      {
+        "command": "python3 tools/workflow.py --base-ref main",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "initial workflow introduction handled"
+      },
+      {
+        "command": "python3 tools/workflow.py --render",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "owner view regenerated without status mutation"
+      },
+      {
+        "command": "python3 tools/plugins.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "31 plugins"
+      },
+      {
+        "command": "python3 tools/api.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "146 QML files"
+      },
+      {
+        "command": "python3 tools/guia.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "5 documents; qmllint available"
+      },
+      {
+        "command": "python3 tools/layouts.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "275 QML files"
+      },
+      {
+        "command": "python3 tools/prueba_editar.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "141 tests"
+      },
+      {
+        "command": "python3 tools/prueba_plugins.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "63 tests"
+      },
+      {
+        "command": "python3 tools/prueba_rutas.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "path/network/timeout checks"
+      },
+      {
+        "command": "python3 tools/prueba_texto.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "11 text sinks"
+      },
+      {
+        "command": "git diff --check",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "no whitespace/conflict errors"
+      }
+    ],
+    "limitations": [
+      "Hosted CI was not run; commands were validated locally.",
+      "No CP-00/live product testing or owner approval is implied."
+    ],
+    "runtime_handle": null,
+    "recovery": "No product runtime, personal configuration or desktop service was changed; no runtime recovery action is needed.",
+    "next_agent_action": "Wait for explicit workflow approval and CP-00 authorization, then follow CP-00 isolation preflight before any product launch.",
+    "next_owner_action": "Read the independent engineering audit and decide whether to approve the workflow and authorize CP-00 only."
+  }
+}

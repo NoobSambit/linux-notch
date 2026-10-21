@@ -18,10 +18,26 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
+        with:
+          fetch-depth: 0 # Recorded tested SHAs and workflow history must be available.
 
       - uses: actions/setup-python@v7
         with:
           python-version: "3.12"
+
+      - name: Workflow checker regression tests
+        run: python3 tools/test_workflow.py
+
+      - name: Workflow records, evidence and preserved history
+        env:
+          WORKFLOW_BASE: ${{ github.event.pull_request.base.sha || github.event.before }}
+        run: |
+          if [ -n "$WORKFLOW_BASE" ] && [ "$WORKFLOW_BASE" != "0000000000000000000000000000000000000000" ]; then
+            python3 tools/workflow.py --base-ref "$WORKFLOW_BASE"
+            git diff --check "$WORKFLOW_BASE" HEAD
+          else
+            python3 tools/workflow.py
+          fi
 
       - name: El catálogo de plugins dice la verdad
         run: python3 tools/plugins.py
