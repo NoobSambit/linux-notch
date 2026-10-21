@@ -7,7 +7,7 @@
 Approve workflow and authorize CP-00 only; no images yet.
 
 Workflow: **AWAITING WORKFLOW APPROVAL**.
-Active checkpoint: **None — no checkpoint has started**.
+Active checkpoint: **None**.
 Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 | Checkpoint | State | References | Tasks done | Tests: pass / fail / untested / help |
@@ -28,7 +28,7 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 - Codex next: Wait for explicit workflow and CP-00 authorization; then inspect safe isolation options without launching product.
 - You next: Approve workflow and authorize CP-00 only; no images yet.
-- Waiting/blocker: Owner authorization and approved prerequisites as described above.
+- Waiting/blocker: No blocker recorded; follow the next action above.
 - Test version / run: No runtime handoff yet.
 
 ## Tests and remaining work
