@@ -9,6 +9,7 @@ from __future__ import annotations
 
 import argparse
 import datetime
+import hashlib
 import json
 import os
 from pathlib import Path
@@ -17,10 +18,12 @@ import socket
 import socketserver
 import subprocess
 import sys
+import tarfile
 import time
 
 ROOT = Path(__file__).resolve().parent.parent
 LAB = ROOT / 'scratch/cp00/lab'
+BACKUPS = ROOT / 'scratch/backups/cp-00-baseline'
 BASELINE = 'ff520e33e136bbce11b7100c69888dedf42f7273'
 
 
@@ -103,6 +106,7 @@ def prepare():
         LAB.joinpath(child).mkdir(parents=True, exist_ok=True, mode=0o700)
     os.chmod(LAB, 0o700)
     os.chmod(LAB / 'runtime', 0o700)
+    BACKUPS.mkdir(parents=True, exist_ok=True, mode=0o700)
     LAB.joinpath('etc/passwd').write_text('cp00:x:1000:1000:CP00 disposable user:/home/cp00:/bin/sh\n')
     LAB.joinpath('etc/group').write_text('cp00:x:1000:\n')
     LAB.joinpath('etc/nsswitch.conf').write_text('passwd: files\ngroup: files\nhosts: files\n')
@@ -127,9 +131,69 @@ hl.config({
     if not (LAB / 'original').exists():
         # External to either sandbox; only this immutable source export is mounted.
         raise RuntimeError('Prepare source export first: see tools/cp00.md')
+    manifest = source_manifest(LAB / 'original', BASELINE)
+    LAB.joinpath('source-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
+    for source, dest in [('cp00_probe.py', 'probe.py'), ('cp00_runtime.py', 'runtime_control.py')]:
+        LAB.joinpath(dest).write_bytes(Path(__file__).with_name(source).read_bytes())
+
+
+def source_manifest(source, revision):
+    manifest = {}
+    entries = subprocess.check_output(['git', 'ls-tree', '-rz', revision], cwd=ROOT).split(b'\0')
+    for entry in filter(None, entries):
+        meta, name = entry.split(b'\t', 1)
+        mode, kind, blob = meta.split()
+        if mode == b'120000' or kind != b'blob':
+            raise RuntimeError('Unexpected nonregular source export entry')
+        data = source.joinpath(name.decode()).read_bytes()
+        if hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest().encode() != blob:
+            raise RuntimeError('Export differs from pinned Git source: ' + name.decode())
+        manifest[name.decode()] = hashlib.sha256(data).hexdigest()
+    return {'revision': revision, 'files': manifest}
+
+
+def payload_live(name):
+    file = LAB / (name + '.json')
+    if not file.exists():
+        return False
+    old = json.loads(file.read_text())
+    try:
+        current = identity(old['pid'])
+    except (FileNotFoundError, ProcessLookupError):
+        return False
+    current['argv'] = [s.decode() for s in current['argv']]
+    if any(current[k] != old[k] for k in ['pid', 'start_ticks', 'exe', 'argv', 'pid_namespace']):
+        raise RuntimeError('Recorded payload changed; refusing reuse: ' + name)
+    return True
+
+
+def select_source(revision):
+    if payload_live('server') or payload_live('compositor'):
+        raise RuntimeError('Stop both sandboxes before selecting another code revision')
+    revision = subprocess.check_output(['git', 'rev-parse', revision + '^{commit}'], cwd=ROOT, text=True).strip()
+    subprocess.run(['git', 'merge-base', '--is-ancestor', BASELINE, revision], cwd=ROOT, check=True)
+    if revision == BASELINE:
+        selected = {'revision': revision, 'path': '/original', 'manifest': '/lab/source-manifest.json'}
+    else:
+        export = LAB / 'exports' / revision
+        if not export.exists():
+            export.mkdir(parents=True, mode=0o700)
+            proc = subprocess.Popen(['git', 'archive', revision], cwd=ROOT, stdout=subprocess.PIPE)
+            with tarfile.open(fileobj=proc.stdout, mode='r|') as archive:
+                archive.extractall(export, filter='data')
+            if proc.wait():
+                raise RuntimeError('Git source export failed')
+        manifest = source_manifest(export, revision)
+        LAB.joinpath('candidate-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
+        selected = {'revision': revision, 'path': '/candidate', 'manifest': '/lab/candidate-manifest.json'}
+    LAB.joinpath('selected-source.json').write_text(json.dumps(selected, indent=2) + '\n')
+    print('Pinned source ' + revision)
 
 
 def sandbox(compositor=False):
+    selected_file = LAB / 'selected-source.json'
+    selected = json.loads(selected_file.read_text()) if selected_file.exists() else {
+        'revision': BASELINE, 'path': '/original', 'manifest': '/lab/source-manifest.json'}
     command = ['bwrap', '--unshare-all', '--unshare-user', '--new-session', '--cap-drop', 'ALL',
                '--ro-bind', '/usr', '/usr', '--symlink', 'usr/bin', '/bin',
                '--symlink', 'usr/lib', '/lib', '--symlink', 'usr/lib', '/lib64',
@@ -141,6 +205,7 @@ def sandbox(compositor=False):
                '--bind', str(LAB / 'home'), '/home/cp00',
                '--bind', str(LAB / 'runtime'), '/run/cp00',
                '--bind', str(LAB), '/lab',
+               '--bind', str(BACKUPS), '/backups',
                '--ro-bind', str(LAB / 'original'), '/original',
                '--ro-bind', str(LAB / 'original'), '/lab/original',
                '--ro-bind', str(Path(__file__).resolve()), '/control.py',
@@ -156,6 +221,12 @@ def sandbox(compositor=False):
                '--setenv', 'XDG_SESSION_TYPE', 'wayland',
                '--setenv', 'XDG_CURRENT_DESKTOP', 'Hyprland',
                '--setenv', 'K4_LOG', '0', '--chdir', '/home/cp00']
+    command += ['--setenv', 'CP00_SOURCE_REVISION', selected['revision'],
+                '--setenv', 'CP00_SOURCE_PATH', selected['path'],
+                '--setenv', 'CP00_SOURCE_MANIFEST', selected['manifest']]
+    if selected['path'] == '/candidate':
+        command += ['--ro-bind', str(LAB / 'exports' / selected['revision']), '/candidate',
+                    '--ro-bind', str(LAB / 'exports'), '/lab/exports']
     # Only render nodes, never DRM card/input/audio/camera devices.
     for node in ['/dev/dri/renderD128', '/dev/dri/renderD129']:
         if Path(node).exists():
@@ -190,6 +261,8 @@ def request(message):
 def start_server():
     if (LAB / 'control.sock').exists():
         try:
+            if not payload_live('server'):
+                raise ConnectionRefusedError('Stale command-server socket')
             print(json.dumps(request({'command': ['/usr/bin/true']})))
             return
         except (ConnectionRefusedError, FileNotFoundError):
@@ -225,6 +298,15 @@ def start_compositor():
                             stdin=subprocess.DEVNULL, stdout=log, stderr=log,
                             start_new_session=True, close_fds=True)
     save_payload('compositor', proc.pid, ['Hyprland', '-c', '/lab/hyprland.lua'])
+    for _ in range(150):
+        result = request({'command': ['hyprctl', '-j', 'monitors'], 'timeout': 2})
+        if result.get('exit_code') == 0 and json.loads(result['stdout']):
+            break
+        if proc.poll() is not None:
+            raise RuntimeError('Nested compositor exited; inspect its log')
+        time.sleep(.1)
+    else:
+        raise RuntimeError('Nested output readiness timed out; retain/reverify handle')
     print(json.dumps({'wrapper': proc.pid, 'started': now(), 'log': str(log.name)}))
 
 
@@ -265,16 +347,68 @@ def serve():
         server.serve_forever()
 
 
+def owner_start():
+    selected = LAB / 'selected-source.json'
+    revision = json.loads(selected.read_text())['revision'] if selected.exists() else BASELINE
+    print('CP-00 isolated test / source ' + revision, flush=True)
+    if not payload_live('server'):
+        prepare()
+    start_server()
+    if not payload_live('compositor'):
+        start_compositor()
+    status = request({'command': ['python3', '/lab/runtime_control.py', 'status']})
+    if status.get('exit_code') != 0:
+        probe = request({'command': ['python3', '/lab/probe.py']})
+        if probe.get('exit_code') != 0:
+            raise RuntimeError('Prelaunch isolation probe failed: ' + json.dumps(probe))
+        status = request({'command': ['python3', '/lab/runtime_control.py', 'start']})
+    if status.get('exit_code') != 0:
+        raise RuntimeError(json.dumps(status))
+    print(status['stdout'])
+
+
+def owner_stop():
+    if payload_live('server'):
+        result = request({'command': ['python3', '/lab/runtime_control.py', 'stop']})
+        if result.get('exit_code') != 0:
+            raise RuntimeError('Guarded app stop failed; inspect before teardown: ' + json.dumps(result))
+        print(result['stdout'])
+    print(stop_verified('compositor'))
+    print(stop_verified('server'))
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument('action', choices=['prepare', 'server-start', 'server-stop',
-                                         'compositor-start', 'compositor-stop', 'exec', '_server'])
+    parser.add_argument('action', choices=['prepare', 'pin', 'start', 'stop', 'restore',
+                                         'server-start', 'server-stop', 'compositor-start',
+                                         'compositor-stop', 'exec', '_server'])
     parser.add_argument('command', nargs=argparse.REMAINDER)
     args = parser.parse_args()
     if args.action == '_server':
         serve()
     elif args.action == 'prepare':
         prepare()
+    elif args.action == 'pin':
+        select_source(args.command[0])
+    elif args.action == 'start':
+        owner_start()
+    elif args.action == 'stop':
+        owner_stop()
+    elif args.action == 'restore':
+        owner_stop()
+        select_source(BASELINE)
+        prepare()
+        start_server()
+        start_compositor()
+        probe = request({'command': ['python3', '/lab/probe.py']})
+        if probe.get('exit_code') != 0:
+            raise RuntimeError('Restore prelaunch isolation failed: ' + json.dumps(probe))
+        snapshot_file = LAB / 'recovery-snapshot.txt'
+        snapshot = snapshot_file.read_text().strip() if snapshot_file.exists() else 'original-run03'
+        result = request({'command': ['python3', '/lab/runtime_control.py', 'restore', snapshot]})
+        if result.get('exit_code') != 0:
+            raise RuntimeError(json.dumps(result))
+        print('CP-00 original source + matching dummy snapshot restored\n' + result['stdout'])
     elif args.action == 'server-start':
         start_server()
     elif args.action == 'compositor-start':

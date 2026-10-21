@@ -1,0 +1,81 @@
+  INFO: Launching config: "/original/shell.qml"
+  INFO: Shell ID: "3c9ccbd9d073f80115714dfdfa978cf1" Path ID "3c9ccbd9d073f80115714dfdfa978cf1"
+  INFO: Saving logs to "/run/cp00/quickshell/by-id/fv309nt/log.qslog"
+ ERROR quickshell.service.pipewire.loop: Failed to connect pipewire context. Errno: 112
+  WARN quickshell.network.networkmanager: Could not connect to DBus. NetworkManager backend will not work.
+ ERROR quickshell.network: Network will not work. Could not find an available backend.
+  WARN quickshell.bluetooth: Could not connect to DBus. Bluetooth integration is not available.
+  INFO: Configuration Loaded
+  WARN scene: QML FileView at @services/Settings.qml[602:5]: Read of /home/cp00/.local/state/k4/ajustes.json failed: File does not exist.
+  WARN scene: QML FileView at @services/Idioma.qml[169:5]: Read of /original/traducciones/es.json failed: File does not exist.
+  WARN scene: QML FileView at @services/Game.qml[1897:5]: Read of /home/cp00/.local/state/k4/partida.json failed: File does not exist.
+  WARN scene: QML FileView at @services/Tokens.qml[274:5]: Read of /home/cp00/.local/state/k4/tokens.json failed: File does not exist.
+  WARN scene: QML FileView at @services/PluginManager.qml[858:5]: Read of /home/cp00/.local/state/k4/catalogo.json failed: File does not exist.
+  WARN scene: QML FileView at @services/PluginManager.qml[815:5]: Read of /home/cp00/.local/state/k4/plugins.json.bak failed: File does not exist.
+  WARN scene: QML FileView at @services/PluginManager.qml[805:5]: Read of /home/cp00/.local/state/k4/plugins.json failed: File does not exist.
+  WARN scene: QML FileView at @services/Weather.qml[174:5]: Read of /home/cp00/.local/state/k4/weather.json failed: File does not exist.
+  WARN qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.ServiceUnknown", "The name org.freedesktop.portal.Desktop was not provided by any .service files")
+  WARN qt.qml.propertyCache.append: Member data of the object ClippingRectangle_QMLTYPE_113 overrides a member of the base object. Consider renaming it or adding final or override specifier
+  INFO qt.multimedia.ffmpeg: Using Qt multimedia with FFmpeg version n9.0.2 GPL version 3 or later
+  WARN qt.qml.propertyCache.append: Member enabled of the object Action overrides a member of the base object. Consider renaming it or adding final or override specifier
+  WARN qt.qml.propertyCache.append: Member enabled of the object Chip overrides a member of the base object. Consider renaming it or adding final or override specifier
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML Enganches at @services/Enganches.qml[20:1]: Binding loop detected for property "gruposAjustes":
+qs:@/qs/services/Enganches.qml:82:5
+  WARN scene: QML FileView at file:///original/api/K4/Guardado.qml[60:28]: Read of /home/cp00/.local/state/k4/plugins/player/estado.json failed: File does not exist.
+  WARN scene: QML Fichero at @plugins/HyprTheme/HyprThemePlugin.qml[937:5]: Read of /home/cp00/.local/state/k4/hyprtheme.json failed: File does not exist.
+  WARN scene: QML Fichero at @plugins/HyprTheme/HyprThemePlugin.qml[936:5]: Read of /home/cp00/.config/hypr/hyprland.lua failed: File does not exist.
+  WARN scene: QML Fichero at @plugins/HyprTheme/HyprThemePlugin.qml[935:5]: Read of /home/cp00/.config/hypr/config/k4-theme.lua failed: File does not exist.
+  WARN scene: QML FileView at file:///original/api/K4/Guardado.qml[60:28]: Read of /home/cp00/.local/state/k4/plugins/pantallas/estado.json failed: File does not exist.
+  WARN scene: QML FileView at @services/Ambiente.qml[75:5]: Read of /home/cp00/.local/state/k4/tema.json failed: File does not exist.
+  WARN scene: QML Fichero at @plugins/Terminal/TerminalPlugin.qml[1191:32]: Read of /home/cp00/.config/k4term/k4term.conf failed: File does not exist.
+  WARN scene: QML Fichero at @plugins/Ssh/SshPlugin.qml[651:34]: Read of /etc/hostname failed: File does not exist.
+  WARN scene: QML Fichero at @plugins/Ssh/SshPlugin.qml[192:31]: Read of /home/cp00/.ssh/config failed: File does not exist.
+  WARN scene: QML Fichero at @plugins/Ssh/SshPlugin.qml[199:34]: Read of /home/cp00/.config/k4term/hosts.json failed: File does not exist.
+  WARN scene: QML Fichero at @plugins/Ssh/SshPlugin.qml[222:34]: Read of /home/cp00/.config/k4term/claves.json failed: File does not exist.
+  WARN scene: QML FileView at file:///original/api/K4/Guardado.qml[60:28]: Read of /home/cp00/.local/state/k4/plugins/agentes/estado.json failed: File does not exist.
+  WARN scene: QML FileView at file:///original/api/K4/Guardado.qml[60:28]: Read of /home/cp00/.local/state/k4/plugins/dual/estado.json failed: File does not exist.
+  WARN scene: QML FileView at file:///original/api/K4/Guardado.qml[60:28]: Read of /home/cp00/.local/state/k4/plugins/atalaya/ajustes.json failed: File does not exist.
+  WARN scene: QML FileView at file:///original/api/K4/Guardado.qml[60:28]: Read of /home/cp00/.local/state/k4/plugins/submap/estado.json failed: File does not exist.
+  INFO: Exiting due to IPC request.

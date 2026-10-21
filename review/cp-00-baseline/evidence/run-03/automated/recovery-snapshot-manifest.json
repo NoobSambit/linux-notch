@@ -1,0 +1,22 @@
+{
+  "revision": "ff520e33e136bbce11b7100c69888dedf42f7273",
+  "stores": [
+    ".local/state/k4",
+    ".config/k4",
+    ".config/k4term"
+  ],
+  "files": {
+    ".local/state/k4/ajustes.json": "680365e73ecdd588e79d39c7f9ca3f89caa5f68fde896cb010b7f7c27c4d7ad0",
+    ".local/state/k4/catalogo.json": "548502caf732c5e883b031b05578344006c22657b36e6ec109f7b266aaf8b44b",
+    ".local/state/k4/cp00-probe.txt": "8b3d5b3fc97aa03813dae485d04eae4e1fa05e7c1795fc30b7578cceb80a7ac8",
+    ".local/state/k4/partida.json": "6bed28aea798c21276560001b8a36418acd504873c9eb66d1cc2e3b5d85d492a",
+    ".local/state/k4/plugins/cp00-fixture/state.json": "bff789a2b3773765aa393a30b026f46dd823bc5b8ffa1ba138f71d73863cffd4",
+    ".local/state/k4/plugins.json": "37dfa235d4c61e2b4ad3eab8bbc19c21de7fce54d0276f6b5f597006f5b8916a",
+    ".local/state/k4/plugins.json.bak": "37dfa235d4c61e2b4ad3eab8bbc19c21de7fce54d0276f6b5f597006f5b8916a",
+    ".local/state/k4/portapapeles/datos/45307d5f89b9d5fb": "a89d17a17a027ac3baf1ce6c72a81bb7251dcfcd353abf8f93e08111203aee56",
+    ".local/state/k4/portapapeles/indice.json": "d5953ea0dd802017a036dddc1a62756f252ed8a7c9a3c8613dec4fbacebcccb2",
+    ".local/state/k4/shelf/dummy.json": "fc7fc2417d2515d6260c9c006e5952945c6f0333d50f4b7be6c2e565351778f1",
+    ".local/state/k4/tema.json": "38009e9b36e99126bd6642e6371afddbd2c89527c727f5ddf99924bea7819ef5",
+    ".local/state/k4/tokens-vigia.json": "8e3fceeb4f160b83abc32a0c8069bd90b1d43a7ddd23a18461b75164763aece5"
+  }
+}

@@ -1,0 +1,63 @@
+[
+  {
+    "command": [
+      "python3",
+      "/lab/runtime_control.py",
+      "start"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"instance\": {\n    \"config_path\": \"/original/shell.qml\",\n    \"id\": \"prxe09nt\",\n    \"launch_time\": \"2026-10-21T08:18:33\",\n    \"pid\": 997,\n    \"shell_id\": \"3c9ccbd9d073f80115714dfdfa978cf1\"\n  },\n  \"process\": {\n    \"pid\": 997,\n    \"start_ticks\": \"1216201\",\n    \"exe\": \"/usr/bin/quickshell\",\n    \"argv\": [\n      \"quickshell\",\n      \"-p\",\n      \"/original/shell.qml\",\n      \"--no-color\"\n    ],\n    \"pid_namespace\": \"pid:[4026533306]\"\n  },\n  \"environment\": {\n    \"WAYLAND_DISPLAY\": \"wayland-1\",\n    \"HYPRLAND_INSTANCE_SIGNATURE\": \"efb50993780079460b0cbed1363e2166a2de1d9f_1792570523_989200077\",\n    \"DBUS_SESSION_BUS_ADDRESS\": \"unix:path=/tmp/dbus-elnEgfoKRU,guid=e56901560faf96da5907e6bf6ad8749b\",\n    \"XDG_RUNTIME_DIR\": \"/run/cp00\"\n  },\n  \"revision\": \"ff520e33e136bbce11b7100c69888dedf42f7273\",\n  \"log\": \"/lab/logs/k4-1792570713474296765.txt\"\n}\n",
+    "stderr": "",
+    "date": "2026-10-21T08:18:33.769731+00:00"
+  },
+  {
+    "command": [
+      "python3",
+      "/lab/runtime_control.py",
+      "ipc",
+      "call",
+      "k4.settings",
+      "abrirPagina",
+      "apariencia"
+    ],
+    "exit_code": 0,
+    "stdout": "\n",
+    "stderr": "",
+    "date": "2026-10-21T08:18:34.519292+00:00"
+  },
+  {
+    "command": [
+      "grim",
+      "/lab/restored-settings-settled.png"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "date": "2026-10-21T08:18:36.077060+00:00"
+  },
+  {
+    "command": [
+      "python3",
+      "/lab/runtime_control.py",
+      "ipc",
+      "call",
+      "k4.settings",
+      "close"
+    ],
+    "exit_code": 0,
+    "stdout": "\n",
+    "stderr": "",
+    "date": "2026-10-21T08:18:36.187094+00:00"
+  },
+  {
+    "command": [
+      "python3",
+      "/lab/runtime_control.py",
+      "stop"
+    ],
+    "exit_code": 0,
+    "stdout": "Stopped only full ID prxe09nt\n",
+    "stderr": "",
+    "date": "2026-10-21T08:18:36.394727+00:00"
+  }
+]

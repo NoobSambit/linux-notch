@@ -1,0 +1,544 @@
+diff --git a/tools/cp00.md b/tools/cp00.md
+index 48a9a60..631ba30 100644
+--- a/tools/cp00.md
++++ b/tools/cp00.md
+@@ -39,2 +39,10 @@ its private session/PID namespace; the compositor payload exit closes only the n
+-with a global kill. Revalidate handles after resume. Later recovery tooling will add
+-full Quickshell ID/config/start-time checks and dummy-store backup/restore rehearsals.
++with a global kill. Revalidate handles after resume. Full Quickshell ID/config/start-time and bus checks are implemented in cp00_runtime.py.
++Run `python3 tools/test_cp00.py` for the focused refusal/corrupt-backup regressions.
++
++The exercised single-command controls are `python3 tools/cp00.py start`, `stop` and `restore`.
++Restore previous selects the original ff520e3 source and the immutable snapshot named in
++`scratch/cp00/lab/recovery-snapshot.txt`, with checksums and retained pre-restore dummy state.
++`python3 tools/cp00.py pin <full-SHA>` selects a clean source export only while both sandboxes are
++stopped; it validates ancestry and every Git blob. Candidate exports and both original aliases are
++read-only to the app. Each run records the actual selected source and current tool patch/revision.
++Readiness remains solely in progress.json; owner tests are never enabled by this tooling document.
+diff --git a/tools/cp00.py b/tools/cp00.py
+index 0d7d287..73b17c9 100644
+--- a/tools/cp00.py
++++ b/tools/cp00.py
+@@ -11,0 +12 @@ import datetime
++import hashlib
+@@ -19,0 +21 @@ import sys
++import tarfile
+@@ -23,0 +26 @@ LAB = ROOT / 'scratch/cp00/lab'
++BACKUPS = ROOT / 'scratch/backups/cp-00-baseline'
+@@ -105,0 +109 @@ def prepare():
++    BACKUPS.mkdir(parents=True, exist_ok=True, mode=0o700)
+@@ -129,0 +134,57 @@ hl.config({
++    manifest = source_manifest(LAB / 'original', BASELINE)
++    LAB.joinpath('source-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
++    for source, dest in [('cp00_probe.py', 'probe.py'), ('cp00_runtime.py', 'runtime_control.py')]:
++        LAB.joinpath(dest).write_bytes(Path(__file__).with_name(source).read_bytes())
++
++
++def source_manifest(source, revision):
++    manifest = {}
++    entries = subprocess.check_output(['git', 'ls-tree', '-rz', revision], cwd=ROOT).split(b'\0')
++    for entry in filter(None, entries):
++        meta, name = entry.split(b'\t', 1)
++        mode, kind, blob = meta.split()
++        if mode == b'120000' or kind != b'blob':
++            raise RuntimeError('Unexpected nonregular source export entry')
++        data = source.joinpath(name.decode()).read_bytes()
++        if hashlib.sha1(b'blob ' + str(len(data)).encode() + b'\0' + data).hexdigest().encode() != blob:
++            raise RuntimeError('Export differs from pinned Git source: ' + name.decode())
++        manifest[name.decode()] = hashlib.sha256(data).hexdigest()
++    return {'revision': revision, 'files': manifest}
++
++
++def payload_live(name):
++    file = LAB / (name + '.json')
++    if not file.exists():
++        return False
++    old = json.loads(file.read_text())
++    try:
++        current = identity(old['pid'])
++    except (FileNotFoundError, ProcessLookupError):
++        return False
++    current['argv'] = [s.decode() for s in current['argv']]
++    if any(current[k] != old[k] for k in ['pid', 'start_ticks', 'exe', 'argv', 'pid_namespace']):
++        raise RuntimeError('Recorded payload changed; refusing reuse: ' + name)
++    return True
++
++
++def select_source(revision):
++    if payload_live('server') or payload_live('compositor'):
++        raise RuntimeError('Stop both sandboxes before selecting another code revision')
++    revision = subprocess.check_output(['git', 'rev-parse', revision + '^{commit}'], cwd=ROOT, text=True).strip()
++    subprocess.run(['git', 'merge-base', '--is-ancestor', BASELINE, revision], cwd=ROOT, check=True)
++    if revision == BASELINE:
++        selected = {'revision': revision, 'path': '/original', 'manifest': '/lab/source-manifest.json'}
++    else:
++        export = LAB / 'exports' / revision
++        if not export.exists():
++            export.mkdir(parents=True, mode=0o700)
++            proc = subprocess.Popen(['git', 'archive', revision], cwd=ROOT, stdout=subprocess.PIPE)
++            with tarfile.open(fileobj=proc.stdout, mode='r|') as archive:
++                archive.extractall(export, filter='data')
++            if proc.wait():
++                raise RuntimeError('Git source export failed')
++        manifest = source_manifest(export, revision)
++        LAB.joinpath('candidate-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
++        selected = {'revision': revision, 'path': '/candidate', 'manifest': '/lab/candidate-manifest.json'}
++    LAB.joinpath('selected-source.json').write_text(json.dumps(selected, indent=2) + '\n')
++    print('Pinned source ' + revision)
+@@ -132,0 +194,3 @@ def sandbox(compositor=False):
++    selected_file = LAB / 'selected-source.json'
++    selected = json.loads(selected_file.read_text()) if selected_file.exists() else {
++        'revision': BASELINE, 'path': '/original', 'manifest': '/lab/source-manifest.json'}
+@@ -143,0 +208 @@ def sandbox(compositor=False):
++               '--bind', str(BACKUPS), '/backups',
+@@ -158,0 +224,6 @@ def sandbox(compositor=False):
++    command += ['--setenv', 'CP00_SOURCE_REVISION', selected['revision'],
++                '--setenv', 'CP00_SOURCE_PATH', selected['path'],
++                '--setenv', 'CP00_SOURCE_MANIFEST', selected['manifest']]
++    if selected['path'] == '/candidate':
++        command += ['--ro-bind', str(LAB / 'exports' / selected['revision']), '/candidate',
++                    '--ro-bind', str(LAB / 'exports'), '/lab/exports']
+@@ -192,0 +264,2 @@ def start_server():
++            if not payload_live('server'):
++                raise ConnectionRefusedError('Stale command-server socket')
+@@ -227,0 +301,9 @@ def start_compositor():
++    for _ in range(150):
++        result = request({'command': ['hyprctl', '-j', 'monitors'], 'timeout': 2})
++        if result.get('exit_code') == 0 and json.loads(result['stdout']):
++            break
++        if proc.poll() is not None:
++            raise RuntimeError('Nested compositor exited; inspect its log')
++        time.sleep(.1)
++    else:
++        raise RuntimeError('Nested output readiness timed out; retain/reverify handle')
+@@ -267,0 +350,30 @@ def serve():
++def owner_start():
++    selected = LAB / 'selected-source.json'
++    revision = json.loads(selected.read_text())['revision'] if selected.exists() else BASELINE
++    print('CP-00 isolated test / source ' + revision, flush=True)
++    if not payload_live('server'):
++        prepare()
++    start_server()
++    if not payload_live('compositor'):
++        start_compositor()
++    status = request({'command': ['python3', '/lab/runtime_control.py', 'status']})
++    if status.get('exit_code') != 0:
++        probe = request({'command': ['python3', '/lab/probe.py']})
++        if probe.get('exit_code') != 0:
++            raise RuntimeError('Prelaunch isolation probe failed: ' + json.dumps(probe))
++        status = request({'command': ['python3', '/lab/runtime_control.py', 'start']})
++    if status.get('exit_code') != 0:
++        raise RuntimeError(json.dumps(status))
++    print(status['stdout'])
++
++
++def owner_stop():
++    if payload_live('server'):
++        result = request({'command': ['python3', '/lab/runtime_control.py', 'stop']})
++        if result.get('exit_code') != 0:
++            raise RuntimeError('Guarded app stop failed; inspect before teardown: ' + json.dumps(result))
++        print(result['stdout'])
++    print(stop_verified('compositor'))
++    print(stop_verified('server'))
++
++
+@@ -270,2 +382,3 @@ def main():
+-    parser.add_argument('action', choices=['prepare', 'server-start', 'server-stop',
+-                                         'compositor-start', 'compositor-stop', 'exec', '_server'])
++    parser.add_argument('action', choices=['prepare', 'pin', 'start', 'stop', 'restore',
++                                         'server-start', 'server-stop', 'compositor-start',
++                                         'compositor-stop', 'exec', '_server'])
+@@ -277,0 +391,21 @@ def main():
++    elif args.action == 'pin':
++        select_source(args.command[0])
++    elif args.action == 'start':
++        owner_start()
++    elif args.action == 'stop':
++        owner_stop()
++    elif args.action == 'restore':
++        owner_stop()
++        select_source(BASELINE)
++        prepare()
++        start_server()
++        start_compositor()
++        probe = request({'command': ['python3', '/lab/probe.py']})
++        if probe.get('exit_code') != 0:
++            raise RuntimeError('Restore prelaunch isolation failed: ' + json.dumps(probe))
++        snapshot_file = LAB / 'recovery-snapshot.txt'
++        snapshot = snapshot_file.read_text().strip() if snapshot_file.exists() else 'original-run03'
++        result = request({'command': ['python3', '/lab/runtime_control.py', 'restore', snapshot]})
++        if result.get('exit_code') != 0:
++            raise RuntimeError(json.dumps(result))
++        print('CP-00 original source + matching dummy snapshot restored\n' + result['stdout'])
+diff --git a/tools/cp00_probe.py b/tools/cp00_probe.py
+index 10a5376..60adf82 100644
+--- a/tools/cp00_probe.py
++++ b/tools/cp00_probe.py
+@@ -37 +37,4 @@ assert 'org.freedesktop.portal.Desktop' not in names['stdout'], 'Unexpected port
+-for alias in ['/original', '/lab/original']:
++aliases = ['/original', '/lab/original']
++if os.environ.get('CP00_SOURCE_PATH') == '/candidate':
++    aliases += ['/candidate', '/lab/exports/' + os.environ['CP00_SOURCE_REVISION']]
++for alias in aliases:
+diff --git a/tools/cp00_runtime.py b/tools/cp00_runtime.py
+new file mode 100644
+index 0000000..951e2bd
+--- /dev/null
++++ b/tools/cp00_runtime.py
+@@ -0,0 +1,243 @@
++#!/usr/bin/env python3
++"""Exact-instance controls and disposable-store recovery, INSIDE the CP-00 sandbox."""
++import argparse
++import hashlib
++import json
++import os
++from pathlib import Path
++import shutil
++import signal
++import subprocess
++import time
++
++LAB = Path('/lab')
++HOME_DIR = Path('/home/cp00')
++BACKUPS = Path('/backups')
++SOURCE = os.environ.get('CP00_SOURCE_PATH', '/original')
++CONFIG = SOURCE + '/shell.qml'
++REVISION = os.environ.get('CP00_SOURCE_REVISION', 'ff520e33e136bbce11b7100c69888dedf42f7273')
++STORES = ['.local/state/k4', '.config/k4', '.config/k4term']
++
++
++def execute(command):
++    r = subprocess.run(command, capture_output=True, text=True, timeout=15)
++    if r.returncode:
++        raise RuntimeError(f'{command!r} exited {r.returncode}: {r.stdout}{r.stderr}')
++    return r.stdout
++
++
++def instances():
++    raw = execute(['quickshell', 'list', '--all', '--json'])
++    # Installed 0.2.1 prints this sentence even when --json was requested.
++    return [] if raw.strip() == 'No running instances.' else json.loads(raw)
++
++
++def process_identity(pid):
++    proc = Path('/proc', str(pid))
++    tail = proc.joinpath('stat').read_text().rsplit(')', 1)[1].split()
++    if tail[0] == 'Z':
++        raise ProcessLookupError(pid)
++    return {'pid': pid, 'start_ticks': tail[19],
++            'exe': str(proc.joinpath('exe').resolve()),
++            'argv': [v.decode() for v in proc.joinpath('cmdline').read_bytes().split(b'\0')[:-1]],
++            'pid_namespace': os.readlink(proc / 'ns/pid')}
++
++
++def environment():
++    assert os.environ['HOME'] == str(HOME_DIR)
++    assert not Path('/home/noobsambit').exists() and not Path('/parent').exists()
++    return {key: os.environ[key] for key in ['WAYLAND_DISPLAY', 'HYPRLAND_INSTANCE_SIGNATURE',
++                                           'DBUS_SESSION_BUS_ADDRESS', 'XDG_RUNTIME_DIR']}
++
++
++def record(instance, log=None):
++    assert instance['config_path'] == CONFIG
++    value = {'instance': instance, 'process': process_identity(instance['pid']),
++             'environment': environment(), 'revision': REVISION}
++    if log:
++        value['log'] = str(log)
++    LAB.joinpath('k4.json').write_text(json.dumps(value, indent=2) + '\n')
++    return value
++
++
++def verify(handle):
++    expected = handle['instance']
++    matches = [i for i in instances() if i['id'] == expected['id']]
++    if not matches:
++        return False
++    if expected['config_path'] != CONFIG:
++        raise RuntimeError('Refusing foreign configuration')
++    if handle['environment'] != environment() or handle['revision'] != REVISION:
++        raise RuntimeError('Refusing changed session or source revision')
++    if len(matches) != 1 or matches[0] != expected:
++        raise RuntimeError('Refusing changed full instance identity')
++    if process_identity(expected['pid']) != handle['process']:
++        raise RuntimeError('Refusing changed PID/start time/executable/arguments/namespace')
++    return True
++
++
++def current():
++    handle = json.loads(LAB.joinpath('k4.json').read_text())
++    if not verify(handle):
++        raise RuntimeError('Recorded full instance ID is absent; no replacement selected')
++    return handle
++
++
++def start():
++    environment()
++    # The immutable export is verified against Git archive bytes before every launch.
++    manifest = json.loads(Path(os.environ.get('CP00_SOURCE_MANIFEST', '/lab/source-manifest.json')).read_text())
++    assert manifest['revision'] == REVISION
++    for name, digest in manifest['files'].items():
++        assert hashlib.sha256(Path(SOURCE, name).read_bytes()).hexdigest() == digest, name
++    if any(i['config_path'] == CONFIG for i in instances()):
++        raise RuntimeError('Original config already running; refusing unrecorded/default selection')
++    log = LAB.joinpath('logs', 'k4-' + str(time.time_ns()) + '.txt')
++    with log.open('w') as output:
++        child = subprocess.Popen(['sh', SOURCE + '/arrancar', '--no-color'],
++                                 stdin=subprocess.DEVNULL, stdout=output, stderr=output, close_fds=True)
++    for _ in range(100):
++        found = [i for i in instances() if i['pid'] == child.pid and i['config_path'] == CONFIG]
++        if found:
++            value = record(found[0], log)
++            ready = subprocess.run(['quickshell', 'ipc', '--id', found[0]['id'], 'show'],
++                                   capture_output=True, text=True, timeout=5)
++            if ready.returncode or 'target k4\n' not in ready.stdout:
++                time.sleep(.1)
++                continue
++            print(json.dumps(value, indent=2))
++            return
++        if child.poll() is not None:
++            raise RuntimeError('Original startup failed: ' + log.read_text())
++        time.sleep(.05)
++    raise RuntimeError('Startup discovery timed out; inspect exact child PID ' + str(child.pid))
++
++
++def stop():
++    if not LAB.joinpath('k4.json').exists():
++        if any(i['config_path'] == CONFIG for i in instances()):
++            raise RuntimeError('Unrecorded original instance exists; refusing to choose one')
++        print('Already stopped; no recorded instance')
++        return
++    handle = json.loads(LAB.joinpath('k4.json').read_text())
++    if not verify(handle):
++        print('Already stopped; recorded full ID absent. No replacement touched.')
++        return
++    pid = handle['instance']['pid']
++    fd = os.pidfd_open(pid)
++    try:
++        if not verify(handle):
++            raise RuntimeError('Identity disappeared before stop')
++        result = subprocess.run(['quickshell', 'kill', '--id', handle['instance']['id']],
++                                capture_output=True, text=True, timeout=10)
++        if result.returncode:
++            if not verify(handle):
++                return
++            signal.pidfd_send_signal(fd, signal.SIGTERM)
++        for _ in range(100):
++            try:
++                if process_identity(pid) != handle['process']:
++                    break
++            except (FileNotFoundError, ProcessLookupError):
++                break
++            time.sleep(.05)
++        else:
++            # Escalation remains confined to the same pinned, reverified test process.
++            if verify(handle):
++                signal.pidfd_send_signal(fd, signal.SIGKILL)
++            time.sleep(.1)
++        if any(i['id'] == handle['instance']['id'] for i in instances()):
++            raise RuntimeError('Recorded instance still listed after stop')
++    finally:
++        os.close(fd)
++    print('Stopped only full ID ' + handle['instance']['id'])
++
++
++def digest_tree(root):
++    values = {}
++    for p in sorted(root.rglob('*')):
++        if p.is_symlink():
++            raise RuntimeError('Refusing symlink in disposable backup: ' + str(p))
++        if p.is_file():
++            values[str(p.relative_to(root))] = hashlib.sha256(p.read_bytes()).hexdigest()
++    return values
++
++
++def snapshot(name):
++    if not name or any(c not in 'abcdefghijklmnopqrstuvwxyz0123456789-' for c in name):
++        raise ValueError('Snapshot name must use lowercase letters, digits and hyphens')
++    return BACKUPS / name
++
++
++def backup(name, quiet=False):
++    environment()
++    if any(i['config_path'] == CONFIG for i in instances()):
++        raise RuntimeError('Stop original before snapshot')
++    target = snapshot(name)
++    target.mkdir(mode=0o700)  # Immutable; never replace a previous snapshot.
++    for relative in STORES:
++        source = HOME_DIR / relative
++        if source.exists():
++            if source.is_symlink() or any(p.is_symlink() for p in source.parents):
++                raise RuntimeError('Refusing redirected disposable store')
++            digest_tree(source)  # Reject links before copying.
++            shutil.copytree(source, target / 'home' / relative)
++    store = target / 'home'
++    store.mkdir(exist_ok=True)
++    manifest = {'revision': REVISION, 'stores': STORES, 'files': digest_tree(store)}
++    target.joinpath('manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
++    if not quiet:
++        print(json.dumps({'snapshot': str(target), 'manifest': manifest}, indent=2))
++
++
++def restore(name):
++    stop()
++    target = snapshot(name)
++    manifest = json.loads(target.joinpath('manifest.json').read_text())
++    if manifest['revision'] != REVISION or manifest['stores'] != STORES:
++        raise RuntimeError('Snapshot does not match original source/store scope')
++    if digest_tree(target / 'home') != manifest['files']:
++        raise RuntimeError('Snapshot checksum mismatch; no state changed')
++    retained = 'before-restore-' + str(time.time_ns())
++    backup(retained, quiet=True)
++    for relative in STORES:
++        dest = HOME_DIR / relative
++        source = target / 'home' / relative
++        if dest.is_symlink() or any(p.is_symlink() for p in dest.parents):
++            raise RuntimeError('Refusing redirected state path')
++        if dest.exists():
++            shutil.rmtree(dest)  # Only allowlisted, verified disposable directories.
++        if source.exists():
++            shutil.copytree(source, dest)
++    # Compare the entire restored store set, including plugin, clipboard and Shelf fixtures.
++    restored = {}
++    for relative in STORES:
++        if (HOME_DIR / relative).exists():
++            restored.update({relative + '/' + k: v for k, v in digest_tree(HOME_DIR / relative).items()})
++    assert restored == manifest['files']
++    print('Restored matching disposable snapshot; retained current state in ' + retained)
++    start()
++
++
++def main():
++    parser = argparse.ArgumentParser(description=__doc__)
++    parser.add_argument('action', choices=['start', 'stop', 'status', 'ipc', 'backup', 'restore'])
++    parser.add_argument('arguments', nargs=argparse.REMAINDER)
++    args = parser.parse_args()
++    if args.action == 'start':
++        start()
++    elif args.action == 'stop':
++        stop()
++    elif args.action == 'status':
++        print(json.dumps(current(), indent=2))
++    elif args.action == 'ipc':
++        h = current()
++        print(execute(['quickshell', 'ipc', '--id', h['instance']['id']] + args.arguments))
++    elif args.action == 'backup':
++        backup(args.arguments[0])
++    elif args.action == 'restore':
++        restore(args.arguments[0])
++
++
++if __name__ == '__main__':
++    main()
+diff --git a/tools/test_cp00.py b/tools/test_cp00.py
+new file mode 100644
+index 0000000..3660084
+--- /dev/null
++++ b/tools/test_cp00.py
+@@ -0,0 +1,107 @@
++#!/usr/bin/env python3
++"""Safety regressions for CP-00 controls. No host service/process is signalled."""
++import copy
++import importlib.util
++from pathlib import Path
++import tempfile
++import unittest
++from unittest.mock import patch
++
++spec = importlib.util.spec_from_file_location('runtime', Path(__file__).with_name('cp00_runtime.py'))
++runtime = importlib.util.module_from_spec(spec)
++spec.loader.exec_module(runtime)
++
++
++class Controls(unittest.TestCase):
++    def setUp(self):
++        self.instance = {'id': 'full-test-id', 'pid': 10, 'config_path': runtime.CONFIG,
++                         'launch_time': '2026-10-21T00:00:00', 'shell_id': 'fixture'}
++        self.process = {'pid': 10, 'start_ticks': '100', 'exe': '/usr/bin/quickshell',
++                        'argv': ['quickshell', '-p', runtime.CONFIG], 'pid_namespace': 'test'}
++        self.env = {'WAYLAND_DISPLAY': 'test', 'HYPRLAND_INSTANCE_SIGNATURE': 'test',
++                    'DBUS_SESSION_BUS_ADDRESS': 'test', 'XDG_RUNTIME_DIR': 'test'}
++        self.handle = {'instance': self.instance, 'process': self.process,
++                       'environment': self.env, 'revision': runtime.REVISION}
++
++    def verify(self, handle=None, found=None, process=None, env=None):
++        with patch.object(runtime, 'instances', return_value=found if found is not None else [self.instance]), \
++             patch.object(runtime, 'process_identity', return_value=process or self.process), \
++             patch.object(runtime, 'environment', return_value=env or self.env), \
++             patch.object(runtime.os, 'pidfd_open', side_effect=AssertionError('must not signal')):
++            return runtime.verify(handle or self.handle)
++
++    def test_matches_full_identity(self):
++        self.assertTrue(self.verify())
++
++    def test_absent_old_id_does_not_select_replacement(self):
++        replacement = dict(self.instance, id='other-full-id')
++        self.assertFalse(self.verify(found=[replacement], env={'changed': True}))
++
++    def test_substring_id_is_not_a_match(self):
++        self.assertFalse(self.verify(found=[dict(self.instance, id='full-test-id-extra')]))
++
++    def test_previous_revision_absent_is_already_stopped(self):
++        handle = copy.deepcopy(self.handle)
++        handle['instance']['config_path'] = '/previous/shell.qml'
++        self.assertFalse(self.verify(handle, found=[]))
++
++    def test_changed_config_refused(self):
++        with self.assertRaises(RuntimeError):
++            self.verify(found=[dict(self.instance, config_path='/foreign/shell.qml')])
++
++    def test_recorded_foreign_config_refused(self):
++        handle = copy.deepcopy(self.handle)
++        handle['instance']['config_path'] = '/foreign/shell.qml'
++        with self.assertRaises(RuntimeError):
++            self.verify(handle)
++
++    def test_pid_reuse_refused(self):
++        with self.assertRaises(RuntimeError):
++            self.verify(process=dict(self.process, start_ticks='101'))
++
++    def test_changed_bus_refused(self):
++        with self.assertRaises(RuntimeError):
++            self.verify(env=dict(self.env, DBUS_SESSION_BUS_ADDRESS='foreign'))
++
++    def test_changed_executable_refused(self):
++        with self.assertRaises(RuntimeError):
++            self.verify(process=dict(self.process, exe='/usr/bin/sleep'))
++
++    def test_no_instance_cli_sentence(self):
++        with patch.object(runtime, 'execute', return_value='No running instances.\n'):
++            self.assertEqual(runtime.instances(), [])
++
++    def test_malformed_cli_is_not_silently_empty(self):
++        with patch.object(runtime, 'execute', return_value='Unexpected error'):
++            with self.assertRaises(ValueError):
++                runtime.instances()
++
++    def test_snapshot_path_traversal_refused(self):
++        for value in ['../personal', '/tmp/test', '', 'UPPER', 'name.json']:
++            with self.subTest(value=value), self.assertRaises(ValueError):
++                runtime.snapshot(value)
++
++    def test_backup_symlinks_refused(self):
++        with tempfile.TemporaryDirectory() as directory:
++            root = Path(directory)
++            (root / 'outside').symlink_to('/etc/passwd')
++            with self.assertRaises(RuntimeError):
++                runtime.digest_tree(root)
++
++    def test_corrupt_snapshot_does_not_change_state(self):
++        with tempfile.TemporaryDirectory() as directory:
++            root = Path(directory)
++            snap = root / 'baseline'
++            (snap / 'home').mkdir(parents=True)
++            (snap / 'home/dummy').write_text('corrupt')
++            import json
++            (snap / 'manifest.json').write_text(json.dumps({'revision': runtime.REVISION,
++                                                        'stores': runtime.STORES, 'files': {}}))
++            with patch.object(runtime, 'BACKUPS', root), patch.object(runtime, 'stop'), \
++                 patch.object(runtime, 'backup', side_effect=AssertionError('must not mutate')):
++                with self.assertRaisesRegex(RuntimeError, 'checksum mismatch'):
++                    runtime.restore('baseline')
++
++
++if __name__ == '__main__':
++    unittest.main()

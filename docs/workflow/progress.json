@@ -49,13 +49,34 @@
         {
           "id": "T02",
           "title": "Prepare and prove separate test code/home/bus/Wayland context; supply guarded Start/Stop/Restore actions and rehearse dummy-state backup/restore.",
-          "status": "IN PROGRESS",
-          "evidence": []
+          "status": "DONE",
+          "evidence": [
+            {
+              "path": "review/cp-00-baseline/evidence/run-03/automated/recovery.md",
+              "sha256": "4e42826a7310e320954c6abef0bcb5e486f72a687fece9656f1cb2b024c86c4f"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-03/automated/recovery-rehearsal.json",
+              "sha256": "9268d0eeb3a22d534ad2f70187ca8ff1d0e86cbb383335a554cca63a48f25fc3"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-03/automated/complete-store-snapshot.json",
+              "sha256": "e27cec8d6ff3430d1bdf8e8ae381fcd7efb0faf46da28ff20403bc332e85b8fc"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-03/automated/recovery-snapshot-manifest.json",
+              "sha256": "6b31ddf1d5c4060276a552f27c1b2037781c99d1639b9cd7ef0afe9678fe5b01"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-03/automated/test_cp00.txt",
+              "sha256": "62e6bd3a77554540929dd26eab6204ab86056dc07bacce00a71e4482e9f4bcb8"
+            }
+          ]
         },
         {
           "id": "T03",
           "title": "Capture original surface/dock top/bottom and compatibility-only sides, fullscreen and available displays; smoke media, clipboard, capture and plugin samples.",
-          "status": "PENDING",
+          "status": "IN PROGRESS",
           "evidence": []
         },
         {
@@ -102,8 +123,8 @@
           "id": "R01",
           "kind": "runtime",
           "title": "Prove isolated paths/services, exact-instance termination, backup and previous-version restore using dummy state; host services unchanged.",
-          "result": "NOT TESTED",
-          "reason": "Isolation and payload termination verified in run-02; full Quickshell-ID and previous-code/dummy-state restore rehearsal remain.",
+          "result": "PASS",
+          "reason": "Isolated original/candidate start, exact full-ID stop preserving a neighbor, complete dummy-store backup/checksum/restore, previous-source launch, settled settings/launcher captures and host invariants exercised. No owner result implied.",
           "history": [
             {
               "result": "NOT TESTED",
@@ -141,6 +162,53 @@
                 {
                   "path": "review/cp-00-baseline/evidence/run-02/automated/private-clipboard.json",
                   "sha256": "bf7b3951bfa872495e3792aaeacb4b734b45d56d115af0d470e50c3c5fc0f8d5"
+                }
+              ]
+            },
+            {
+              "result": "PASS",
+              "date": "2026-10-21T08:26:51Z",
+              "revision": "b2e7122e93c8857c8b84501da91a4d75a1317f17",
+              "environment": "CP00 independent bwrap namespaces/private bus/no host endpoints; Qt 6.11.2, Quickshell 0.2.1, Hyprland 0.56.2 WAYLAND-1 1280x720/60 Hz scale 1. Original ff520e3 and clean b2e7122 candidate; tool patch recorded. Both test sandboxes stopped.",
+              "patch": {
+                "path": "review/cp-00-baseline/evidence/run-03/automated/tools.patch",
+                "sha256": "5146cc83eb7b3bdfa0805fc3897f1d206f862f2fbc8df4f7ed0891dce87fb4ca"
+              },
+              "run": "run-03",
+              "steps": "Run 14 control regressions; original guarded start/IPC; keep independent neighbor live during exact-ID stop; snapshot settings/enabled plugins/plugin state/actual dummy clipboard/Shelf; mutate dummy stores and restore with checksum comparison; start pinned b2e7122 candidate then run cp00.py restore to original ff520e3 and matching original-run03-complete snapshot; reopen settings/launcher; cp00.py stop.",
+              "observed": "Final direct and cross-revision rehearsals pass; initial tooling failures corrected and retained in recovery.md; terminal label, full IDs, source SHA and snapshot manifests recorded; both test payloads absent after stop. Host notification owner and unrelated Quickshell unchanged.",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-03/automated/recovery.md",
+                  "sha256": "4e42826a7310e320954c6abef0bcb5e486f72a687fece9656f1cb2b024c86c4f"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-03/automated/recovery-rehearsal.json",
+                  "sha256": "9268d0eeb3a22d534ad2f70187ca8ff1d0e86cbb383335a554cca63a48f25fc3"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-03/automated/complete-store-snapshot.json",
+                  "sha256": "e27cec8d6ff3430d1bdf8e8ae381fcd7efb0faf46da28ff20403bc332e85b8fc"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-03/automated/run03-cross-revision-restore.txt",
+                  "sha256": "b5cbebf4a929a219c87dac91f77d70d6773847a5510637af9567ed3f3e431720"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-03/automated/run03-final-stop.txt",
+                  "sha256": "c5e5e13bd9e0f47976bb19ec9ae66e76c443e8266928598bb344097eb2fcd760"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-03/automated/test_cp00.txt",
+                  "sha256": "62e6bd3a77554540929dd26eab6204ab86056dc07bacce00a71e4482e9f4bcb8"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-03/application/cp-00__R01__restored-settings__run-03.png",
+                  "sha256": "9d8e4ccf41e0d1f7c94747ff298ca2799a7de402cf1ed3213d344e90b04ea5f4"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-03/application/cp-00__R01__restored-launcher__run-03.png",
+                  "sha256": "3d67875c2bb1df775dbb51735a13971ffe45ac126a4b59841cbc0b54d09112ee"
                 }
               ]
             }
@@ -211,14 +279,32 @@
             "path": "review/cp-00-baseline/evidence/run-02/automated/tools.patch",
             "sha256": "cf8433e4320044ce79555d894e2964b795f6188a96f646d0ff224ca43e0d9c24"
           }
+        },
+        {
+          "id": "run-03",
+          "date": "2026-10-21T08:26:51Z",
+          "revision": "b2e7122e93c8857c8b84501da91a4d75a1317f17",
+          "environment": "CP00 independent bwrap namespaces/private bus/no host endpoints; Qt 6.11.2, Quickshell 0.2.1, Hyprland 0.56.2 WAYLAND-1 1280x720/60 Hz scale 1. Original ff520e3 and clean b2e7122 candidate; tool patch recorded. Both test sandboxes stopped.",
+          "patch": {
+            "path": "review/cp-00-baseline/evidence/run-03/automated/tools.patch",
+            "sha256": "5146cc83eb7b3bdfa0805fc3897f1d206f862f2fbc8df4f7ed0891dce87fb4ca"
+          },
+          "handoff": {
+            "path": "review/cp-00-baseline/evidence/run-03/index.md",
+            "sha256": "b4414969499989ed4885b975a89aa41dbdc310acdff9ce53615c34ae51c0de33"
+          },
+          "recovery": {
+            "path": "review/cp-00-baseline/evidence/run-03/automated/recovery.md",
+            "sha256": "4e42826a7310e320954c6abef0bcb5e486f72a687fece9656f1cb2b024c86c4f"
+          }
         }
       ],
-      "latest_run": "run-02",
+      "latest_run": "run-03",
       "branch": "checkpoint/cp-00-baseline",
       "last_good_sha": "ff520e33e136bbce11b7100c69888dedf42f7273",
-      "current_task": "T02",
+      "current_task": "T03",
       "blocked_reason": null,
-      "next_agent_action": "T02: implement and rehearse full-ID/config/PID/start-time guarded k4 controls and disposable backup/restore; reprove final environment, then launch unchanged pinned original source. Both test sandboxes are stopped; recorded handles are historical.",
+      "next_agent_action": "T03: characterize unchanged original UI (surface/dock top/bottom/sides, fullscreen/displays, media/clipboard/capture and four plugin examples) in a new run; add reproducible T04 workload tooling before pinning the final clean test revision. Sandboxes stopped; recovery snapshot original-run03-complete is retained.",
       "next_owner_action": "No action yet. CP-00 engineering preparation is authorized; wait for verified owner-test instructions or a concrete capability request.",
       "contract": "docs/workflow/checkpoints/cp-00-baseline.md",
       "visual_brief": "docs/workflow/checkpoints/cp-00-baseline.visual.md",

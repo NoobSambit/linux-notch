@@ -34,7 +34,10 @@ assert names['exit_code'] == 0, names
 assert '(activatable)' not in names['stdout'], 'Unexpected bus activation directory'
 assert 'org.freedesktop.Notifications' not in names['stdout'], 'Unexpected test-bus notification owner'
 assert 'org.freedesktop.portal.Desktop' not in names['stdout'], 'Unexpected portal'
-for alias in ['/original', '/lab/original']:
+aliases = ['/original', '/lab/original']
+if os.environ.get('CP00_SOURCE_PATH') == '/candidate':
+    aliases += ['/candidate', '/lab/exports/' + os.environ['CP00_SOURCE_REVISION']]
+for alias in aliases:
     try:
         Path(alias, 'cp00-must-not-write').write_text('probe')
     except OSError:

@@ -1,0 +1,4 @@
+Stopped only full ID okp09nt
+
+stopped verified compositor
+stopped verified server
