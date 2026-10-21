@@ -1,0 +1,49 @@
+[
+  {
+    "saved_override": null,
+    "catalog_default": true,
+    "effective": {
+      "id": "atalaya",
+      "enabled": true,
+      "error": ""
+    }
+  },
+  {
+    "saved_override": false,
+    "effective": {
+      "id": "atalaya",
+      "enabled": false,
+      "error": ""
+    }
+  },
+  {
+    "saved_override": true,
+    "effective": {
+      "id": "atalaya",
+      "enabled": true,
+      "error": ""
+    }
+  },
+  {
+    "open_state": {
+      "abierto": true,
+      "cargando": false,
+      "ventanas": 2,
+      "monitor": "CP00-STABLE",
+      "escala": 0.456,
+      "ruedaAlReves": false,
+      "error": ""
+    }
+  },
+  {
+    "closed_state": {
+      "abierto": false,
+      "cargando": false,
+      "ventanas": 2,
+      "monitor": "CP00-STABLE",
+      "escala": 0,
+      "ruedaAlReves": false,
+      "error": ""
+    }
+  }
+]

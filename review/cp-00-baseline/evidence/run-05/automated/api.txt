@@ -1,0 +1,4 @@
+$ python3 tools/api.py
+146 ficheros revisados, ninguno se salta la API.
+
+Exit: 0

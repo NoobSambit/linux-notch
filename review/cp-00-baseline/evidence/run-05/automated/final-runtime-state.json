@@ -1,0 +1,35 @@
+{
+  "recorded_stopped_handles": {
+    "server": {
+      "pid": 111957,
+      "start_ticks": "2068814",
+      "exe": "/usr/bin/python3.14",
+      "pid_namespace": "pid:[4026533587]",
+      "argv": [
+        "python3",
+        "/control.py",
+        "_server"
+      ],
+      "date": "2026-10-21T10:40:39.645152+00:00"
+    },
+    "compositor": {
+      "pid": 111963,
+      "start_ticks": "2068825",
+      "exe": "/usr/bin/Hyprland",
+      "pid_namespace": "pid:[4026533644]",
+      "argv": [
+        "Hyprland",
+        "-c",
+        "/lab/hyprland.lua"
+      ],
+      "date": "2026-10-21T10:40:39.754587+00:00"
+    }
+  },
+  "remaining_pids_in_test_namespaces": [],
+  "next_start_source": {
+    "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "path": "/candidate",
+    "manifest": "/lab/candidate-manifest.json"
+  },
+  "observed": "No process remains in either test PID namespace; historical handles must be reverified, never reused blindly."
+}

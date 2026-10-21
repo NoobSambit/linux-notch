@@ -1,0 +1,158 @@
+[
+  {
+    "repetition": 1,
+    "ipc_ready_seconds": 0.40269511400038027,
+    "handle": {
+      "instance": {
+        "config_path": "/candidate/shell.qml",
+        "id": "kr1lh69nt",
+        "launch_time": "2026-10-21T10:29:45",
+        "pid": 2288,
+        "shell_id": "2d05d68fdebd309fd350f051a28894b6"
+      },
+      "process": {
+        "pid": 2288,
+        "start_ticks": "2003386",
+        "exe": "/usr/bin/quickshell",
+        "argv": [
+          "quickshell",
+          "-p",
+          "/candidate/shell.qml",
+          "--no-color"
+        ],
+        "pid_namespace": "pid:[4026533473]"
+      },
+      "environment": {
+        "WAYLAND_DISPLAY": "wayland-1",
+        "HYPRLAND_INSTANCE_SIGNATURE": "efb50993780079460b0cbed1363e2166a2de1d9f_1792578524_814895884",
+        "DBUS_SESSION_BUS_ADDRESS": "unix:path=/tmp/dbus-8IcFSA10I9,guid=617893c4645722f8868ba1b86ad893dc",
+        "XDG_RUNTIME_DIR": "/run/cp00"
+      },
+      "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "log": "/lab/logs/k4-1792578585314909445.txt"
+    },
+    "after_warmup": {
+      "snapshot": {
+        "monotonic": 10574.176470841,
+        "pid": 2288,
+        "start_ticks": "2003386",
+        "cpu_ticks": 110,
+        "reaped_child_ticks": 56,
+        "rss_kib": 288784.0,
+        "engines_ns": {
+          "render": 15844452,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t698\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t355\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30240 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30240 KiB\ndrm-purgeable-system0:\t388 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t15844452 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    }
+  },
+  {
+    "repetition": 2,
+    "ipc_ready_seconds": 0.36695624200001475,
+    "handle": {
+      "instance": {
+        "config_path": "/candidate/shell.qml",
+        "id": "cw1oh69nt",
+        "launch_time": "2026-10-21T10:29:48",
+        "pid": 2460,
+        "shell_id": "2d05d68fdebd309fd350f051a28894b6"
+      },
+      "process": {
+        "pid": 2460,
+        "start_ticks": "2003747",
+        "exe": "/usr/bin/quickshell",
+        "argv": [
+          "quickshell",
+          "-p",
+          "/candidate/shell.qml",
+          "--no-color"
+        ],
+        "pid_namespace": "pid:[4026533473]"
+      },
+      "environment": {
+        "WAYLAND_DISPLAY": "wayland-1",
+        "HYPRLAND_INSTANCE_SIGNATURE": "efb50993780079460b0cbed1363e2166a2de1d9f_1792578524_814895884",
+        "DBUS_SESSION_BUS_ADDRESS": "unix:path=/tmp/dbus-8IcFSA10I9,guid=617893c4645722f8868ba1b86ad893dc",
+        "XDG_RUNTIME_DIR": "/run/cp00"
+      },
+      "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "log": "/lab/logs/k4-1792578588928086262.txt"
+    },
+    "after_warmup": {
+      "snapshot": {
+        "monotonic": 10577.785467284,
+        "pid": 2460,
+        "start_ticks": "2003747",
+        "cpu_ticks": 109,
+        "reaped_child_ticks": 57,
+        "rss_kib": 283924.0,
+        "engines_ns": {
+          "render": 15428192,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t698\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t360\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30240 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30240 KiB\ndrm-purgeable-system0:\t388 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t15428192 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    }
+  },
+  {
+    "repetition": 3,
+    "ipc_ready_seconds": 0.36054342800161976,
+    "handle": {
+      "instance": {
+        "config_path": "/candidate/shell.qml",
+        "id": "312sh69nt",
+        "launch_time": "2026-10-21T10:29:52",
+        "pid": 2631,
+        "shell_id": "2d05d68fdebd309fd350f051a28894b6"
+      },
+      "process": {
+        "pid": 2631,
+        "start_ticks": "2004107",
+        "exe": "/usr/bin/quickshell",
+        "argv": [
+          "quickshell",
+          "-p",
+          "/candidate/shell.qml",
+          "--no-color"
+        ],
+        "pid_namespace": "pid:[4026533473]"
+      },
+      "environment": {
+        "WAYLAND_DISPLAY": "wayland-1",
+        "HYPRLAND_INSTANCE_SIGNATURE": "efb50993780079460b0cbed1363e2166a2de1d9f_1792578524_814895884",
+        "DBUS_SESSION_BUS_ADDRESS": "unix:path=/tmp/dbus-8IcFSA10I9,guid=617893c4645722f8868ba1b86ad893dc",
+        "XDG_RUNTIME_DIR": "/run/cp00"
+      },
+      "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "log": "/lab/logs/k4-1792578592531305279.txt"
+    },
+    "after_warmup": {
+      "snapshot": {
+        "monotonic": 10581.383768825,
+        "pid": 2631,
+        "start_ticks": "2004107",
+        "cpu_ticks": 110,
+        "reaped_child_ticks": 53,
+        "rss_kib": 285376.0,
+        "engines_ns": {
+          "render": 14705704,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t698\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t365\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30240 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30240 KiB\ndrm-purgeable-system0:\t388 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t14705704 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    }
+  }
+]

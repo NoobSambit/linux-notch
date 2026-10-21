@@ -1,0 +1,32 @@
+CP-00 isolated test / source b114d5a1b8c3ed90e97b577e3424092a783e04ed
+{"command": ["/usr/bin/true"], "exit_code": 0, "stdout": "", "stderr": "", "date": "2026-10-21T10:35:28.876584+00:00"}
+{"wrapper": 108375, "started": "2026-10-21T10:35:32.646954+00:00", "log": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/logs/compositor.txt"}
+{
+  "instance": {
+    "config_path": "/candidate/shell.qml",
+    "id": "k28r69nt",
+    "launch_time": "2026-10-21T10:35:32",
+    "pid": 92,
+    "shell_id": "2d05d68fdebd309fd350f051a28894b6"
+  },
+  "process": {
+    "pid": 92,
+    "start_ticks": "2038141",
+    "exe": "/usr/bin/quickshell",
+    "argv": [
+      "quickshell",
+      "-p",
+      "/candidate/shell.qml",
+      "--no-color"
+    ],
+    "pid_namespace": "pid:[4026533531]"
+  },
+  "environment": {
+    "WAYLAND_DISPLAY": "wayland-1",
+    "HYPRLAND_INSTANCE_SIGNATURE": "efb50993780079460b0cbed1363e2166a2de1d9f_1792578928_1055630503",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/tmp/dbus-pGgytv5aIL,guid=fe69b8c2b46b98a37d4e5f226ad89570",
+    "XDG_RUNTIME_DIR": "/run/cp00"
+  },
+  "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+  "log": "/lab/logs/k4-1792578932870610420.txt"
+}

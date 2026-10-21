@@ -1,0 +1,4 @@
+$ python3 tools/layouts.py
+2486 ficheros revisados, nadie se coloca a mano dentro de un layout.
+
+Exit: 0

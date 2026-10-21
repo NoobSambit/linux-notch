@@ -1,0 +1,4 @@
+$ python3 tools/plugins.py
+31 plugins del repo verificados.
+
+Exit: 0

@@ -11,7 +11,7 @@
       "title": "Safe environment and original k4 baseline",
       "depends_on": [],
       "visual": false,
-      "status": "IMPLEMENTING",
+      "status": "AWAITING OWNER TEST",
       "authorization": {
         "owner_quote": "I approve the established LINUX NOTCHBAR workflow and explicitly authorize **Checkpoint CP-00 ONLY**.",
         "date": "2026-10-21T07:59:40Z",
@@ -70,6 +70,18 @@
             {
               "path": "review/cp-00-baseline/evidence/run-03/automated/test_cp00.txt",
               "sha256": "62e6bd3a77554540929dd26eab6204ab86056dc07bacce00a71e4482e9f4bcb8"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/recovery.md",
+              "sha256": "0852571736525fb2095a337644ebb02702c728a08aa76089d7bd8aa93517113d"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/recovery-check.json",
+              "sha256": "0e36703daf3e43f4cd4aaa1020fcc94fb71f506a1ed61596aaf40124988f2407"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/final-isolation-probe.json",
+              "sha256": "75a5195c891e5911080f94131df1527c66dde702cd0b5679eeed661696013467"
             }
           ]
         },
@@ -89,14 +101,47 @@
             {
               "path": "review/cp-00-baseline/evidence/run-04/automated/commands.json",
               "sha256": "391686334277ffc40954fb27b4bdb66bb6c5c52ee7a9e12b86b457431410438c"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/baseline-report.md",
+              "sha256": "40098a4ae8988bce3a46140eb39c8c7cf52ef97945f0d90ed07499b818e3980a"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/capture-inventory.json",
+              "sha256": "dbb781617def87217ec480fc93ab30e3312ecc85ba277d29e7af5d6b96ed64f8"
             }
           ]
         },
         {
           "id": "T04",
           "title": "Measure idle/startup/media/dock and Atalaya effective enabled/closed costs; inventory provenance gaps and prepare baseline handoff.",
-          "status": "IN PROGRESS",
-          "evidence": []
+          "status": "DONE",
+          "evidence": [
+            {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/performance-summary.md",
+              "sha256": "0345bebccc6f73dff875175749a5607ab7a81cf946481485314935566416f44a"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/performance.json",
+              "sha256": "c0c1f0d1ff4b6275baafe174b38a1e80973167b62a88389d9e2f7df636ffdbdb"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/startup.json",
+              "sha256": "7cb7aa84568e1f342ed4ec7d62a25c4aeac399ba5378da87d4ca89a58b0c5651"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/atalaya-states.json",
+              "sha256": "414bafa089f002edb57a1bdcef92fe577ff2cd190c30571c0d613f8efc18a241"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/asset-inventory.json",
+              "sha256": "e66f81f62c96beac5b54667157280dc40ac1bc9ba0bb8397f9e179619b6a9e4b"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/completion-audit.md",
+              "sha256": "56badf00a62d9b9fa9c1067390ce5ae470578ef8832f7ccef69f4064fe7b0ce7"
+            }
+          ]
         }
       ],
       "tests": [
@@ -104,8 +149,8 @@
           "id": "A01",
           "kind": "automated",
           "title": "Run existing gates and read-only capability/path audit; record missing tools and skipped qmllint separately.",
-          "result": "NOT TESTED",
-          "reason": "Initial gates passed in run-01. New runtime-tool patch/environment requires the final affected checks before handoff.",
+          "result": "PASS",
+          "reason": "All required commands pass; 30 workflow and 14 safety checks. Initial fixture failure and unchanged validator assertions retained; source unchanged.",
           "history": [
             {
               "result": "PASS",
@@ -129,6 +174,52 @@
                   "sha256": "34f584a60ac2db4286b131ed88615487ac16ba2b2b7bf2d6bd0437a3c3a6e1a6"
                 }
               ]
+            },
+            {
+              "result": "FAIL",
+              "date": "2026-10-21T10:47:14Z",
+              "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+              "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+              "run": "run-05",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/gates-initial.json",
+                  "sha256": "8cc2e74bd57af1238935867355ea2c8981a9b2a7a4377015f4321c23b9252d61"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/test_workflow.txt",
+                  "sha256": "67aaf58253e79fe2625f169650d95310c7c42a85a335a9c8013f506cf5002ddf"
+                }
+              ],
+              "command": "Initial final gate run: python3 tools/test_workflow.py (other commands in gates-initial.json)",
+              "exit_code": 1
+            },
+            {
+              "result": "PASS",
+              "date": "2026-10-21T10:47:14Z",
+              "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+              "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+              "run": "run-05",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/gates.json",
+                  "sha256": "96eef10c0c93f993f498ba17822b417c7b4e69a0dcd2954429f7a5683fdd808d"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/test_workflow-after-fixture-fix.txt",
+                  "sha256": "031b4669ad6b481f7cbedc3abaff127582ff68ec829803a0ea2ed8b63de11b90"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/workflow-fixture-fix.patch",
+                  "sha256": "33a3b3629685348e75f8af2408fdb7cf55dc7958f3d15c29537372c49b73e9bb"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/source-integrity.json",
+                  "sha256": "94d82bad1bab87964fc17aa2d8d098758c6f0d824f653bce344739695c74ec97"
+                }
+              ],
+              "command": "All inherited VERIFICATION.md commands; python3 tools/test_cp00.py; workflow.py --base-ref 6478e25; git diff --check. Corrected synthetic workflow fixture rerun: exact command/logs and file hash in gates.json.",
+              "exit_code": 0
             }
           ]
         },
@@ -136,8 +227,8 @@
           "id": "R01",
           "kind": "runtime",
           "title": "Prove isolated paths/services, exact-instance termination, backup and previous-version restore using dummy state; host services unchanged.",
-          "result": "NOT TESTED",
-          "reason": "Prior exact-instance/recovery proof retained. Changed fixed-display/independent-checkout harness requires final clean-run revalidation.",
+          "result": "PASS",
+          "reason": "Final clean-checkout/fixed-display isolation, exact-instance stop and candidate/previous-source dummy-state recovery pass; host invariants match.",
           "history": [
             {
               "result": "NOT TESTED",
@@ -224,6 +315,41 @@
                   "sha256": "3d67875c2bb1df775dbb51735a13971ffe45ac126a4b59841cbc0b54d09112ee"
                 }
               ]
+            },
+            {
+              "result": "PASS",
+              "date": "2026-10-21T10:47:14Z",
+              "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+              "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+              "run": "run-05",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/recovery.md",
+                  "sha256": "0852571736525fb2095a337644ebb02702c728a08aa76089d7bd8aa93517113d"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/recovery-check.json",
+                  "sha256": "0e36703daf3e43f4cd4aaa1020fcc94fb71f506a1ed61596aaf40124988f2407"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/final-isolation-probe.json",
+                  "sha256": "75a5195c891e5911080f94131df1527c66dde702cd0b5679eeed661696013467"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/restored-previous-handle.json",
+                  "sha256": "b2bf900b30f7cf528ef8ccc4048b62d2284e3231a69bb1d6dfc82a4b7b48cdcb"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/run05-copyable-restore-final.txt",
+                  "sha256": "095511b6c7f0ce93a9985ad88601be6c7226378bdfa149cc1a819825a834b987"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/run05-copyable-stop-final.txt",
+                  "sha256": "f0e07c93063c513b40c3ce760296c3993312bd1be241e64bee387d19a14d88c7"
+                }
+              ],
+              "steps": "Recheck private paths/bus/read-only clean source; full-ID stop preserves independent neighbor; snapshot/mutate/restore candidate stores and compare bytes; reopen candidate UI. Exercise copyable Start/demo/fullscreen/display/Stop/Restore; restore original clean ff520e3 plus matching snapshot, reopen settings/launcher, Stop and reselect candidate.",
+              "observed": "All actions pass; exact state hashes/readbacks and native UI captures retained. Host Quickshell/notification owner unchanged; personal k4 state absent; both test namespaces stopped."
             }
           ]
         },
@@ -231,8 +357,8 @@
           "id": "R02",
           "kind": "runtime",
           "title": "Record original top/bottom/dock, experimental sides, fullscreen, one/two displays where available, media/clipboard/capture and examples hola/piezas/efectos/snake.",
-          "result": "NOT TESTED",
-          "reason": "Original behavior matrix observed in run-04; final fixed-display/clean-checkout rerun remains.",
+          "result": "PASS",
+          "reason": "Declared available original-k4 observation matrix completed on fixed display with real captures/readbacks; inherited findings and physical/device limits documented.",
           "history": [
             {
               "result": "NOT TESTED",
@@ -260,6 +386,29 @@
                   "sha256": "391686334277ffc40954fb27b4bdb66bb6c5c52ee7a9e12b86b457431410438c"
                 }
               ]
+            },
+            {
+              "result": "PASS",
+              "date": "2026-10-21T10:47:14Z",
+              "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+              "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+              "run": "run-05",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/baseline-report.md",
+                  "sha256": "40098a4ae8988bce3a46140eb39c8c7cf52ef97945f0d90ed07499b818e3980a"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/capture-inventory.json",
+                  "sha256": "dbb781617def87217ec480fc93ab30e3312ecc85ba277d29e7af5d6b96ed64f8"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/commands.json",
+                  "sha256": "efc1546ba40eb6b3df647cb29c20527a2ed575c287d1e5d9996c5e2c4673a902"
+                }
+              ],
+              "steps": "python3 tools/cp00_baseline.py characterize run-05: top/bottom/experimental sides, settled Dual, settings/launcher typing/Escape, real clipboard text/image and capture, fullscreen return, available virtual one/two displays/removal, local VLC MPRIS and four inherited standalone plugin banks.",
+              "observed": "All required available observations/readbacks completed and actual captures reviewed. Known inherited warnings and unavailable physical/device/deep lifecycle cases remain explicit; no product-correctness or full release certification implied."
             }
           ]
         },
@@ -267,8 +416,8 @@
           "id": "R03",
           "kind": "runtime",
           "title": "Measure startup/idle/active resources with workload/duration/hardware; record Atalaya saved override versus inherited catalog effective state and closed-state GPU activity.",
-          "result": "FAIL",
-          "reason": "Exploratory Qt timing crashed the installed logger; parent-output occlusion invalidated partial CPU/GPU samples and timed out capture. Fixed headless method is established; complete clean-run matrix remains.",
+          "result": "PASS",
+          "reason": "Reproducible fixed-display resource/Atalaya/rights baseline complete with raw evidence; per-process/instrumentation/hardware limitations visible.",
           "history": [
             {
               "result": "FAIL",
@@ -304,6 +453,37 @@
                   "sha256": "e66f81f62c96beac5b54667157280dc40ac1bc9ba0bb8397f9e179619b6a9e4b"
                 }
               ]
+            },
+            {
+              "result": "PASS",
+              "date": "2026-10-21T10:47:14Z",
+              "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+              "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+              "run": "run-05",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/performance-summary.md",
+                  "sha256": "0345bebccc6f73dff875175749a5607ab7a81cf946481485314935566416f44a"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/performance.json",
+                  "sha256": "c0c1f0d1ff4b6275baafe174b38a1e80973167b62a88389d9e2f7df636ffdbdb"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/startup.json",
+                  "sha256": "7cb7aa84568e1f342ed4ec7d62a25c4aeac399ba5378da87d4ca89a58b0c5651"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/atalaya-states.json",
+                  "sha256": "414bafa089f002edb57a1bdcef92fe577ff2cd190c30571c0d613f8efc18a241"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/asset-inventory.json",
+                  "sha256": "e66f81f62c96beac5b54667157280dc40ac1bc9ba0bb8397f9e179619b6a9e4b"
+                }
+              ],
+              "steps": "python3 tools/cp00_baseline.py measure run-05 and inventory run-05: three startup-to-IPC runs, three 10-second samples each for eight workloads including absent/off/on Atalaya, local media, settled dock, open/closed previews and untraced control; per-process /proc/RSS/deduplicated DRM counters and Wayland callback traces; verify raw trace retrieval hashes.",
+              "observed": "24 complete samples, valid nonnegative GPU counters and fixed 1280x720 headless display. Effective Atalaya on/off precedence and two live previews observed. Open render engine ~6.03%, closed ~0.49%, near ~0.50% baseline; untraced idle 7.3\u20137.5% one core. 157 rights-gap paths inventoried. Failed Qt instrumentation/occluded prior run retained; no invented acceptance budgets."
             }
           ]
         },
@@ -312,7 +492,7 @@
           "kind": "owner",
           "title": "Start and stop safely",
           "result": "NOT TESTED",
-          "reason": "CP-00 started; this scenario has not yet been performed.",
+          "reason": "Awaiting actual owner M01\u2013M04 results for b114d5a / run-05; no agent approval or personal test claimed.",
           "history": []
         },
         {
@@ -320,7 +500,7 @@
           "kind": "owner",
           "title": "Original everyday paths",
           "result": "NOT TESTED",
-          "reason": "CP-00 started; this scenario has not yet been performed.",
+          "reason": "Awaiting actual owner M01\u2013M04 results for b114d5a / run-05; no agent approval or personal test claimed.",
           "history": []
         },
         {
@@ -328,7 +508,7 @@
           "kind": "owner",
           "title": "Screen and fullscreen baseline",
           "result": "NOT TESTED",
-          "reason": "CP-00 started; this scenario has not yet been performed.",
+          "reason": "Awaiting actual owner M01\u2013M04 results for b114d5a / run-05; no agent approval or personal test claimed.",
           "history": []
         },
         {
@@ -336,7 +516,7 @@
           "kind": "owner",
           "title": "Recovery rehearsal",
           "result": "NOT TESTED",
-          "reason": "CP-00 started; this scenario has not yet been performed.",
+          "reason": "Awaiting actual owner M01\u2013M04 results for b114d5a / run-05; no agent approval or personal test claimed.",
           "history": []
         }
       ],
@@ -388,15 +568,37 @@
             "path": "review/cp-00-baseline/evidence/run-04/index.md",
             "sha256": "fb42eb46898036bb8aa2443a0662564d1806981366ff9b27d471eed6825d1d05"
           }
+        },
+        {
+          "id": "run-05",
+          "date": "2026-10-21T10:47:14Z",
+          "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+          "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+          "handoff": {
+            "path": "review/cp-00-baseline/evidence/run-05/index.md",
+            "sha256": "566362d62128a416a898c6394fd894a3c8475cc024ebc0ecbe59d5978157872d"
+          },
+          "review": {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/diff-review.md",
+            "sha256": "f0aa73af58dd82b14988ba0eaff2d9c9e1f13a39e02e40ed5bbf1eb2f411e202"
+          },
+          "recovery": {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/recovery.md",
+            "sha256": "0852571736525fb2095a337644ebb02702c728a08aa76089d7bd8aa93517113d"
+          },
+          "verification_bookkeeping": {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/workflow-fixture-fix.patch",
+            "sha256": "33a3b3629685348e75f8af2408fdb7cf55dc7958f3d15c29537372c49b73e9bb"
+          }
         }
       ],
-      "latest_run": "run-04",
+      "latest_run": "run-05",
       "branch": "checkpoint/cp-00-baseline",
       "last_good_sha": "ff520e33e136bbce11b7100c69888dedf42f7273",
-      "current_task": "T04",
+      "current_task": null,
       "blocked_reason": null,
-      "next_agent_action": "T04: pin this fourth execution commit as a clean independent checkout; run-05 repeats fixed-display UI matrix, complete startup/idle/media/dock/Atalaya/kernel-GPU/frame-callback measurements plus untraced control, all existing gates and recovery/host-invariant checks. Review full diff, then make only the fifth evidence/handoff commit if all required engineering gates pass.",
-      "next_owner_action": "No manual tests yet. The fixed-display final run is pending; no Gate B is recorded.",
+      "next_agent_action": "Stop at CP-00 owner-testing handoff. Await M01\u2013M04 results and explicit Gate B for b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05; record only the actual later decision as a separate administrative change. No CP-01 work, push or publication. All test payloads are stopped.",
+      "next_owner_action": "Use the CP-00 owner checklist and run-05 handoff: Start, test M01\u2013M04, report PASS/FAIL/NOT TESTED/NEEDS HELP, then explicitly approve the tested SHA/run or request changes. No reference images required.",
       "contract": "docs/workflow/checkpoints/cp-00-baseline.md",
       "visual_brief": "docs/workflow/checkpoints/cp-00-baseline.visual.md",
       "owner_note": "owner/checkpoints/cp-00-baseline.md"

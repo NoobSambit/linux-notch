@@ -1,0 +1,4 @@
+$ python3 tools/prueba_rutas.py
+Rutas: bien. Sin red, con reloj y dentro de su carpeta.
+
+Exit: 0

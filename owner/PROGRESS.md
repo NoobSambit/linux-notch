@@ -4,7 +4,7 @@
 
 ## WHAT YOU NEED TO DO NOW
 
-No manual tests yet. The fixed-display final run is pending; no Gate B is recorded.
+Use the CP-00 owner checklist and run-05 handoff: Start, test M01–M04, report PASS/FAIL/NOT TESTED/NEEDS HELP, then explicitly approve the tested SHA/run or request changes. No reference images required.
 
 Workflow: **IN PROGRESS**.
 Active checkpoint: **cp-00-baseline**.
@@ -12,7 +12,7 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 | Checkpoint | State | References | Tasks done | Tests: pass / fail / untested / help |
 | --- | --- | --- | --- | --- |
-| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | IMPLEMENTING | Not required | 3/4 | 0 / 1 / 7 / 0 |
+| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | AWAITING OWNER TEST | Not required | 4/4 | 4 / 0 / 4 / 0 |
 | [cp-01-safety — Regression and safety gates](checkpoints/cp-01-safety.md) | PLANNED | Not required | 0/4 | 0 / 0 / 11 / 0 |
 | [cp-02-dnd-spike — Isolated Shelf drag-and-drop feasibility](checkpoints/cp-02-dnd-spike.md) | PLANNED | Not required | 0/4 | 0 / 0 / 8 / 0 |
 | [cp-03-design-system — Shared design system and original visual direction](checkpoints/cp-03-design-system.md) | PLANNED | 4 images needed when activated; none approved | 0/4 | 0 / 0 / 8 / 0 |
@@ -26,25 +26,25 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ## Current handoff
 
-- Codex next: T04: pin this fourth execution commit as a clean independent checkout; run-05 repeats fixed-display UI matrix, complete startup/idle/media/dock/Atalaya/kernel-GPU/frame-callback measurements plus untraced control, all existing gates and recovery/host-invariant checks. Review full diff, then make only the fifth evidence/handoff commit if all required engineering gates pass.
-- You next: No manual tests yet. The fixed-display final run is pending; no Gate B is recorded.
+- Codex next: Stop at CP-00 owner-testing handoff. Await M01–M04 results and explicit Gate B for b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05; record only the actual later decision as a separate administrative change. No CP-01 work, push or publication. All test payloads are stopped.
+- You next: Use the CP-00 owner checklist and run-05 handoff: Start, test M01–M04, report PASS/FAIL/NOT TESTED/NEEDS HELP, then explicitly approve the tested SHA/run or request changes. No reference images required.
 - Waiting/blocker: No blocker recorded; follow the next action above.
-- Test version / run: run-04
+- Test version / run: run-05
 
 ## Tests and remaining work
 
 ### cp-00-baseline
 
-Next: No manual tests yet. The fixed-display final run is pending; no Gate B is recorded.
+Next: Use the CP-00 owner checklist and run-05 handoff: Start, test M01–M04, report PASS/FAIL/NOT TESTED/NEEDS HELP, then explicitly approve the tested SHA/run or request changes. No reference images required.
 
-Remaining tasks: T04.
+Remaining tasks: None.
 
-- **M01 NOT TESTED** — Start and stop safely (CP-00 started; this scenario has not yet been performed.)
-- **M02 NOT TESTED** — Original everyday paths (CP-00 started; this scenario has not yet been performed.)
-- **M03 NOT TESTED** — Screen and fullscreen baseline (CP-00 started; this scenario has not yet been performed.)
-- **M04 NOT TESTED** — Recovery rehearsal (CP-00 started; this scenario has not yet been performed.)
+- **M01 NOT TESTED** — Start and stop safely (Awaiting actual owner M01–M04 results for b114d5a / run-05; no agent approval or personal test claimed.)
+- **M02 NOT TESTED** — Original everyday paths (Awaiting actual owner M01–M04 results for b114d5a / run-05; no agent approval or personal test claimed.)
+- **M03 NOT TESTED** — Screen and fullscreen baseline (Awaiting actual owner M01–M04 results for b114d5a / run-05; no agent approval or personal test claimed.)
+- **M04 NOT TESTED** — Recovery rehearsal (Awaiting actual owner M01–M04 results for b114d5a / run-05; no agent approval or personal test claimed.)
 
-Engineering checks: A01: NOT TESTED; R01: NOT TESTED; R02: NOT TESTED; R03: FAIL.
+Engineering checks: A01: PASS; R01: PASS; R02: PASS; R03: PASS.
 Approval: Waiting; no final owner approval recorded.
 
 Codex keeps this page aligned with its [single progress record](../docs/workflow/progress.json).

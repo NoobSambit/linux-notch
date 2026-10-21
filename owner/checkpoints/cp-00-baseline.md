@@ -5,6 +5,14 @@
 Check [Progress](../PROGRESS.md). If CP-00 is awaiting authorization, use the message in
 [Start here](../README.md) when you are ready. Test only after Codex supplies a labelled ready version.
 
+## Ready engineering version
+
+**b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05.**
+Use the [tested handoff](../../review/cp-00-baseline/evidence/run-05/index.md) for exact
+Start, Stop, Restore and optional harmless test fixtures. The test environment is stopped;
+your ordinary desktop was not replaced. Complete M01–M04 below and report the results.
+Gate B is still yours; no final approval has been recorded.
+
 ## What are we building, and why?
 
 We need to know what already works and be able to stop a failed test without disturbing your desktop. Only a separate test setup, baseline captures and recovery instructions. Your everyday desktop is not replaced.
