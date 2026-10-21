@@ -1,0 +1,74 @@
+{
+  "date": "2026-10-21T12:13:50.076233+00:00",
+  "payloads": {
+    "server": {
+      "pid": 171620,
+      "start_ticks": "2616311",
+      "exe": "/usr/bin/python3.14",
+      "pid_namespace": "pid:[4026533703]",
+      "argv": [
+        "python3",
+        "/control.py",
+        "_server"
+      ],
+      "date": "2026-10-21T12:11:55.317232+00:00"
+    },
+    "compositor": {
+      "pid": 171627,
+      "start_ticks": "2616328",
+      "exe": "/usr/bin/Hyprland",
+      "pid_namespace": "pid:[4026533760]",
+      "argv": [
+        "Hyprland",
+        "-c",
+        "/lab/hyprland.lua"
+      ],
+      "date": "2026-10-21T12:11:55.484121+00:00"
+    }
+  },
+  "records": [
+    {
+      "command": [
+        "python3",
+        "/lab/runtime_control.py",
+        "status"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"instance\": {\n    \"config_path\": \"/candidate/shell.qml\",\n    \"id\": \"k2e8b9nt\",\n    \"launch_time\": \"2026-10-21T12:12:14\",\n    \"pid\": 92,\n    \"shell_id\": \"2d05d68fdebd309fd350f051a28894b6\"\n  },\n  \"process\": {\n    \"pid\": 92,\n    \"start_ticks\": \"2618240\",\n    \"exe\": \"/usr/bin/quickshell\",\n    \"argv\": [\n      \"quickshell\",\n      \"-p\",\n      \"/candidate/shell.qml\",\n      \"--no-color\"\n    ],\n    \"pid_namespace\": \"pid:[4026533703]\"\n  },\n  \"environment\": {\n    \"WAYLAND_DISPLAY\": \"wayland-1\",\n    \"HYPRLAND_INSTANCE_SIGNATURE\": \"efb50993780079460b0cbed1363e2166a2de1d9f_1792584715_1830369440\",\n    \"DBUS_SESSION_BUS_ADDRESS\": \"unix:path=/tmp/dbus-VU6QO1DWLq,guid=a77b2cb58c6e6114f3db2b066ad8ac0b\",\n    \"XDG_RUNTIME_DIR\": \"/run/cp00\"\n  },\n  \"revision\": \"b114d5a1b8c3ed90e97b577e3424092a783e04ed\",\n  \"log\": \"/lab/logs/k4-1792584734558841268.txt\"\n}\n",
+      "stderr": "",
+      "date": "2026-10-21T12:13:50.029876+00:00"
+    },
+    {
+      "command": [
+        "hyprctl",
+        "-j",
+        "monitors"
+      ],
+      "exit_code": 0,
+      "stdout": "[{\n    \"id\": 1,\n    \"name\": \"CP00-STABLE\",\n    \"description\": \"\",\n    \"make\": \"\",\n    \"model\": \"\",\n    \"serial\": \"\",\n    \"width\": 1280,\n    \"height\": 720,\n    \"physicalWidth\": 0,\n    \"physicalHeight\": 0,\n    \"refreshRate\": 60.00000,\n    \"x\": 0,\n    \"y\": 0,\n    \"activeWorkspace\": {\n        \"id\": 1,\n        \"name\": \"1\"\n    },\n    \"specialWorkspace\": {\n        \"id\": 0,\n        \"name\": \"\"\n    },\n    \"reserved\": [0, 0, 0, 34],\n    \"scale\": 1,\n    \"transform\": 0,\n    \"focused\": true,\n    \"dpmsStatus\": true,\n    \"vrr\": false,\n    \"solitary\": \"0\",\n    \"solitaryBlockedBy\": [\"WINDOWED\",\"CANDIDATE\"],\n    \"activelyTearing\": false,\n    \"tearingBlockedBy\": [\"NOT_TORN\",\"USER\",\"SUPPORT\",\"CANDIDATE\"],\n    \"directScanoutTo\": \"0\",\n    \"directScanoutBlockedBy\": [\"USER\",\"MIRROR\",\"SW\",\"CANDIDATE\"],\n    \"disabled\": false,\n    \"currentFormat\": \"XRGB8888\",\n    \"mirrorOf\": \"none\",\n    \"availableModes\": [\"1920x1080@60.00Hz\"],\n    \"colorManagementPreset\": \"srgb\",\n    \"sdrBrightness\": 1,\n    \"sdrSaturation\": 1,\n    \"sdrMinLuminance\": 0.2,\n    \"sdrMaxLuminance\": 80,\n    \"hardwareCursorsInUse\": true\n}]\n",
+      "stderr": "",
+      "date": "2026-10-21T12:13:50.035125+00:00"
+    },
+    {
+      "command": [
+        "hyprctl",
+        "configerrors"
+      ],
+      "exit_code": 0,
+      "stdout": "\n\n",
+      "stderr": "",
+      "date": "2026-10-21T12:13:50.042309+00:00"
+    },
+    {
+      "command": [
+        "python3",
+        "-c",
+        "import os,json;from pathlib import Path;print(json.dumps({\"namespaces\":{k:os.readlink(\"/proc/self/ns/\"+k) for k in [\"pid\",\"mnt\",\"ipc\",\"net\",\"user\"]},\"host_paths_absent\":{p:not Path(p).exists() for p in [\"/home/noobsambit\",\"/parent\",\"/run/user/1000\",\"/run/dbus/system_bus_socket\",\"/dev/snd\",\"/dev/input\"]}}))"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"namespaces\": {\"pid\": \"pid:[4026533703]\", \"mnt\": \"mnt:[4026533700]\", \"ipc\": \"ipc:[4026533702]\", \"net\": \"net:[4026533705]\", \"user\": \"user:[4026533755]\"}, \"host_paths_absent\": {\"/home/noobsambit\": true, \"/parent\": true, \"/run/user/1000\": true, \"/run/dbus/system_bus_socket\": true, \"/dev/snd\": true, \"/dev/input\": true}}\n",
+      "stderr": "",
+      "date": "2026-10-21T12:13:50.075903+00:00"
+    }
+  ]
+}

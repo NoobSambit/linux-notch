@@ -1,0 +1,52 @@
+{
+  "date": "2026-10-21T12:11:27.415731+00:00",
+  "owner_quote": "everything is fine",
+  "after_original_snapshot": "owner-after-m04-20261021-121127",
+  "payloads_live": {
+    "server": true,
+    "compositor": true
+  },
+  "personal_k4_paths_exist": {
+    "/home/noobsambit/.config/k4": false,
+    "/home/noobsambit/.local/state/k4": false,
+    "/home/noobsambit/.local/share/k4": false
+  },
+  "original_status": {
+    "command": [
+      "python3",
+      "/lab/runtime_control.py",
+      "status"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"instance\": {\n    \"config_path\": \"/original/shell.qml\",\n    \"id\": \"k27ta9nt\",\n    \"launch_time\": \"2026-10-21T12:03:07\",\n    \"pid\": 92,\n    \"shell_id\": \"3c9ccbd9d073f80115714dfdfa978cf1\"\n  },\n  \"process\": {\n    \"pid\": 92,\n    \"start_ticks\": \"2563556\",\n    \"exe\": \"/usr/bin/quickshell\",\n    \"argv\": [\n      \"quickshell\",\n      \"-p\",\n      \"/original/shell.qml\",\n      \"--no-color\"\n    ],\n    \"pid_namespace\": \"pid:[4026533705]\"\n  },\n  \"environment\": {\n    \"WAYLAND_DISPLAY\": \"wayland-1\",\n    \"HYPRLAND_INSTANCE_SIGNATURE\": \"efb50993780079460b0cbed1363e2166a2de1d9f_1792584183_927252701\",\n    \"DBUS_SESSION_BUS_ADDRESS\": \"unix:path=/tmp/dbus-VRJ3QahhX6,guid=07bfb36d2f96a07dbd8644fa6ad8a9f7\",\n    \"XDG_RUNTIME_DIR\": \"/run/cp00\"\n  },\n  \"revision\": \"ff520e33e136bbce11b7100c69888dedf42f7273\",\n  \"log\": \"/lab/logs/k4-1792584187714445452.txt\"\n}\n",
+    "stderr": "",
+    "date": "2026-10-21T12:11:27.487305+00:00"
+  },
+  "quickshell": {
+    "command": [
+      "quickshell",
+      "list",
+      "--all",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "[\n    {\n        \"config_path\": \"/home/noobsambit/.config/quickshell/end4-pC/shell.qml\",\n        \"id\": \"xzn1r8nt\",\n        \"launch_time\": \"2026-10-21T10:26:11\",\n        \"pid\": 1293,\n        \"shell_id\": \"962f75767314addec36fdeb1bbb48f35\"\n    }\n]\n",
+    "stderr": ""
+  },
+  "notifications": {
+    "command": [
+      "busctl",
+      "--user",
+      "call",
+      "org.freedesktop.DBus",
+      "/org/freedesktop/DBus",
+      "org.freedesktop.DBus",
+      "GetNameOwner",
+      "s",
+      "org.freedesktop.Notifications"
+    ],
+    "exit_code": 0,
+    "stdout": "s \":1.14\"\n",
+    "stderr": ""
+  }
+}

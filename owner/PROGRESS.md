@@ -4,7 +4,7 @@
 
 ## WHAT YOU NEED TO DO NOW
 
-Perform M04 in the prepared aquamarine recovery copy: type vlc in the open launcher and press Esc; right-click the top island → Ajustes → Island; check settings opens, version label ff520e3 and restored top/Arriba position; close settings and check responsiveness. Report M04 PASS/FAIL/NOT TESTED/NEEDS HELP and any unexpected setting. The reset from M03 bottom is intentional. Stop remains python3 tools/cp00.py stop. Codex will return to preserved b114d5a candidate state after your result; Gate B is a separate later decision.
+M04 report received and all four owner-test reports recorded PASS. The b114d5a candidate and matching test state have been restored and stopped. Review the M04 report/return proof and remaining image/hardware limitations; Gate B requires a separate explicit decision for CP-00 / b114d5a / run-05. M01 owner image and bar-visible M03 image remain unsupplied; physical second-display testing remains unavailable and unwaived. No CP-01 or remote action follows automatically.
 
 Workflow: **IN PROGRESS**.
 Active checkpoint: **cp-00-baseline**.
@@ -12,7 +12,7 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 | Checkpoint | State | References | Tasks done | Tests: pass / fail / untested / help |
 | --- | --- | --- | --- | --- |
-| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | AWAITING OWNER TEST | Not required | 4/4 | 7 / 0 / 1 / 0 |
+| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | AWAITING OWNER TEST | Not required | 4/4 | 8 / 0 / 0 / 0 |
 | [cp-01-safety — Regression and safety gates](checkpoints/cp-01-safety.md) | PLANNED | Not required | 0/4 | 0 / 0 / 11 / 0 |
 | [cp-02-dnd-spike — Isolated Shelf drag-and-drop feasibility](checkpoints/cp-02-dnd-spike.md) | PLANNED | Not required | 0/4 | 0 / 0 / 8 / 0 |
 | [cp-03-design-system — Shared design system and original visual direction](checkpoints/cp-03-design-system.md) | PLANNED | 4 images needed when activated; none approved | 0/4 | 0 / 0 / 8 / 0 |
@@ -26,8 +26,8 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ## Current handoff
 
-- Codex next: Await owner M04 report only. The temporary original ff520e33e136bbce11b7100c69888dedf42f7273 test copy is running with matching original-run03-complete snapshot and launcher open; full current IDs/config/PID/start ticks/bus/socket/source are in review/cp-00-baseline/evidence/run-05/automated/m04-readiness.json and owner/cp-00__M04__preparation__run-05.md. Reverify handles. After owner check, record literal M04 report, Stop original, pin unchanged full b114d5a1b8c3ed90e97b577e3424092a783e04ed while stopped, prepare private server/compositor and isolation probe, then restore the correctly revision-labelled owner-before-m04-20261021-120008 candidate snapshot through the existing runtime helper. Verify candidate identity/bottom state and report actual results before approval handoff; no personal restore. Initial readiness/probe failures and accidental failed Restore continuation caused no store changes; all failure logs retained. One verified non-listening stale M03 private command socket was preserved under a new name; recheck endpoint ambiguity after abrupt test closure, do not weaken identity checks or patch helpers silently. All prior runs/evidence/results preserved; M01 owner image/bar-visible M03 owner image remain unsupplied and physical dual-display untested. Only administrative commits authorized now. Do not grant Gate B without explicit b114d5a/run-05 approval, begin CP-01, modify product/helper code or perform remote actions.
-- You next: Perform M04 in the prepared aquamarine recovery copy: type vlc in the open launcher and press Esc; right-click the top island → Ajustes → Island; check settings opens, version label ff520e3 and restored top/Arriba position; close settings and check responsiveness. Report M04 PASS/FAIL/NOT TESTED/NEEDS HELP and any unexpected setting. The reset from M03 bottom is intentional. Stop remains python3 tools/cp00.py stop. Codex will return to preserved b114d5a candidate state after your result; Gate B is a separate later decision.
+- Codex next: All M01–M04 owner reports are recorded PASS for b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05; this is not Gate B. After M04, the original ff520e3 state was preserved in owner-after-m04-20261021-121127, then the candidate was restored from owner-before-m04-20261021-120008, source/bottom settings/rendering verified and both private payloads stopped. Selected source is b114d5a. Current final state, handles, backup manifests and commands are in review/cp-00-baseline/evidence/run-05/automated/m04-return-final-state.json and m04-return-summary.md; reverify if any later runtime action is needed. Preserve all snapshots and prior evidence/runs/results, including the earlier stale-socket failure and its verified private housekeeping. Gate B remains null; await a separate explicit owner decision naming CP-00 / b114d5a / run-05, with existing evidence limitations visible. M01 owner image and bar-visible M03 owner image remain unsupplied; physical dual-display is untested and not waived. No product/helper changes, CP-01, tags, push, PR, merge, publication or personal restore. Five engineering commits are already complete; only administrative decision/evidence records may follow within existing authorization.
+- You next: M04 report received and all four owner-test reports recorded PASS. The b114d5a candidate and matching test state have been restored and stopped. Review the M04 report/return proof and remaining image/hardware limitations; Gate B requires a separate explicit decision for CP-00 / b114d5a / run-05. M01 owner image and bar-visible M03 image remain unsupplied; physical second-display testing remains unavailable and unwaived. No CP-01 or remote action follows automatically.
 - Waiting/blocker: No blocker recorded; follow the next action above.
 - Test version / run: run-05
 
@@ -35,14 +35,14 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ### cp-00-baseline
 
-Next: Perform M04 in the prepared aquamarine recovery copy: type vlc in the open launcher and press Esc; right-click the top island → Ajustes → Island; check settings opens, version label ff520e3 and restored top/Arriba position; close settings and check responsiveness. Report M04 PASS/FAIL/NOT TESTED/NEEDS HELP and any unexpected setting. The reset from M03 bottom is intentional. Stop remains python3 tools/cp00.py stop. Codex will return to preserved b114d5a candidate state after your result; Gate B is a separate later decision.
+Next: M04 report received and all four owner-test reports recorded PASS. The b114d5a candidate and matching test state have been restored and stopped. Review the M04 report/return proof and remaining image/hardware limitations; Gate B requires a separate explicit decision for CP-00 / b114d5a / run-05. M01 owner image and bar-visible M03 image remain unsupplied; physical second-display testing remains unavailable and unwaived. No CP-01 or remote action follows automatically.
 
 Remaining tasks: None.
 
 - **M01 PASS** — Start and stop safely (Owner-reported PASS for b114d5a / run-05: Start/Stop worked and normal desktop remained unaffected. Literal dated report saved; checklist owner label/desktop image was not supplied and remains outstanding.)
 - **M02 PASS** — Original everyday paths (Owner reports all five supplied M02 steps worked as intended on b114d5a / run-05; literal reply and interpretation preserved in the hashed owner report.)
 - **M03 PASS** — Screen and fullscreen baseline (Owner reports M03 went fine for the prepared single-display top/bottom/fullscreen-return/typing matrix; nested capture and final saved abajo setting preserved. Capture hides the island, so no bar-visible owner image is claimed. Conditional second physical display remains NOT TESTED — ENVIRONMENT LIMITATION.)
-- **M04 NOT TESTED** — Recovery rehearsal (Original ff520e3 and its matching dummy snapshot restored for run-05 M04; current b114d5a dummy state preserved with all 15 file hashes verified. Awaiting actual owner launcher/settings/top-position observation. Startup failures and stale-private-IPC housekeeping retained; no owner result or Gate B inferred.)
+- **M04 PASS** — Recovery rehearsal (Owner reports the restored original launcher/settings and test desktop are fine for run-05 M04. Literal reply preserved. Agent then returned to unchanged b114d5a with its matching candidate snapshot, verified bottom placement/rendering and stopped the private runtime. Gate B remains unrecorded.)
 
 Engineering checks: A01: PASS; R01: PASS; R02: PASS; R03: PASS.
 Approval: Waiting; no final owner approval recorded.

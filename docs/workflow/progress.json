@@ -579,9 +579,40 @@
           "id": "M04",
           "kind": "owner",
           "title": "Recovery rehearsal",
-          "result": "NOT TESTED",
-          "reason": "Original ff520e3 and its matching dummy snapshot restored for run-05 M04; current b114d5a dummy state preserved with all 15 file hashes verified. Awaiting actual owner launcher/settings/top-position observation. Startup failures and stale-private-IPC housekeeping retained; no owner result or Gate B inferred.",
-          "history": []
+          "result": "PASS",
+          "reason": "Owner reports the restored original launcher/settings and test desktop are fine for run-05 M04. Literal reply preserved. Agent then returned to unchanged b114d5a with its matching candidate snapshot, verified bottom placement/rendering and stopped the private runtime. Gate B remains unrecorded.",
+          "history": [
+            {
+              "result": "PASS",
+              "date": "2026-10-21T12:16:56Z",
+              "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+              "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+              "run": "run-05",
+              "recovery_revision": "ff520e33e136bbce11b7100c69888dedf42f7273",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M04__owner-report__run-05.md",
+                  "sha256": "4d04a6000123808951e02513e2cd8d72d9ffd9abe1808b6f0626b6061d46a862"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M04__preparation__run-05.md",
+                  "sha256": "162717a3265f55e09760910b3289663dd29a2e734e2dc74569c42f413f0e4818"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/m04-return-summary.md",
+                  "sha256": "b7951736b7965543a8b78e57481bf7e484633234cc8849da7984288e2b68ec96"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/m04-return-final-state.json",
+                  "sha256": "752ce3707f9f3806d6295ada38b5ee71d9a1560daccaeadb18a16d64dbf392df"
+                }
+              ],
+              "steps": "Owner M04: search vlc in the restored original launcher and Escape; open Ajustes \u2192 Island and check original ff520e3/top setting; close settings and check responsiveness. Agent return to the candidate is recorded separately.",
+              "observed": "Owner: \"everything is fine\". No failure or unexpected setting reported. Subsequent agent proof confirms b114d5a candidate returned to its saved bottom setting, actual settings/launcher rendered, both private test payloads stopped and host invariants unchanged.",
+              "owner_quote": "everything is fine",
+              "source": "Owner reply immediately after the three-step M04 instructions in this Codex thread; date is UTC transcription time. No Gate B approval inferred."
+            }
+          ]
         }
       ],
       "runs": [
@@ -661,8 +692,8 @@
       "last_good_sha": "ff520e33e136bbce11b7100c69888dedf42f7273",
       "current_task": null,
       "blocked_reason": null,
-      "next_agent_action": "Await owner M04 report only. The temporary original ff520e33e136bbce11b7100c69888dedf42f7273 test copy is running with matching original-run03-complete snapshot and launcher open; full current IDs/config/PID/start ticks/bus/socket/source are in review/cp-00-baseline/evidence/run-05/automated/m04-readiness.json and owner/cp-00__M04__preparation__run-05.md. Reverify handles. After owner check, record literal M04 report, Stop original, pin unchanged full b114d5a1b8c3ed90e97b577e3424092a783e04ed while stopped, prepare private server/compositor and isolation probe, then restore the correctly revision-labelled owner-before-m04-20261021-120008 candidate snapshot through the existing runtime helper. Verify candidate identity/bottom state and report actual results before approval handoff; no personal restore. Initial readiness/probe failures and accidental failed Restore continuation caused no store changes; all failure logs retained. One verified non-listening stale M03 private command socket was preserved under a new name; recheck endpoint ambiguity after abrupt test closure, do not weaken identity checks or patch helpers silently. All prior runs/evidence/results preserved; M01 owner image/bar-visible M03 owner image remain unsupplied and physical dual-display untested. Only administrative commits authorized now. Do not grant Gate B without explicit b114d5a/run-05 approval, begin CP-01, modify product/helper code or perform remote actions.",
-      "next_owner_action": "Perform M04 in the prepared aquamarine recovery copy: type vlc in the open launcher and press Esc; right-click the top island \u2192 Ajustes \u2192 Island; check settings opens, version label ff520e3 and restored top/Arriba position; close settings and check responsiveness. Report M04 PASS/FAIL/NOT TESTED/NEEDS HELP and any unexpected setting. The reset from M03 bottom is intentional. Stop remains python3 tools/cp00.py stop. Codex will return to preserved b114d5a candidate state after your result; Gate B is a separate later decision.",
+      "next_agent_action": "All M01\u2013M04 owner reports are recorded PASS for b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05; this is not Gate B. After M04, the original ff520e3 state was preserved in owner-after-m04-20261021-121127, then the candidate was restored from owner-before-m04-20261021-120008, source/bottom settings/rendering verified and both private payloads stopped. Selected source is b114d5a. Current final state, handles, backup manifests and commands are in review/cp-00-baseline/evidence/run-05/automated/m04-return-final-state.json and m04-return-summary.md; reverify if any later runtime action is needed. Preserve all snapshots and prior evidence/runs/results, including the earlier stale-socket failure and its verified private housekeeping. Gate B remains null; await a separate explicit owner decision naming CP-00 / b114d5a / run-05, with existing evidence limitations visible. M01 owner image and bar-visible M03 owner image remain unsupplied; physical dual-display is untested and not waived. No product/helper changes, CP-01, tags, push, PR, merge, publication or personal restore. Five engineering commits are already complete; only administrative decision/evidence records may follow within existing authorization.",
+      "next_owner_action": "M04 report received and all four owner-test reports recorded PASS. The b114d5a candidate and matching test state have been restored and stopped. Review the M04 report/return proof and remaining image/hardware limitations; Gate B requires a separate explicit decision for CP-00 / b114d5a / run-05. M01 owner image and bar-visible M03 image remain unsupplied; physical second-display testing remains unavailable and unwaived. No CP-01 or remote action follows automatically.",
       "contract": "docs/workflow/checkpoints/cp-00-baseline.md",
       "visual_brief": "docs/workflow/checkpoints/cp-00-baseline.visual.md",
       "owner_note": "owner/checkpoints/cp-00-baseline.md",
@@ -742,7 +773,30 @@
             }
           ]
         }
-      ]
+      ],
+      "owner_test_closeout": {
+        "date": "2026-10-21T12:16:56Z",
+        "run": "run-05",
+        "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+        "selected_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+        "runtime_state": "stopped",
+        "candidate_snapshot": "owner-before-m04-20261021-120008",
+        "post_m04_original_snapshot": "owner-after-m04-20261021-121127",
+        "evidence": [
+          {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/m04-return-summary.md",
+            "sha256": "b7951736b7965543a8b78e57481bf7e484633234cc8849da7984288e2b68ec96"
+          },
+          {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/m04-return-final-state.json",
+            "sha256": "752ce3707f9f3806d6295ada38b5ee71d9a1560daccaeadb18a16d64dbf392df"
+          },
+          {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/m04-return-capture-inventory.json",
+            "sha256": "0f4b46052f24701e0fd3bf637e66081e62a552f9924a6026ad8001f9772e04dc"
+          }
+        ]
+      }
     },
     {
       "id": "cp-01-safety",

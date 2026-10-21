@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "/lab/runtime_control.py",
+    "restore",
+    "owner-before-m04-20261021-120008"
+  ],
+  "exit_code": 0,
+  "stdout": "Already stopped; recorded full ID absent. No replacement touched.\nRestored matching disposable snapshot; retained current state in before-restore-1792584734478496363\n{\n  \"instance\": {\n    \"config_path\": \"/candidate/shell.qml\",\n    \"id\": \"k2e8b9nt\",\n    \"launch_time\": \"2026-10-21T12:12:14\",\n    \"pid\": 92,\n    \"shell_id\": \"2d05d68fdebd309fd350f051a28894b6\"\n  },\n  \"process\": {\n    \"pid\": 92,\n    \"start_ticks\": \"2618240\",\n    \"exe\": \"/usr/bin/quickshell\",\n    \"argv\": [\n      \"quickshell\",\n      \"-p\",\n      \"/candidate/shell.qml\",\n      \"--no-color\"\n    ],\n    \"pid_namespace\": \"pid:[4026533703]\"\n  },\n  \"environment\": {\n    \"WAYLAND_DISPLAY\": \"wayland-1\",\n    \"HYPRLAND_INSTANCE_SIGNATURE\": \"efb50993780079460b0cbed1363e2166a2de1d9f_1792584715_1830369440\",\n    \"DBUS_SESSION_BUS_ADDRESS\": \"unix:path=/tmp/dbus-VU6QO1DWLq,guid=a77b2cb58c6e6114f3db2b066ad8ac0b\",\n    \"XDG_RUNTIME_DIR\": \"/run/cp00\"\n  },\n  \"revision\": \"b114d5a1b8c3ed90e97b577e3424092a783e04ed\",\n  \"log\": \"/lab/logs/k4-1792584734558841268.txt\"\n}\n",
+  "stderr": "",
+  "date": "2026-10-21T12:12:14.841415+00:00"
+}

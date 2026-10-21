@@ -1,0 +1,130 @@
+{
+  "date": "2026-10-21T12:14:10.645482+00:00",
+  "payloads_live": {
+    "server": false,
+    "compositor": false
+  },
+  "selected_source": {
+    "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "path": "/candidate",
+    "manifest": "/lab/candidate-manifest.json"
+  },
+  "private_command_sockets": [],
+  "personal_k4_paths_exist": {
+    "/home/noobsambit/.config/k4": false,
+    "/home/noobsambit/.local/state/k4": false,
+    "/home/noobsambit/.local/share/k4": false
+  },
+  "snapshots": {
+    "owner-before-m04-20261021-120008": {
+      "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "stores": [
+        ".local/state/k4",
+        ".config/k4",
+        ".config/k4term"
+      ],
+      "files": {
+        ".local/state/k4/ajustes.json": "e642421ae88e537e1d364d354e40d84cca99dd88fb8a8c4bdea5c1bbc08f3edc",
+        ".local/state/k4/catalogo.json": "548502caf732c5e883b031b05578344006c22657b36e6ec109f7b266aaf8b44b",
+        ".local/state/k4/cp00-probe.txt": "8b3d5b3fc97aa03813dae485d04eae4e1fa05e7c1795fc30b7578cceb80a7ac8",
+        ".local/state/k4/partida.json": "59aba3c4419da8b61974845bf8caaadf35bad55357b80f4bf6679cc62f6cc1db",
+        ".local/state/k4/plugins/cp00-fixture/state.json": "bff789a2b3773765aa393a30b026f46dd823bc5b8ffa1ba138f71d73863cffd4",
+        ".local/state/k4/plugins/dual/estado.json": "be07efe41848637d7af809b41b64a727287baa4f186bc30ea0a76bc85c54388a",
+        ".local/state/k4/plugins.json": "37dfa235d4c61e2b4ad3eab8bbc19c21de7fce54d0276f6b5f597006f5b8916a",
+        ".local/state/k4/plugins.json.bak": "37dfa235d4c61e2b4ad3eab8bbc19c21de7fce54d0276f6b5f597006f5b8916a",
+        ".local/state/k4/portapapeles/datos/0066eaf72bb71d4e": "3e83c8dd990752cef3e0a77d30b262cc1eafe6894c23483ab515855f4363890f",
+        ".local/state/k4/portapapeles/datos/289145052baaf82a": "4b0fc96a2813362052492a1d79030750046ab0fb147b4e9e18a4b7cadd65a8ad",
+        ".local/state/k4/portapapeles/datos/45307d5f89b9d5fb": "a89d17a17a027ac3baf1ce6c72a81bb7251dcfcd353abf8f93e08111203aee56",
+        ".local/state/k4/portapapeles/indice.json": "d2022b4e98acfadb6bcfb41f8504bb6822366ca50873fab964070ca4e389aa70",
+        ".local/state/k4/shelf/dummy.json": "fc7fc2417d2515d6260c9c006e5952945c6f0333d50f4b7be6c2e565351778f1",
+        ".local/state/k4/tema.json": "38009e9b36e99126bd6642e6371afddbd2c89527c727f5ddf99924bea7819ef5",
+        ".local/state/k4/tokens-vigia.json": "8e3fceeb4f160b83abc32a0c8069bd90b1d43a7ddd23a18461b75164763aece5"
+      }
+    },
+    "owner-after-m04-20261021-121127": {
+      "revision": "ff520e33e136bbce11b7100c69888dedf42f7273",
+      "stores": [
+        ".local/state/k4",
+        ".config/k4",
+        ".config/k4term"
+      ],
+      "files": {
+        ".local/state/k4/ajustes.json": "680365e73ecdd588e79d39c7f9ca3f89caa5f68fde896cb010b7f7c27c4d7ad0",
+        ".local/state/k4/catalogo.json": "548502caf732c5e883b031b05578344006c22657b36e6ec109f7b266aaf8b44b",
+        ".local/state/k4/cp00-probe.txt": "8b3d5b3fc97aa03813dae485d04eae4e1fa05e7c1795fc30b7578cceb80a7ac8",
+        ".local/state/k4/partida.json": "daf17689744275d9d8c41bdd5af63bc95588133bc1810ec9065ca045ab4f7fa4",
+        ".local/state/k4/plugins/cp00-fixture/state.json": "bff789a2b3773765aa393a30b026f46dd823bc5b8ffa1ba138f71d73863cffd4",
+        ".local/state/k4/plugins.json": "37dfa235d4c61e2b4ad3eab8bbc19c21de7fce54d0276f6b5f597006f5b8916a",
+        ".local/state/k4/plugins.json.bak": "37dfa235d4c61e2b4ad3eab8bbc19c21de7fce54d0276f6b5f597006f5b8916a",
+        ".local/state/k4/portapapeles/datos/45307d5f89b9d5fb": "a89d17a17a027ac3baf1ce6c72a81bb7251dcfcd353abf8f93e08111203aee56",
+        ".local/state/k4/portapapeles/indice.json": "d5953ea0dd802017a036dddc1a62756f252ed8a7c9a3c8613dec4fbacebcccb2",
+        ".local/state/k4/shelf/dummy.json": "fc7fc2417d2515d6260c9c006e5952945c6f0333d50f4b7be6c2e565351778f1",
+        ".local/state/k4/tema.json": "38009e9b36e99126bd6642e6371afddbd2c89527c727f5ddf99924bea7819ef5",
+        ".local/state/k4/tokens-vigia.json": "8e3fceeb4f160b83abc32a0c8069bd90b1d43a7ddd23a18461b75164763aece5"
+      }
+    },
+    "original-run03-complete": {
+      "revision": "ff520e33e136bbce11b7100c69888dedf42f7273",
+      "stores": [
+        ".local/state/k4",
+        ".config/k4",
+        ".config/k4term"
+      ],
+      "files": {
+        ".local/state/k4/ajustes.json": "680365e73ecdd588e79d39c7f9ca3f89caa5f68fde896cb010b7f7c27c4d7ad0",
+        ".local/state/k4/catalogo.json": "548502caf732c5e883b031b05578344006c22657b36e6ec109f7b266aaf8b44b",
+        ".local/state/k4/cp00-probe.txt": "8b3d5b3fc97aa03813dae485d04eae4e1fa05e7c1795fc30b7578cceb80a7ac8",
+        ".local/state/k4/partida.json": "6bed28aea798c21276560001b8a36418acd504873c9eb66d1cc2e3b5d85d492a",
+        ".local/state/k4/plugins/cp00-fixture/state.json": "bff789a2b3773765aa393a30b026f46dd823bc5b8ffa1ba138f71d73863cffd4",
+        ".local/state/k4/plugins.json": "37dfa235d4c61e2b4ad3eab8bbc19c21de7fce54d0276f6b5f597006f5b8916a",
+        ".local/state/k4/plugins.json.bak": "37dfa235d4c61e2b4ad3eab8bbc19c21de7fce54d0276f6b5f597006f5b8916a",
+        ".local/state/k4/portapapeles/datos/45307d5f89b9d5fb": "a89d17a17a027ac3baf1ce6c72a81bb7251dcfcd353abf8f93e08111203aee56",
+        ".local/state/k4/portapapeles/indice.json": "d5953ea0dd802017a036dddc1a62756f252ed8a7c9a3c8613dec4fbacebcccb2",
+        ".local/state/k4/shelf/dummy.json": "fc7fc2417d2515d6260c9c006e5952945c6f0333d50f4b7be6c2e565351778f1",
+        ".local/state/k4/tema.json": "38009e9b36e99126bd6642e6371afddbd2c89527c727f5ddf99924bea7819ef5",
+        ".local/state/k4/tokens-vigia.json": "8e3fceeb4f160b83abc32a0c8069bd90b1d43a7ddd23a18461b75164763aece5"
+      }
+    }
+  },
+  "final_dummy_settings": {
+    "posicionBarra": "abajo",
+    "reservaIsla": "reserva",
+    "accesosDirectos": [
+      "game",
+      "settings",
+      "system",
+      "clipboard"
+    ]
+  },
+  "postlaunch_changed_paths": [
+    ".local/state/k4/partida.json"
+  ],
+  "quickshell": {
+    "command": [
+      "quickshell",
+      "list",
+      "--all",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "[\n    {\n        \"config_path\": \"/home/noobsambit/.config/quickshell/end4-pC/shell.qml\",\n        \"id\": \"xzn1r8nt\",\n        \"launch_time\": \"2026-10-21T10:26:11\",\n        \"pid\": 1293,\n        \"shell_id\": \"962f75767314addec36fdeb1bbb48f35\"\n    }\n]\n",
+    "stderr": ""
+  },
+  "notifications": {
+    "command": [
+      "busctl",
+      "--user",
+      "call",
+      "org.freedesktop.DBus",
+      "/org/freedesktop/DBus",
+      "org.freedesktop.DBus",
+      "GetNameOwner",
+      "s",
+      "org.freedesktop.Notifications"
+    ],
+    "exit_code": 0,
+    "stdout": "s \":1.14\"\n",
+    "stderr": ""
+  },
+  "host_invariants_match": true
+}
