@@ -34,9 +34,13 @@ assert names['exit_code'] == 0, names
 assert '(activatable)' not in names['stdout'], 'Unexpected bus activation directory'
 assert 'org.freedesktop.Notifications' not in names['stdout'], 'Unexpected test-bus notification owner'
 assert 'org.freedesktop.portal.Desktop' not in names['stdout'], 'Unexpected portal'
+monitors = command(['hyprctl', '-j', 'monitors'])
+assert monitors['exit_code'] == 0
+primary = next(m for m in json.loads(monitors['stdout']) if m['name'] == 'CP00-STABLE')
+assert (primary['width'], primary['height'], primary['scale']) == (1280, 720, 1)
 aliases = ['/original', '/lab/original']
 if os.environ.get('CP00_SOURCE_PATH') == '/candidate':
-    aliases += ['/candidate', '/lab/exports/' + os.environ['CP00_SOURCE_REVISION']]
+    aliases += ['/candidate', '/lab/checkouts/' + os.environ['CP00_SOURCE_REVISION']]
 for alias in aliases:
     try:
         Path(alias, 'cp00-must-not-write').write_text('probe')
@@ -51,7 +55,7 @@ print(json.dumps({'result': 'PASS', 'environment': dict(os.environ),
                   'namespaces': {k: os.readlink('/proc/self/ns/' + k)
                                  for k in ['pid', 'mnt', 'net', 'ipc', 'user']},
                   'absent_paths': absent, 'session_bus': bus, 'names': names,
-                  'monitors': command(['hyprctl', '-j', 'monitors']),
+                  'monitors': monitors,
                   'interfaces': Path('/proc/net/dev').read_text(),
                   'process_ids': sorted(p.name for p in Path('/proc').glob('[0-9]*')),
                   'state_sentinel': str(state / 'cp00-probe.txt')}, indent=2))

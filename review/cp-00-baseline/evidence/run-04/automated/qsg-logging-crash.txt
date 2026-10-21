@@ -1,0 +1,31 @@
+===== Environment (trimmed) =====
+QT_LOGGING_RULES=qt.scenegraph.time.renderloop.debug=true;qt.scenegraph.general.debug=true
+QT_QPA_PLATFORM=wayland
+QSG_RENDER_TIMING=1
+QML_IMPORT_PATH=/candidate/api:/original/api
+QT_QUICK_CONTROLS_STYLE=Fusion
+
+===== Instance Information =====
+Signal: Segmentation fault (11)
+Crashed process ID: 2832
+Run ID: d22wc19nt
+Shell ID: 2d05d68fdebd309fd350f051a28894b6
+Config Path: /candidate/shell.qml
+
+===== Stacktrace =====
+#0  0x00007fe9ee43e6ef at /usr/bin/../lib/libc.so.6
+#1  0x00007fe9ee576408 at /usr/bin/../lib/libc.so.6
+#2  0x00007fe9eee9e500 at /usr/bin/../lib/libQt6Core.so.6
+#3  0x00007fe9eee4eb97 at /usr/bin/../lib/libQt6Core.so.6
+#4  0x00007fe9eee4fd45 in QTextStream::operator<<(char const*) at /usr/bin/../lib/libQt6Core.so.6
+#5  0x00005616995e165f in qs::log::LogMessage::formatMessage(QTextStream&, qs::log::LogMessage const&, bool, bool, QString const&) at /usr/src/debug/illogical-impulse-quickshell-git/quickshell/src/core/logging.cpp:145:31
+#6  0x00005616995e3300 in qs::log::LogManager::messageHandler(QtMsgType, QMessageLogContext const&, QString const&) at /usr/src/debug/illogical-impulse-quickshell-git/quickshell/src/core/logging.cpp:223:28
+#7  0x00007fe9eed09622 at /usr/bin/../lib/libQt6Core.so.6
+#8  0x00007fe9eecfa553 at /usr/bin/../lib/libQt6Core.so.6
+#9  0x00007fe9eecfa70b in QMessageLogger::debug(char const*, ...) const at /usr/bin/../lib/libQt6Core.so.6
+#10 0x00007fe9f08d99cd at /usr/bin/../lib/libQt6Quick.so.6
+#11 0x00007fe9f08653d4 in QQuickWindowPrivate::renderSceneGraph() at /usr/bin/../lib/libQt6Quick.so.6
+#12 0x00007fe9f0ac2e8e at /usr/bin/../lib/libQt6Quick.so.6
+#13 0x00007fe9eef721ea at /usr/bin/../lib/libQt6Core.so.6
+#14 0x00007fe9ee498041 at /usr/bin/../lib/libc.so.6
+#15 0x00007fe9ee52072b at /usr/bin/../lib/libc.so.6

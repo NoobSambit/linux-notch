@@ -1,0 +1,234 @@
+[
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__capture-return__run-04.png",
+    "sha256": "9adb602ac1fd5103a80643240d1f561ff1e39b0366ca4e0f6b7177419dc9dd72",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__clipboard-image__run-04.png",
+    "sha256": "c8f2e27b79c11e0157e5e60f7933ed228b1538371687e672a42752223d22e525",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__clipboard-text__run-04.png",
+    "sha256": "9e0a67ecf49b9052d3c574b1d367cdef89827cd001b26c29037ac5a438b9fa78",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__display-removal-return__run-04.png",
+    "sha256": "3d5f6d21d34fc8a9732d1b4b3c417dfac6e0de8c33df6aa9f962441ac7ca72c0",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__dual-before-settings-ready-bottom__run-04.png",
+    "sha256": "c78e05291c6dbac59e37aa8d227f5708fcccbe923e212e1d173c4d970e40676b",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__dual-default-steady-after-wait__run-04.png",
+    "sha256": "17bc7f29f57c951c850159007c1a1e8a29d80c04b7cb7592d088fd9c84fe86c4",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__dual-from-abajo__run-04.png",
+    "sha256": "f7a4487ece423f191bb852b2315c3cb0b870a1f030e70e5ff08ec4361f433d8e",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__dual-from-arriba__run-04.png",
+    "sha256": "10f4b8acde3f5c2723a83291e1f68831ba1bcdf2b6105bd456961ae1907b833b",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__dual-instant-top__run-04.png",
+    "sha256": "6b6cdad9a09871201841f0c716bc0d7f256c20bb920f7be3234b9624303d8552",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__example-efectos__run-04.png",
+    "sha256": "e6d150d9b353d9fa13469e61b0ffa7bf4ec3dc8840a820d44139d81ce731550a",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__example-hola__run-04.png",
+    "sha256": "543acc504ad270f49da20ebf4c27f92d521b6417ceea0e96854496d6e573842b",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__example-piezas__run-04.png",
+    "sha256": "36422002f68a01e85f24b4e7cec8939bd9a4b50474db716bcad7068aaa423d1f",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__example-snake__run-04.png",
+    "sha256": "4b8b4f59d97f93ddeda37e2ac1413d4bb4ada8680d77036d4019485298cff0d7",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__fullscreen-on__run-04.png",
+    "sha256": "1409d860f790eb303bbfc805182b51d17c262d47770cbcd8b039df9b76ace7ea",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__fullscreen-return__run-04.png",
+    "sha256": "108c2ec7ffb7eb1855304965ed39ab6c892e4a62275006163efdffa54d4b459a",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__launcher-abajo__run-04.png",
+    "sha256": "800e7845761101f48ebba9f87f15e423bb171b224cb5c6be575acf33deb506b9",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__launcher-arriba__run-04.png",
+    "sha256": "41923eb55fe7b6b30f353a335b1df3e8c969dba97bd64fc5d8aaa52f1d83f230",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__launcher-derecha__run-04.png",
+    "sha256": "c1097537994390cabfa697ff487f7a45f1e849ccecd9497384e7dfec1a3066f6",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__launcher-izquierda__run-04.png",
+    "sha256": "fdd679e575517dc692c71ea5bc4553ab083ba55844b4ce3e16f4678926fd6819",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__media-paused__run-04.png",
+    "sha256": "c7da4f2e061571d1b97a2e0b556bbe169d22a54ec2aa01df6ff89635fd56cd36",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__media-playing__run-04.png",
+    "sha256": "c03f1ceec63af0599e91d966723569b731daa8d4267069fcffe891bef900f8b7",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__settings-capture__run-04.png",
+    "sha256": "dbff6ad9b8492bd7ffd4abe564106784ef86c671c3594285bc9b9b3e9585aecd",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__surface-abajo__run-04.png",
+    "sha256": "19e1556cf95cc6e0c33a76e6665144a00639b03f68eb31b8fac59aacbd2e1d91",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__surface-arriba__run-04.png",
+    "sha256": "25bc5cd71d38dade76f598dfdf6546c72e16b49c8e1f7b21fa2f4767362b95d5",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__surface-derecha__run-04.png",
+    "sha256": "3f6e4316977784cbe3b5464bcf35c60630f1f59bd640a0d8b660ef6bde6be353",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__surface-izquierda__run-04.png",
+    "sha256": "4fc83538596d6ec9c77ae523f562b668661265edc9f29225053be581e4e7b782",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__two-displays-first__run-04.png",
+    "sha256": "78ea647558dca9828fb5f71e36403012263e03d4e53e0a0f8fed917c6675d543",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R02__two-displays-second__run-04.png",
+    "sha256": "23f27fe836f1a0f6df0c3a801fbdb4b3006e772b808e10c753b347b265246cf8",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-04/application/cp-00__R03__atalaya-headless-smoke__run-04.png",
+    "sha256": "64acd85fd58f6d500560a763c8dbc689172f45ca4d0f711cc4f6401f2fac9cbd",
+    "tool": "grim inside private namespace",
+    "source_revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+    "type": "actual application capture",
+    "privacy": "Synthetic HOME/data and inherited sample plugins only; no host desktop capture."
+  }
+]

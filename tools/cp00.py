@@ -18,7 +18,6 @@ import socket
 import socketserver
 import subprocess
 import sys
-import tarfile
 import time
 
 ROOT = Path(__file__).resolve().parent.parent
@@ -131,7 +130,8 @@ hl.config({
     if not (LAB / 'original').exists():
         # External to either sandbox; only this immutable source export is mounted.
         raise RuntimeError('Prepare source export first: see tools/cp00.md')
-    manifest = source_manifest(LAB / 'original', BASELINE)
+    original = checkout_source(BASELINE)
+    manifest = source_manifest(original, BASELINE)
     LAB.joinpath('source-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
     for source, dest in [('cp00_probe.py', 'probe.py'), ('cp00_runtime.py', 'runtime_control.py')]:
         LAB.joinpath(dest).write_bytes(Path(__file__).with_name(source).read_bytes())
@@ -150,6 +150,23 @@ def source_manifest(source, revision):
             raise RuntimeError('Export differs from pinned Git source: ' + name.decode())
         manifest[name.decode()] = hashlib.sha256(data).hexdigest()
     return {'revision': revision, 'files': manifest}
+
+
+def checkout_source(revision):
+    """A real independent Git checkout, with no owner config, alternates or remote."""
+    checkout = LAB / 'checkouts' / revision
+    if not checkout.exists():
+        checkout.parent.mkdir(parents=True, exist_ok=True, mode=0o700)
+        subprocess.run(['git', 'clone', '--quiet', '--no-hardlinks', '--no-checkout',
+                        str(ROOT), str(checkout)], check=True)
+        subprocess.run(['git', '-C', str(checkout), 'remote', 'remove', 'origin'], check=True)
+        subprocess.run(['git', '-C', str(checkout), 'checkout', '--quiet', '--detach', revision], check=True)
+    observed = subprocess.check_output(['git', '-C', str(checkout), 'rev-parse', 'HEAD'], text=True).strip()
+    if observed != revision or subprocess.check_output(['git', '-C', str(checkout), 'status', '--porcelain']):
+        raise RuntimeError('Pinned test checkout is dirty or at a different revision')
+    if (checkout / '.git/objects/info/alternates').exists():
+        raise RuntimeError('Test checkout must not reference the owner object store')
+    return checkout
 
 
 def payload_live(name):
@@ -173,17 +190,11 @@ def select_source(revision):
     revision = subprocess.check_output(['git', 'rev-parse', revision + '^{commit}'], cwd=ROOT, text=True).strip()
     subprocess.run(['git', 'merge-base', '--is-ancestor', BASELINE, revision], cwd=ROOT, check=True)
     if revision == BASELINE:
+        checkout_source(revision)
         selected = {'revision': revision, 'path': '/original', 'manifest': '/lab/source-manifest.json'}
     else:
-        export = LAB / 'exports' / revision
-        if not export.exists():
-            export.mkdir(parents=True, mode=0o700)
-            proc = subprocess.Popen(['git', 'archive', revision], cwd=ROOT, stdout=subprocess.PIPE)
-            with tarfile.open(fileobj=proc.stdout, mode='r|') as archive:
-                archive.extractall(export, filter='data')
-            if proc.wait():
-                raise RuntimeError('Git source export failed')
-        manifest = source_manifest(export, revision)
+        checkout = checkout_source(revision)
+        manifest = source_manifest(checkout, revision)
         LAB.joinpath('candidate-manifest.json').write_text(json.dumps(manifest, indent=2) + '\n')
         selected = {'revision': revision, 'path': '/candidate', 'manifest': '/lab/candidate-manifest.json'}
     LAB.joinpath('selected-source.json').write_text(json.dumps(selected, indent=2) + '\n')
@@ -194,6 +205,7 @@ def sandbox(compositor=False):
     selected_file = LAB / 'selected-source.json'
     selected = json.loads(selected_file.read_text()) if selected_file.exists() else {
         'revision': BASELINE, 'path': '/original', 'manifest': '/lab/source-manifest.json'}
+    original = LAB / 'checkouts' / BASELINE
     command = ['bwrap', '--unshare-all', '--unshare-user', '--new-session', '--cap-drop', 'ALL',
                '--ro-bind', '/usr', '/usr', '--symlink', 'usr/bin', '/bin',
                '--symlink', 'usr/lib', '/lib', '--symlink', 'usr/lib', '/lib64',
@@ -206,8 +218,9 @@ def sandbox(compositor=False):
                '--bind', str(LAB / 'runtime'), '/run/cp00',
                '--bind', str(LAB), '/lab',
                '--bind', str(BACKUPS), '/backups',
-               '--ro-bind', str(LAB / 'original'), '/original',
-               '--ro-bind', str(LAB / 'original'), '/lab/original',
+               '--ro-bind', str(original), '/original',
+               '--ro-bind', str(original), '/lab/original',
+               '--ro-bind', str(LAB / 'checkouts'), '/lab/checkouts',
                '--ro-bind', str(Path(__file__).resolve()), '/control.py',
                '--clearenv', '--setenv', 'PATH', '/usr/bin',
                '--setenv', 'HOME', '/home/cp00', '--setenv', 'USER', 'cp00',
@@ -225,8 +238,7 @@ def sandbox(compositor=False):
                 '--setenv', 'CP00_SOURCE_PATH', selected['path'],
                 '--setenv', 'CP00_SOURCE_MANIFEST', selected['manifest']]
     if selected['path'] == '/candidate':
-        command += ['--ro-bind', str(LAB / 'exports' / selected['revision']), '/candidate',
-                    '--ro-bind', str(LAB / 'exports'), '/lab/exports']
+        command += ['--ro-bind', str(LAB / 'checkouts' / selected['revision']), '/candidate']
     # Only render nodes, never DRM card/input/audio/camera devices.
     for node in ['/dev/dri/renderD128', '/dev/dri/renderD129']:
         if Path(node).exists():
@@ -307,6 +319,15 @@ def start_compositor():
         time.sleep(.1)
     else:
         raise RuntimeError('Nested output readiness timed out; retain/reverify handle')
+    # A headless primary keeps rendering independent of the parent's workspace visibility.
+    for command in [
+        ['hyprctl', 'output', 'create', 'headless', 'CP00-STABLE'],
+        ['hyprctl', 'eval', 'hl.monitor({output="CP00-STABLE",mode="1280x720@60",position="0x0",scale=1}); hl.monitor({output="WAYLAND-1",mode="1280x720@60",position="0x0",scale=1,mirror="CP00-STABLE"})'],
+        ['grim', '-o', 'CP00-STABLE', '/lab/headless-readiness.png'],
+    ]:
+        result = request({'command': command, 'timeout': 5})
+        if result.get('exit_code') != 0:
+            raise RuntimeError('Private headless output setup failed: ' + json.dumps(result))
     print(json.dumps({'wrapper': proc.pid, 'started': now(), 'log': str(log.name)}))
 
 
@@ -377,9 +398,51 @@ def owner_stop():
     print(stop_verified('server'))
 
 
+def owner_fixture(action, arguments):
+    check = request({'command': ['python3', '/lab/runtime_control.py', 'status']})
+    if check.get('exit_code') != 0:
+        raise RuntimeError('Start CP-00 first')
+    def run(command, **extra):
+        result = request({'command': command, **extra})
+        if result.get('exit_code', 0 if 'pid' in result else 1) != 0:
+            raise RuntimeError(json.dumps(result))
+        return result
+    if action == 'demo':
+        from cp00_baseline import FIXTURE
+        LAB.joinpath('fixture.qml').write_text(FIXTURE)
+        listed = json.loads(run(['quickshell', 'list', '--all', '--json'])['stdout'])
+        if not any(i['config_path'] == '/lab/fixture.qml' for i in listed):
+            run(['quickshell', '-p', '/lab/fixture.qml', '--no-color'], background=True, log='owner-document.txt')
+        if request({'command': ['playerctl', '-p', 'vlc', 'status']}).get('exit_code') != 0:
+            run(['vlc', '--intf', 'dummy', '--extraintf', 'dbus', '--aout', 'adummy',
+                 '--no-video', '--no-one-instance', '--loop', '/lab/dummy.wav'], background=True, log='owner-media.txt')
+        for _ in range(50):
+            if request({'command': ['playerctl', '-p', 'vlc', 'status']}).get('exit_code') == 0:
+                break
+            time.sleep(.1)
+        run(['playerctl', '-p', 'vlc', 'play'])
+        LAB.joinpath('owner-text.txt').write_text('CP00 harmless owner-test text\n')
+        run(['sh', '-c', 'exec wl-copy --foreground < /lab/owner-text.txt'], background=True, log='owner-clipboard.txt')
+        print('CP-00 dummy documents, local music (silent test output) and harmless clipboard are ready.')
+    elif action == 'fullscreen':
+        listed = json.loads(run(['quickshell', 'list', '--all', '--json'])['stdout'])
+        found = [i for i in listed if i['config_path'] == '/lab/fixture.qml']
+        if len(found) != 1 or arguments not in [['true'], ['false']]:
+            raise RuntimeError('Run demo first; use fullscreen true or fullscreen false')
+        run(['quickshell', 'ipc', '--id', found[0]['id'], 'call', 'cp00.fixture', 'fullscreen', arguments[0]])
+    else:
+        target = 'CP00-2' if action == 'view-second' else 'CP00-STABLE'
+        monitors = json.loads(run(['hyprctl', '-j', 'monitors'])['stdout'])
+        if target == 'CP00-2' and not any(m['name'] == target for m in monitors):
+            run(['hyprctl', 'output', 'create', 'headless', target])
+        run(['hyprctl', 'eval', 'hl.monitor({output="WAYLAND-1",mode="1280x720@60",position="0x0",scale=1,mirror="' + target + '"})'])
+        print('Nested test window shows ' + target)
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('action', choices=['prepare', 'pin', 'start', 'stop', 'restore',
+                                         'demo', 'fullscreen', 'view-first', 'view-second',
                                          'server-start', 'server-stop', 'compositor-start',
                                          'compositor-stop', 'exec', '_server'])
     parser.add_argument('command', nargs=argparse.REMAINDER)
@@ -394,6 +457,8 @@ def main():
         owner_start()
     elif args.action == 'stop':
         owner_stop()
+    elif args.action in ['demo', 'fullscreen', 'view-first', 'view-second']:
+        owner_fixture(args.action, args.command)
     elif args.action == 'restore':
         owner_stop()
         select_source(BASELINE)

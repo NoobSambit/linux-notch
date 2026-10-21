@@ -4,7 +4,7 @@
 
 ## WHAT YOU NEED TO DO NOW
 
-No action yet. CP-00 engineering preparation is authorized; wait for verified owner-test instructions or a concrete capability request.
+No manual tests yet. The fixed-display final run is pending; no Gate B is recorded.
 
 Workflow: **IN PROGRESS**.
 Active checkpoint: **cp-00-baseline**.
@@ -12,7 +12,7 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 | Checkpoint | State | References | Tasks done | Tests: pass / fail / untested / help |
 | --- | --- | --- | --- | --- |
-| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | IMPLEMENTING | Not required | 2/4 | 1 / 0 / 7 / 0 |
+| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | IMPLEMENTING | Not required | 3/4 | 0 / 1 / 7 / 0 |
 | [cp-01-safety — Regression and safety gates](checkpoints/cp-01-safety.md) | PLANNED | Not required | 0/4 | 0 / 0 / 11 / 0 |
 | [cp-02-dnd-spike — Isolated Shelf drag-and-drop feasibility](checkpoints/cp-02-dnd-spike.md) | PLANNED | Not required | 0/4 | 0 / 0 / 8 / 0 |
 | [cp-03-design-system — Shared design system and original visual direction](checkpoints/cp-03-design-system.md) | PLANNED | 4 images needed when activated; none approved | 0/4 | 0 / 0 / 8 / 0 |
@@ -26,25 +26,25 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ## Current handoff
 
-- Codex next: T03: characterize unchanged original UI (surface/dock top/bottom/sides, fullscreen/displays, media/clipboard/capture and four plugin examples) in a new run; add reproducible T04 workload tooling before pinning the final clean test revision. Sandboxes stopped; recovery snapshot original-run03-complete is retained.
-- You next: No action yet. CP-00 engineering preparation is authorized; wait for verified owner-test instructions or a concrete capability request.
+- Codex next: T04: pin this fourth execution commit as a clean independent checkout; run-05 repeats fixed-display UI matrix, complete startup/idle/media/dock/Atalaya/kernel-GPU/frame-callback measurements plus untraced control, all existing gates and recovery/host-invariant checks. Review full diff, then make only the fifth evidence/handoff commit if all required engineering gates pass.
+- You next: No manual tests yet. The fixed-display final run is pending; no Gate B is recorded.
 - Waiting/blocker: No blocker recorded; follow the next action above.
-- Test version / run: run-03
+- Test version / run: run-04
 
 ## Tests and remaining work
 
 ### cp-00-baseline
 
-Next: No action yet. CP-00 engineering preparation is authorized; wait for verified owner-test instructions or a concrete capability request.
+Next: No manual tests yet. The fixed-display final run is pending; no Gate B is recorded.
 
-Remaining tasks: T03, T04.
+Remaining tasks: T04.
 
 - **M01 NOT TESTED** — Start and stop safely (CP-00 started; this scenario has not yet been performed.)
 - **M02 NOT TESTED** — Original everyday paths (CP-00 started; this scenario has not yet been performed.)
 - **M03 NOT TESTED** — Screen and fullscreen baseline (CP-00 started; this scenario has not yet been performed.)
 - **M04 NOT TESTED** — Recovery rehearsal (CP-00 started; this scenario has not yet been performed.)
 
-Engineering checks: A01: NOT TESTED; R01: PASS; R02: NOT TESTED; R03: NOT TESTED.
+Engineering checks: A01: NOT TESTED; R01: NOT TESTED; R02: NOT TESTED; R03: FAIL.
 Approval: Waiting; no final owner approval recorded.
 
 Codex keeps this page aligned with its [single progress record](../docs/workflow/progress.json).

@@ -76,13 +76,26 @@
         {
           "id": "T03",
           "title": "Capture original surface/dock top/bottom and compatibility-only sides, fullscreen and available displays; smoke media, clipboard, capture and plugin samples.",
-          "status": "IN PROGRESS",
-          "evidence": []
+          "status": "DONE",
+          "evidence": [
+            {
+              "path": "review/cp-00-baseline/evidence/run-04/automated/baseline-observations.md",
+              "sha256": "8229a208951a01a2b3e6dab416f4ff6aac4d9c2a779b18f8398c948d7a3ad31c"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-04/automated/capture-inventory.json",
+              "sha256": "ecba0b96c23f369c8e16e9ea7c4a8a08131954a75122915e6cb99919bda5ebdc"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-04/automated/commands.json",
+              "sha256": "391686334277ffc40954fb27b4bdb66bb6c5c52ee7a9e12b86b457431410438c"
+            }
+          ]
         },
         {
           "id": "T04",
           "title": "Measure idle/startup/media/dock and Atalaya effective enabled/closed costs; inventory provenance gaps and prepare baseline handoff.",
-          "status": "PENDING",
+          "status": "IN PROGRESS",
           "evidence": []
         }
       ],
@@ -123,8 +136,8 @@
           "id": "R01",
           "kind": "runtime",
           "title": "Prove isolated paths/services, exact-instance termination, backup and previous-version restore using dummy state; host services unchanged.",
-          "result": "PASS",
-          "reason": "Isolated original/candidate start, exact full-ID stop preserving a neighbor, complete dummy-store backup/checksum/restore, previous-source launch, settled settings/launcher captures and host invariants exercised. No owner result implied.",
+          "result": "NOT TESTED",
+          "reason": "Prior exact-instance/recovery proof retained. Changed fixed-display/independent-checkout harness requires final clean-run revalidation.",
           "history": [
             {
               "result": "NOT TESTED",
@@ -219,16 +232,80 @@
           "kind": "runtime",
           "title": "Record original top/bottom/dock, experimental sides, fullscreen, one/two displays where available, media/clipboard/capture and examples hola/piezas/efectos/snake.",
           "result": "NOT TESTED",
-          "reason": "CP-00 started; this scenario has not yet been performed.",
-          "history": []
+          "reason": "Original behavior matrix observed in run-04; final fixed-display/clean-checkout rerun remains.",
+          "history": [
+            {
+              "result": "NOT TESTED",
+              "date": "2026-10-21T10:27:45Z",
+              "revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+              "environment": "Exploratory CP00 private namespaces, Qt 6.11.2/Quickshell 0.2.1/Hyprland 0.56.2, source 818993b. Initial variable parent viewport/occlusion invalidated profiling; later fixed CP00-STABLE 1280x720/60Hz headless mirror and clean independent Git checkout smoke. Sandboxes stopped.",
+              "patch": {
+                "path": "review/cp-00-baseline/evidence/run-04/automated/tools.patch",
+                "sha256": "d2d90763eed1c3538ad618d9cbf3be2b56387e554ddbe5e6e5ee9bbf766f389d"
+              },
+              "run": "run-04",
+              "steps": "python3 tools/cp00_baseline.py characterize run-04; resume characterize-tail after fixing dummy-window QML syntax; supplemental settled Dual and fixed-headless Atalaya observations.",
+              "observed": "Actual captures and readback cover named inherited scenarios; transient captures and environment limits retained. Fixed-display clean final revalidation remains.",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-04/automated/baseline-observations.md",
+                  "sha256": "8229a208951a01a2b3e6dab416f4ff6aac4d9c2a779b18f8398c948d7a3ad31c"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-04/automated/capture-inventory.json",
+                  "sha256": "ecba0b96c23f369c8e16e9ea7c4a8a08131954a75122915e6cb99919bda5ebdc"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-04/automated/commands.json",
+                  "sha256": "391686334277ffc40954fb27b4bdb66bb6c5c52ee7a9e12b86b457431410438c"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "R03",
           "kind": "runtime",
           "title": "Measure startup/idle/active resources with workload/duration/hardware; record Atalaya saved override versus inherited catalog effective state and closed-state GPU activity.",
-          "result": "NOT TESTED",
-          "reason": "CP-00 started; this scenario has not yet been performed.",
-          "history": []
+          "result": "FAIL",
+          "reason": "Exploratory Qt timing crashed the installed logger; parent-output occlusion invalidated partial CPU/GPU samples and timed out capture. Fixed headless method is established; complete clean-run matrix remains.",
+          "history": [
+            {
+              "result": "FAIL",
+              "date": "2026-10-21T10:27:45Z",
+              "revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+              "environment": "Exploratory CP00 private namespaces, Qt 6.11.2/Quickshell 0.2.1/Hyprland 0.56.2, source 818993b. Initial variable parent viewport/occlusion invalidated profiling; later fixed CP00-STABLE 1280x720/60Hz headless mirror and clean independent Git checkout smoke. Sandboxes stopped.",
+              "patch": {
+                "path": "review/cp-00-baseline/evidence/run-04/automated/tools.patch",
+                "sha256": "d2d90763eed1c3538ad618d9cbf3be2b56387e554ddbe5e6e5ee9bbf766f389d"
+              },
+              "run": "run-04",
+              "steps": "python3 tools/cp00_baseline.py measure run-04 (initial QSG timing, then Wayland tracing/kernel counters); check namespace handles after capture timeout; establish independent headless output and smoke live Atalaya.",
+              "observed": "QSG logger segmentation fault retained. Fifteen partial traced samples are invalid because parent workspace visibility/viewport changed. Private headless output restores capture and live previews; no full resource PASS claimed. Rights inventory and source state audit completed.",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-04/automated/baseline-observations.md",
+                  "sha256": "8229a208951a01a2b3e6dab416f4ff6aac4d9c2a779b18f8398c948d7a3ad31c"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-04/automated/qsg-logging-crash.txt",
+                  "sha256": "5ccc469a374324ab86c431a6608b3a4e32ce74fb18f8757677ebfd86b9d864ce"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-04/automated/performance.json",
+                  "sha256": "e562e280aee37209b949fb0fc2924ce91765af1470591398e1c36655a7623f7d"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-04/automated/display-method.md",
+                  "sha256": "7175f1b6ad1db7bda387632533f4fb5850f814cbc6a32d36880b69b33a14a3c4"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-04/automated/asset-inventory.json",
+                  "sha256": "e66f81f62c96beac5b54667157280dc40ac1bc9ba0bb8397f9e179619b6a9e4b"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "M01",
@@ -297,15 +374,29 @@
             "path": "review/cp-00-baseline/evidence/run-03/automated/recovery.md",
             "sha256": "4e42826a7310e320954c6abef0bcb5e486f72a687fece9656f1cb2b024c86c4f"
           }
+        },
+        {
+          "id": "run-04",
+          "date": "2026-10-21T10:27:45Z",
+          "revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+          "environment": "Exploratory CP00 private namespaces, Qt 6.11.2/Quickshell 0.2.1/Hyprland 0.56.2, source 818993b. Initial variable parent viewport/occlusion invalidated profiling; later fixed CP00-STABLE 1280x720/60Hz headless mirror and clean independent Git checkout smoke. Sandboxes stopped.",
+          "patch": {
+            "path": "review/cp-00-baseline/evidence/run-04/automated/tools.patch",
+            "sha256": "d2d90763eed1c3538ad618d9cbf3be2b56387e554ddbe5e6e5ee9bbf766f389d"
+          },
+          "handoff": {
+            "path": "review/cp-00-baseline/evidence/run-04/index.md",
+            "sha256": "fb42eb46898036bb8aa2443a0662564d1806981366ff9b27d471eed6825d1d05"
+          }
         }
       ],
-      "latest_run": "run-03",
+      "latest_run": "run-04",
       "branch": "checkpoint/cp-00-baseline",
       "last_good_sha": "ff520e33e136bbce11b7100c69888dedf42f7273",
-      "current_task": "T03",
+      "current_task": "T04",
       "blocked_reason": null,
-      "next_agent_action": "T03: characterize unchanged original UI (surface/dock top/bottom/sides, fullscreen/displays, media/clipboard/capture and four plugin examples) in a new run; add reproducible T04 workload tooling before pinning the final clean test revision. Sandboxes stopped; recovery snapshot original-run03-complete is retained.",
-      "next_owner_action": "No action yet. CP-00 engineering preparation is authorized; wait for verified owner-test instructions or a concrete capability request.",
+      "next_agent_action": "T04: pin this fourth execution commit as a clean independent checkout; run-05 repeats fixed-display UI matrix, complete startup/idle/media/dock/Atalaya/kernel-GPU/frame-callback measurements plus untraced control, all existing gates and recovery/host-invariant checks. Review full diff, then make only the fifth evidence/handoff commit if all required engineering gates pass.",
+      "next_owner_action": "No manual tests yet. The fixed-display final run is pending; no Gate B is recorded.",
       "contract": "docs/workflow/checkpoints/cp-00-baseline.md",
       "visual_brief": "docs/workflow/checkpoints/cp-00-baseline.visual.md",
       "owner_note": "owner/checkpoints/cp-00-baseline.md"

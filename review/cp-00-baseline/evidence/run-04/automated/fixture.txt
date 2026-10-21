@@ -1,0 +1,17 @@
+  INFO: Launching config: "/lab/fixture.qml"
+  INFO: Shell ID: "08410f71d13f28fac8a3ef50509d74c3" Path ID "08410f71d13f28fac8a3ef50509d74c3"
+  INFO: Saving logs to "/run/cp00/quickshell/by-id/e71s119nt/log.qslog"
+ ERROR: Failed to load configuration
+ ERROR:   caused by @fixture.qml[13:120]: Unexpected token `;'
+  INFO: Launching config: "/lab/fixture.qml"
+  INFO: Shell ID: "08410f71d13f28fac8a3ef50509d74c3" Path ID "08410f71d13f28fac8a3ef50509d74c3"
+  INFO: Saving logs to "/run/cp00/quickshell/by-id/z71x319nt/log.qslog"
+  INFO: Configuration Loaded
+  WARN qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.ServiceUnknown", "The name org.freedesktop.portal.Desktop was not provided by any .service files")
+  INFO: Exiting due to IPC request.
+  INFO: Launching config: "/lab/fixture.qml"
+  INFO: Shell ID: "08410f71d13f28fac8a3ef50509d74c3" Path ID "08410f71d13f28fac8a3ef50509d74c3"
+  INFO: Saving logs to "/run/cp00/quickshell/by-id/b73dv19nt/log.qslog"
+  INFO: Configuration Loaded
+  WARN qt.qpa.services: Failed to register with host portal QDBusError("org.freedesktop.DBus.Error.ServiceUnknown", "The name org.freedesktop.portal.Desktop was not provided by any .service files")
+  INFO: Exiting due to IPC request.
