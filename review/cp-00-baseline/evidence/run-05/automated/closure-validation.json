@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-21T12:49:47.587472+00:00",
+  "result": "PASS",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "tools/workflow.py",
+        "--base-ref",
+        "570387d"
+      ],
+      "exit_code": 0,
+      "stdout": "PASS: 11 checkpoint records, task/proof IDs, manual-test fields, reference paths, gates, links and owner view are consistent.\nStructural validation only; no product/runtime test or owner approval is implied.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "git",
+        "diff",
+        "--cached",
+        "--check"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "python3",
+        "review/cp-00-baseline/evidence/run-05/automated/closure-check.py"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"date\": \"2026-10-21T12:49:47.579339+00:00\",\n  \"result\": \"PASS\",\n  \"base_ref\": \"570387d\",\n  \"tested_revision\": \"b114d5a1b8c3ed90e97b577e3424092a783e04ed\",\n  \"run\": \"run-05\",\n  \"required_pass\": 8,\n  \"conditional_not_tested\": [\n    \"R02-physical-2-display\",\n    \"M03-physical-2-display\"\n  ],\n  \"checked_hashed_references_in_worktree_and_index\": 165,\n  \"preserved_old_evidence_files\": 290,\n  \"all_old_histories_preserved\": true,\n  \"later_checkpoints_unchanged\": true,\n  \"product_and_helper_source_unchanged\": {\n    \"b114d5a1b8c3ed90e97b577e3424092a783e04ed\": \"clean\",\n    \"ff520e33e136bbce11b7100c69888dedf42f7273\": \"clean\"\n  },\n  \"selected_source\": {\n    \"revision\": \"b114d5a1b8c3ed90e97b577e3424092a783e04ed\",\n    \"path\": \"/candidate\",\n    \"manifest\": \"/lab/candidate-manifest.json\"\n  },\n  \"test_payloads_stopped\": true,\n  \"immutable_snapshot_file_counts\": {\n    \"owner-before-m04-20261021-120008\": 15,\n    \"owner-after-m04-20261021-121127\": 12,\n    \"original-run03-complete\": 12\n  },\n  \"resource_samples\": 24,\n  \"startup_samples\": 3,\n  \"physical_display_names\": [\n    \"eDP-1\"\n  ],\n  \"gate_b\": null\n}\n",
+      "stderr": ""
+    }
+  ],
+  "regressions": [
+    {
+      "command": [
+        "python3",
+        "tools/test_workflow.py"
+      ],
+      "exit_code": 0,
+      "tests": 30,
+      "result": "OK",
+      "duration_seconds": 5.616
+    },
+    {
+      "command": [
+        "python3",
+        "tools/test_cp00.py"
+      ],
+      "exit_code": 0,
+      "tests": 14,
+      "result": "OK",
+      "duration_seconds": 0.005
+    }
+  ],
+  "earlier_administrative_attempts": [
+    {
+      "command": "python3 tools/workflow.py --render",
+      "exit_code": 1,
+      "result": "New proof not yet staged; resolved by staging reviewed evidence first."
+    },
+    {
+      "command": "python3 tools/workflow.py --base-ref 570387d",
+      "exit_code": 1,
+      "result": "Generated owner view stale; resolved by render after staging."
+    },
+    {
+      "command": "closure-check.py initial draft",
+      "exit_code": 1,
+      "result": "Audit assertion expected combined display status instead of schema NOT TESTED plus reason. Assertion corrected; records unchanged."
+    },
+    {
+      "command": "python3 tools/workflow.py --render and --base-ref 570387d",
+      "exit_code": 1,
+      "result": "New assessment linked closure-validation.json before that artifact existed; created and staged artifact before final verification. No missing evidence or changed test result."
+    }
+  ],
+  "scope": "Evidence-only closure verification, not a new product/runtime or owner test; Gate B remains null."
+}

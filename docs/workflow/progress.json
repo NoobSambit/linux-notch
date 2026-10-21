@@ -413,6 +413,56 @@
           ]
         },
         {
+          "id": "R02-physical-2-display",
+          "kind": "runtime",
+          "parent_test": "R02",
+          "title": "Conditional physical second-display repetition of R02",
+          "required": false,
+          "result": "NOT TESTED",
+          "reason": "NOT TESTED \u2014 ENVIRONMENT LIMITATION: historical/current inventories show only physical eDP-1; run-05 CP00-2 was explicitly headless, not a second physical monitor. Existing CP-00 where-available/if-second-display-exists repetition is approved nonblocking for CP-00 only; later core display/release testing remains required.",
+          "disposition": {
+            "owner_quote": "I do not know whether physical dual-monitor testing was performed. Check the actual run records and display configuration. Do not confuse my two screenshots with two monitors. If physical dual-monitor testing was not performed, record it honestly as NOT TESTED \u2014 ENVIRONMENT LIMITATION. I approve a formal nonblocking CP-00-only disposition if this is a conditional scenario permitted by the existing specification and workflow rules. Preserve the requirement for later relevant checkpoints and release testing.",
+            "date": "2026-10-21T12:39:10Z",
+            "source": "Owner evidence-closure instruction in this Codex thread on 2026-10-21, beginning \"Let's finish CP-00 evidence closure and prepare Gate B.\" Literal decision and UTC transcription in review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+            "spec_reference": "docs/workflow/checkpoints/cp-00-baseline.md#runtime-verification",
+            "reason": "Existing R02 scope says displays where available and owner M03 step 3 is conditional on a second test display. Actual physical dual-display execution is not established; only one physical display is recorded. Owner condition for CP-00-only nonblocking treatment is satisfied. Main required R02/M03, actual virtual two-output baseline and all later relevant display/release requirements are retained. No FAIL/NEEDS HELP is waived.",
+            "evidence": {
+              "path": "review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+              "sha256": "6eee2bfc834bc4b0ff59f8477af629d334ad8e996b486465119bcbbd12941c6a"
+            },
+            "supporting_evidence": {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/closure-display-verification.json",
+              "sha256": "a720c079c5b90dcb27dab715da62cabced6a2df5004386fe750cfb52ff56ab96"
+            },
+            "scope": "CP-00 physical second-display repetition only; no later release waiver."
+          },
+          "history": [
+            {
+              "result": "NOT TESTED",
+              "date": "2026-10-21T12:45:15Z",
+              "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+              "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+              "run": "run-05",
+              "steps": "Read-only review of existing display commands, historical/current physical output inventories and original conditional contract. The physical dual-monitor scenario was not executed or assumed performed.",
+              "observed": "Only eDP-1 is recorded physically. CP00-STABLE/CP00-2 are headless and WAYLAND-1 is a viewer mirror; two PNG captures do not establish two physical monitors. This child record is a disclosed late coverage inventory correction.",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+                  "sha256": "6eee2bfc834bc4b0ff59f8477af629d334ad8e996b486465119bcbbd12941c6a"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/closure-display-verification.json",
+                  "sha256": "a720c079c5b90dcb27dab715da62cabced6a2df5004386fe750cfb52ff56ab96"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/closure-assessment.md",
+                  "sha256": "25f772cc6163f691c3bd766d5bf95cb0118eadcabc3265705cc77cbdce283704"
+                }
+              ]
+            }
+          ]
+        },
+        {
           "id": "R03",
           "kind": "runtime",
           "title": "Measure startup/idle/active resources with workload/duration/hardware; record Atalaya saved override versus inherited catalog effective state and closed-state GPU activity.",
@@ -492,7 +542,7 @@
           "kind": "owner",
           "title": "Start and stop safely",
           "result": "PASS",
-          "reason": "Owner-reported PASS for b114d5a / run-05: Start/Stop worked and normal desktop remained unaffected. Literal dated report saved; checklist owner label/desktop image was not supplied and remains outstanding.",
+          "reason": "PASS retained after owner-authorized evidence closure: written M01 report plus genuine source/instance/stop/isolation/host evidence accepted as adequate for the unrecovered M01-specific image; no screenshot is fabricated or relabelled.",
           "history": [
             {
               "result": "PASS",
@@ -511,15 +561,72 @@
               "owner_quote": "CP-00 run-05 M01: PASS. Start/Stop worked and my normal desktop remained unaffected.",
               "source": "Owner message in this Codex thread on 2026-10-21; date is UTC transcription time, not an invented execution timestamp.",
               "evidence_limitations": "No owner label/desktop photo or screenshot accompanied the report. That checklist attachment remains outstanding. Agent M02 preparation captures are not owner M01 evidence."
+            },
+            {
+              "result": "PASS",
+              "date": "2026-10-21T12:45:15Z",
+              "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+              "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+              "run": "run-05",
+              "review_kind": "Evidence closure/applicability review of already performed tests; no new live or owner rerun",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+                  "sha256": "6eee2bfc834bc4b0ff59f8477af629d334ad8e996b486465119bcbbd12941c6a"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/closure-assessment.md",
+                  "sha256": "25f772cc6163f691c3bd766d5bf95cb0118eadcabc3265705cc77cbdce283704"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/closure-screenshot-investigation.json",
+                  "sha256": "47a480d32ea60a805b16748f9e67f9a77cf75bcb24b17060e1350d74d1520692"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/closure-evidence-inventory.json",
+                  "sha256": "400066fb2bbc2ccce320ec7fddb4cf2d550f60d17c2b80ae6fe02ac65b271b2b"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M01__owner-report__run-05.md",
+                  "sha256": "5830f5224a78b26bf2a71e4a288e5b8b4df8baf7af9e6726616e3236d1ed9797"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/recovery-check.json",
+                  "sha256": "0e36703daf3e43f4cd4aaa1020fcc94fb71f506a1ed61596aaf40124988f2407"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R01__recovery-candidate-settings__run-05.png",
+                  "sha256": "82a3cb5b9fdc0c137db37d03893219d2acf3661f09d4e56b923fbf788eaf2f7b"
+                }
+              ],
+              "steps": "Search and inspect existing original captures; correlate times/content and owner clarification; verify the original owner report and genuine runtime proof; assess adequacy and apply only explicitly authorized evidence-format disposition.",
+              "source": "Owner evidence-closure instruction in this Codex thread on 2026-10-21, beginning \"Let's finish CP-00 evidence closure and prepare Gate B.\" Literal decision and UTC transcription in review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+              "observed": "M01 owner report plus exact-instance neighbour-preservation/host invariants, source-labelled native frame and isolation/return proof adequately cover identity, Start/Stop and unaffected desktop. No M01 original owner viewpoint found; authorized substitute accepted after adequacy review. Neither recovered M02/M03 image is mislabelled as M01."
             }
-          ]
+          ],
+          "evidence_disposition": {
+            "owner_quote": "If the original owner screenshots cannot be recovered, I explicitly authorize using my written M01/M03 PASS reports together with your genuine existing runtime captures as substitutes, provided you verify and document that this evidence is adequate.",
+            "date": "2026-10-21T12:39:10Z",
+            "source": "Owner evidence-closure instruction in this Codex thread on 2026-10-21, beginning \"Let's finish CP-00 evidence closure and prepare Gate B.\" Literal decision and UTC transcription in review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+            "spec_reference": "docs/workflow/RECORD_FORMAT.md#updating-a-checkpoint",
+            "checklist_reference": "owner/checkpoints/cp-00-baseline.md",
+            "reason": "Both original manual-period PNGs are recovered/preserved. No M01-specific label/normal-desktop view or bar-visible M03 owner view was recoverable; the explicitly authorized written reports and inspected genuine runtime identity/host-stop/edge/fullscreen evidence adequately cover these observations. The recovered M03 original remains primary screenshot-output evidence. This substitutes evidence format only, not behaviour or required scope.",
+            "evidence": {
+              "path": "review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+              "sha256": "6eee2bfc834bc4b0ff59f8477af629d334ad8e996b486465119bcbbd12941c6a"
+            },
+            "adequacy_evidence": {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/closure-assessment.md",
+              "sha256": "25f772cc6163f691c3bd766d5bf95cb0118eadcabc3265705cc77cbdce283704"
+            }
+          }
         },
         {
           "id": "M02",
           "kind": "owner",
           "title": "Original everyday paths",
           "result": "PASS",
-          "reason": "Owner reports all five supplied M02 steps worked as intended on b114d5a / run-05; literal reply and interpretation preserved in the hashed owner report.",
+          "reason": "PASS retained; recovered original manual-period screenshot preserved, with exact M02 typed content visible. Owner clarification about both screenshots/Dock is documented accurately; no separate Dock image or click trace is invented.",
           "history": [
             {
               "result": "PASS",
@@ -537,6 +644,44 @@
               "observed": "Owner reports all five steps work as intended. No failure reported; no screenshot or per-step timing was supplied.",
               "owner_quote": "all 5 styffs works as intended",
               "source": "Owner reply immediately after the five numbered M02 instructions in this Codex thread; date is UTC transcription time."
+            },
+            {
+              "result": "PASS",
+              "date": "2026-10-21T12:45:15Z",
+              "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+              "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+              "run": "run-05",
+              "review_kind": "Evidence closure/applicability review of already performed tests; no new live or owner rerun",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+                  "sha256": "6eee2bfc834bc4b0ff59f8477af629d334ad8e996b486465119bcbbd12941c6a"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/closure-assessment.md",
+                  "sha256": "25f772cc6163f691c3bd766d5bf95cb0118eadcabc3265705cc77cbdce283704"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/closure-screenshot-investigation.json",
+                  "sha256": "47a480d32ea60a805b16748f9e67f9a77cf75bcb24b17060e1350d74d1520692"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/closure-evidence-inventory.json",
+                  "sha256": "400066fb2bbc2ccce320ec7fddb4cf2d550f60d17c2b80ae6fe02ac65b271b2b"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M02__owner-report__run-05.md",
+                  "sha256": "a8fd698f866ce590bc38bc8158a498783eadc128c2d983cf791e59da9f594984"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M02__recovered-owner-capture__run-05.png",
+                  "sha256": "7cb0764cf831a1b4798bb19087fde4ef44ca353f2c3d89327995e1be0648483d"
+                }
+              ],
+              "steps": "Search and inspect existing original captures; correlate times/content and owner clarification; verify the original owner report and genuine runtime proof; assess adequacy and apply only explicitly authorized evidence-format disposition.",
+              "source": "Owner evidence-closure instruction in this Codex thread on 2026-10-21, beginning \"Let's finish CP-00 evidence closure and prepare Gate B.\" Literal decision and UTC transcription in review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+              "owner_quote": "A clarification from me: I remember taking TWO screenshots during manual testing, and they appeared in the Dock correctly. Please investigate the existing captures before claiming my screenshots are missing.",
+              "observed": "Recovered 11:36:02 PNG is genuine and visibly contains CP00 M02 harmless text and both documents; original saved bytes now preserved. Owner recalls both shots appearing correctly in Dock; that is an owner observation, not independently shown by the PNG. All original M02 PASS history retained."
             }
           ]
         },
@@ -545,7 +690,7 @@
           "kind": "owner",
           "title": "Screen and fullscreen baseline",
           "result": "PASS",
-          "reason": "Owner reports M03 went fine for the prepared single-display top/bottom/fullscreen-return/typing matrix; nested capture and final saved abajo setting preserved. Capture hides the island, so no bar-visible owner image is claimed. Conditional second physical display remains NOT TESTED \u2014 ENVIRONMENT LIMITATION.",
+          "reason": "PASS retained after evidence closure: genuine original M03 whole-screen capture is present; owner report, output/saved-setting context and genuine native edge/fullscreen frames form adequate accepted combined evidence. Physical second-display repetition is separately NOT TESTED with an approved CP-00-only conditional disposition.",
           "history": [
             {
               "result": "PASS",
@@ -572,6 +717,109 @@
               "owner_quote": "ok everything went fine",
               "source": "Owner reply immediately after the M03 instructions in this Codex thread; date is UTC transcription time.",
               "evidence_limitations": "The inherited capture hides the island; a bar-visible owner image has not been supplied. The image does not independently prove both positions, transitions or input. Conditional second physical display remains NOT TESTED \u2014 ENVIRONMENT LIMITATION."
+            },
+            {
+              "result": "PASS",
+              "date": "2026-10-21T12:45:15Z",
+              "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+              "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+              "run": "run-05",
+              "review_kind": "Evidence closure/applicability review of already performed tests; no new live or owner rerun",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+                  "sha256": "6eee2bfc834bc4b0ff59f8477af629d334ad8e996b486465119bcbbd12941c6a"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/closure-assessment.md",
+                  "sha256": "25f772cc6163f691c3bd766d5bf95cb0118eadcabc3265705cc77cbdce283704"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/closure-screenshot-investigation.json",
+                  "sha256": "47a480d32ea60a805b16748f9e67f9a77cf75bcb24b17060e1350d74d1520692"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/closure-evidence-inventory.json",
+                  "sha256": "400066fb2bbc2ccce320ec7fddb4cf2d550f60d17c2b80ae6fe02ac65b271b2b"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M03__owner-report__run-05.md",
+                  "sha256": "c1116db7e412b52d0e35f776051a599a8cbc41d431e24819fd9310e092436b12"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M03__owner-capture__run-05.png",
+                  "sha256": "65b2702b316953d2bc69fc4b53d64924387d57d38786fa486c951bcccd5b48f6"
+                }
+              ],
+              "steps": "Search and inspect existing original captures; correlate times/content and owner clarification; verify the original owner report and genuine runtime proof; assess adequacy and apply only explicitly authorized evidence-format disposition.",
+              "source": "Owner evidence-closure instruction in this Codex thread on 2026-10-21, beginning \"Let's finish CP-00 evidence closure and prepare Gate B.\" Literal decision and UTC transcription in review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+              "observed": "Reverified genuine 11:53:25 M03 original already in Git. It hides the island normally; monitor/setting context, written M03 report and inspected native top/bottom/fullscreen/return frames collectively cover the required available-display observations. No original file is called missing or represented as a new bar-visible owner image."
+            }
+          ],
+          "evidence_disposition": {
+            "owner_quote": "If the original owner screenshots cannot be recovered, I explicitly authorize using my written M01/M03 PASS reports together with your genuine existing runtime captures as substitutes, provided you verify and document that this evidence is adequate.",
+            "date": "2026-10-21T12:39:10Z",
+            "source": "Owner evidence-closure instruction in this Codex thread on 2026-10-21, beginning \"Let's finish CP-00 evidence closure and prepare Gate B.\" Literal decision and UTC transcription in review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+            "spec_reference": "docs/workflow/RECORD_FORMAT.md#updating-a-checkpoint",
+            "checklist_reference": "owner/checkpoints/cp-00-baseline.md",
+            "reason": "Both original manual-period PNGs are recovered/preserved. No M01-specific label/normal-desktop view or bar-visible M03 owner view was recoverable; the explicitly authorized written reports and inspected genuine runtime identity/host-stop/edge/fullscreen evidence adequately cover these observations. The recovered M03 original remains primary screenshot-output evidence. This substitutes evidence format only, not behaviour or required scope.",
+            "evidence": {
+              "path": "review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+              "sha256": "6eee2bfc834bc4b0ff59f8477af629d334ad8e996b486465119bcbbd12941c6a"
+            },
+            "adequacy_evidence": {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/closure-assessment.md",
+              "sha256": "25f772cc6163f691c3bd766d5bf95cb0118eadcabc3265705cc77cbdce283704"
+            }
+          }
+        },
+        {
+          "id": "M03-physical-2-display",
+          "kind": "owner",
+          "parent_test": "M03",
+          "title": "Conditional physical second-display repetition of M03",
+          "required": false,
+          "result": "NOT TESTED",
+          "reason": "NOT TESTED \u2014 ENVIRONMENT LIMITATION: historical/current inventories show only physical eDP-1; run-05 CP00-2 was explicitly headless, not a second physical monitor. Existing CP-00 where-available/if-second-display-exists repetition is approved nonblocking for CP-00 only; later core display/release testing remains required.",
+          "disposition": {
+            "owner_quote": "I do not know whether physical dual-monitor testing was performed. Check the actual run records and display configuration. Do not confuse my two screenshots with two monitors. If physical dual-monitor testing was not performed, record it honestly as NOT TESTED \u2014 ENVIRONMENT LIMITATION. I approve a formal nonblocking CP-00-only disposition if this is a conditional scenario permitted by the existing specification and workflow rules. Preserve the requirement for later relevant checkpoints and release testing.",
+            "date": "2026-10-21T12:39:10Z",
+            "source": "Owner evidence-closure instruction in this Codex thread on 2026-10-21, beginning \"Let's finish CP-00 evidence closure and prepare Gate B.\" Literal decision and UTC transcription in review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+            "spec_reference": "docs/workflow/checkpoints/cp-00-baseline.md#runtime-verification",
+            "reason": "Existing R02 scope says displays where available and owner M03 step 3 is conditional on a second test display. Actual physical dual-display execution is not established; only one physical display is recorded. Owner condition for CP-00-only nonblocking treatment is satisfied. Main required R02/M03, actual virtual two-output baseline and all later relevant display/release requirements are retained. No FAIL/NEEDS HELP is waived.",
+            "evidence": {
+              "path": "review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+              "sha256": "6eee2bfc834bc4b0ff59f8477af629d334ad8e996b486465119bcbbd12941c6a"
+            },
+            "supporting_evidence": {
+              "path": "review/cp-00-baseline/evidence/run-05/automated/closure-display-verification.json",
+              "sha256": "a720c079c5b90dcb27dab715da62cabced6a2df5004386fe750cfb52ff56ab96"
+            },
+            "scope": "CP-00 physical second-display repetition only; no later release waiver."
+          },
+          "history": [
+            {
+              "result": "NOT TESTED",
+              "date": "2026-10-21T12:45:15Z",
+              "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+              "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+              "run": "run-05",
+              "steps": "Read-only review of existing display commands, historical/current physical output inventories and original conditional contract. The physical dual-monitor scenario was not executed or assumed performed.",
+              "observed": "Only eDP-1 is recorded physically. CP00-STABLE/CP00-2 are headless and WAYLAND-1 is a viewer mirror; two PNG captures do not establish two physical monitors. This child record is a disclosed late coverage inventory correction.",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+                  "sha256": "6eee2bfc834bc4b0ff59f8477af629d334ad8e996b486465119bcbbd12941c6a"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/closure-display-verification.json",
+                  "sha256": "a720c079c5b90dcb27dab715da62cabced6a2df5004386fe750cfb52ff56ab96"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/automated/closure-assessment.md",
+                  "sha256": "25f772cc6163f691c3bd766d5bf95cb0118eadcabc3265705cc77cbdce283704"
+                }
+              ]
             }
           ]
         },
@@ -692,8 +940,8 @@
       "last_good_sha": "ff520e33e136bbce11b7100c69888dedf42f7273",
       "current_task": null,
       "blocked_reason": null,
-      "next_agent_action": "All M01\u2013M04 owner reports are recorded PASS for b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05; this is not Gate B. After M04, the original ff520e3 state was preserved in owner-after-m04-20261021-121127, then the candidate was restored from owner-before-m04-20261021-120008, source/bottom settings/rendering verified and both private payloads stopped. Selected source is b114d5a. Current final state, handles, backup manifests and commands are in review/cp-00-baseline/evidence/run-05/automated/m04-return-final-state.json and m04-return-summary.md; reverify if any later runtime action is needed. Preserve all snapshots and prior evidence/runs/results, including the earlier stale-socket failure and its verified private housekeeping. Gate B remains null; await a separate explicit owner decision naming CP-00 / b114d5a / run-05, with existing evidence limitations visible. M01 owner image and bar-visible M03 owner image remain unsupplied; physical dual-display is untested and not waived. No product/helper changes, CP-01, tags, push, PR, merge, publication or personal restore. Five engineering commits are already complete; only administrative decision/evidence records may follow within existing authorization.",
-      "next_owner_action": "M04 report received and all four owner-test reports recorded PASS. The b114d5a candidate and matching test state have been restored and stopped. Review the M04 report/return proof and remaining image/hardware limitations; Gate B requires a separate explicit decision for CP-00 / b114d5a / run-05. M01 owner image and bar-visible M03 image remain unsupplied; physical second-display testing remains unavailable and unwaived. No CP-01 or remote action follows automatically.",
+      "next_agent_action": "Await the owner's explicit CP-00 Gate B approval for b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05. Evidence closure PASS; eight required tests PASS; conditional physical-display cases remain NOT TESTED with approved CP-00-only dispositions. Preserve all history, the selected stopped candidate and snapshots. Do not grant Gate B, modify product/helper code, begin CP-01, push, publish, create a PR or merge.",
+      "next_owner_action": "Send exactly: I approve CP-00 Gate B for b114d5a1b8c3ed90e97b577e3424092a783e04ed, evidence run-05. This approves CP-00 only; physical dual-monitor testing remains NOT TESTED with a nonblocking CP-00-only disposition and later relevant display/release requirements remain required.",
       "contract": "docs/workflow/checkpoints/cp-00-baseline.md",
       "visual_brief": "docs/workflow/checkpoints/cp-00-baseline.visual.md",
       "owner_note": "owner/checkpoints/cp-00-baseline.md",
@@ -794,6 +1042,74 @@
           {
             "path": "review/cp-00-baseline/evidence/run-05/automated/m04-return-capture-inventory.json",
             "sha256": "0f4b46052f24701e0fd3bf637e66081e62a552f9924a6026ad8001f9772e04dc"
+          }
+        ]
+      },
+      "evidence_closure": {
+        "result": "PASS",
+        "date": "2026-10-21T12:49:30.306840+00:00",
+        "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+        "run": "run-05",
+        "owner_source": "Owner evidence-closure instruction in this Codex thread on 2026-10-21, beginning \"Let's finish CP-00 evidence closure and prepare Gate B.\" Literal decision and UTC transcription in review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+        "owner_decision_date": "2026-10-21T12:39:10Z",
+        "screenshot_evidence_disposition": {
+          "owner_quote": "If the original owner screenshots cannot be recovered, I explicitly authorize using my written M01/M03 PASS reports together with your genuine existing runtime captures as substitutes, provided you verify and document that this evidence is adequate.",
+          "date": "2026-10-21T12:39:10Z",
+          "source": "Owner evidence-closure instruction in this Codex thread on 2026-10-21, beginning \"Let's finish CP-00 evidence closure and prepare Gate B.\" Literal decision and UTC transcription in review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+          "spec_reference": "docs/workflow/RECORD_FORMAT.md#updating-a-checkpoint",
+          "checklist_reference": "owner/checkpoints/cp-00-baseline.md",
+          "reason": "Both original manual-period PNGs are recovered/preserved. No M01-specific label/normal-desktop view or bar-visible M03 owner view was recoverable; the explicitly authorized written reports and inspected genuine runtime identity/host-stop/edge/fullscreen evidence adequately cover these observations. The recovered M03 original remains primary screenshot-output evidence. This substitutes evidence format only, not behaviour or required scope.",
+          "evidence": {
+            "path": "review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+            "sha256": "6eee2bfc834bc4b0ff59f8477af629d334ad8e996b486465119bcbbd12941c6a"
+          },
+          "adequacy_evidence": {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/closure-assessment.md",
+            "sha256": "25f772cc6163f691c3bd766d5bf95cb0118eadcabc3265705cc77cbdce283704"
+          }
+        },
+        "required_tests": [
+          "A01",
+          "R01",
+          "R02",
+          "R03",
+          "M01",
+          "M02",
+          "M03",
+          "M04"
+        ],
+        "conditional_not_tested": [
+          "R02-physical-2-display",
+          "M03-physical-2-display"
+        ],
+        "evidence": [
+          {
+            "path": "review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md",
+            "sha256": "6eee2bfc834bc4b0ff59f8477af629d334ad8e996b486465119bcbbd12941c6a"
+          },
+          {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/closure-assessment.md",
+            "sha256": "25f772cc6163f691c3bd766d5bf95cb0118eadcabc3265705cc77cbdce283704"
+          },
+          {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/closure-screenshot-investigation.json",
+            "sha256": "47a480d32ea60a805b16748f9e67f9a77cf75bcb24b17060e1350d74d1520692"
+          },
+          {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/closure-display-verification.json",
+            "sha256": "a720c079c5b90dcb27dab715da62cabced6a2df5004386fe750cfb52ff56ab96"
+          },
+          {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/closure-evidence-inventory.json",
+            "sha256": "400066fb2bbc2ccce320ec7fddb4cf2d550f60d17c2b80ae6fe02ac65b271b2b"
+          },
+          {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/closure-validation.json",
+            "sha256": "78e998b3b0be9f47ce7da3ff398f7351e0a3d8fd7a575be5c90da4771a21440d"
+          },
+          {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/closure-check.py",
+            "sha256": "62146e321266567e35825d3c87df2839e28c98152d77e09050f81655078a6e3a"
           }
         ]
       }

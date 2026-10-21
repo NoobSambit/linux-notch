@@ -4,7 +4,7 @@
 
 ## WHAT YOU NEED TO DO NOW
 
-M04 report received and all four owner-test reports recorded PASS. The b114d5a candidate and matching test state have been restored and stopped. Review the M04 report/return proof and remaining image/hardware limitations; Gate B requires a separate explicit decision for CP-00 / b114d5a / run-05. M01 owner image and bar-visible M03 image remain unsupplied; physical second-display testing remains unavailable and unwaived. No CP-01 or remote action follows automatically.
+Send exactly: I approve CP-00 Gate B for b114d5a1b8c3ed90e97b577e3424092a783e04ed, evidence run-05. This approves CP-00 only; physical dual-monitor testing remains NOT TESTED with a nonblocking CP-00-only disposition and later relevant display/release requirements remain required.
 
 Workflow: **IN PROGRESS**.
 Active checkpoint: **cp-00-baseline**.
@@ -12,7 +12,7 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 | Checkpoint | State | References | Tasks done | Tests: pass / fail / untested / help |
 | --- | --- | --- | --- | --- |
-| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | AWAITING OWNER TEST | Not required | 4/4 | 8 / 0 / 0 / 0 |
+| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | AWAITING OWNER TEST | Not required | 4/4 | 8 / 0 / 2 / 0 |
 | [cp-01-safety — Regression and safety gates](checkpoints/cp-01-safety.md) | PLANNED | Not required | 0/4 | 0 / 0 / 11 / 0 |
 | [cp-02-dnd-spike — Isolated Shelf drag-and-drop feasibility](checkpoints/cp-02-dnd-spike.md) | PLANNED | Not required | 0/4 | 0 / 0 / 8 / 0 |
 | [cp-03-design-system — Shared design system and original visual direction](checkpoints/cp-03-design-system.md) | PLANNED | 4 images needed when activated; none approved | 0/4 | 0 / 0 / 8 / 0 |
@@ -26,8 +26,8 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ## Current handoff
 
-- Codex next: All M01–M04 owner reports are recorded PASS for b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05; this is not Gate B. After M04, the original ff520e3 state was preserved in owner-after-m04-20261021-121127, then the candidate was restored from owner-before-m04-20261021-120008, source/bottom settings/rendering verified and both private payloads stopped. Selected source is b114d5a. Current final state, handles, backup manifests and commands are in review/cp-00-baseline/evidence/run-05/automated/m04-return-final-state.json and m04-return-summary.md; reverify if any later runtime action is needed. Preserve all snapshots and prior evidence/runs/results, including the earlier stale-socket failure and its verified private housekeeping. Gate B remains null; await a separate explicit owner decision naming CP-00 / b114d5a / run-05, with existing evidence limitations visible. M01 owner image and bar-visible M03 owner image remain unsupplied; physical dual-display is untested and not waived. No product/helper changes, CP-01, tags, push, PR, merge, publication or personal restore. Five engineering commits are already complete; only administrative decision/evidence records may follow within existing authorization.
-- You next: M04 report received and all four owner-test reports recorded PASS. The b114d5a candidate and matching test state have been restored and stopped. Review the M04 report/return proof and remaining image/hardware limitations; Gate B requires a separate explicit decision for CP-00 / b114d5a / run-05. M01 owner image and bar-visible M03 image remain unsupplied; physical second-display testing remains unavailable and unwaived. No CP-01 or remote action follows automatically.
+- Codex next: Await the owner's explicit CP-00 Gate B approval for b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05. Evidence closure PASS; eight required tests PASS; conditional physical-display cases remain NOT TESTED with approved CP-00-only dispositions. Preserve all history, the selected stopped candidate and snapshots. Do not grant Gate B, modify product/helper code, begin CP-01, push, publish, create a PR or merge.
+- You next: Send exactly: I approve CP-00 Gate B for b114d5a1b8c3ed90e97b577e3424092a783e04ed, evidence run-05. This approves CP-00 only; physical dual-monitor testing remains NOT TESTED with a nonblocking CP-00-only disposition and later relevant display/release requirements remain required.
 - Waiting/blocker: No blocker recorded; follow the next action above.
 - Test version / run: run-05
 
@@ -35,16 +35,17 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ### cp-00-baseline
 
-Next: M04 report received and all four owner-test reports recorded PASS. The b114d5a candidate and matching test state have been restored and stopped. Review the M04 report/return proof and remaining image/hardware limitations; Gate B requires a separate explicit decision for CP-00 / b114d5a / run-05. M01 owner image and bar-visible M03 image remain unsupplied; physical second-display testing remains unavailable and unwaived. No CP-01 or remote action follows automatically.
+Next: Send exactly: I approve CP-00 Gate B for b114d5a1b8c3ed90e97b577e3424092a783e04ed, evidence run-05. This approves CP-00 only; physical dual-monitor testing remains NOT TESTED with a nonblocking CP-00-only disposition and later relevant display/release requirements remain required.
 
 Remaining tasks: None.
 
-- **M01 PASS** — Start and stop safely (Owner-reported PASS for b114d5a / run-05: Start/Stop worked and normal desktop remained unaffected. Literal dated report saved; checklist owner label/desktop image was not supplied and remains outstanding.)
-- **M02 PASS** — Original everyday paths (Owner reports all five supplied M02 steps worked as intended on b114d5a / run-05; literal reply and interpretation preserved in the hashed owner report.)
-- **M03 PASS** — Screen and fullscreen baseline (Owner reports M03 went fine for the prepared single-display top/bottom/fullscreen-return/typing matrix; nested capture and final saved abajo setting preserved. Capture hides the island, so no bar-visible owner image is claimed. Conditional second physical display remains NOT TESTED — ENVIRONMENT LIMITATION.)
+- **M01 PASS** — Start and stop safely (PASS retained after owner-authorized evidence closure: written M01 report plus genuine source/instance/stop/isolation/host evidence accepted as adequate for the unrecovered M01-specific image; no screenshot is fabricated or relabelled.)
+- **M02 PASS** — Original everyday paths (PASS retained; recovered original manual-period screenshot preserved, with exact M02 typed content visible. Owner clarification about both screenshots/Dock is documented accurately; no separate Dock image or click trace is invented.)
+- **M03 PASS** — Screen and fullscreen baseline (PASS retained after evidence closure: genuine original M03 whole-screen capture is present; owner report, output/saved-setting context and genuine native edge/fullscreen frames form adequate accepted combined evidence. Physical second-display repetition is separately NOT TESTED with an approved CP-00-only conditional disposition.)
+- **M03-physical-2-display NOT TESTED** — Conditional physical second-display repetition of M03 (NOT TESTED — ENVIRONMENT LIMITATION: historical/current inventories show only physical eDP-1; run-05 CP00-2 was explicitly headless, not a second physical monitor. Existing CP-00 where-available/if-second-display-exists repetition is approved nonblocking for CP-00 only; later core display/release testing remains required.)
 - **M04 PASS** — Recovery rehearsal (Owner reports the restored original launcher/settings and test desktop are fine for run-05 M04. Literal reply preserved. Agent then returned to unchanged b114d5a with its matching candidate snapshot, verified bottom placement/rendering and stopped the private runtime. Gate B remains unrecorded.)
 
-Engineering checks: A01: PASS; R01: PASS; R02: PASS; R03: PASS.
+Engineering checks: A01: PASS; R01: PASS; R02: PASS; R02-physical-2-display: NOT TESTED; R03: PASS.
 Approval: Waiting; no final owner approval recorded.
 
 Codex keeps this page aligned with its [single progress record](../docs/workflow/progress.json).

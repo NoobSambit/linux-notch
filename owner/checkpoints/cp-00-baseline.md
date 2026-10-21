@@ -12,6 +12,7 @@ Use the [tested handoff](../../review/cp-00-baseline/evidence/run-05/index.md) f
 Start, Stop, Restore and optional harmless test fixtures. The M04 recovery copy has been returned
 to the preserved b114d5a candidate and stopped; see the [return proof](../../review/cp-00-baseline/evidence/run-05/automated/m04-return-summary.md).
 The current results and next action are in [the generated progress view](../PROGRESS.md).
+The [run-05 evidence closure](../../review/cp-00-baseline/evidence/run-05/automated/closure-assessment.md) records the recovered screenshots, accepted evidence combination and conditional physical-display disposition.
 Gate B is still yours; no final approval has been recorded.
 
 ## What are we building, and why?
@@ -61,6 +62,10 @@ Missing equipment/software means **NOT TESTED — ENVIRONMENT LIMITATION** with 
 
 **Evidence:** Photo or screenshot of the label and affected desktop; tell Codex which action failed. Save in `review/cp-00-baseline/evidence/run-01/owner/` with test ID `M01`.
 
+For run-05 closure only, the owner authorized the verified written report plus genuine existing runtime
+identity/isolation/stop proof as the substitute for an unrecovered M01-specific owner image. The exact
+decision and adequacy assessment are in the closure link above; no owner desktop photo is invented.
+
 **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
 
 ### M02 — Original everyday paths
@@ -98,7 +103,29 @@ Missing equipment/software means **NOT TESTED — ENVIRONMENT LIMITATION** with 
 
 **Evidence:** One whole-screen capture with monitor arrangement and chosen edge. Save in `review/cp-00-baseline/evidence/run-01/owner/` with test ID `M03`.
 
+The original run-05 M03 capture was recovered/reverified. It hides the island through the normal capture
+path; the accepted context combines that original, the written owner report, saved setting/output records
+and genuine existing agent top/bottom/fullscreen frames. No new bar-visible owner image is claimed.
+
 **Recovery:** Use Stop for this checkpoint; ask Codex to restore the previous test version.
+
+### M03-physical-2-display — Physical second-display repetition (conditional)
+
+**Before starting:** A second physical display and a safely isolated test setup spanning it are available. This is the conditional repetition from M03 step 3, not a replacement for parent M03.
+
+**What to do:**
+
+1. In that authorized isolated setup, repeat the parent M03 top/bottom, fullscreen-return and typing checks on both physical displays.
+
+**Expected result:** Current behaviour on both physical displays is recorded, with usable focus and no stranded surface. Virtual/headless output observations are identified separately.
+
+**Failure examples:** Surface stays offscreen, focus is lost or fullscreen return fails on either display.
+
+**Evidence:** Per-display captures with physical arrangement, chosen edges, code/run and observed outcomes. If unavailable, keep NOT TESTED — ENVIRONMENT LIMITATION; a CP-00-only nonblocking disposition needs the owner's recorded decision and hashed evidence.
+
+**Recovery:** Use the guarded Stop for this checkpoint; ask Codex to restore the previous disposable version. Never change the real desktop monitor configuration as a shortcut.
+
+This conditional baseline disposition does not waive later relevant core display or release testing.
 
 ### M04 — Recovery rehearsal
 

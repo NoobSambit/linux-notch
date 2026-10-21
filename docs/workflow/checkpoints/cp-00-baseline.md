@@ -72,6 +72,7 @@ Record exact implemented commands/results, SHA and environment in the authoritat
 
 - **R01:** Prove isolated paths/services, exact-instance termination, backup and previous-version restore using dummy state; host services unchanged.
 - **R02:** Record original top/bottom/dock, experimental sides, fullscreen, one/two displays where available, media/clipboard/capture and examples hola/piezas/efectos/snake.
+- **R02-physical-2-display:** Conditional physical second-display repetition of the R02 baseline, under the existing "where available" scope. Keep NOT TESTED on unavailable hardware; only a recorded owner disposition may make this CP-00-only case nonblocking. R02 stays required; virtual output proof must not be called physical monitor proof.
 - **R03:** Measure startup/idle/active resources with workload/duration/hardware; record Atalaya saved override versus inherited catalog effective state and closed-state GPU activity.
 
 Capture actual application states under `review/cp-00-baseline/evidence/run-01/application/` for the first run;
@@ -88,6 +89,12 @@ Explicitly approve this workflow and authorize CP-00 only. Codex will check avai
 Use [this checkpoint’s complete brief](cp-00-baseline.visual.md) and [personal tests](../../../owner/checkpoints/cp-00-baseline.md).
 Owner test IDs M01–M04 complement the proof table; Codex prepares data/tools and handles diagnosis.
 Special hardware/software is declared in each test; missing capability stays NOT TESTED — ENVIRONMENT LIMITATION.
+- **M03-physical-2-display:** Conditional physical repetition of M03's existing "If a second test display exists" step. The owner note defines the steps. This separate case remains NOT TESTED when unavailable, with any nonblocking CP-00-only disposition recorded under RECORD_FORMAT. Parent M03 and all later relevant core display/release requirements remain required.
+
+For run-05 only, the owner's evidence-closure decision accepts verified written M01/M03 reports plus
+genuine existing runtime captures for the unrecovered specific owner viewpoints; both recovered original
+manual-period captures remain preserved. See `review/cp-00-baseline/evidence/run-05/owner/closure-owner-decisions.md`
+and its adequacy assessment. This is an explicitly authorized evidence-format disposition, not a behavioural waiver.
 
 ## Completion and approval gates
 

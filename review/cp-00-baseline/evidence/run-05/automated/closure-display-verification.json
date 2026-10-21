@@ -1,0 +1,327 @@
+{
+  "recorded_at": "2026-10-21T12:35:26.103719+00:00",
+  "current_host_monitors": [
+    {
+      "command": [
+        "hyprctl",
+        "-j",
+        "monitors"
+      ],
+      "exit_code": 0,
+      "monitors": [
+        {
+          "id": 0,
+          "name": "eDP-1",
+          "description": "Chimei Innolux Corporation 0x1629",
+          "make": "Chimei Innolux Corporation",
+          "model": "0x1629",
+          "serial": "",
+          "width": 1920,
+          "height": 1080,
+          "physicalWidth": 360,
+          "physicalHeight": 200,
+          "refreshRate": 165.002,
+          "x": 0,
+          "y": 0,
+          "activeWorkspace": {
+            "id": 1,
+            "name": "1"
+          },
+          "specialWorkspace": {
+            "id": 0,
+            "name": ""
+          },
+          "reserved": [
+            0,
+            40,
+            0,
+            0
+          ],
+          "scale": 1,
+          "transform": 0,
+          "focused": true,
+          "dpmsStatus": true,
+          "vrr": false,
+          "solitary": "0",
+          "solitaryBlockedBy": [
+            "WINDOWED",
+            "CANDIDATE"
+          ],
+          "activelyTearing": false,
+          "tearingBlockedBy": [
+            "NOT_TORN",
+            "CANDIDATE"
+          ],
+          "directScanoutTo": "0",
+          "directScanoutBlockedBy": [
+            "USER",
+            "SW",
+            "CANDIDATE"
+          ],
+          "disabled": false,
+          "currentFormat": "XRGB8888",
+          "mirrorOf": "none",
+          "availableModes": [
+            "1920x1080@165.00Hz",
+            "1920x1080@60.00Hz"
+          ],
+          "colorManagementPreset": "srgb",
+          "sdrBrightness": 1,
+          "sdrSaturation": 1,
+          "sdrMinLuminance": 0.2,
+          "sdrMaxLuminance": 80,
+          "hardwareCursorsInUse": false
+        }
+      ],
+      "stderr": ""
+    },
+    {
+      "command": [
+        "hyprctl",
+        "-j",
+        "monitors",
+        "all"
+      ],
+      "exit_code": 0,
+      "monitors": [
+        {
+          "id": 0,
+          "name": "eDP-1",
+          "description": "Chimei Innolux Corporation 0x1629",
+          "make": "Chimei Innolux Corporation",
+          "model": "0x1629",
+          "serial": "",
+          "width": 1920,
+          "height": 1080,
+          "physicalWidth": 360,
+          "physicalHeight": 200,
+          "refreshRate": 165.002,
+          "x": 0,
+          "y": 0,
+          "activeWorkspace": {
+            "id": 1,
+            "name": "1"
+          },
+          "specialWorkspace": {
+            "id": 0,
+            "name": ""
+          },
+          "reserved": [
+            0,
+            40,
+            0,
+            0
+          ],
+          "scale": 1,
+          "transform": 0,
+          "focused": true,
+          "dpmsStatus": true,
+          "vrr": false,
+          "solitary": "0",
+          "solitaryBlockedBy": [
+            "WINDOWED",
+            "CANDIDATE"
+          ],
+          "activelyTearing": false,
+          "tearingBlockedBy": [
+            "NOT_TORN",
+            "CANDIDATE"
+          ],
+          "directScanoutTo": "0",
+          "directScanoutBlockedBy": [
+            "USER",
+            "SW",
+            "CANDIDATE"
+          ],
+          "disabled": false,
+          "currentFormat": "XRGB8888",
+          "mirrorOf": "none",
+          "availableModes": [
+            "1920x1080@165.00Hz",
+            "1920x1080@60.00Hz"
+          ],
+          "colorManagementPreset": "srgb",
+          "sdrBrightness": 1,
+          "sdrSaturation": 1,
+          "sdrMinLuminance": 0.2,
+          "sdrMaxLuminance": 80,
+          "hardwareCursorsInUse": false
+        }
+      ],
+      "stderr": ""
+    }
+  ],
+  "historical_host_observations": [
+    {
+      "source": "review/cp-00-baseline/evidence/run-05/automated/m03-host-before.json",
+      "date": "2026-10-21T11:41:06.302168+00:00",
+      "command": [
+        "hyprctl",
+        "-j",
+        "monitors"
+      ],
+      "exit_code": 0,
+      "monitors": [
+        {
+          "id": 0,
+          "name": "eDP-1",
+          "description": "Chimei Innolux Corporation 0x1629",
+          "make": "Chimei Innolux Corporation",
+          "model": "0x1629",
+          "serial": "",
+          "width": 1920,
+          "height": 1080,
+          "physicalWidth": 360,
+          "physicalHeight": 200,
+          "refreshRate": 165.002,
+          "x": 0,
+          "y": 0,
+          "activeWorkspace": {
+            "id": 1,
+            "name": "1"
+          },
+          "specialWorkspace": {
+            "id": 0,
+            "name": ""
+          },
+          "reserved": [
+            0,
+            40,
+            0,
+            0
+          ],
+          "scale": 1,
+          "transform": 0,
+          "focused": true,
+          "dpmsStatus": true,
+          "vrr": false,
+          "solitary": "0",
+          "solitaryBlockedBy": [
+            "WINDOWED",
+            "CANDIDATE"
+          ],
+          "activelyTearing": false,
+          "tearingBlockedBy": [
+            "NOT_TORN",
+            "CANDIDATE"
+          ],
+          "directScanoutTo": "0",
+          "directScanoutBlockedBy": [
+            "USER",
+            "SW",
+            "CANDIDATE"
+          ],
+          "disabled": false,
+          "currentFormat": "XRGB8888",
+          "mirrorOf": "none",
+          "availableModes": [
+            "1920x1080@165.00Hz",
+            "1920x1080@60.00Hz"
+          ],
+          "colorManagementPreset": "srgb",
+          "sdrBrightness": 1,
+          "sdrSaturation": 1,
+          "sdrMinLuminance": 0.2,
+          "sdrMaxLuminance": 80,
+          "hardwareCursorsInUse": false
+        }
+      ]
+    }
+  ],
+  "historical_virtual_operations": [
+    {
+      "command": [
+        "hyprctl",
+        "output",
+        "create",
+        "headless",
+        "CP00-2"
+      ],
+      "exit_code": 0,
+      "stdout": "ok\n",
+      "stderr": "",
+      "date": "2026-10-21T10:29:27.190547+00:00"
+    }
+  ],
+  "m03_private_monitors": {
+    "date": "2026-10-21T11:43:08.938571+00:00",
+    "monitors": [
+      {
+        "id": 1,
+        "name": "CP00-STABLE",
+        "description": "",
+        "make": "",
+        "model": "",
+        "serial": "",
+        "width": 1280,
+        "height": 720,
+        "physicalWidth": 0,
+        "physicalHeight": 0,
+        "refreshRate": 60.0,
+        "x": 0,
+        "y": 0,
+        "activeWorkspace": {
+          "id": 1,
+          "name": "1"
+        },
+        "specialWorkspace": {
+          "id": 0,
+          "name": ""
+        },
+        "reserved": [
+          0,
+          34,
+          0,
+          0
+        ],
+        "scale": 1,
+        "transform": 0,
+        "focused": true,
+        "dpmsStatus": true,
+        "vrr": false,
+        "solitary": "0",
+        "solitaryBlockedBy": [
+          "WINDOWED",
+          "CANDIDATE"
+        ],
+        "activelyTearing": false,
+        "tearingBlockedBy": [
+          "NOT_TORN",
+          "USER",
+          "SUPPORT",
+          "CANDIDATE"
+        ],
+        "directScanoutTo": "0",
+        "directScanoutBlockedBy": [
+          "USER",
+          "MIRROR",
+          "SW",
+          "CANDIDATE"
+        ],
+        "disabled": false,
+        "currentFormat": "XRGB8888",
+        "mirrorOf": "none",
+        "availableModes": [
+          "1920x1080@60.00Hz"
+        ],
+        "colorManagementPreset": "srgb",
+        "sdrBrightness": 1,
+        "sdrSaturation": 1,
+        "sdrMinLuminance": 0.2,
+        "sdrMaxLuminance": 80,
+        "hardwareCursorsInUse": true
+      }
+    ]
+  },
+  "findings": [
+    "Current and pre-M03 host inventories list only physical eDP-1.",
+    "Run-05 independently records creation of CP00-2 as headless, not a physical output.",
+    "CP00-STABLE is headless; WAYLAND-1 is its viewer mirror.",
+    "Two recovered PNG files are two captures, not two physical monitors.",
+    "No record of actual physical dual-monitor owner testing was found; classify NOT TESTED \u2014 ENVIRONMENT LIMITATION."
+  ],
+  "runtime_payloads_live": {
+    "server": false,
+    "compositor": false
+  }
+}

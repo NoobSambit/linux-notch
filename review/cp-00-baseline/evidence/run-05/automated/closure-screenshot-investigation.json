@@ -1,0 +1,176 @@
+{
+  "recorded_at": "2026-10-21T12:37:40Z",
+  "method": "Read-only filename/PNG-header/metadata/hash inventory plus actual image decoding; no runtime launch and no image alteration.",
+  "reviewed_sources": [
+    "run-05 review evidence and command/provenance logs",
+    "CP00 lab excluding inherited source/checkouts/plugin bank",
+    "all CP00 dummy backup snapshots, including extensionless PNG clipboard blobs",
+    "synthetic HOME Capturas and cache/pictures paths",
+    "configured host screenshot output locations, limited to current test-date image candidates; no unrelated personal image was opened"
+  ],
+  "png_candidates": 323,
+  "distinct_png_hashes": 182,
+  "capture_output_candidates": [
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/home/Capturas/captura-20261021-083214.png",
+      "sha256": "2e0b1d80b43c12a388deef1e6b257bc6bf6079f09e561b34a6614ae745f73460",
+      "bytes": 5666,
+      "mtime_utc": "2026-10-21T08:32:14.274584+00:00",
+      "size": [
+        951,
+        1028
+      ]
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/home/Capturas/captura-20261021-102922.png",
+      "sha256": "e07a632c93ba991ad0b546ca5e1d8b8ae623ba9544e7b80dbd08cbfdcca83fb0",
+      "bytes": 5029,
+      "mtime_utc": "2026-10-21T10:29:22.064177+00:00",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/home/Capturas/captura-20261021-113602.png",
+      "sha256": "7cb0764cf831a1b4798bb19087fde4ef44ca353f2c3d89327995e1be0648483d",
+      "bytes": 20018,
+      "mtime_utc": "2026-10-21T11:36:02.746608+00:00",
+      "size": [
+        1280,
+        720
+      ]
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/home/Capturas/captura-20261021-115325.png",
+      "sha256": "65b2702b316953d2bc69fc4b53d64924387d57d38786fa486c951bcccd5b48f6",
+      "bytes": 14388,
+      "mtime_utc": "2026-10-21T11:53:25.937235+00:00",
+      "size": [
+        1280,
+        720
+      ]
+    }
+  ],
+  "host_and_alternative_output_search": {
+    "date": "2026-10-21T12:31:30.960659+00:00",
+    "host_configured_pictures_directory": "/home/noobsambit (xdg-user-dir PICTURES)",
+    "roots": [
+      {
+        "path": "/home/noobsambit/Capturas",
+        "exists": false,
+        "candidate_count": 0
+      },
+      {
+        "path": "/home/noobsambit/Pictures",
+        "exists": true,
+        "candidate_count": 0
+      },
+      {
+        "path": "/home/noobsambit/Images",
+        "exists": false,
+        "candidate_count": 0
+      },
+      {
+        "path": "/home/noobsambit/Im\u00e1genes",
+        "exists": false,
+        "candidate_count": 0
+      },
+      {
+        "path": "/home/noobsambit/Screenshots",
+        "exists": true,
+        "candidate_count": 0
+      },
+      {
+        "path": "/home/noobsambit/screenshot",
+        "exists": false,
+        "candidate_count": 0
+      },
+      {
+        "path": "/home/noobsambit/.cache/k4",
+        "exists": false,
+        "candidate_count": 0
+      },
+      {
+        "path": "scratch/cp00/lab/home/Pictures",
+        "exists": false,
+        "candidate_count": 0
+      },
+      {
+        "path": "scratch/cp00/lab/home/Im\u00e1genes",
+        "exists": false,
+        "candidate_count": 0
+      },
+      {
+        "path": "scratch/cp00/lab/home/.cache",
+        "exists": true,
+        "candidate_count": 0
+      },
+      {
+        "path": "/tmp/k4-captura",
+        "exists": false,
+        "candidate_count": 0
+      }
+    ],
+    "candidates": []
+  },
+  "recovered_manual_captures": [
+    {
+      "original_source": "scratch/cp00/lab/home/Capturas/captura-20261021-113602.png",
+      "preserved_path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M02__recovered-owner-capture__run-05.png",
+      "sha256": "7cb0764cf831a1b4798bb19087fde4ef44ca353f2c3d89327995e1be0648483d",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "source_mtime_utc": "2026-10-21T11:36:02.746608+00:00",
+      "attribution": "M02 manual-test interval, correlated by original filename/mtime, visible fixture state, preparation/report times and owner clarification; no exact click transcript available.",
+      "image_inspection": "Opened source with view_image; whole nested test display, harmless CP00 content; island/Dock absent in the actual PNG.",
+      "matching_existing_image_paths": [
+        "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/home/Capturas/captura-20261021-113602.png"
+      ],
+      "ownership_limit": "Owner recalls both captures and correct Dock appearance. File recovery confirms the images, but no retained image/log independently proves the transient Dock appearance."
+    },
+    {
+      "original_source": "scratch/cp00/lab/home/Capturas/captura-20261021-115325.png",
+      "preserved_path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M03__owner-capture__run-05.png",
+      "sha256": "65b2702b316953d2bc69fc4b53d64924387d57d38786fa486c951bcccd5b48f6",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "source_mtime_utc": "2026-10-21T11:53:25.937235+00:00",
+      "attribution": "M03 manual-test interval, correlated by original filename/mtime, visible fixture state, preparation/report times and owner clarification; no exact click transcript available.",
+      "image_inspection": "Opened source with view_image; whole nested test display, harmless CP00 content; island/Dock absent in the actual PNG.",
+      "matching_existing_image_paths": [
+        "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/home/Capturas/captura-20261021-115325.png",
+        "review/cp-00-baseline/evidence/run-05/owner/cp-00__M03__owner-capture__run-05.png"
+      ],
+      "ownership_limit": "Owner recalls both captures and correct Dock appearance. File recovery confirms the images, but no retained image/log independently proves the transient Dock appearance."
+    }
+  ],
+  "older_capture_classification": [
+    {
+      "filename": "captura-20261021-083214.png",
+      "classification": "Agent engineering capture: exact output appears in run-04/automated/commands.json; before owner test periods."
+    },
+    {
+      "filename": "captura-20261021-102922.png",
+      "classification": "Agent engineering capture: exact output appears in run-05/automated/commands.json; before owner test periods."
+    }
+  ],
+  "log_search_findings": [
+    "The M03 image was already preserved byte-for-byte in owner/cp-00__M03__owner-capture__run-05.png.",
+    "The M02 image was present only in synthetic Capturas and is now preserved in Git.",
+    "No additional original M01 label/normal-desktop view or M03 bar-visible owner view was recovered.",
+    "Logs contain no exact owner screenshot/Dock click transcript; no such transcript is invented."
+  ],
+  "evidence_support": {
+    "M01": "Neither recovered PNG proves Start/Stop or normal desktop preservation. Substitute evidence is assessed separately against the owner report, R01 actual stop/neighbor/host invariants and genuine labelled runtime capture.",
+    "M02": "First PNG visibly contains CP00 M02 harmless text and both dummy documents; supports text input and genuine screenshot output. Dock appearance is the owner clarification only.",
+    "M03": "Second PNG shows the whole dummy desktop during M03 with island intentionally omitted. It is genuine M03 capture evidence; alone it cannot prove edge placement or the transition/typing sequence. Genuine R02 frames plus owner report and saved state supply those observations."
+  },
+  "privacy_review": "Only the two synthetic manual-capture sources and five selected existing synthetic runtime frames were opened; no unrelated host image was opened or copied.",
+  "primary_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+  "run": "run-05"
+}
