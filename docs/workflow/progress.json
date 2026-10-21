@@ -70,8 +70,8 @@
           "id": "A01",
           "kind": "automated",
           "title": "Run existing gates and read-only capability/path audit; record missing tools and skipped qmllint separately.",
-          "result": "PASS",
-          "reason": "All eleven required gate commands exited 0, including installed qmllint and ffmpeg checks; missing feature dependencies remain explicitly inventoried.",
+          "result": "NOT TESTED",
+          "reason": "Initial gates passed in run-01. New runtime-tool patch/environment requires the final affected checks before handoff.",
           "history": [
             {
               "result": "PASS",
@@ -103,8 +103,48 @@
           "kind": "runtime",
           "title": "Prove isolated paths/services, exact-instance termination, backup and previous-version restore using dummy state; host services unchanged.",
           "result": "NOT TESTED",
-          "reason": "CP-00 started; this scenario has not yet been performed.",
-          "history": []
+          "reason": "Isolation and payload termination verified in run-02; full Quickshell-ID and previous-code/dummy-state restore rehearsal remain.",
+          "history": [
+            {
+              "result": "NOT TESTED",
+              "date": "2026-10-21T08:10:48Z",
+              "revision": "2c0b4cae550f5fe66704533cdfed8553ebdc00ee",
+              "environment": "CP00 lab: separate bwrap mount/user/PID/IPC/net namespaces, synthetic HOME, private no-activation bus; Hyprland 0.56.2/Aquamarine 0.15.1 WAYLAND-1 951x1028 scale 1/60 Hz; Qt 6.11.2, Quickshell 0.2.1; no k4 launch.",
+              "run": "run-02",
+              "patch": {
+                "path": "review/cp-00-baseline/evidence/run-02/automated/tools.patch",
+                "sha256": "cf8433e4320044ce79555d894e2964b795f6188a96f646d0ff224ca43e0d9c24"
+              },
+              "steps": "Start two sandboxes; run tools/cp00_probe.py through private command server; compare host/app namespaces and buses; check blocked pactl/wpctl/system bus; nested grim and harmless clipboard; stop verified compositor/server payloads and scan their namespace IDs.",
+              "observed": "Final path/service/dummy-write probes and exact payload stop passed. Initial tooling failures and corrections retained in isolation.md. No test namespace process remains; host Quickshell xzn1r8nt and notification :1.14 unchanged. k4/full-ID and restore not yet exercised.",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-02/automated/isolation.md",
+                  "sha256": "c3a808f60b6002b916ddb666313d507ea13281b5c0def2dbe8a18a1d1014333a"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-02/automated/isolation-probe.json",
+                  "sha256": "c632ab76db478a22f99131fc9614b1a2dff778c29cee8c8f5e082c939152916c"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-02/automated/isolation-probe-initial-failure.json",
+                  "sha256": "666d0c55608db50a0e34565e01617d4c7cabad7e85fecf6ba728f95d383fae96"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-02/automated/host-comparison.json",
+                  "sha256": "85b4a84d53e938f014da66b40dad54744bdf5064b51e971d6b88efb5eff38c8c"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-02/automated/stop-proof.json",
+                  "sha256": "15e267f561ee4a3adaae66d80fe468f74ccc2f164d3e2d6977f5b747300141f2"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-02/automated/private-clipboard.json",
+                  "sha256": "bf7b3951bfa872495e3792aaeacb4b734b45d56d115af0d470e50c3c5fc0f8d5"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "R02",
@@ -161,14 +201,24 @@
           "date": "2026-10-21T08:00:00Z",
           "revision": "6478e25c52adbbbe3e2f00e2c5cf975b09e6732b",
           "environment": "Arch 7.2.8; i7-13700HX; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2; physical eDP-1 1920x1080 scale 1. Read-only host inventory; no app launch."
+        },
+        {
+          "id": "run-02",
+          "date": "2026-10-21T08:10:48Z",
+          "revision": "2c0b4cae550f5fe66704533cdfed8553ebdc00ee",
+          "environment": "CP00 lab: separate bwrap mount/user/PID/IPC/net namespaces, synthetic HOME, private no-activation bus; Hyprland 0.56.2/Aquamarine 0.15.1 WAYLAND-1 951x1028 scale 1/60 Hz; Qt 6.11.2, Quickshell 0.2.1; no k4 launch.",
+          "patch": {
+            "path": "review/cp-00-baseline/evidence/run-02/automated/tools.patch",
+            "sha256": "cf8433e4320044ce79555d894e2964b795f6188a96f646d0ff224ca43e0d9c24"
+          }
         }
       ],
-      "latest_run": "run-01",
+      "latest_run": "run-02",
       "branch": "checkpoint/cp-00-baseline",
       "last_good_sha": "ff520e33e136bbce11b7100c69888dedf42f7273",
       "current_task": "T02",
       "blocked_reason": null,
-      "next_agent_action": "T02: prove namespace filesystem/service boundaries, then test an isolated Hyprland compositor. No k4 launch until the app cannot access host HOME, bus, clipboard, audio, network or compositor IPC.",
+      "next_agent_action": "T02: implement and rehearse full-ID/config/PID/start-time guarded k4 controls and disposable backup/restore; reprove final environment, then launch unchanged pinned original source. Both test sandboxes are stopped; recorded handles are historical.",
       "next_owner_action": "No action yet. CP-00 engineering preparation is authorized; wait for verified owner-test instructions or a concrete capability request.",
       "contract": "docs/workflow/checkpoints/cp-00-baseline.md",
       "visual_brief": "docs/workflow/checkpoints/cp-00-baseline.visual.md",

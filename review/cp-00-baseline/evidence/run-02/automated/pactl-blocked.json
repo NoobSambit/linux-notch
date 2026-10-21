@@ -1,0 +1,10 @@
+{
+  "command": [
+    "pactl",
+    "info"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Connection failure: Connection refused\npa_context_connect() failed: Connection refused\n",
+  "date": "2026-10-21T08:07:40.735485+00:00"
+}

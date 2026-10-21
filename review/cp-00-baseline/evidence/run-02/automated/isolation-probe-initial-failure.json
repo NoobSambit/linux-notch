@@ -1,0 +1,10 @@
+{
+  "command": [
+    "python3",
+    "/lab/probe.py"
+  ],
+  "exit_code": 1,
+  "stdout": "",
+  "stderr": "Traceback (most recent call last):\n  File \"/lab/probe.py\", line 35, in <module>\n    assert 'org.freedesktop.Notifications' not in names['stdout'], 'Unexpected test-bus notification owner'\n           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^\nAssertionError: Unexpected test-bus notification owner\n",
+  "date": "2026-10-21T08:05:32.633808+00:00"
+}

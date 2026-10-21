@@ -12,7 +12,7 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 | Checkpoint | State | References | Tasks done | Tests: pass / fail / untested / help |
 | --- | --- | --- | --- | --- |
-| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | IMPLEMENTING | Not required | 1/4 | 1 / 0 / 7 / 0 |
+| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | IMPLEMENTING | Not required | 1/4 | 0 / 0 / 8 / 0 |
 | [cp-01-safety — Regression and safety gates](checkpoints/cp-01-safety.md) | PLANNED | Not required | 0/4 | 0 / 0 / 11 / 0 |
 | [cp-02-dnd-spike — Isolated Shelf drag-and-drop feasibility](checkpoints/cp-02-dnd-spike.md) | PLANNED | Not required | 0/4 | 0 / 0 / 8 / 0 |
 | [cp-03-design-system — Shared design system and original visual direction](checkpoints/cp-03-design-system.md) | PLANNED | 4 images needed when activated; none approved | 0/4 | 0 / 0 / 8 / 0 |
@@ -26,10 +26,10 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ## Current handoff
 
-- Codex next: T02: prove namespace filesystem/service boundaries, then test an isolated Hyprland compositor. No k4 launch until the app cannot access host HOME, bus, clipboard, audio, network or compositor IPC.
+- Codex next: T02: implement and rehearse full-ID/config/PID/start-time guarded k4 controls and disposable backup/restore; reprove final environment, then launch unchanged pinned original source. Both test sandboxes are stopped; recorded handles are historical.
 - You next: No action yet. CP-00 engineering preparation is authorized; wait for verified owner-test instructions or a concrete capability request.
 - Waiting/blocker: No blocker recorded; follow the next action above.
-- Test version / run: run-01
+- Test version / run: run-02
 
 ## Tests and remaining work
 
@@ -44,7 +44,7 @@ Remaining tasks: T02, T03, T04.
 - **M03 NOT TESTED** — Screen and fullscreen baseline (CP-00 started; this scenario has not yet been performed.)
 - **M04 NOT TESTED** — Recovery rehearsal (CP-00 started; this scenario has not yet been performed.)
 
-Engineering checks: A01: PASS; R01: NOT TESTED; R02: NOT TESTED; R03: NOT TESTED.
+Engineering checks: A01: NOT TESTED; R01: NOT TESTED; R02: NOT TESTED; R03: NOT TESTED.
 Approval: Waiting; no final owner approval recorded.
 
 Codex keeps this page aligned with its [single progress record](../docs/workflow/progress.json).
