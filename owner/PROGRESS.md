@@ -4,7 +4,7 @@
 
 ## WHAT YOU NEED TO DO NOW
 
-Perform M02 only using the prepared nested aquamarine window and the linked M02 preparation steps; report PASS/FAIL/NOT TESTED/NEEDS HELP and failed step if any. Supply the checklist M01 label/desktop image if available; its absence is recorded. Use python3 tools/cp00.py stop if needed. M03/M04 and explicit Gate B are later separate actions.
+M02 report received. Next owner test is M03 (screen/fullscreen), to be prepared separately; M04 and explicit Gate B remain later separate actions. The test runtime is currently stopped. The M01 checklist owner label/desktop image remains outstanding.
 
 Workflow: **IN PROGRESS**.
 Active checkpoint: **cp-00-baseline**.
@@ -12,7 +12,7 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 | Checkpoint | State | References | Tasks done | Tests: pass / fail / untested / help |
 | --- | --- | --- | --- | --- |
-| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | AWAITING OWNER TEST | Not required | 4/4 | 5 / 0 / 3 / 0 |
+| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | AWAITING OWNER TEST | Not required | 4/4 | 6 / 0 / 2 / 0 |
 | [cp-01-safety — Regression and safety gates](checkpoints/cp-01-safety.md) | PLANNED | Not required | 0/4 | 0 / 0 / 11 / 0 |
 | [cp-02-dnd-spike — Isolated Shelf drag-and-drop feasibility](checkpoints/cp-02-dnd-spike.md) | PLANNED | Not required | 0/4 | 0 / 0 / 8 / 0 |
 | [cp-03-design-system — Shared design system and original visual direction](checkpoints/cp-03-design-system.md) | PLANNED | 4 images needed when activated; none approved | 0/4 | 0 / 0 / 8 / 0 |
@@ -26,8 +26,8 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ## Current handoff
 
-- Codex next: Await owner M02 only; same b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05. Private runtime and fixtures left running; exact current server/compositor/app identities, bus/socket, recovery and commands are in review/cp-00-baseline/evidence/run-05/owner/cp-00__M02__preparation__run-05.md and automated/m02-readiness.json. Revalidate handles on resume. Append the actual owner result; address the explicitly outstanding M01 owner image without inventing proof. Prepare M03 only after M02. Five engineering commits are complete; owner permits small administrative evidence/approval commits. Do not modify product code, repin to administrative HEAD, record Gate B, begin CP-01 or perform remote actions.
-- You next: Perform M02 only using the prepared nested aquamarine window and the linked M02 preparation steps; report PASS/FAIL/NOT TESTED/NEEDS HELP and failed step if any. Supply the checklist M01 label/desktop image if available; its absence is recorded. Use python3 tools/cp00.py stop if needed. M03/M04 and explicit Gate B are later separate actions.
+- Codex next: M02 owner PASS recorded for unchanged b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05. Both recorded test payloads are stopped as verified while recording the result; selected source remains b114d5a. On the next owner-testing continuation, prepare M03 only using guarded Start/demo and existing screen/fullscreen helpers, reverify isolation/identities, and provide simple steps. Retain M02 preparation evidence and all prior runs/results. M01 owner image remains outstanding. Five engineering commits are complete; only scoped administrative evidence/approval commits are authorized now. Do not change product code, repin to administrative HEAD, record Gate B, begin CP-01 or perform remote actions.
+- You next: M02 report received. Next owner test is M03 (screen/fullscreen), to be prepared separately; M04 and explicit Gate B remain later separate actions. The test runtime is currently stopped. The M01 checklist owner label/desktop image remains outstanding.
 - Waiting/blocker: No blocker recorded; follow the next action above.
 - Test version / run: run-05
 
@@ -35,12 +35,12 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ### cp-00-baseline
 
-Next: Perform M02 only using the prepared nested aquamarine window and the linked M02 preparation steps; report PASS/FAIL/NOT TESTED/NEEDS HELP and failed step if any. Supply the checklist M01 label/desktop image if available; its absence is recorded. Use python3 tools/cp00.py stop if needed. M03/M04 and explicit Gate B are later separate actions.
+Next: M02 report received. Next owner test is M03 (screen/fullscreen), to be prepared separately; M04 and explicit Gate B remain later separate actions. The test runtime is currently stopped. The M01 checklist owner label/desktop image remains outstanding.
 
 Remaining tasks: None.
 
 - **M01 PASS** — Start and stop safely (Owner-reported PASS for b114d5a / run-05: Start/Stop worked and normal desktop remained unaffected. Literal dated report saved; checklist owner label/desktop image was not supplied and remains outstanding.)
-- **M02 NOT TESTED** — Original everyday paths (Same pinned b114d5a / run-05 session and harmless fixtures prepared; awaiting owner M02 observation. Preparation evidence is not an owner PASS.)
+- **M02 PASS** — Original everyday paths (Owner reports all five supplied M02 steps worked as intended on b114d5a / run-05; literal reply and interpretation preserved in the hashed owner report.)
 - **M03 NOT TESTED** — Screen and fullscreen baseline (Awaiting this owner test for b114d5a / run-05; prepare one test at a time after M02. No result or approval inferred.)
 - **M04 NOT TESTED** — Recovery rehearsal (Awaiting this owner test for b114d5a / run-05; prepare one test at a time after M02. No result or approval inferred.)
 

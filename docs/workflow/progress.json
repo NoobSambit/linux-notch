@@ -518,9 +518,27 @@
           "id": "M02",
           "kind": "owner",
           "title": "Original everyday paths",
-          "result": "NOT TESTED",
-          "reason": "Same pinned b114d5a / run-05 session and harmless fixtures prepared; awaiting owner M02 observation. Preparation evidence is not an owner PASS.",
-          "history": []
+          "result": "PASS",
+          "reason": "Owner reports all five supplied M02 steps worked as intended on b114d5a / run-05; literal reply and interpretation preserved in the hashed owner report.",
+          "history": [
+            {
+              "result": "PASS",
+              "date": "2026-10-21T11:38:37Z",
+              "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+              "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+              "run": "run-05",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M02__owner-report__run-05.md",
+                  "sha256": "a8fd698f866ce590bc38bc8158a498783eadc128c2d983cf791e59da9f594984"
+                }
+              ],
+              "steps": "All five supplied M02 instructions: native launcher search/escape; settings open/escape; silent local media pause/resume; harmless text copy/clipboard readback; nested screen capture/preview.",
+              "observed": "Owner reports all five steps work as intended. No failure reported; no screenshot or per-step timing was supplied.",
+              "owner_quote": "all 5 styffs works as intended",
+              "source": "Owner reply immediately after the five numbered M02 instructions in this Codex thread; date is UTC transcription time."
+            }
+          ]
         },
         {
           "id": "M03",
@@ -616,8 +634,8 @@
       "last_good_sha": "ff520e33e136bbce11b7100c69888dedf42f7273",
       "current_task": null,
       "blocked_reason": null,
-      "next_agent_action": "Await owner M02 only; same b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05. Private runtime and fixtures left running; exact current server/compositor/app identities, bus/socket, recovery and commands are in review/cp-00-baseline/evidence/run-05/owner/cp-00__M02__preparation__run-05.md and automated/m02-readiness.json. Revalidate handles on resume. Append the actual owner result; address the explicitly outstanding M01 owner image without inventing proof. Prepare M03 only after M02. Five engineering commits are complete; owner permits small administrative evidence/approval commits. Do not modify product code, repin to administrative HEAD, record Gate B, begin CP-01 or perform remote actions.",
-      "next_owner_action": "Perform M02 only using the prepared nested aquamarine window and the linked M02 preparation steps; report PASS/FAIL/NOT TESTED/NEEDS HELP and failed step if any. Supply the checklist M01 label/desktop image if available; its absence is recorded. Use python3 tools/cp00.py stop if needed. M03/M04 and explicit Gate B are later separate actions.",
+      "next_agent_action": "M02 owner PASS recorded for unchanged b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05. Both recorded test payloads are stopped as verified while recording the result; selected source remains b114d5a. On the next owner-testing continuation, prepare M03 only using guarded Start/demo and existing screen/fullscreen helpers, reverify isolation/identities, and provide simple steps. Retain M02 preparation evidence and all prior runs/results. M01 owner image remains outstanding. Five engineering commits are complete; only scoped administrative evidence/approval commits are authorized now. Do not change product code, repin to administrative HEAD, record Gate B, begin CP-01 or perform remote actions.",
+      "next_owner_action": "M02 report received. Next owner test is M03 (screen/fullscreen), to be prepared separately; M04 and explicit Gate B remain later separate actions. The test runtime is currently stopped. The M01 checklist owner label/desktop image remains outstanding.",
       "contract": "docs/workflow/checkpoints/cp-00-baseline.md",
       "visual_brief": "docs/workflow/checkpoints/cp-00-baseline.visual.md",
       "owner_note": "owner/checkpoints/cp-00-baseline.md",
