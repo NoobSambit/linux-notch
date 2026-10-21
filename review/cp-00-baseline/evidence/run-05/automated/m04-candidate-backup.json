@@ -1,0 +1,12 @@
+{
+  "command": [
+    "python3",
+    "/lab/runtime_control.py",
+    "backup",
+    "owner-before-m04-20261021-120008"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"snapshot\": \"/backups/owner-before-m04-20261021-120008\",\n  \"manifest\": {\n    \"revision\": \"b114d5a1b8c3ed90e97b577e3424092a783e04ed\",\n    \"stores\": [\n      \".local/state/k4\",\n      \".config/k4\",\n      \".config/k4term\"\n    ],\n    \"files\": {\n      \".local/state/k4/ajustes.json\": \"e642421ae88e537e1d364d354e40d84cca99dd88fb8a8c4bdea5c1bbc08f3edc\",\n      \".local/state/k4/catalogo.json\": \"548502caf732c5e883b031b05578344006c22657b36e6ec109f7b266aaf8b44b\",\n      \".local/state/k4/cp00-probe.txt\": \"8b3d5b3fc97aa03813dae485d04eae4e1fa05e7c1795fc30b7578cceb80a7ac8\",\n      \".local/state/k4/partida.json\": \"59aba3c4419da8b61974845bf8caaadf35bad55357b80f4bf6679cc62f6cc1db\",\n      \".local/state/k4/plugins/cp00-fixture/state.json\": \"bff789a2b3773765aa393a30b026f46dd823bc5b8ffa1ba138f71d73863cffd4\",\n      \".local/state/k4/plugins/dual/estado.json\": \"be07efe41848637d7af809b41b64a727287baa4f186bc30ea0a76bc85c54388a\",\n      \".local/state/k4/plugins.json\": \"37dfa235d4c61e2b4ad3eab8bbc19c21de7fce54d0276f6b5f597006f5b8916a\",\n      \".local/state/k4/plugins.json.bak\": \"37dfa235d4c61e2b4ad3eab8bbc19c21de7fce54d0276f6b5f597006f5b8916a\",\n      \".local/state/k4/portapapeles/datos/0066eaf72bb71d4e\": \"3e83c8dd990752cef3e0a77d30b262cc1eafe6894c23483ab515855f4363890f\",\n      \".local/state/k4/portapapeles/datos/289145052baaf82a\": \"4b0fc96a2813362052492a1d79030750046ab0fb147b4e9e18a4b7cadd65a8ad\",\n      \".local/state/k4/portapapeles/datos/45307d5f89b9d5fb\": \"a89d17a17a027ac3baf1ce6c72a81bb7251dcfcd353abf8f93e08111203aee56\",\n      \".local/state/k4/portapapeles/indice.json\": \"d2022b4e98acfadb6bcfb41f8504bb6822366ca50873fab964070ca4e389aa70\",\n      \".local/state/k4/shelf/dummy.json\": \"fc7fc2417d2515d6260c9c006e5952945c6f0333d50f4b7be6c2e565351778f1\",\n      \".local/state/k4/tema.json\": \"38009e9b36e99126bd6642e6371afddbd2c89527c727f5ddf99924bea7819ef5\",\n      \".local/state/k4/tokens-vigia.json\": \"8e3fceeb4f160b83abc32a0c8069bd90b1d43a7ddd23a18461b75164763aece5\"\n    }\n  }\n}\n",
+  "stderr": "",
+  "date": "2026-10-21T12:02:46.166812+00:00"
+}

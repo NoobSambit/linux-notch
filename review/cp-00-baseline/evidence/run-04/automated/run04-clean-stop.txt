@@ -1,0 +1,4 @@
+Stopped only full ID k2qa69nt
+
+stopped verified compositor
+stopped verified server

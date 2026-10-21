@@ -1,0 +1,39 @@
+Stopped only full ID e2hp09nt
+
+stopped verified compositor
+stopped verified server
+Pinned source ff520e33e136bbce11b7100c69888dedf42f7273
+{"command": ["/usr/bin/true"], "exit_code": 0, "stdout": "", "stderr": "", "date": "2026-10-21T08:24:55.460159+00:00"}
+{"wrapper": 68593, "started": "2026-10-21T08:24:55.766095+00:00", "log": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/logs/compositor.txt"}
+CP-00 original source + matching dummy snapshot restored
+Already stopped; recorded full ID absent. No replacement touched.
+Restored matching disposable snapshot; retained current state in before-restore-1792571095908411714
+{
+  "instance": {
+    "config_path": "/original/shell.qml",
+    "id": "okp09nt",
+    "launch_time": "2026-10-21T08:24:56",
+    "pid": 24,
+    "shell_id": "3c9ccbd9d073f80115714dfdfa978cf1"
+  },
+  "process": {
+    "pid": 24,
+    "start_ticks": "1254452",
+    "exe": "/usr/bin/quickshell",
+    "argv": [
+      "quickshell",
+      "-p",
+      "/original/shell.qml",
+      "--no-color"
+    ],
+    "pid_namespace": "pid:[4026533306]"
+  },
+  "environment": {
+    "WAYLAND_DISPLAY": "wayland-1",
+    "HYPRLAND_INSTANCE_SIGNATURE": "efb50993780079460b0cbed1363e2166a2de1d9f_1792571095_412543309",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/tmp/dbus-7t12PCEVsW,guid=cfa7b32d66a0e70ed0f0221c6ad876d7",
+    "XDG_RUNTIME_DIR": "/run/cp00"
+  },
+  "revision": "ff520e33e136bbce11b7100c69888dedf42f7273",
+  "log": "/lab/logs/k4-1792571095979954529.txt"
+}

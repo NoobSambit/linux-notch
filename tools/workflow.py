@@ -65,7 +65,7 @@ def overview(data):
         if c['id'] != current['id'] and c['status'] == 'PLANNED':
             continue
         rows += [f'### {c["id"]}', '', f'Next: {c["next_owner_action"]}', '',
-                 'Remaining tasks: ' + ', '.join(t['id'] for t in c['tasks'] if t['status'] != 'DONE') + '.', '']
+                 'Remaining tasks: ' + (', '.join(t['id'] for t in c['tasks'] if t['status'] != 'DONE') or 'None') + '.', '']
         owner = [t for t in c['tests'] if t['kind'] == 'owner']
         rows += [f'- **{t["id"]} {t["result"]}** — {t["title"]}' + (f' ({t["reason"]})' if t['reason'] else '') for t in owner]
         rows += ['', 'Engineering checks: ' + '; '.join(f'{t["id"]}: {t["result"]}' for t in c['tests'] if t['kind'] != 'owner') + '.',

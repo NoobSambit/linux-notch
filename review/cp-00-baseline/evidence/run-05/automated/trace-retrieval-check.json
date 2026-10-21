@@ -1,0 +1,127 @@
+{
+  "date": "2026-10-21T10:48:56.643031+00:00",
+  "fresh_process_working_directory": "/tmp",
+  "result": "PASS",
+  "files": [
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/idle-catalog-atalaya-on-1-frames.txt",
+      "sha256": "54d0b7f958d63b5411d42eadbc95604125c11bf3b9f908e2f8edb04060a3de87",
+      "bytes": 434160
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/idle-catalog-atalaya-on-2-frames.txt",
+      "sha256": "165bb74b182374705e681da7116dd12b18765d8307115805ec98b1cd867542d7",
+      "bytes": 434160
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/idle-catalog-atalaya-on-3-frames.txt",
+      "sha256": "35c52d61f3e1f8e52ce5a03771bc0504a2675b4f8e0af26f5d6f332f918cdba5",
+      "bytes": 434160
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/idle-atalaya-off-1-frames.txt",
+      "sha256": "1ed074466ee7a09263ae561778086df918712e181b2fb11c186afbe5f15fd603",
+      "bytes": 434550
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/idle-atalaya-off-2-frames.txt",
+      "sha256": "33fdf7ba72941c7dcdd3a5d3f9db187f38d9b1e2f4206d97580fb8faef2e136c",
+      "bytes": 433440
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/idle-atalaya-off-3-frames.txt",
+      "sha256": "fb0ca8af4a0e5a2ed07b0701f5b91b4de0d0661c404b53e70542827df650b3ca",
+      "bytes": 434160
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/idle-explicit-atalaya-on-1-frames.txt",
+      "sha256": "51d7a77c6319d0e9053aa3da3e47d467d4077c96c4600748f14a40726cb0c46c",
+      "bytes": 434160
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/idle-explicit-atalaya-on-2-frames.txt",
+      "sha256": "01967c5cb2697d256805e50a75737525d6d6166845d580e390c80ac6c52258df",
+      "bytes": 433440
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/idle-explicit-atalaya-on-3-frames.txt",
+      "sha256": "408d23e7380fd4924a8f497c31393bd340fb194abe6ee6ba0f65ff21ecbc70e6",
+      "bytes": 433806
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/media-local-playing-1-frames.txt",
+      "sha256": "78a4b81629aaf14665770e780cdb83f54fd53119eddfb0240c52e904071d0885",
+      "bytes": 433440
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/media-local-playing-2-frames.txt",
+      "sha256": "34daa662909dd32fc7b49714f7f0fdcf6d2b4b5bc0474ead76f8ebed82ef38cf",
+      "bytes": 434092
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/media-local-playing-3-frames.txt",
+      "sha256": "d70a2b95d5c7b95c5a8322fd9417c7d24c9340665e0d29f03018e01c67fc7f62",
+      "bytes": 435258
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/dock-settled-1-frames.txt",
+      "sha256": "7b9f7be44af83314410349dd8d03ca8bf33131b8f7929417d09aaba57951e6c2",
+      "bytes": 434160
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/dock-settled-2-frames.txt",
+      "sha256": "f56ff3f93d79f225ecf66184804c3a75c370f874de3b6df7e7433fd2c2dcc81d",
+      "bytes": 433440
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/dock-settled-3-frames.txt",
+      "sha256": "99e1702a951708e04bdaa108922b54bfb8d88a3b425e2eb6168986f4fd93f66a",
+      "bytes": 437857
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/atalaya-open-two-dummy-windows-1-frames.txt",
+      "sha256": "69351fd0ce8438803565abf3b5547e3d6559975100950de3700ebe7d8673f372",
+      "bytes": 1529170
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/atalaya-open-two-dummy-windows-2-frames.txt",
+      "sha256": "37385b1a3a2a5c064050924874cd8126a7bfbcbf6f3ef329424fb8e4a135717f",
+      "bytes": 1520702
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/atalaya-open-two-dummy-windows-3-frames.txt",
+      "sha256": "aee476eca86fa21ed10383eadd1663eca10aa4d1efad68f1cb11e47d2bea1c53",
+      "bytes": 1522056
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/atalaya-closed-after-open-1-frames.txt",
+      "sha256": "8e8553537b4018c350971f5c2c991dc72c26c15e11fa657a990432b07d79bfc4",
+      "bytes": 434160
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/atalaya-closed-after-open-2-frames.txt",
+      "sha256": "51258a2a7515016ae3e09362f5e6d15ae5b84e5eb13665e3ed190e37ba6b2b89",
+      "bytes": 435624
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/atalaya-closed-after-open-3-frames.txt",
+      "sha256": "4f8f73fc5da49408f942f00d0eb2ac63d890828918ecb7121bd182e33a49d2fc",
+      "bytes": 434948
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/idle-untraced-control-1-frames.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/idle-untraced-control-2-frames.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-05/idle-untraced-control-3-frames.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    }
+  ]
+}

@@ -1,0 +1,3172 @@
+[
+  {
+    "duration_seconds": 10.001751415000399,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 9.098406491439116,
+    "reaped_child_cpu_percent": 0.0,
+    "rss_kib_min": 233884.0,
+    "rss_kib_max": 253856.0,
+    "gpu_engine_percent": {
+      "render": 0.5180034760941709,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8838.569731233,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 145,
+        "reaped_child_ticks": 59,
+        "rss_kib": 253856.0,
+        "engines_ns": {
+          "render": 33404696,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t33404696 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8839.572414317,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 154,
+        "reaped_child_ticks": 59,
+        "rss_kib": 253856.0,
+        "engines_ns": {
+          "render": 38342772,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t28028 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t28028 KiB\ndrm-purgeable-system0:\t2240 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t38342772 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8840.574998342,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 164,
+        "reaped_child_ticks": 59,
+        "rss_kib": 253856.0,
+        "engines_ns": {
+          "render": 43370808,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t43370808 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8841.577750989,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 172,
+        "reaped_child_ticks": 59,
+        "rss_kib": 234100.0,
+        "engines_ns": {
+          "render": 48414184,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t48414184 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8842.580310794,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 181,
+        "reaped_child_ticks": 59,
+        "rss_kib": 234100.0,
+        "engines_ns": {
+          "render": 53462968,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t28028 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t28028 KiB\ndrm-purgeable-system0:\t2240 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t53462968 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8843.581947145,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 191,
+        "reaped_child_ticks": 59,
+        "rss_kib": 234100.0,
+        "engines_ns": {
+          "render": 58585280,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t28028 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t28028 KiB\ndrm-purgeable-system0:\t2240 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t58585280 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8844.583037423,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 200,
+        "reaped_child_ticks": 59,
+        "rss_kib": 234100.0,
+        "engines_ns": {
+          "render": 63806288,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t63806288 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8845.584665004,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 210,
+        "reaped_child_ticks": 59,
+        "rss_kib": 234100.0,
+        "engines_ns": {
+          "render": 68999112,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t28028 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t17752 KiB\ndrm-resident-system0:\t28028 KiB\ndrm-purgeable-system0:\t2112 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t68999112 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8846.587357685,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 219,
+        "reaped_child_ticks": 59,
+        "rss_kib": 234100.0,
+        "engines_ns": {
+          "render": 74189128,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t28028 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t28028 KiB\ndrm-purgeable-system0:\t2240 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t74189128 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8847.590053598,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 228,
+        "reaped_child_ticks": 59,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 80347696,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t80347696 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8848.571482648,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 236,
+        "reaped_child_ticks": 59,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 85214116,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t85214116 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "idle-catalog-atalaya-on",
+    "repetition": 1,
+    "frame_trace": "idle-catalog-atalaya-on-1-frames.txt",
+    "frames_logged": 628,
+    "frame_callbacks_by_surface": {
+      "51": 628
+    },
+    "callback_interval_ms_max": 25,
+    "callback_interval_ms_p95": 20
+  },
+  {
+    "duration_seconds": 10.003499160999127,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 9.296746918576378,
+    "reaped_child_cpu_percent": 0.199930041259707,
+    "rss_kib_min": 233884.0,
+    "rss_kib_max": 233884.0,
+    "gpu_engine_percent": {
+      "render": 0.5116382495391552,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8848.612461147,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 236,
+        "reaped_child_ticks": 59,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 85443228,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t85443228 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8849.615478146,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 246,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 90832456,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t28032 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t28032 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t90832456 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8850.61856903,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 254,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 95836000,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t95836000 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8851.621541494,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 264,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 101327252,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t101327252 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8852.624997441,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 273,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 106241304,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t28028 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t4 MiB\ndrm-resident-system0:\t28028 KiB\ndrm-purgeable-system0:\t2240 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t106241304 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8853.627568537,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 282,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 111427836,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t111427836 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8854.630176944,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 292,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 116143976,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t116143976 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8855.633437121,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 302,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 121179760,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t28028 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t17752 KiB\ndrm-resident-system0:\t28028 KiB\ndrm-purgeable-system0:\t2112 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t121179760 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8856.636836266,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 310,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 125990904,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t28028 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t28028 KiB\ndrm-purgeable-system0:\t2240 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t125990904 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8857.639244821,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 320,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 131506388,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t131506388 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8858.615960308,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 329,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 136624956,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t28028 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t28028 KiB\ndrm-purgeable-system0:\t2240 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t136624956 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "idle-catalog-atalaya-on",
+    "repetition": 2,
+    "frame_trace": "idle-catalog-atalaya-on-2-frames.txt",
+    "frames_logged": 627,
+    "frame_callbacks_by_surface": {
+      "51": 627
+    },
+    "callback_interval_ms_max": 25,
+    "callback_interval_ms_p95": 20
+  },
+  {
+    "duration_seconds": 10.00278534499921,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 9.697298967681451,
+    "reaped_child_cpu_percent": 0.0,
+    "rss_kib_min": 233884.0,
+    "rss_kib_max": 233884.0,
+    "gpu_engine_percent": {
+      "render": 0.5155419637769311,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8858.683324771,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 330,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 136937840,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t28028 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t28028 KiB\ndrm-purgeable-system0:\t2240 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t136937840 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8859.685926099,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 340,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 142112412,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t28028 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t28028 KiB\ndrm-purgeable-system0:\t2240 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t142112412 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8860.690598538,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 349,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 147348812,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t17752 KiB\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1600 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t147348812 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8861.695417968,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 358,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 152528584,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t152528584 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8862.696438262,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 368,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 157730716,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t28028 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t28028 KiB\ndrm-purgeable-system0:\t2240 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t157730716 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8863.699113771,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 378,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 163007416,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t163007416 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8864.701513924,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 387,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 168196548,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t27516 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t27516 KiB\ndrm-purgeable-system0:\t1728 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t168196548 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8865.704367257,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 397,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 173434820,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t173434820 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8866.706481181,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 407,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 178756032,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t178756032 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8867.709683418,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 416,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 183528384,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t183528384 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8868.686110116,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 427,
+        "reaped_child_ticks": 61,
+        "rss_kib": 233884.0,
+        "engines_ns": {
+          "render": 188506396,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t188506396 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "idle-catalog-atalaya-on",
+    "repetition": 3,
+    "frame_trace": "idle-catalog-atalaya-on-3-frames.txt",
+    "frames_logged": 628,
+    "frame_callbacks_by_surface": {
+      "51": 628
+    },
+    "callback_interval_ms_max": 25,
+    "callback_interval_ms_p95": 20
+  },
+  {
+    "duration_seconds": 10.003141592000247,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 9.197110643077833,
+    "reaped_child_cpu_percent": 0.0,
+    "rss_kib_min": 234268.0,
+    "rss_kib_max": 234268.0,
+    "gpu_engine_percent": {
+      "render": 0.5117464701383259,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8872.519082473,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 464,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 207831832,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t207831832 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8873.520452404,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 472,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 212899336,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t212899336 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8874.522720607,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 481,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 217965181,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t19800 KiB\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1604 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t217965181 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8875.525550767,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 491,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 223042612,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t223042612 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8876.528383516,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 500,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 228437976,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t228437976 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8877.530292339,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 509,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 233385568,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t19800 KiB\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1604 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t233385568 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8878.534852938,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 520,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 238841980,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t4 MiB\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t238841980 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8879.537727859,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 528,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 243952540,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t243952540 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8880.539442665,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 538,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 248292252,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t248292252 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8881.542448543,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 547,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 253486428,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t253486428 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8882.522224065,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 556,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 259022556,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t259022556 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "idle-atalaya-off",
+    "repetition": 1,
+    "frame_trace": "idle-atalaya-off-1-frames.txt",
+    "frames_logged": 630,
+    "frame_callbacks_by_surface": {
+      "51": 630
+    },
+    "callback_interval_ms_max": 27,
+    "callback_interval_ms_p95": 20
+  },
+  {
+    "duration_seconds": 10.001521354000943,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 9.498554933544867,
+    "reaped_child_cpu_percent": 0.09998478877415651,
+    "rss_kib_min": 234268.0,
+    "rss_kib_max": 234268.0,
+    "gpu_engine_percent": {
+      "render": 0.5095879936267064,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8882.577541195,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 556,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 259559716,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t259559716 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8883.580309731,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 566,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 264364724,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t264364724 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8884.582332359,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 576,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 269526296,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t269526296 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8885.5855189,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 585,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 275094352,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t4 MiB\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t275094352 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8886.588129038,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 594,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 279976892,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t279976892 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8887.589397278,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 604,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 285072216,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t285072216 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8888.591371666,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 614,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 290227444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t290227444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8889.593557404,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 623,
+        "reaped_child_ticks": 61,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 295202960,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t295202960 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8890.594644673,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 633,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 300396720,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t300396720 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8891.596524468,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 642,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 305761040,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t305761040 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8892.579062549,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 651,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 310526268,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t310526268 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "idle-atalaya-off",
+    "repetition": 2,
+    "frame_trace": "idle-atalaya-off-2-frames.txt",
+    "frames_logged": 628,
+    "frame_callbacks_by_surface": {
+      "51": 628
+    },
+    "callback_interval_ms_max": 25,
+    "callback_interval_ms_p95": 21
+  },
+  {
+    "duration_seconds": 10.003919015000065,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 9.496278394252812,
+    "reaped_child_cpu_percent": 0.0,
+    "rss_kib_min": 234268.0,
+    "rss_kib_max": 234268.0,
+    "gpu_engine_percent": {
+      "render": 0.5080358999687451,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8892.628434561,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 651,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 310718200,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t310718200 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8893.630826776,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 661,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 315949400,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t315949400 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8894.633734833,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 671,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 320707920,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t320707920 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8895.636613254,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 680,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 325638404,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t325638404 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8896.639361949,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 689,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 330586880,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t330586880 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8897.642332586,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 698,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 335362040,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t335362040 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8898.645132424,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 707,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 340726048,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t340726048 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8899.648169489,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 717,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 346219068,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t346219068 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8900.651056167,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 726,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 351353860,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t351353860 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8901.654677977,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 736,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 356482360,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t356482360 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8902.632353576,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 746,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234268.0,
+        "engines_ns": {
+          "render": 361541700,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t361541700 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "idle-atalaya-off",
+    "repetition": 3,
+    "frame_trace": "idle-atalaya-off-3-frames.txt",
+    "frames_logged": 627,
+    "frame_callbacks_by_surface": {
+      "51": 627
+    },
+    "callback_interval_ms_max": 26,
+    "callback_interval_ms_p95": 20
+  },
+  {
+    "duration_seconds": 10.002663952000148,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 9.197549816876888,
+    "reaped_child_cpu_percent": 0.0,
+    "rss_kib_min": 234460.0,
+    "rss_kib_max": 234460.0,
+    "gpu_engine_percent": {
+      "render": 0.5155003931696539,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8906.496330294,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 784,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 381917484,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t381917484 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8907.498307737,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 792,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 386892948,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t386892948 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8908.500375403,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 801,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 391906476,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t391906476 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8909.502846809,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 810,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 397022184,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t397022184 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8910.504799775,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 819,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 401965148,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t401965148 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8911.506887187,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 829,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 407098172,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t407098172 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8912.510437887,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 838,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 412366032,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t412366032 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8913.513289533,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 846,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 417610804,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t417610804 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8914.515532671,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 857,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 423041060,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t423041060 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8915.517553291,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 866,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 428406108,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t428406108 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8916.498994246,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 876,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 433481256,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t433481256 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "idle-explicit-atalaya-on",
+    "repetition": 1,
+    "frame_trace": "idle-explicit-atalaya-on-1-frames.txt",
+    "frames_logged": 628,
+    "frame_callbacks_by_surface": {
+      "51": 628
+    },
+    "callback_interval_ms_max": 23,
+    "callback_interval_ms_p95": 20
+  },
+  {
+    "duration_seconds": 10.00103084500006,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 9.599010490803003,
+    "reaped_child_cpu_percent": 0.19997938522506256,
+    "rss_kib_min": 234460.0,
+    "rss_kib_max": 234460.0,
+    "gpu_engine_percent": {
+      "render": 0.5100684598478478,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8916.557089463,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 877,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 433847492,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29568 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t4 MiB\ndrm-resident-system0:\t29568 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t433847492 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8917.560962383,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 886,
+        "reaped_child_ticks": 62,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 439023936,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30080 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30080 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t439023936 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8918.563231583,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 896,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 444161536,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30148 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30148 KiB\ndrm-purgeable-system0:\t2344 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t444161536 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8919.565240565,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 906,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 449344532,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29636 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29636 KiB\ndrm-purgeable-system0:\t1832 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t449344532 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8920.56674642,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 916,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 454384372,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29600 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29600 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t454384372 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8921.567874193,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 926,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 459595604,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30112 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30112 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t459595604 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8922.569572608,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 935,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 464903712,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29600 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29600 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t464903712 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8923.570741524,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 945,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 470064868,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29600 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29600 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t470064868 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8924.572703687,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 955,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 474956820,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30112 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30112 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t474956820 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8925.574669372,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 963,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 479993384,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30112 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30112 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t479993384 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8926.558120308,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 973,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 484859596,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29600 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29600 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t484859596 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "idle-explicit-atalaya-on",
+    "repetition": 2,
+    "frame_trace": "idle-explicit-atalaya-on-2-frames.txt",
+    "frames_logged": 627,
+    "frame_callbacks_by_surface": {
+      "51": 627
+    },
+    "callback_interval_ms_max": 24,
+    "callback_interval_ms_p95": 20
+  },
+  {
+    "duration_seconds": 10.00273304500115,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 8.597650223503502,
+    "reaped_child_cpu_percent": 0.0,
+    "rss_kib_min": 234460.0,
+    "rss_kib_max": 234460.0,
+    "gpu_engine_percent": {
+      "render": 0.3671683712318424,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8926.601923981,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 973,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 485026412,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29600 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t4 MiB\ndrm-resident-system0:\t29600 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t485026412 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8927.604036662,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 981,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 488532408,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30112 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30112 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t488532408 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8928.606248658,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 991,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 491893792,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30112 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30112 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t491893792 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8929.607428904,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 998,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 495371968,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29600 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29600 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t495371968 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8930.608391782,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1008,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 499557032,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30112 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30112 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t499557032 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8931.61027256,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1017,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 503206496,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30112 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t30112 KiB\ndrm-purgeable-system0:\t2244 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t503206496 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8932.612845594,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1025,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 506891372,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29600 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29600 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t506891372 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8933.614039572,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1034,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 510327168,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29600 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t4 MiB\ndrm-resident-system0:\t29600 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t510327168 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8934.61579012,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1042,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 513769932,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t30112 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t17784 KiB\ndrm-resident-system0:\t30112 KiB\ndrm-purgeable-system0:\t2116 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t513769932 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8935.61867131,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1051,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 517948028,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29600 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t29600 KiB\ndrm-purgeable-system0:\t1732 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t517948028 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8936.604657026,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1059,
+        "reaped_child_ticks": 64,
+        "rss_kib": 234460.0,
+        "engines_ns": {
+          "render": 521753284,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t29600 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t17784 KiB\ndrm-resident-system0:\t29600 KiB\ndrm-purgeable-system0:\t1604 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t521753284 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "idle-explicit-atalaya-on",
+    "repetition": 3,
+    "frame_trace": "idle-explicit-atalaya-on-3-frames.txt",
+    "frames_logged": 627,
+    "frame_callbacks_by_surface": {
+      "51": 627
+    },
+    "callback_interval_ms_max": 26,
+    "callback_interval_ms_p95": 21
+  },
+  {
+    "duration_seconds": 10.002103119000822,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 1.1997476787860553,
+    "reaped_child_cpu_percent": 0.19995794646434256,
+    "rss_kib_min": 235616.0,
+    "rss_kib_max": 235616.0,
+    "gpu_engine_percent": {
+      "render": 0.018219048317330695,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8939.674917794,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1092,
+        "reaped_child_ticks": 64,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 532454156,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t42800 KiB\ndrm-shared-system0:\t8 MiB\ndrm-active-system0:\t24264 KiB\ndrm-resident-system0:\t42800 KiB\ndrm-purgeable-system0:\t2140 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t532454156 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8940.677015633,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1098,
+        "reaped_child_ticks": 64,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8941.678841329,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1099,
+        "reaped_child_ticks": 64,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8942.681297858,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1099,
+        "reaped_child_ticks": 64,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8943.684122096,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1100,
+        "reaped_child_ticks": 64,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8944.686917783,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1101,
+        "reaped_child_ticks": 64,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8945.689100237,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1101,
+        "reaped_child_ticks": 64,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8946.691727902,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1102,
+        "reaped_child_ticks": 64,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8947.693532992,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1102,
+        "reaped_child_ticks": 64,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8948.694755765,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1103,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8949.677020913,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1104,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "media-local-playing",
+    "repetition": 1,
+    "frame_trace": "media-local-playing-1-frames.txt",
+    "frames_logged": 32,
+    "frame_callbacks_by_surface": {
+      "51": 32
+    },
+    "callback_interval_ms_max": 37,
+    "callback_interval_ms_p95": 30
+  },
+  {
+    "duration_seconds": 10.002747810000074,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 0.6998077061386945,
+    "reaped_child_cpu_percent": 0.0,
+    "rss_kib_min": 235616.0,
+    "rss_kib_max": 235616.0,
+    "gpu_engine_percent": {
+      "render": 0.0,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8949.721657334,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1104,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8950.722868365,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1104,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8951.72579346,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1106,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8952.7268229,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1106,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8953.72882328,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1107,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8954.730133524,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1107,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8955.733909857,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1108,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8956.737206362,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1109,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8957.7402627,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1109,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8958.742870716,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1110,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8959.724405144,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1111,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "media-local-playing",
+    "repetition": 2,
+    "frame_trace": "media-local-playing-2-frames.txt",
+    "frames_logged": 0,
+    "frame_callbacks_by_surface": {},
+    "callback_interval_ms_max": null,
+    "callback_interval_ms_p95": null
+  },
+  {
+    "duration_seconds": 10.00176162400021,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 0.5998943211766226,
+    "reaped_child_cpu_percent": 0.0,
+    "rss_kib_min": 235616.0,
+    "rss_kib_max": 235616.0,
+    "gpu_engine_percent": {
+      "render": 0.0,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8959.763637273,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1111,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8960.766481005,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1111,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8961.769618399,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1113,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8962.771147091,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1113,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8963.773957176,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1114,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8964.776782444,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1114,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8965.778416554,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1114,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8966.781520198,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1116,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8967.78401761,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1116,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8968.786826023,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1117,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8969.765398897,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1117,
+        "reaped_child_ticks": 66,
+        "rss_kib": 235616.0,
+        "engines_ns": {
+          "render": 534276444,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t46396 KiB\ndrm-shared-system0:\t12 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t46396 KiB\ndrm-purgeable-system0:\t1768 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t534276444 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "media-local-playing",
+    "repetition": 3,
+    "frame_trace": "media-local-playing-3-frames.txt",
+    "frames_logged": 0,
+    "frame_callbacks_by_surface": {},
+    "callback_interval_ms_max": null,
+    "callback_interval_ms_p95": null
+  },
+  {
+    "duration_seconds": 10.002006324000831,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 0.6998595854916417,
+    "reaped_child_cpu_percent": 0.6998595854916417,
+    "rss_kib_min": 249744.0,
+    "rss_kib_max": 249744.0,
+    "gpu_engine_percent": {
+      "render": 0.0,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8975.890077461,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1148,
+        "reaped_child_ticks": 68,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8976.892527499,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1149,
+        "reaped_child_ticks": 70,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8977.895341785,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1150,
+        "reaped_child_ticks": 70,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8978.898082855,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1150,
+        "reaped_child_ticks": 72,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8979.899178216,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1151,
+        "reaped_child_ticks": 72,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8980.901611608,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1151,
+        "reaped_child_ticks": 72,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8981.903204916,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1152,
+        "reaped_child_ticks": 73,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8982.905273836,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1153,
+        "reaped_child_ticks": 74,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8983.907024186,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1153,
+        "reaped_child_ticks": 74,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8984.908764782,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1154,
+        "reaped_child_ticks": 75,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8985.892083785,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1155,
+        "reaped_child_ticks": 75,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "dock-settled",
+    "repetition": 1,
+    "frame_trace": "dock-settled-1-frames.txt",
+    "frames_logged": 0,
+    "frame_callbacks_by_surface": {},
+    "callback_interval_ms_max": null,
+    "callback_interval_ms_p95": null
+  },
+  {
+    "duration_seconds": 10.001802475999284,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 0.6998738494183898,
+    "reaped_child_cpu_percent": 0.6998738494183898,
+    "rss_kib_min": 247412.0,
+    "rss_kib_max": 249744.0,
+    "gpu_engine_percent": {
+      "render": 0.0,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8985.93807491,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1155,
+        "reaped_child_ticks": 75,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8986.940644706,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1155,
+        "reaped_child_ticks": 75,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8987.943604641,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1157,
+        "reaped_child_ticks": 77,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8988.946116959,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1157,
+        "reaped_child_ticks": 77,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8989.949378238,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1158,
+        "reaped_child_ticks": 77,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8990.952305032,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1158,
+        "reaped_child_ticks": 79,
+        "rss_kib": 249744.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8991.954486704,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1159,
+        "reaped_child_ticks": 79,
+        "rss_kib": 247412.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8992.957449355,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1160,
+        "reaped_child_ticks": 80,
+        "rss_kib": 247412.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8993.960357346,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1161,
+        "reaped_child_ticks": 80,
+        "rss_kib": 247412.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8994.962936847,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1161,
+        "reaped_child_ticks": 81,
+        "rss_kib": 247412.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8995.939877386,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1162,
+        "reaped_child_ticks": 82,
+        "rss_kib": 247412.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "dock-settled",
+    "repetition": 2,
+    "frame_trace": "dock-settled-2-frames.txt",
+    "frames_logged": 0,
+    "frame_callbacks_by_surface": {},
+    "callback_interval_ms_max": null,
+    "callback_interval_ms_p95": null
+  },
+  {
+    "duration_seconds": 10.002126740000676,
+    "clock_ticks_per_second": 100,
+    "cpu_percent_one_core": 0.6998511598543818,
+    "reaped_child_cpu_percent": 0.7998298969764364,
+    "rss_kib_min": 247220.0,
+    "rss_kib_max": 247412.0,
+    "gpu_engine_percent": {
+      "render": 0.0,
+      "copy": 0.0,
+      "video": 0.0,
+      "video-enhance": 0.0
+    },
+    "samples": [
+      {
+        "monotonic": 8995.986362401,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1162,
+        "reaped_child_ticks": 82,
+        "rss_kib": 247412.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8996.988726864,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1162,
+        "reaped_child_ticks": 82,
+        "rss_kib": 247412.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8997.992326548,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1163,
+        "reaped_child_ticks": 83,
+        "rss_kib": 247412.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8998.993785078,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1164,
+        "reaped_child_ticks": 84,
+        "rss_kib": 247412.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 8999.996250028,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1164,
+        "reaped_child_ticks": 84,
+        "rss_kib": 247412.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 9000.998315966,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1165,
+        "reaped_child_ticks": 84,
+        "rss_kib": 247412.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 9002.000194339,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1166,
+        "reaped_child_ticks": 85,
+        "rss_kib": 247412.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 9003.003086416,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1167,
+        "reaped_child_ticks": 86,
+        "rss_kib": 247220.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 9004.005718647,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1167,
+        "reaped_child_ticks": 86,
+        "rss_kib": 247220.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 9005.007635615,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1167,
+        "reaped_child_ticks": 87,
+        "rss_kib": 247220.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      },
+      {
+        "monotonic": 9005.988489141,
+        "pid": 3552,
+        "start_ticks": "1364027",
+        "cpu_ticks": 1169,
+        "reaped_child_ticks": 90,
+        "rss_kib": 247220.0,
+        "engines_ns": {
+          "render": 538460728,
+          "copy": 0,
+          "video": 0,
+          "video-enhance": 0
+        },
+        "raw_drm_fdinfo": [
+          "pos:\t0\nflags:\t02100002\nmnt_id:\t543\nino:\t540\ndrm-driver:\ti915\ndrm-client-id:\t278\ndrm-pdev:\t0000:00:02.0\ndrm-total-system0:\t100312 KiB\ndrm-shared-system0:\t29 MiB\ndrm-active-system0:\t0\ndrm-resident-system0:\t100312 KiB\ndrm-purgeable-system0:\t17068 KiB\ndrm-total-stolen-system0:\t0\ndrm-shared-stolen-system0:\t0\ndrm-active-stolen-system0:\t0\ndrm-resident-stolen-system0:\t0\ndrm-purgeable-stolen-system0:\t0\ndrm-engine-render:\t538460728 ns\ndrm-engine-copy:\t0 ns\ndrm-engine-video:\t0 ns\ndrm-engine-capacity-video:\t2\ndrm-engine-video-enhance:\t0 ns\n"
+        ]
+      }
+    ],
+    "condition": "dock-settled",
+    "repetition": 3,
+    "frame_trace": "dock-settled-3-frames.txt",
+    "frames_logged": 0,
+    "frame_callbacks_by_surface": {},
+    "callback_interval_ms_max": null,
+    "callback_interval_ms_p95": null
+  }
+]

@@ -1,0 +1,18 @@
+{
+  "actions": [
+    "python3 tools/cp00.py compositor-stop",
+    "python3 tools/cp00.py server-stop"
+  ],
+  "observed": "Both verified payloads stopped; their PID namespaces are absent; host config/notification owner unchanged.",
+  "host_quickshell": [
+    {
+      "config_path": "/home/noobsambit/.config/quickshell/end4-pC/shell.qml",
+      "id": "xzn1r8nt",
+      "launch_time": "2026-10-21T10:26:11",
+      "pid": 1293,
+      "shell_id": "962f75767314addec36fdeb1bbb48f35"
+    }
+  ],
+  "host_notification_owner": "s \":1.14\"\n",
+  "host_k4_state_absent": true
+}

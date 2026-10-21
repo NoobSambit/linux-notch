@@ -1,0 +1,4 @@
+$ python3 tools/guia.py
+5 documentos revisados, no le mienten al código.
+
+Exit: 0

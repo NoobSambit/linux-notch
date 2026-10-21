@@ -1,0 +1,26 @@
+{
+  "server": {
+    "pid": 55125,
+    "start_ticks": "1148381",
+    "exe": "/usr/bin/python3.14",
+    "pid_namespace": "pid:[4026533306]",
+    "argv": [
+      "python3",
+      "/control.py",
+      "_server"
+    ],
+    "date": "2026-10-21T08:07:15.312141+00:00"
+  },
+  "compositor": {
+    "pid": 55130,
+    "start_ticks": "1148399",
+    "exe": "/usr/bin/Hyprland",
+    "pid_namespace": "pid:[4026533417]",
+    "argv": [
+      "Hyprland",
+      "-c",
+      "/lab/hyprland.lua"
+    ],
+    "date": "2026-10-21T08:07:15.501045+00:00"
+  }
+}

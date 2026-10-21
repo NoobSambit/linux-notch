@@ -1,0 +1,175 @@
+$ python3 tools/test_workflow.py
+...FFF......F...........FFFFF.
+======================================================================
+FAIL: test_conditional_not_tested_and_failure (__main__.WorkflowTests.test_conditional_not_tested_and_failure)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 313, in test_conditional_not_tested_and_failure
+    self.good()
+    ~~~~~~~~~^^
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 71, in good
+    self.assertEqual([], self.errors())
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [] != ['cp-00-baseline: current_task does not match task state']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'cp-00-baseline: current_task does not match task state'
+
+- []
++ ['cp-00-baseline: current_task does not match task state']
+
+======================================================================
+FAIL: test_correction_archives_approval_and_suspends_downstream (__main__.WorkflowTests.test_correction_archives_approval_and_suspends_downstream)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 339, in test_correction_archives_approval_and_suspends_downstream
+    self.assertEqual([], self.errors(previous=old))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [] != ['cp-00-baseline: current_task does not match task state']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'cp-00-baseline: current_task does not match task state'
+
+- []
++ ['cp-00-baseline: current_task does not match task state']
+
+======================================================================
+FAIL: test_current_task_and_premature_testing (__main__.WorkflowTests.test_current_task_and_premature_testing)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 179, in test_current_task_and_premature_testing
+    self.good()
+    ~~~~~~~~~^^
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 71, in good
+    self.assertEqual([], self.errors())
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [] != ['cp-00-baseline: current_task does not ma[327 chars]SHA']
+
+Second list contains 5 additional elements.
+First extra element 0:
+'cp-00-baseline: current_task does not match task state'
+
+- []
++ ['cp-00-baseline: current_task does not match task state',
++  'cp-00-baseline/run-01: revision must be a locally available full commit SHA',
++  'cp-00-baseline/run-02: revision must be a locally available full commit SHA',
++  'cp-00-baseline/run-03: revision must be a locally available full commit SHA',
++  'cp-00-baseline/run-04: revision must be a locally available full commit SHA']
+
+======================================================================
+FAIL: test_initial_record (__main__.WorkflowTests.test_initial_record)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 128, in test_initial_record
+    self.good()
+    ~~~~~~~~~^^
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 71, in good
+    self.assertEqual([], self.errors())
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [] != ['cp-00-baseline: last_good_sha: revision [356 chars]SHA']
+
+Second list contains 5 additional elements.
+First extra element 0:
+'cp-00-baseline: last_good_sha: revision must be a locally available full commit SHA'
+
+- []
++ ['cp-00-baseline: last_good_sha: revision must be a locally available full '
++  'commit SHA',
++  'cp-00-baseline/run-01: revision must be a locally available full commit SHA',
++  'cp-00-baseline/run-02: revision must be a locally available full commit SHA',
++  'cp-00-baseline/run-03: revision must be a locally available full commit SHA',
++  'cp-00-baseline/run-04: revision must be a locally available full commit SHA']
+
+======================================================================
+FAIL: test_submission_cannot_skip_inventory (__main__.WorkflowTests.test_submission_cannot_skip_inventory)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 303, in test_submission_cannot_skip_inventory
+    self.good()
+    ~~~~~~~~~^^
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 71, in good
+    self.assertEqual([], self.errors())
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [] != ['cp-00-baseline: current_task does not match task state']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'cp-00-baseline: current_task does not match task state'
+
+- []
++ ['cp-00-baseline: current_task does not match task state']
+
+======================================================================
+FAIL: test_valid_handoff_and_full_sequence (__main__.WorkflowTests.test_valid_handoff_and_full_sequence)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 132, in test_valid_handoff_and_full_sequence
+    self.good()
+    ~~~~~~~~~^^
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 71, in good
+    self.assertEqual([], self.errors())
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [] != ['cp-00-baseline: current_task does not match task state']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'cp-00-baseline: current_task does not match task state'
+
+- []
++ ['cp-00-baseline: current_task does not match task state']
+
+======================================================================
+FAIL: test_visual_gate_and_design_spec (__main__.WorkflowTests.test_visual_gate_and_design_spec)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 284, in test_visual_gate_and_design_spec
+    self.good()
+    ~~~~~~~~~^^
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 71, in good
+    self.assertEqual([], self.errors())
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [] != ['cp-00-baseline: current_task does not match task state']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'cp-00-baseline: current_task does not match task state'
+
+- []
++ ['cp-00-baseline: current_task does not match task state']
+
+======================================================================
+FAIL: test_visual_reapproval_retains_old_work_and_closes_gate (__main__.WorkflowTests.test_visual_reapproval_retains_old_work_and_closes_gate)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 354, in test_visual_reapproval_retains_old_work_and_closes_gate
+    self.assertEqual([], self.errors(previous=old))
+    ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: Lists differ: [] != ['cp-00-baseline: current_task does not match task state']
+
+Second list contains 1 additional elements.
+First extra element 0:
+'cp-00-baseline: current_task does not match task state'
+
+- []
++ ['cp-00-baseline: current_task does not match task state']
+
+======================================================================
+FAIL: test_work_without_authorization (__main__.WorkflowTests.test_work_without_authorization)
+----------------------------------------------------------------------
+Traceback (most recent call last):
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 156, in test_work_without_authorization
+    self.bad('before authorization')
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/noobsambit/Documents/k4-main/tools/test_workflow.py", line 75, in bad
+    self.assertTrue(any(fragment in e for e in errors), errors)
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: False is not true : ['cp-00-baseline: last_good_sha: revision must be a locally available full commit SHA', 'cp-00-baseline/run-01: revision must be a locally available full commit SHA', 'cp-00-baseline/run-02: revision must be a locally available full commit SHA', 'cp-00-baseline/run-03: revision must be a locally available full commit SHA', 'cp-00-baseline/run-04: revision must be a locally available full commit SHA']
+
+----------------------------------------------------------------------
+Ran 30 tests in 3.851s
+
+FAILED (failures=9)
+
+Exit: 1

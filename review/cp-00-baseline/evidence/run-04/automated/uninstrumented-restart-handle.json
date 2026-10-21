@@ -1,0 +1,29 @@
+{
+  "instance": {
+    "config_path": "/candidate/shell.qml",
+    "id": "472gf19nt",
+    "launch_time": "2026-10-21T08:40:28",
+    "pid": 2848,
+    "shell_id": "2d05d68fdebd309fd350f051a28894b6"
+  },
+  "process": {
+    "pid": 2848,
+    "start_ticks": "1347657",
+    "exe": "/usr/bin/quickshell",
+    "argv": [
+      "quickshell",
+      "-p",
+      "/candidate/shell.qml",
+      "--no-color"
+    ],
+    "pid_namespace": "pid:[4026533306]"
+  },
+  "environment": {
+    "WAYLAND_DISPLAY": "wayland-1",
+    "HYPRLAND_INSTANCE_SIGNATURE": "efb50993780079460b0cbed1363e2166a2de1d9f_1792571502_1574084624",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/tmp/dbus-NwZGRlgoi4,guid=271c20e935f412de3ba8c4de6ad8786e",
+    "XDG_RUNTIME_DIR": "/run/cp00"
+  },
+  "revision": "818993b1ce115fe3428cf92853c8ea776db7a415",
+  "log": "/lab/logs/k4-1792572028028056351.txt"
+}

@@ -28,6 +28,9 @@ jobs:
       - name: Workflow checker regression tests
         run: python3 tools/test_workflow.py
 
+      - name: CP-00 instance and disposable-recovery safety regressions
+        run: python3 tools/test_cp00.py
+
       - name: Workflow records, evidence and preserved history
         env:
           WORKFLOW_BASE: ${{ github.event.pull_request.base.sha || github.event.before }}

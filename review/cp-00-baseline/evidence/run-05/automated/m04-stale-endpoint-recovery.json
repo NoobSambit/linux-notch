@@ -1,0 +1,12 @@
+{
+  "date": "2026-10-21T12:02:14.067202+00:00",
+  "candidate_store_hashes_unchanged": true,
+  "initial_probe_limit": "First host connect used an AF_UNIX path longer than its limit; no mutation occurred. Retried from the task-private directory with its relative path.",
+  "actions": [
+    {
+      "source": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/runtime/hypr/efb50993780079460b0cbed1363e2166a2de1d9f_1792582872_910622797/.socket.sock",
+      "preserved_as": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/runtime/hypr/efb50993780079460b0cbed1363e2166a2de1d9f_1792582872_910622797/.socket.sock.stale-before-m04",
+      "probe": "ECONNREFUSED after both guarded payloads stopped; task-private endpoint only"
+    }
+  ]
+}

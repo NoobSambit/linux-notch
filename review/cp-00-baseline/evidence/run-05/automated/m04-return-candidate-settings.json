@@ -1,0 +1,44 @@
+{
+  "date": "2026-10-21T12:12:56.540603+00:00",
+  "saved_position": "abajo",
+  "commands": [
+    {
+      "command": [
+        "python3",
+        "/lab/runtime_control.py",
+        "status"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"instance\": {\n    \"config_path\": \"/candidate/shell.qml\",\n    \"id\": \"k2e8b9nt\",\n    \"launch_time\": \"2026-10-21T12:12:14\",\n    \"pid\": 92,\n    \"shell_id\": \"2d05d68fdebd309fd350f051a28894b6\"\n  },\n  \"process\": {\n    \"pid\": 92,\n    \"start_ticks\": \"2618240\",\n    \"exe\": \"/usr/bin/quickshell\",\n    \"argv\": [\n      \"quickshell\",\n      \"-p\",\n      \"/candidate/shell.qml\",\n      \"--no-color\"\n    ],\n    \"pid_namespace\": \"pid:[4026533703]\"\n  },\n  \"environment\": {\n    \"WAYLAND_DISPLAY\": \"wayland-1\",\n    \"HYPRLAND_INSTANCE_SIGNATURE\": \"efb50993780079460b0cbed1363e2166a2de1d9f_1792584715_1830369440\",\n    \"DBUS_SESSION_BUS_ADDRESS\": \"unix:path=/tmp/dbus-VU6QO1DWLq,guid=a77b2cb58c6e6114f3db2b066ad8ac0b\",\n    \"XDG_RUNTIME_DIR\": \"/run/cp00\"\n  },\n  \"revision\": \"b114d5a1b8c3ed90e97b577e3424092a783e04ed\",\n  \"log\": \"/lab/logs/k4-1792584734558841268.txt\"\n}\n",
+      "stderr": "",
+      "date": "2026-10-21T12:12:55.540595+00:00"
+    },
+    {
+      "command": [
+        "python3",
+        "/lab/runtime_control.py",
+        "ipc",
+        "call",
+        "k4.settings",
+        "abrirPagina",
+        "island"
+      ],
+      "exit_code": 0,
+      "stdout": "\n",
+      "stderr": "",
+      "date": "2026-10-21T12:12:55.662808+00:00"
+    },
+    {
+      "command": [
+        "grim",
+        "-o",
+        "CP00-STABLE",
+        "/lab/m04-return-candidate-settings.png"
+      ],
+      "exit_code": 0,
+      "stdout": "",
+      "stderr": "",
+      "date": "2026-10-21T12:12:56.540455+00:00"
+    }
+  ]
+}

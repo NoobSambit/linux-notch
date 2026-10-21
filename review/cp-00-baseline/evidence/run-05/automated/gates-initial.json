@@ -1,0 +1,82 @@
+{
+  "date": "2026-10-21T10:29:40.481468+00:00",
+  "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+  "results": [
+    {
+      "command": "python3 tools/plugins.py",
+      "exit_code": 0,
+      "seconds": 0.141,
+      "evidence": "plugins.txt"
+    },
+    {
+      "command": "python3 tools/api.py",
+      "exit_code": 0,
+      "seconds": 0.405,
+      "evidence": "api.txt"
+    },
+    {
+      "command": "python3 tools/guia.py",
+      "exit_code": 0,
+      "seconds": 0.194,
+      "evidence": "guia.txt"
+    },
+    {
+      "command": "python3 tools/layouts.py",
+      "exit_code": 0,
+      "seconds": 3.335,
+      "evidence": "layouts.txt"
+    },
+    {
+      "command": "python3 tools/prueba_editar.py",
+      "exit_code": 0,
+      "seconds": 0.428,
+      "evidence": "prueba_editar.txt"
+    },
+    {
+      "command": "python3 tools/prueba_plugins.py",
+      "exit_code": 0,
+      "seconds": 0.913,
+      "evidence": "prueba_plugins.txt"
+    },
+    {
+      "command": "python3 tools/prueba_rutas.py",
+      "exit_code": 0,
+      "seconds": 0.026,
+      "evidence": "prueba_rutas.txt"
+    },
+    {
+      "command": "python3 tools/prueba_texto.py",
+      "exit_code": 0,
+      "seconds": 0.062,
+      "evidence": "prueba_texto.txt"
+    },
+    {
+      "command": "python3 tools/workflow.py",
+      "exit_code": 0,
+      "seconds": 0.241,
+      "evidence": "workflow.txt"
+    },
+    {
+      "command": "python3 tools/test_workflow.py",
+      "exit_code": 1,
+      "seconds": 3.947,
+      "evidence": "test_workflow.txt"
+    },
+    {
+      "command": "python3 tools/test_cp00.py",
+      "exit_code": 0,
+      "seconds": 0.088,
+      "evidence": "test_cp00.txt"
+    },
+    {
+      "command": "python3 tools/workflow.py --base-ref 6478e25c52adbbbe3e2f00e2c5cf975b09e6732b",
+      "exit_code": 0,
+      "evidence": "workflow-history.txt"
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "evidence": "diff-check.txt"
+    }
+  ]
+}

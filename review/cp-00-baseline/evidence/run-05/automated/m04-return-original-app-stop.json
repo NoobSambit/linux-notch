@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "/lab/runtime_control.py",
+    "stop"
+  ],
+  "exit_code": 0,
+  "stdout": "Stopped only full ID k27ta9nt\n",
+  "stderr": "",
+  "date": "2026-10-21T12:11:36.803769+00:00"
+}

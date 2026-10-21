@@ -1,0 +1,11 @@
+{
+  "command": [
+    "python3",
+    "/lab/runtime_control.py",
+    "start"
+  ],
+  "exit_code": 0,
+  "stdout": "{\n  \"instance\": {\n    \"config_path\": \"/original/shell.qml\",\n    \"id\": \"hfrc09nt\",\n    \"launch_time\": \"2026-10-21T08:17:15\",\n    \"pid\": 557,\n    \"shell_id\": \"3c9ccbd9d073f80115714dfdfa978cf1\"\n  },\n  \"process\": {\n    \"pid\": 557,\n    \"start_ticks\": \"1208439\",\n    \"exe\": \"/usr/bin/quickshell\",\n    \"argv\": [\n      \"quickshell\",\n      \"-p\",\n      \"/original/shell.qml\",\n      \"--no-color\"\n    ],\n    \"pid_namespace\": \"pid:[4026533306]\"\n  },\n  \"environment\": {\n    \"WAYLAND_DISPLAY\": \"wayland-1\",\n    \"HYPRLAND_INSTANCE_SIGNATURE\": \"efb50993780079460b0cbed1363e2166a2de1d9f_1792570523_989200077\",\n    \"DBUS_SESSION_BUS_ADDRESS\": \"unix:path=/tmp/dbus-elnEgfoKRU,guid=e56901560faf96da5907e6bf6ad8749b\",\n    \"XDG_RUNTIME_DIR\": \"/run/cp00\"\n  },\n  \"revision\": \"ff520e33e136bbce11b7100c69888dedf42f7273\",\n  \"log\": \"/lab/logs/k4-1792570635846181412.txt\"\n}\n",
+  "stderr": "",
+  "date": "2026-10-21T08:17:16.128418+00:00"
+}

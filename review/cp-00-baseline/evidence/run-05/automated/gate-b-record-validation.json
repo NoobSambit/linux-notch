@@ -1,0 +1,40 @@
+{
+  "date": "2026-10-21 13:07:05 UTC",
+  "scope": "Administrative transcription of the owner's CP-00 Gate B approval; no new runtime testing.",
+  "base_ref": "59fd804",
+  "checks": [
+    {
+      "check": "workflow validator --base-ref 59fd804",
+      "chunk_id": "ed2ed9",
+      "wall_time_seconds": 0.139867147,
+      "exit_code": 0,
+      "original_token_count": 52,
+      "output": "PASS: 11 checkpoint records, task/proof IDs, manual-test fields, reference paths, gates, links and owner view are consistent.\nStructural validation only; no product/runtime test or owner approval is implied.\n"
+    },
+    {
+      "check": "python3 tools/test_workflow.py",
+      "chunk_id": "014a18",
+      "wall_time_seconds": 5.604105663,
+      "exit_code": 0,
+      "original_token_count": 33,
+      "output": "..............................\n----------------------------------------------------------------------\nRan 30 tests in 5.661s\n\nOK\n"
+    },
+    {
+      "check": "read-only approval preservation/hash audit",
+      "chunk_id": "a689fb",
+      "wall_time_seconds": 0.452907129,
+      "exit_code": 0,
+      "original_token_count": 42,
+      "output": "PASS: all 298 existing evidence files, test histories and later checkpoints unchanged; exact owner approval and staged proof hash verified; no product/helper change.\n"
+    },
+    {
+      "check": "git diff --cached --check and --stat",
+      "chunk_id": "9a5dc5",
+      "wall_time_seconds": 0.000015814,
+      "exit_code": 0,
+      "original_token_count": 85,
+      "output": " docs/workflow/progress.json                        | 25 +++++++++++++-----\n owner/PROGRESS.md                                  | 30 ++++++++++++++++------\n owner/checkpoints/cp-00-baseline.md                |  2 +-\n .../evidence/run-05/owner/gate-b-approval.md       | 16 ++++++++++++\n 4 files changed, 58 insertions(+), 15 deletions(-)\n"
+    }
+  ],
+  "result": "PASS"
+}

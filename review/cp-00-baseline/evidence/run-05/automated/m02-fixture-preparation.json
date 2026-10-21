@@ -1,0 +1,28 @@
+[
+  {
+    "command": [
+      "hyprctl",
+      "eval",
+      "hl.dispatch(hl.dsp.focus({monitor=\"CP00-STABLE\"}))"
+    ],
+    "exit_code": 0,
+    "stdout": "ok\n",
+    "stderr": "",
+    "date": "2026-10-21T11:11:35.853391+00:00"
+  },
+  {
+    "command": [
+      "python3",
+      "-c",
+      "import sys,os,json;sys.path.insert(0,\"/lab\");import runtime_control as r\nfound=[i for i in r.instances() if i[\"config_path\"]==\"/lab/fixture.qml\"]\nassert len(found)==1,found\ni=found[0]; old=r.process_identity(i[\"pid\"]); fd=os.pidfd_open(i[\"pid\"])\nassert r.process_identity(i[\"pid\"])==old\nr.execute([\"quickshell\",\"kill\",\"--id\",i[\"id\"]]);os.close(fd)\nprint(json.dumps({\"stopped_dummy_fixture\":i,\"process\":old}))"
+    ],
+    "exit_code": 0,
+    "stdout": "{\"stopped_dummy_fixture\": {\"config_path\": \"/lab/fixture.qml\", \"id\": \"27ed89nt\", \"launch_time\": \"2026-10-21T11:10:26\", \"pid\": 254, \"shell_id\": \"08410f71d13f28fac8a3ef50509d74c3\"}, \"process\": {\"pid\": 254, \"start_ticks\": \"2247416\", \"exe\": \"/usr/bin/quickshell\", \"argv\": [\"quickshell\", \"-p\", \"/lab/fixture.qml\", \"--no-color\"], \"pid_namespace\": \"pid:[4026533591]\"}}\n",
+    "stderr": "",
+    "date": "2026-10-21T11:11:35.948807+00:00"
+  },
+  {
+    "pid": 406,
+    "started": "2026-10-21T11:11:35.950260+00:00"
+  }
+]

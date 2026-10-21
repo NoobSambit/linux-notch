@@ -26,6 +26,25 @@ class WorkflowTests(unittest.TestCase):
         (cls.root / 'tools').mkdir()
         shutil.copy2(cls.source / 'tools/workflow.py', cls.root / 'tools/workflow.py')
         cls.base = json.loads(workflow.RECORD.read_text())
+        # Contracts/IDs come from the project; execution state must be synthetic.
+        # Real checkpoint SHAs do not exist in this temporary repository, and a
+        # live current_task must never leak into a synthetic completed handoff.
+        cls.base.update(workflow_status='AWAITING WORKFLOW APPROVAL', active_checkpoint=None,
+                        next_checkpoint=cls.base['checkpoints'][0]['id'])
+        for checkpoint in cls.base['checkpoints']:
+            checkpoint.update(status='PLANNED', authorization=None, gate_a=None, gate_b=None,
+                              reference_sets=[], runs=[], latest_run=None, branch=None,
+                              last_good_sha=None, current_task=None, blocked_reason=None)
+            for field in ['approval_history', 'submission', 'proposed_design_spec']:
+                checkpoint.pop(field, None)
+            for task in checkpoint['tasks']:
+                task.update(status='PENDING', evidence=[])
+            for test in checkpoint['tests']:
+                test.update(result='NOT TESTED', reason='Synthetic fixture has not run.', history=[])
+                test.pop('disposition', None)
+                test.pop('required', None)
+        (cls.root / 'docs/workflow/progress.json').write_text(json.dumps(cls.base, indent=2) + '\n')
+        (cls.root / 'owner/PROGRESS.md').write_text(workflow.overview(cls.base))
         cls.git('init', '-q')
         cls.git('config', 'user.name', 'Workflow fixture')
         cls.git('config', 'user.email', 'fixture@invalid')

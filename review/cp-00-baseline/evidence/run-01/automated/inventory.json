@@ -1,0 +1,577 @@
+{
+  "date": "2026-10-21T07:58:19Z",
+  "revision": "6478e25c52adbbbe3e2f00e2c5cf975b09e6732b",
+  "baseline_revision": "ff520e33e136bbce11b7100c69888dedf42f7273",
+  "kernel": "7.2.8-arch1-2",
+  "cpu": "13th Gen Intel(R) Core(TM) i7-13700HX",
+  "memory_kib": 13985644,
+  "commands": [
+    {
+      "command": [
+        "quickshell",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Quickshell 0.2.1 (revision 7511545ee20664e3b8b8d3322c0ffe7567c56f7a, distributed by AUR (package: quickshell-git))\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "quickshell",
+        "--help"
+      ],
+      "exit_code": 0,
+      "stdout": "\nquickshell [OPTIONS] [SUBCOMMAND]\n\n\nOPTIONS:\n  -h,     --help              Print this help message and exit\n  -V,     --version           Print quickshell's version and exit.\n  -n,     --no-duplicate      Exit immediately if another instance of the given config is\n                              running.\n  -d,     --daemonize         Detach from the controlling terminal.\n[Option Group: Config Selection]\n  Quickshell detects configurations as named directories under each XDG config\n  directory as `<xdg dir>/quickshell/<config name>/shell.qml`.\n  \n  If `<xdg dir>/quickshell/shell.qml` exists, it will be registered as the\n  'default' configuration, and no subdirectories will be considered. If --config\n  is not passed, 'default' will be assumed.\n  \n  Alternatively, a config can be selected by path with --path.\n  \n  Examples:\n  - `~/.config/quickshell/shell.qml` can be run with `qs`\n  - `/etc/xdg/quickshell/myconfig/shell.qml` can be run with `qs -c myconfig`\n  - `~/myshell/shell.qml` can be run with `qs -p ~/myshell`\n  - `~/myshell/randomfile.qml` can be run with `qs -p ~/myshell/randomfile.qml`\n  \n\n  OPTIONS:\n    -p,     --path TEXT (Env:QS_CONFIG_PATH) Excludes: --config --manifest \n                                Path to a QML file or config folder.\n    -c,     --config TEXT (Env:QS_CONFIG_NAME) Excludes: --path \n                                Name of a quickshell configuration to run.\n    -m,     --manifest TEXT (Env:QS_MANIFEST) Excludes: --path \n                                [DEPRECATED] Path to a quickshell manifest.\n                                If a manifest is specified, configs named by -c will point to its\n                                entries.\n                                Defaults to $XDG_CONFIG_HOME/quickshell/manifest.conf\n[Option Group: Logging]\n\n  OPTIONS:\n            --no-color          Disables colored logging.\n                                Colored logging can also be disabled by specifying a non empty\n                                value for the NO_COLOR environment variable.\n            --log-times         Log timestamps with each message.\n            --log-rules TEXT    Log rules to apply, in the format of QT_LOGGING_RULES.\n    -v,     --verbose           Increases log verbosity.\n                                -v will show INFO level internal logs.\n                                -vv will show DEBUG level internal logs.\n[Option Group: Debugging]\n  Options for QML debugging.\n  \n\n  OPTIONS:\n            --debug INT:INT in [0 - 65535] \n                                Open the given port for a QML debugger connection.\n            --waitfordebug Needs: --debug \n                                Wait for a QML debugger to connect before executing the\n                                configuration.\n\nSUBCOMMANDS:\n  log                         Print quickshell logs.\n  list                        List running quickshell instances.\n  kill                        Kill quickshell instances.\n  ipc                         Communicate with other Quickshell instances.\n  msg                         [DEPRECATED] Moved to `ipc call`.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "quickshell",
+        "kill",
+        "--help"
+      ],
+      "exit_code": 0,
+      "stdout": "Kill quickshell instances.\n\n\nquickshell kill [OPTIONS]\n\n\nOPTIONS:\n  -h,     --help              Print this help message and exit\n[Option Group: Instance Selection]\n\n  OPTIONS:\n    -i,     --id TEXT           The instance id to operate on.\n                                You may also use a substring the id as long as it is unique, for\n                                example \"abc\" will select \"abcdefg\".\n            --pid INT           The process id of the instance to operate on.\n[Option Group: Config Selection]\n  Quickshell detects configurations as named directories under each XDG config\n  directory as `<xdg dir>/quickshell/<config name>/shell.qml`.\n  \n  If `<xdg dir>/quickshell/shell.qml` exists, it will be registered as the\n  'default' configuration, and no subdirectories will be considered. If --config\n  is not passed, 'default' will be assumed.\n  \n  Alternatively, a config can be selected by path with --path.\n  \n  Examples:\n  - `~/.config/quickshell/shell.qml` can be run with `qs`\n  - `/etc/xdg/quickshell/myconfig/shell.qml` can be run with `qs -c myconfig`\n  - `~/myshell/shell.qml` can be run with `qs -p ~/myshell`\n  - `~/myshell/randomfile.qml` can be run with `qs -p ~/myshell/randomfile.qml`\n  \n\n  OPTIONS:\n    -p,     --path TEXT (Env:QS_CONFIG_PATH) Excludes: --config --manifest \n                                Path to a QML file or config folder.\n    -c,     --config TEXT (Env:QS_CONFIG_NAME) Excludes: --path \n                                Name of a quickshell configuration to run.\n    -m,     --manifest TEXT (Env:QS_MANIFEST) Excludes: --path \n                                [DEPRECATED] Path to a quickshell manifest.\n                                If a manifest is specified, configs named by -c will point to its\n                                entries.\n                                Defaults to $XDG_CONFIG_HOME/quickshell/manifest.conf\n    -n,     --newest            Operate on the most recently launched instance instead of the\n                                oldest\n            --any-display       If passed, instances will not be filtered by the display\n                                connection they were launched on.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "quickshell",
+        "ipc",
+        "--help"
+      ],
+      "exit_code": 0,
+      "stdout": "Communicate with other Quickshell instances.\n\n\nquickshell ipc [OPTIONS] SUBCOMMANDS\n\n\nOPTIONS:\n  -h,     --help              Print this help message and exit\n[Option Group: Instance Selection]\n\n  OPTIONS:\n    -i,     --id TEXT           The instance id to operate on.\n                                You may also use a substring the id as long as it is unique, for\n                                example \"abc\" will select \"abcdefg\".\n            --pid INT           The process id of the instance to operate on.\n[Option Group: Config Selection]\n  Quickshell detects configurations as named directories under each XDG config\n  directory as `<xdg dir>/quickshell/<config name>/shell.qml`.\n  \n  If `<xdg dir>/quickshell/shell.qml` exists, it will be registered as the\n  'default' configuration, and no subdirectories will be considered. If --config\n  is not passed, 'default' will be assumed.\n  \n  Alternatively, a config can be selected by path with --path.\n  \n  Examples:\n  - `~/.config/quickshell/shell.qml` can be run with `qs`\n  - `/etc/xdg/quickshell/myconfig/shell.qml` can be run with `qs -c myconfig`\n  - `~/myshell/shell.qml` can be run with `qs -p ~/myshell`\n  - `~/myshell/randomfile.qml` can be run with `qs -p ~/myshell/randomfile.qml`\n  \n\n  OPTIONS:\n    -p,     --path TEXT (Env:QS_CONFIG_PATH) Excludes: --config --manifest \n                                Path to a QML file or config folder.\n    -c,     --config TEXT (Env:QS_CONFIG_NAME) Excludes: --path \n                                Name of a quickshell configuration to run.\n    -m,     --manifest TEXT (Env:QS_MANIFEST) Excludes: --path \n                                [DEPRECATED] Path to a quickshell manifest.\n                                If a manifest is specified, configs named by -c will point to its\n                                entries.\n                                Defaults to $XDG_CONFIG_HOME/quickshell/manifest.conf\n    -n,     --newest            Operate on the most recently launched instance instead of the\n                                oldest\n            --any-display       If passed, instances will not be filtered by the display\n                                connection they were launched on.\n\nSUBCOMMANDS:\n  show                        Print information about available IPC targets.\n  call                        Call an IpcHandler function.\n  wait                        Wait for one IpcHandler signal.\n  listen                      Listen for IpcHandler signals.\n  prop                        Manipulate IpcHandler properties.\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "quickshell",
+        "list",
+        "--all",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "[\n    {\n        \"config_path\": \"/home/noobsambit/.config/quickshell/end4-pC/shell.qml\",\n        \"id\": \"xzn1r8nt\",\n        \"launch_time\": \"2026-10-21T10:26:11\",\n        \"pid\": 1293,\n        \"shell_id\": \"962f75767314addec36fdeb1bbb48f35\"\n    }\n]\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "Hyprland",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "Hyprland 0.56.2 built from branch v0.56.2 at commit efb50993780079460b0cbed1363e2166a2de1d9f clean ([gha] Nix: update inputs).\nDate: Wed Aug 5 14:13:21 2026\nTag: v0.56.2, commits: 7661\n\nLibraries:\nHyprgraphics: built against 0.5.1, system has 0.5.1\nHyprutils: built against 0.14.2, system has 0.14.2\nHyprcursor: built against 0.1.13, system has 0.1.13\nHyprlang: built against 0.6.8, system has 0.6.8\nAquamarine: built against 0.15.1, system has 0.15.1\n\nVersion ABI string: efb50993780079460b0cbed1363e2166a2de1d9f_aq_0.15_hu_0.14_hg_0.5_hc_0.1_hlg_0.6\nno flags were set\n\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "bwrap",
+        "--version"
+      ],
+      "exit_code": 0,
+      "stdout": "bubblewrap 0.13.0\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "pacman",
+        "-Q",
+        "qt6-base",
+        "qt6-declarative",
+        "qt6-wayland",
+        "qt6-multimedia",
+        "qt6-multimedia-ffmpeg",
+        "hyprland",
+        "bubblewrap",
+        "mesa",
+        "nvidia-utils",
+        "ffmpeg",
+        "wl-clipboard"
+      ],
+      "exit_code": 0,
+      "stdout": "qt6-base 6.11.2-3\nqt6-declarative 6.11.2-2\nqt6-wayland 6.11.2-1\nqt6-multimedia 6.11.2-1\nqt6-multimedia-ffmpeg 6.11.2-1\nhyprland 0.56.2-4\nbubblewrap 0.13.0-1\nmesa 1:26.2.4-1\nnvidia-utils 615.71.09-1\nffmpeg 2:9.0.2-2\nwl-clipboard 1:2.3.0-1\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "hyprctl",
+        "-j",
+        "monitors"
+      ],
+      "exit_code": 0,
+      "stdout": "[{\n    \"id\": 0,\n    \"name\": \"eDP-1\",\n    \"description\": \"Chimei Innolux Corporation 0x1629\",\n    \"make\": \"Chimei Innolux Corporation\",\n    \"model\": \"0x1629\",\n    \"serial\": \"\",\n    \"width\": 1920,\n    \"height\": 1080,\n    \"physicalWidth\": 360,\n    \"physicalHeight\": 200,\n    \"refreshRate\": 165.00200,\n    \"x\": 0,\n    \"y\": 0,\n    \"activeWorkspace\": {\n        \"id\": 3,\n        \"name\": \"3\"\n    },\n    \"specialWorkspace\": {\n        \"id\": 0,\n        \"name\": \"\"\n    },\n    \"reserved\": [0, 40, 0, 0],\n    \"scale\": 1,\n    \"transform\": 0,\n    \"focused\": true,\n    \"dpmsStatus\": true,\n    \"vrr\": false,\n    \"solitary\": \"0\",\n    \"solitaryBlockedBy\": [\"WINDOWED\",\"CANDIDATE\"],\n    \"activelyTearing\": false,\n    \"tearingBlockedBy\": [\"NOT_TORN\",\"CANDIDATE\"],\n    \"directScanoutTo\": \"0\",\n    \"directScanoutBlockedBy\": [\"USER\",\"SW\",\"CANDIDATE\"],\n    \"disabled\": false,\n    \"currentFormat\": \"XRGB8888\",\n    \"mirrorOf\": \"none\",\n    \"availableModes\": [\"1920x1080@165.00Hz\",\"1920x1080@60.00Hz\"],\n    \"colorManagementPreset\": \"srgb\",\n    \"sdrBrightness\": 1,\n    \"sdrSaturation\": 1,\n    \"sdrMinLuminance\": 0.2,\n    \"sdrMaxLuminance\": 80,\n    \"hardwareCursorsInUse\": false\n}]\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "busctl",
+        "--user",
+        "call",
+        "org.freedesktop.DBus",
+        "/org/freedesktop/DBus",
+        "org.freedesktop.DBus",
+        "GetNameOwner",
+        "s",
+        "org.freedesktop.Notifications"
+      ],
+      "exit_code": 0,
+      "stdout": "s \":1.14\"\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "busctl",
+        "--user",
+        "call",
+        "org.freedesktop.DBus",
+        "/org/freedesktop/DBus",
+        "org.freedesktop.DBus",
+        "GetConnectionUnixProcessID",
+        "s",
+        "org.freedesktop.Notifications"
+      ],
+      "exit_code": 0,
+      "stdout": "u 1293\n",
+      "stderr": ""
+    }
+  ],
+  "dependencies": [
+    {
+      "check": "pkg:quickshell",
+      "package": "quickshell",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "command": [
+          "pacman",
+          "-Q",
+          "quickshell"
+        ],
+        "exit_code": 0,
+        "stdout": "illogical-impulse-quickshell-git 0.1.0.r1-8\n",
+        "stderr": ""
+      }
+    },
+    {
+      "check": "pkg:hyprland",
+      "package": "hyprland",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "command": [
+          "pacman",
+          "-Q",
+          "hyprland"
+        ],
+        "exit_code": 0,
+        "stdout": "hyprland 0.56.2-4\n",
+        "stderr": ""
+      }
+    },
+    {
+      "check": "git",
+      "package": "git",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/git"
+      }
+    },
+    {
+      "check": "python",
+      "package": "python",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/python"
+      }
+    },
+    {
+      "check": "pkg:qt6-multimedia",
+      "package": "qt6-multimedia",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "command": [
+          "pacman",
+          "-Q",
+          "qt6-multimedia"
+        ],
+        "exit_code": 0,
+        "stdout": "qt6-multimedia 6.11.2-1\n",
+        "stderr": ""
+      }
+    },
+    {
+      "check": "pkg:qt6-multimedia-ffmpeg",
+      "package": "qt6-multimedia-ffmpeg",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "command": [
+          "pacman",
+          "-Q",
+          "qt6-multimedia-ffmpeg"
+        ],
+        "exit_code": 0,
+        "stdout": "qt6-multimedia-ffmpeg 6.11.2-1\n",
+        "stderr": ""
+      }
+    },
+    {
+      "check": "pkg:ttf-meslo-nerd",
+      "package": "ttf-meslo-nerd",
+      "level": "base",
+      "installed": false,
+      "observed": {
+        "command": [
+          "pacman",
+          "-Q",
+          "ttf-meslo-nerd"
+        ],
+        "exit_code": 1,
+        "stdout": "",
+        "stderr": "error: package 'ttf-meslo-nerd' was not found\n"
+      }
+    },
+    {
+      "check": "pkg:adwaita-fonts",
+      "package": "adwaita-fonts",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "command": [
+          "pacman",
+          "-Q",
+          "adwaita-fonts"
+        ],
+        "exit_code": 0,
+        "stdout": "adwaita-fonts 51.0-2\n",
+        "stderr": ""
+      }
+    },
+    {
+      "check": "grim",
+      "package": "grim",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/grim"
+      }
+    },
+    {
+      "check": "slurp",
+      "package": "slurp",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/slurp"
+      }
+    },
+    {
+      "check": "satty",
+      "package": "satty",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/satty"
+      }
+    },
+    {
+      "check": "wf-recorder",
+      "package": "wf-recorder",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/wf-recorder"
+      }
+    },
+    {
+      "check": "swaybg",
+      "package": "swaybg",
+      "level": "base",
+      "installed": false,
+      "observed": {
+        "exit_code": 1,
+        "path": null
+      }
+    },
+    {
+      "check": "ffmpeg",
+      "package": "ffmpeg",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/ffmpeg"
+      }
+    },
+    {
+      "check": "ffprobe",
+      "package": "ffmpeg",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/ffprobe"
+      }
+    },
+    {
+      "check": "magick",
+      "package": "imagemagick",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/magick"
+      }
+    },
+    {
+      "check": "zenity",
+      "package": "zenity",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/zenity"
+      }
+    },
+    {
+      "check": "wl-copy",
+      "package": "wl-clipboard",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/wl-copy"
+      }
+    },
+    {
+      "check": "wl-paste",
+      "package": "wl-clipboard",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/wl-paste"
+      }
+    },
+    {
+      "check": "fd",
+      "package": "fd",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/fd"
+      }
+    },
+    {
+      "check": "pactl",
+      "package": "libpulse",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/pactl"
+      }
+    },
+    {
+      "check": "wpctl",
+      "package": "wireplumber",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/wpctl"
+      }
+    },
+    {
+      "check": "nmcli",
+      "package": "networkmanager",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/nmcli"
+      }
+    },
+    {
+      "check": "pkg:bluez",
+      "package": "bluez",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "command": [
+          "pacman",
+          "-Q",
+          "bluez"
+        ],
+        "exit_code": 0,
+        "stdout": "bluez 5.87-2\n",
+        "stderr": ""
+      }
+    },
+    {
+      "check": "notify-send",
+      "package": "libnotify",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/notify-send"
+      }
+    },
+    {
+      "check": "xdg-open",
+      "package": "xdg-utils",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/xdg-open"
+      }
+    },
+    {
+      "check": "xdg-user-dir",
+      "package": "xdg-user-dirs",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/xdg-user-dir"
+      }
+    },
+    {
+      "check": "update-desktop-database",
+      "package": "desktop-file-utils",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/update-desktop-database"
+      }
+    },
+    {
+      "check": "curl",
+      "package": "curl",
+      "level": "base",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/curl"
+      }
+    },
+    {
+      "check": "whisper-cli",
+      "package": "whisper-cpp",
+      "level": "opcional",
+      "installed": false,
+      "observed": {
+        "exit_code": 1,
+        "path": null
+      }
+    },
+    {
+      "check": "kitty",
+      "package": "kitty",
+      "level": "opcional",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/kitty"
+      }
+    },
+    {
+      "check": "uwsm",
+      "package": "uwsm",
+      "level": "opcional",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/uwsm"
+      }
+    },
+    {
+      "check": "yay",
+      "package": "yay",
+      "level": "opcional",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/yay"
+      }
+    },
+    {
+      "check": "nvidia-smi",
+      "package": "nvidia-utils",
+      "level": "opcional",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/usr/bin/nvidia-smi"
+      }
+    },
+    {
+      "check": "claude",
+      "package": "-",
+      "level": "opcional",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/home/noobsambit/.local/bin/claude"
+      }
+    },
+    {
+      "check": "codex",
+      "package": "-",
+      "level": "opcional",
+      "installed": true,
+      "observed": {
+        "exit_code": 0,
+        "path": "/home/noobsambit/.npm-global/bin/codex"
+      }
+    }
+  ],
+  "host_endpoints": {
+    "XDG_RUNTIME_DIR": "/run/user/1000",
+    "WAYLAND_DISPLAY": "wayland-1",
+    "HYPRLAND_INSTANCE_SIGNATURE": "efb50993780079460b0cbed1363e2166a2de1d9f_1792558569_876137068",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/run/user/1000/bus",
+    "XDG_SESSION_TYPE": "wayland"
+  },
+  "state_paths": [
+    {
+      "path": "/home/noobsambit/.local/state/k4",
+      "exists": false,
+      "symlink": false
+    },
+    {
+      "path": "/home/noobsambit/.config/k4",
+      "exists": false,
+      "symlink": false
+    },
+    {
+      "path": "/home/noobsambit/.cache/k4",
+      "exists": false,
+      "symlink": false
+    },
+    {
+      "path": "/home/noobsambit/.local/share/k4",
+      "exists": false,
+      "symlink": false
+    },
+    {
+      "path": "/home/noobsambit/.config/quickshell",
+      "exists": true,
+      "symlink": false
+    }
+  ]
+}

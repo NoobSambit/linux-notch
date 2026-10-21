@@ -1,0 +1,1 @@
+{"command": ["/usr/bin/true"], "exit_code": 0, "stdout": "", "stderr": "", "date": "2026-10-21T12:11:55.319330+00:00"}

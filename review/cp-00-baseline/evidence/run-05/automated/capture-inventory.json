@@ -1,0 +1,597 @@
+[
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R01__recovery-candidate-launcher__run-05.png",
+    "sha256": "09f5ce73aa1f477dfae1d2d97aa49c1b53bf1762e7b67036ca942bba43a1c4d3",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:35:27.999470+00:00",
+    "test_id": "R01",
+    "state": "recovery-candidate-launcher",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R01__recovery-candidate-settings__run-05.png",
+    "sha256": "82a3cb5b9fdc0c137db37d03893219d2acf3661f09d4e56b923fbf788eaf2f7b",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:35:26.888477+00:00",
+    "test_id": "R01",
+    "state": "recovery-candidate-settings",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R01__restored-previous-launcher__run-05.png",
+    "sha256": "b46d56d1fbf7891726fc790caa8f995ae8f2ddd0f2e7112ab32e03cf726716bd",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "ff520e33e136bbce11b7100c69888dedf42f7273",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:40:46.743739+00:00",
+    "test_id": "R01",
+    "state": "restored-previous-launcher",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R01__restored-previous-settings__run-05.png",
+    "sha256": "884bd656b66440e89714efce21fa537bdd91aaf547f7792fccc910f08a9a623a",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "ff520e33e136bbce11b7100c69888dedf42f7273",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:40:45.606237+00:00",
+    "test_id": "R01",
+    "state": "restored-previous-settings",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__capture-return__run-05.png",
+    "sha256": "3cfe36f52d2d73b85962c66ac3a6334f7e45cc9495bea656372bc537b0496232",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:22.933208+00:00",
+    "test_id": "R02",
+    "state": "capture-return",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__clipboard-image__run-05.png",
+    "sha256": "101f71103a602b7855357e6abba2a78fe4645c528a6f31a38bd172fbe7cbc82f",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:24.328405+00:00",
+    "test_id": "R02",
+    "state": "clipboard-image",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__clipboard-text__run-05.png",
+    "sha256": "0efe3eba700a039a94cd93010eb56cc21e78b0d94d6087b4a5e3fc416605f357",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:21.890710+00:00",
+    "test_id": "R02",
+    "state": "clipboard-text",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__display-removal-return__run-05.png",
+    "sha256": "d817698b6ba3ca7c783c3332623bc26f4d1fafd0692301556df8c53301eb254f",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:29.835147+00:00",
+    "test_id": "R02",
+    "state": "display-removal-return",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__dual-from-abajo__run-05.png",
+    "sha256": "fff171e1fb7ff0bc937d9580ac8bbef84eb496bb4f5039f82170739a16da0e50",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:07.431741+00:00",
+    "test_id": "R02",
+    "state": "dual-from-abajo",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__dual-from-arriba__run-05.png",
+    "sha256": "53bcc551c529ea7eb9f595a03e97b3d912f32ad20e773a325b0a20c8dd4da3e3",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:28:56.380373+00:00",
+    "test_id": "R02",
+    "state": "dual-from-arriba",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__example-efectos__run-05.png",
+    "sha256": "a2642ed68e9dd6e4e486ebd7a806644e21c906ebfb04259a7f9d51b2071da08f",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:40.114949+00:00",
+    "test_id": "R02",
+    "state": "example-efectos",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__example-hola__run-05.png",
+    "sha256": "c7be64e4eb161e770df1e59e7fa4f677dba8b13aa1017c7acb20b406450ca5f3",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:35.806540+00:00",
+    "test_id": "R02",
+    "state": "example-hola",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__example-piezas__run-05.png",
+    "sha256": "578ad6bd33de0b7ca840bc9a978564d7edb6113ce40c233c900d27ede8eaa475",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:37.989975+00:00",
+    "test_id": "R02",
+    "state": "example-piezas",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__example-snake__run-05.png",
+    "sha256": "3decdc231715efd88e2dc5d813b2e5cfc8e99d896d79a71f142a1c2ab9c3a6e4",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:42.411955+00:00",
+    "test_id": "R02",
+    "state": "example-snake",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__fullscreen-on__run-05.png",
+    "sha256": "fd140a9539ff92a1a59e3b94e44a6a584471caa2be7f7deb61db00084ba0909a",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:26.231032+00:00",
+    "test_id": "R02",
+    "state": "fullscreen-on",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__fullscreen-return__run-05.png",
+    "sha256": "83543701f1ff54eaeb586ac18f666df193bec73fe60ed80f1a79bc79addfabb3",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:27.169112+00:00",
+    "test_id": "R02",
+    "state": "fullscreen-return",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__launcher-abajo__run-05.png",
+    "sha256": "4c2801ac5d96283e4f9141630a028d58ab7df9e3bcf416b915a52cae62fb4c5d",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:03.647416+00:00",
+    "test_id": "R02",
+    "state": "launcher-abajo",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__launcher-arriba__run-05.png",
+    "sha256": "398505cec7b5807da062f501663377c48eb65762352d0377b6621d40bdf8be42",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:28:52.593908+00:00",
+    "test_id": "R02",
+    "state": "launcher-arriba",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__launcher-derecha__run-05.png",
+    "sha256": "c7df99b28d79b0ab3898d79d0fa91789cef9e42b40f9056031f6ae85faedc30b",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:17.843533+00:00",
+    "test_id": "R02",
+    "state": "launcher-derecha",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__launcher-escape-return__run-05.png",
+    "sha256": "789d9bdc6fab25f2348ecafada22eec3a874daf81c1a6951ccd313f927ddbf9b",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:44.891889+00:00",
+    "test_id": "R02",
+    "state": "launcher-escape-return",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__launcher-izquierda__run-05.png",
+    "sha256": "2bc9b0b3ae35f9197a221b6072399ef9073013071890ca7ef8a73d5900adf4ca",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:14.454696+00:00",
+    "test_id": "R02",
+    "state": "launcher-izquierda",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__launcher-keyboard-search__run-05.png",
+    "sha256": "7b6040ed9c64865d0c9ebbd14e04a4977630caf4f5d61852ff683c24d90d987e",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:44.006900+00:00",
+    "test_id": "R02",
+    "state": "launcher-keyboard-search",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__media-expanded__run-05.png",
+    "sha256": "921f46a9a0d5fc19c5fdc6866e9481b778b8b1a1e617298cf0cd0ca198d885cb",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:32.913661+00:00",
+    "test_id": "R02",
+    "state": "media-expanded",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__media-paused__run-05.png",
+    "sha256": "5a29fba19028e61a8d7b07f7184b68cb0a371c7a4ee2e455be92fc849d70fa41",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:33.976713+00:00",
+    "test_id": "R02",
+    "state": "media-paused",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__media-playing__run-05.png",
+    "sha256": "40e5b0d13f9bcd4cf3d89626657350800f8e4c45e69ce5e2baddb4568388414d",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:31.961051+00:00",
+    "test_id": "R02",
+    "state": "media-playing",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__settings-capture__run-05.png",
+    "sha256": "a09e1ce3f87abb4cab3bd3507ca560aa72f7c35becd8d8e5417900ed35d08d80",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:20.323199+00:00",
+    "test_id": "R02",
+    "state": "settings-capture",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__surface-abajo__run-05.png",
+    "sha256": "df4db7173e562fdddc6043d1960d942fc4b3cc03833f118931f5ca0ba92349af",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:02.659429+00:00",
+    "test_id": "R02",
+    "state": "surface-abajo",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__surface-arriba__run-05.png",
+    "sha256": "b72314a97e1b2d5947f6c6a66090f312a944d0060a7c511ca717d983a74c3bc0",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:28:51.618614+00:00",
+    "test_id": "R02",
+    "state": "surface-arriba",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__surface-derecha__run-05.png",
+    "sha256": "d8fcf2198cb7938760d50cfcf9f3fd276cbdf7c8f2ef51ed8b6aee9f9bf92d3a",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:16.866244+00:00",
+    "test_id": "R02",
+    "state": "surface-derecha",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__surface-izquierda__run-05.png",
+    "sha256": "1eca15b3d8b2b4a8c617b4386a4af0e481c3f9b0ea8f481419808533e22c4a55",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:13.467288+00:00",
+    "test_id": "R02",
+    "state": "surface-izquierda",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__two-displays-first__run-05.png",
+    "sha256": "0ec359ffc8bebb3708d01ae9c655de4e4283d9a046236344ab75cb165a6a3945",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:28.049101+00:00",
+    "test_id": "R02",
+    "state": "two-displays-first",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__two-displays-second__run-05.png",
+    "sha256": "e7b22b33bebb1bf49f06ec31f9d766e2ea86deabc67629d82e7c32ada419c54e",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:29:28.938950+00:00",
+    "test_id": "R02",
+    "state": "two-displays-second",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R03__atalaya-closed__run-05.png",
+    "sha256": "1b5f8628ef71d4ef12b7778c4fdbb3e8c3f461a7776a5b41c6d18e1a9944ef44",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:34:03.382007+00:00",
+    "test_id": "R03",
+    "state": "atalaya-closed",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R03__atalaya-open__run-05.png",
+    "sha256": "5a2895382f8494567d49b087141aa73c4c903ea05949b74551cfa2e542f3a1d5",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:32:53.781761+00:00",
+    "test_id": "R03",
+    "state": "atalaya-open",
+    "creator": "Codex using native grim capture"
+  },
+  {
+    "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R03__dock-performance__run-05.png",
+    "sha256": "66ba281b145971fe97176242713f8ecfe1a50948431a4f0e35fbb332e70610ae",
+    "dimensions": [
+      1280,
+      720
+    ],
+    "type": "actual running application",
+    "capture_tool": "grim in private session",
+    "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+    "capture_date_utc": "2026-10-21T10:32:47.027090+00:00",
+    "test_id": "R03",
+    "state": "dock-performance",
+    "creator": "Codex using native grim capture"
+  }
+]

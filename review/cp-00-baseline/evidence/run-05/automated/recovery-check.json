@@ -1,0 +1,101 @@
+{
+  "date": "2026-10-21T10:35:28.425069+00:00",
+  "candidate_handle": {
+    "instance": {
+      "config_path": "/candidate/shell.qml",
+      "id": "vh2so69nt",
+      "launch_time": "2026-10-21T10:34:04",
+      "pid": 3235,
+      "shell_id": "2d05d68fdebd309fd350f051a28894b6"
+    },
+    "process": {
+      "pid": 3235,
+      "start_ticks": "2029253",
+      "exe": "/usr/bin/quickshell",
+      "argv": [
+        "quickshell",
+        "-p",
+        "/candidate/shell.qml",
+        "--no-color"
+      ],
+      "pid_namespace": "pid:[4026533473]"
+    },
+    "environment": {
+      "WAYLAND_DISPLAY": "wayland-1",
+      "HYPRLAND_INSTANCE_SIGNATURE": "efb50993780079460b0cbed1363e2166a2de1d9f_1792578524_814895884",
+      "DBUS_SESSION_BUS_ADDRESS": "unix:path=/tmp/dbus-8IcFSA10I9,guid=617893c4645722f8868ba1b86ad893dc",
+      "XDG_RUNTIME_DIR": "/run/cp00"
+    },
+    "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "log": "/lab/logs/k4-1792578843991515347.txt"
+  },
+  "neighbor_preserved": {
+    "config_path": "/lab/neighbor-final.qml",
+    "id": "zm20r69nt",
+    "launch_time": "2026-10-21T10:35:24",
+    "pid": 3419,
+    "shell_id": "0b2f590b36756cf170bb1af6ac105ff5"
+  },
+  "snapshot": "scratch/backups/cp-00-baseline/candidate-run05-rehearsal",
+  "mutation_restored": true,
+  "expected_dummy_file_sha256": "bff789a2b3773765aa393a30b026f46dd823bc5b8ffa1ba138f71d73863cffd4",
+  "host_before": [
+    {
+      "command": [
+        "quickshell",
+        "list",
+        "--all",
+        "--json"
+      ],
+      "stdout": "[\n    {\n        \"config_path\": \"/home/noobsambit/.config/quickshell/end4-pC/shell.qml\",\n        \"id\": \"xzn1r8nt\",\n        \"launch_time\": \"2026-10-21T10:26:11\",\n        \"pid\": 1293,\n        \"shell_id\": \"962f75767314addec36fdeb1bbb48f35\"\n    }\n]\n"
+    },
+    {
+      "command": [
+        "busctl",
+        "--user",
+        "call",
+        "org.freedesktop.DBus",
+        "/org/freedesktop/DBus",
+        "org.freedesktop.DBus",
+        "GetNameOwner",
+        "s",
+        "org.freedesktop.Notifications"
+      ],
+      "stdout": "s \":1.14\"\n"
+    },
+    {
+      "host_k4_state_absent": true
+    }
+  ],
+  "host_after": [
+    {
+      "command": [
+        "quickshell",
+        "list",
+        "--all",
+        "--json"
+      ],
+      "stdout": "[\n    {\n        \"config_path\": \"/home/noobsambit/.config/quickshell/end4-pC/shell.qml\",\n        \"id\": \"xzn1r8nt\",\n        \"launch_time\": \"2026-10-21T10:26:11\",\n        \"pid\": 1293,\n        \"shell_id\": \"962f75767314addec36fdeb1bbb48f35\"\n    }\n]\n"
+    },
+    {
+      "command": [
+        "busctl",
+        "--user",
+        "call",
+        "org.freedesktop.DBus",
+        "/org/freedesktop/DBus",
+        "org.freedesktop.DBus",
+        "GetNameOwner",
+        "s",
+        "org.freedesktop.Notifications"
+      ],
+      "stdout": "s \":1.14\"\n"
+    },
+    {
+      "host_k4_state_absent": true
+    }
+  ],
+  "host_invariants_match": true,
+  "all_test_payloads_stopped": true,
+  "selected_next_start_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed"
+}

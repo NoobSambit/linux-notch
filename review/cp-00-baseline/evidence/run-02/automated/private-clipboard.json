@@ -1,0 +1,11 @@
+{
+  "command": [
+    "sh",
+    "-c",
+    "printf \"%s\" \"CP00 harmless nested selection\" | wl-copy; wl-paste --no-newline"
+  ],
+  "exit_code": 0,
+  "stdout": "CP00 harmless nested selection",
+  "stderr": "",
+  "date": "2026-10-21T08:09:51.197206+00:00"
+}

@@ -1,0 +1,92 @@
+[
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/idle-catalog-atalaya-on-1-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/idle-catalog-atalaya-on-1-frames.txt",
+    "raw_sha256": "f59294758337cecabd445d7925e336a9fd0cf0eaa73c3e7f87998ab0fab3a1c2",
+    "raw_bytes": 451532
+  },
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/idle-catalog-atalaya-on-2-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/idle-catalog-atalaya-on-2-frames.txt",
+    "raw_sha256": "1a587243d7857c4f37628979fe74ea14547f4c8bfe48d25683d4f77c802316ed",
+    "raw_bytes": 450813
+  },
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/idle-catalog-atalaya-on-3-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/idle-catalog-atalaya-on-3-frames.txt",
+    "raw_sha256": "9ffea7353a14e21b67c0034dc997dd230961fb180a93c198290eb24f16a24a6e",
+    "raw_bytes": 452082
+  },
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/idle-atalaya-off-1-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/idle-atalaya-off-1-frames.txt",
+    "raw_sha256": "4cf95b58f88676d32f72eee31b4e1c049f4bb66f9ae26e17715247a28290d238",
+    "raw_bytes": 452970
+  },
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/idle-atalaya-off-2-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/idle-atalaya-off-2-frames.txt",
+    "raw_sha256": "622691d34469f1303190470530b95c4298666ba1beac508765b4c15dc1806b70",
+    "raw_bytes": 451532
+  },
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/idle-atalaya-off-3-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/idle-atalaya-off-3-frames.txt",
+    "raw_sha256": "c233133c3fbd485ccbc644e5819b26d6083fbc073eceabcdacf91d0f6255149e",
+    "raw_bytes": 450813
+  },
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/idle-explicit-atalaya-on-1-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/idle-explicit-atalaya-on-1-frames.txt",
+    "raw_sha256": "2c59fcd28931e20edf267b4ee1e8bbfb850238421da7a2a891289d1d2483523f",
+    "raw_bytes": 451532
+  },
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/idle-explicit-atalaya-on-2-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/idle-explicit-atalaya-on-2-frames.txt",
+    "raw_sha256": "7f55bee0151f851e51d7c96caa6bbfd240621a6a37ef82c040acb1663d1b99c1",
+    "raw_bytes": 450813
+  },
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/idle-explicit-atalaya-on-3-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/idle-explicit-atalaya-on-3-frames.txt",
+    "raw_sha256": "5c8d20f670ed8d49284d54927f42eeabe4f13378fc2b86569ca2e74c1466de6d",
+    "raw_bytes": 451689
+  },
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/media-local-playing-1-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/media-local-playing-1-frames.txt",
+    "raw_sha256": "53353b1e2f48819de42e820255b2570875ce40e81c89884a251dec80e66ab685",
+    "raw_bytes": 25027
+  },
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/media-local-playing-2-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/media-local-playing-2-frames.txt",
+    "raw_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "raw_bytes": 1
+  },
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/media-local-playing-3-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/media-local-playing-3-frames.txt",
+    "raw_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "raw_bytes": 1
+  },
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/dock-settled-1-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/dock-settled-1-frames.txt",
+    "raw_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "raw_bytes": 1
+  },
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/dock-settled-2-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/dock-settled-2-frames.txt",
+    "raw_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "raw_bytes": 1
+  },
+  {
+    "tracked_filtered": "review/cp-00-baseline/evidence/run-04/automated/dock-settled-3-frames.txt",
+    "raw_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/raw-traces/run-04/dock-settled-3-frames.txt",
+    "raw_sha256": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+    "raw_bytes": 1
+  }
+]

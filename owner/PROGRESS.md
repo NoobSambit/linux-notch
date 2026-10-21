@@ -4,15 +4,15 @@
 
 ## WHAT YOU NEED TO DO NOW
 
-Approve workflow and authorize CP-00 only; no images yet.
+Wait for Codex to activate this checkpoint.
 
-Workflow: **AWAITING WORKFLOW APPROVAL**.
+Workflow: **IN PROGRESS**.
 Active checkpoint: **None**.
-Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
+Next checkpoint: [cp-01-safety](checkpoints/cp-01-safety.md).
 
 | Checkpoint | State | References | Tasks done | Tests: pass / fail / untested / help |
 | --- | --- | --- | --- | --- |
-| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | PLANNED | Not required | 0/4 | 0 / 0 / 8 / 0 |
+| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | APPROVED | Not required | 4/4 | 8 / 0 / 2 / 0 |
 | [cp-01-safety — Regression and safety gates](checkpoints/cp-01-safety.md) | PLANNED | Not required | 0/4 | 0 / 0 / 11 / 0 |
 | [cp-02-dnd-spike — Isolated Shelf drag-and-drop feasibility](checkpoints/cp-02-dnd-spike.md) | PLANNED | Not required | 0/4 | 0 / 0 / 8 / 0 |
 | [cp-03-design-system — Shared design system and original visual direction](checkpoints/cp-03-design-system.md) | PLANNED | 4 images needed when activated; none approved | 0/4 | 0 / 0 / 8 / 0 |
@@ -26,8 +26,8 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ## Current handoff
 
-- Codex next: Wait for explicit workflow and CP-00 authorization; then inspect safe isolation options without launching product.
-- You next: Approve workflow and authorize CP-00 only; no images yet.
+- Codex next: Wait for approved prerequisites and activation; then read this contract and current source.
+- You next: Wait for Codex to activate this checkpoint.
 - Waiting/blocker: No blocker recorded; follow the next action above.
 - Test version / run: No runtime handoff yet.
 
@@ -35,16 +35,31 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ### cp-00-baseline
 
-Next: Approve workflow and authorize CP-00 only; no images yet.
+Next: No further CP-00 action required. CP-01 has not started; a separate owner instruction/authorization is needed before its implementation. Later physical-display and release requirements remain required.
+
+Remaining tasks: None.
+
+- **M01 PASS** — Start and stop safely (PASS retained after owner-authorized evidence closure: written M01 report plus genuine source/instance/stop/isolation/host evidence accepted as adequate for the unrecovered M01-specific image; no screenshot is fabricated or relabelled.)
+- **M02 PASS** — Original everyday paths (PASS retained; recovered original manual-period screenshot preserved, with exact M02 typed content visible. Owner clarification about both screenshots/Dock is documented accurately; no separate Dock image or click trace is invented.)
+- **M03 PASS** — Screen and fullscreen baseline (PASS retained after evidence closure: genuine original M03 whole-screen capture is present; owner report, output/saved-setting context and genuine native edge/fullscreen frames form adequate accepted combined evidence. Physical second-display repetition is separately NOT TESTED with an approved CP-00-only conditional disposition.)
+- **M03-physical-2-display NOT TESTED** — Conditional physical second-display repetition of M03 (NOT TESTED — ENVIRONMENT LIMITATION: historical/current inventories show only physical eDP-1; run-05 CP00-2 was explicitly headless, not a second physical monitor. Existing CP-00 where-available/if-second-display-exists repetition is approved nonblocking for CP-00 only; later core display/release testing remains required.)
+- **M04 PASS** — Recovery rehearsal (Owner reports the restored original launcher/settings and test desktop are fine for run-05 M04. Literal reply preserved. Agent then returned to unchanged b114d5a with its matching candidate snapshot, verified bottom placement/rendering and stopped the private runtime. Gate B remains unrecorded.)
+
+Engineering checks: A01: PASS; R01: PASS; R02: PASS; R02-physical-2-display: NOT TESTED; R03: PASS.
+Approval: Owner approved the tested run.
+
+### cp-01-safety
+
+Next: Wait for Codex to activate this checkpoint.
 
 Remaining tasks: T01, T02, T03, T04.
 
-- **M01 NOT TESTED** — Start and stop safely (Checkpoint has not started.)
-- **M02 NOT TESTED** — Original everyday paths (Checkpoint has not started.)
-- **M03 NOT TESTED** — Screen and fullscreen baseline (Checkpoint has not started.)
-- **M04 NOT TESTED** — Recovery rehearsal (Checkpoint has not started.)
+- **M01 NOT TESTED** — Notifications coexist (Checkpoint has not started.)
+- **M02 NOT TESTED** — Settings survive (Checkpoint has not started.)
+- **M03 NOT TESTED** — Safe update and missing services (Checkpoint has not started.)
+- **M04 NOT TESTED** — Return to last good (Checkpoint has not started.)
 
-Engineering checks: A01: NOT TESTED; R01: NOT TESTED; R02: NOT TESTED; R03: NOT TESTED.
+Engineering checks: A01: NOT TESTED; A02: NOT TESTED; A03: NOT TESTED; A04: NOT TESTED; R01: NOT TESTED; R02: NOT TESTED; R03: NOT TESTED.
 Approval: Waiting; no final owner approval recorded.
 
 Codex keeps this page aligned with its [single progress record](../docs/workflow/progress.json).

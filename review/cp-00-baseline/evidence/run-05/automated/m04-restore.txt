@@ -1,0 +1,14 @@
+already stopped (recorded process absent)
+already stopped (recorded process absent)
+Pinned source ff520e33e136bbce11b7100c69888dedf42f7273
+{"command": ["/usr/bin/true"], "exit_code": 0, "stdout": "", "stderr": "", "date": "2026-10-21T12:00:31.455275+00:00"}
+Traceback (most recent call last):
+  File "/home/noobsambit/Documents/k4-main/tools/cp00.py", line 492, in <module>
+    sys.exit(main())
+             ~~~~^^
+  File "/home/noobsambit/Documents/k4-main/tools/cp00.py", line 467, in main
+    start_compositor()
+    ~~~~~~~~~~~~~~~~^^
+  File "/home/noobsambit/Documents/k4-main/tools/cp00.py", line 321, in start_compositor
+    raise RuntimeError('Nested output readiness timed out; retain/reverify handle')
+RuntimeError: Nested output readiness timed out; retain/reverify handle

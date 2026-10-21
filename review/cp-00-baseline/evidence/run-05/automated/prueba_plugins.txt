@@ -1,0 +1,8 @@
+$ python3 tools/prueba_plugins.py
+63 pruebas, todas pasan.
+sin-commit: 000000000000 · /tmp/k4-prueba-plugins-gujt_i40/repo-fantasma
+commit-raro: main
+commit-raro: 7a77cdaa
+el commit revisado (bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb) no es el que se aprueba (aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa)
+
+Exit: 0

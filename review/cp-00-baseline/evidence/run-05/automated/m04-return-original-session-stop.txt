@@ -1,0 +1,4 @@
+Already stopped; recorded full ID absent. No replacement touched.
+
+stopped verified compositor
+stopped verified server

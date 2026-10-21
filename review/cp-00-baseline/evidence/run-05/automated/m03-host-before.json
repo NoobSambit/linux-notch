@@ -1,0 +1,54 @@
+{
+  "date": "2026-10-21T11:41:06.302168+00:00",
+  "payloads_live": {
+    "server": false,
+    "compositor": false
+  },
+  "selected_source": {
+    "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "path": "/candidate",
+    "manifest": "/lab/candidate-manifest.json"
+  },
+  "personal_k4_paths_exist": {
+    "/home/noobsambit/.config/k4": false,
+    "/home/noobsambit/.local/state/k4": false,
+    "/home/noobsambit/.local/share/k4": false
+  },
+  "quickshell": {
+    "command": [
+      "quickshell",
+      "list",
+      "--all",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "[\n    {\n        \"config_path\": \"/home/noobsambit/.config/quickshell/end4-pC/shell.qml\",\n        \"id\": \"xzn1r8nt\",\n        \"launch_time\": \"2026-10-21T10:26:11\",\n        \"pid\": 1293,\n        \"shell_id\": \"962f75767314addec36fdeb1bbb48f35\"\n    }\n]\n",
+    "stderr": ""
+  },
+  "notifications": {
+    "command": [
+      "busctl",
+      "--user",
+      "call",
+      "org.freedesktop.DBus",
+      "/org/freedesktop/DBus",
+      "org.freedesktop.DBus",
+      "GetNameOwner",
+      "s",
+      "org.freedesktop.Notifications"
+    ],
+    "exit_code": 0,
+    "stdout": "s \":1.14\"\n",
+    "stderr": ""
+  },
+  "physical_monitors_read_only": {
+    "command": [
+      "hyprctl",
+      "-j",
+      "monitors"
+    ],
+    "exit_code": 0,
+    "stdout": "[{\n    \"id\": 0,\n    \"name\": \"eDP-1\",\n    \"description\": \"Chimei Innolux Corporation 0x1629\",\n    \"make\": \"Chimei Innolux Corporation\",\n    \"model\": \"0x1629\",\n    \"serial\": \"\",\n    \"width\": 1920,\n    \"height\": 1080,\n    \"physicalWidth\": 360,\n    \"physicalHeight\": 200,\n    \"refreshRate\": 165.00200,\n    \"x\": 0,\n    \"y\": 0,\n    \"activeWorkspace\": {\n        \"id\": 1,\n        \"name\": \"1\"\n    },\n    \"specialWorkspace\": {\n        \"id\": 0,\n        \"name\": \"\"\n    },\n    \"reserved\": [0, 40, 0, 0],\n    \"scale\": 1,\n    \"transform\": 0,\n    \"focused\": true,\n    \"dpmsStatus\": true,\n    \"vrr\": false,\n    \"solitary\": \"0\",\n    \"solitaryBlockedBy\": [\"WINDOWED\",\"CANDIDATE\"],\n    \"activelyTearing\": false,\n    \"tearingBlockedBy\": [\"NOT_TORN\",\"CANDIDATE\"],\n    \"directScanoutTo\": \"0\",\n    \"directScanoutBlockedBy\": [\"USER\",\"SW\",\"CANDIDATE\"],\n    \"disabled\": false,\n    \"currentFormat\": \"XRGB8888\",\n    \"mirrorOf\": \"none\",\n    \"availableModes\": [\"1920x1080@165.00Hz\",\"1920x1080@60.00Hz\"],\n    \"colorManagementPreset\": \"srgb\",\n    \"sdrBrightness\": 1,\n    \"sdrSaturation\": 1,\n    \"sdrMinLuminance\": 0.2,\n    \"sdrMaxLuminance\": 80,\n    \"hardwareCursorsInUse\": false\n}]\n",
+    "stderr": ""
+  }
+}

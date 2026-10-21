@@ -1,0 +1,70 @@
+{
+  "date": "2026-10-21T07:58:39Z",
+  "results": [
+    {
+      "command": "python3 tools/plugins.py",
+      "exit_code": 0,
+      "seconds": 0.16,
+      "log": "plugins.txt"
+    },
+    {
+      "command": "python3 tools/api.py",
+      "exit_code": 0,
+      "seconds": 0.386,
+      "log": "api.txt"
+    },
+    {
+      "command": "python3 tools/guia.py",
+      "exit_code": 0,
+      "seconds": 0.204,
+      "log": "guia.txt"
+    },
+    {
+      "command": "python3 tools/layouts.py",
+      "exit_code": 0,
+      "seconds": 0.726,
+      "log": "layouts.txt"
+    },
+    {
+      "command": "python3 tools/prueba_editar.py",
+      "exit_code": 0,
+      "seconds": 0.61,
+      "log": "prueba_editar.txt"
+    },
+    {
+      "command": "python3 tools/prueba_plugins.py",
+      "exit_code": 0,
+      "seconds": 1.068,
+      "log": "prueba_plugins.txt"
+    },
+    {
+      "command": "python3 tools/prueba_rutas.py",
+      "exit_code": 0,
+      "seconds": 0.023,
+      "log": "prueba_rutas.txt"
+    },
+    {
+      "command": "python3 tools/prueba_texto.py",
+      "exit_code": 0,
+      "seconds": 0.058,
+      "log": "prueba_texto.txt"
+    },
+    {
+      "command": "python3 tools/workflow.py",
+      "exit_code": 0,
+      "seconds": 0.084,
+      "log": "workflow.txt"
+    },
+    {
+      "command": "python3 tools/test_workflow.py",
+      "exit_code": 0,
+      "seconds": 5.023,
+      "log": "test_workflow.txt"
+    },
+    {
+      "command": "git diff --check",
+      "exit_code": 0,
+      "log": "diff-check.txt"
+    }
+  ]
+}

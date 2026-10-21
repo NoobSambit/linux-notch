@@ -1,0 +1,1 @@
+# Filtered Wayland frame request/callback, output and diagnostic trace.

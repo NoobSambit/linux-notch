@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-21T12:15:53.372851+00:00",
+  "captures": [
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__M04__return-candidate-settings__run-05.png",
+      "sha256": "6778e310989e7c67494fac37f45151aa063d554a7371ea8ec563f9085a8aec45",
+      "type": "Actual application screenshot captured by agent after owner M04 report; technical candidate return proof, not owner interaction",
+      "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "run": "run-05",
+      "state": "Agent return proof: b114d5a Settings \u2192 Island and bottom island restored from the preserved candidate snapshot.",
+      "display": "Private CP00-STABLE 1280x720@60Hz scale 1, WAYLAND-1 mirror",
+      "capture_time_utc": "2026-10-21T12:12:56.538192+00:00",
+      "command": [
+        "grim",
+        "-o",
+        "CP00-STABLE",
+        "/lab/m04-return-candidate-settings.png"
+      ],
+      "transport": "Existing guarded CP-00 private command socket",
+      "privacy_review": "Both images opened with view_image. Synthetic settings and public application catalogue only; no personal content."
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__M04__return-candidate-launcher__run-05.png",
+      "sha256": "29daa7f85ead0612465ebb09a1ef3d55627db9439d6ad7ce42abc2fdfa2e330d",
+      "type": "Actual application screenshot captured by agent after owner M04 report; technical candidate return proof, not owner interaction",
+      "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "run": "run-05",
+      "state": "Agent return proof: b114d5a native launcher reopened at the restored bottom edge before guarded Stop.",
+      "display": "Private CP00-STABLE 1280x720@60Hz scale 1, WAYLAND-1 mirror",
+      "capture_time_utc": "2026-10-21T12:13:05.071169+00:00",
+      "command": [
+        "grim",
+        "-o",
+        "CP00-STABLE",
+        "/lab/m04-return-candidate-launcher.png"
+      ],
+      "transport": "Existing guarded CP-00 private command socket",
+      "privacy_review": "Both images opened with view_image. Synthetic settings and public application catalogue only; no personal content."
+    }
+  ]
+}

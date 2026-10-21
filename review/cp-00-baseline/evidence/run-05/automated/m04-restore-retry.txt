@@ -1,0 +1,37 @@
+already stopped (recorded process absent)
+already stopped (recorded process absent)
+Pinned source ff520e33e136bbce11b7100c69888dedf42f7273
+{"command": ["/usr/bin/true"], "exit_code": 0, "stdout": "", "stderr": "", "date": "2026-10-21T12:03:03.789936+00:00"}
+{"wrapper": 164497, "started": "2026-10-21T12:03:07.507378+00:00", "log": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/logs/compositor.txt"}
+CP-00 original source + matching dummy snapshot restored
+Already stopped; recorded full ID absent. No replacement touched.
+Restored matching disposable snapshot; retained current state in before-restore-1792584187633595102
+{
+  "instance": {
+    "config_path": "/original/shell.qml",
+    "id": "k27ta9nt",
+    "launch_time": "2026-10-21T12:03:07",
+    "pid": 92,
+    "shell_id": "3c9ccbd9d073f80115714dfdfa978cf1"
+  },
+  "process": {
+    "pid": 92,
+    "start_ticks": "2563556",
+    "exe": "/usr/bin/quickshell",
+    "argv": [
+      "quickshell",
+      "-p",
+      "/original/shell.qml",
+      "--no-color"
+    ],
+    "pid_namespace": "pid:[4026533705]"
+  },
+  "environment": {
+    "WAYLAND_DISPLAY": "wayland-1",
+    "HYPRLAND_INSTANCE_SIGNATURE": "efb50993780079460b0cbed1363e2166a2de1d9f_1792584183_927252701",
+    "DBUS_SESSION_BUS_ADDRESS": "unix:path=/tmp/dbus-VRJ3QahhX6,guid=07bfb36d2f96a07dbd8644fa6ad8a9f7",
+    "XDG_RUNTIME_DIR": "/run/cp00"
+  },
+  "revision": "ff520e33e136bbce11b7100c69888dedf42f7273",
+  "log": "/lab/logs/k4-1792584187714445452.txt"
+}

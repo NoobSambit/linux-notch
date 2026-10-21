@@ -1,0 +1,60 @@
+{
+  "host_namespaces": {
+    "pid": "pid:[4026531836]",
+    "mnt": "mnt:[4026531832]",
+    "net": "net:[4026531833]",
+    "ipc": "ipc:[4026531839]",
+    "user": "user:[4026531837]"
+  },
+  "app_namespaces": {
+    "pid": "pid:[4026533306]",
+    "mnt": "mnt:[4026533300]",
+    "net": "net:[4026533360]",
+    "ipc": "ipc:[4026533304]",
+    "user": "user:[4026533411]"
+  },
+  "host_state_remains_absent": true,
+  "host_observations": [
+    {
+      "command": [
+        "quickshell",
+        "list",
+        "--all",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "[\n    {\n        \"config_path\": \"/home/noobsambit/.config/quickshell/end4-pC/shell.qml\",\n        \"id\": \"xzn1r8nt\",\n        \"launch_time\": \"2026-10-21T10:26:11\",\n        \"pid\": 1293,\n        \"shell_id\": \"962f75767314addec36fdeb1bbb48f35\"\n    }\n]\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "busctl",
+        "--user",
+        "call",
+        "org.freedesktop.DBus",
+        "/org/freedesktop/DBus",
+        "org.freedesktop.DBus",
+        "GetNameOwner",
+        "s",
+        "org.freedesktop.Notifications"
+      ],
+      "exit_code": 0,
+      "stdout": "s \":1.14\"\n",
+      "stderr": ""
+    },
+    {
+      "command": [
+        "busctl",
+        "--user",
+        "call",
+        "org.freedesktop.DBus",
+        "/org/freedesktop/DBus",
+        "org.freedesktop.DBus",
+        "GetId"
+      ],
+      "exit_code": 0,
+      "stdout": "s \"65b0f7366513b966297ea35d095ecceb\"\n",
+      "stderr": ""
+    }
+  ]
+}

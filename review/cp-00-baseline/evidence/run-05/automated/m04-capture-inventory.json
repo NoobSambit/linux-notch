@@ -1,0 +1,43 @@
+{
+  "date": "2026-10-21T12:05:46.535172+00:00",
+  "captures": [
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__M04__restored-settings__run-05.png",
+      "sha256": "9a12769a1db523403cb5976596671f173748df91fbc0df77964e55eed445ea75",
+      "type": "Actual application screenshot captured by agent during M04 preparation, not an owner result",
+      "run": "run-05",
+      "primary_tested_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "captured_recovery_revision": "ff520e33e136bbce11b7100c69888dedf42f7273",
+      "state": "Agent preparation: original ff520e3 Settings \u2192 Island restored, top position expected; source label visible.",
+      "display": "Private CP00-STABLE 1280x720@60Hz scale 1; WAYLAND-1 mirror",
+      "capture_time_utc": "2026-10-21T12:04:29.170233+00:00",
+      "command": [
+        "grim",
+        "-o",
+        "CP00-STABLE",
+        "/lab/m04-restored-settings.png"
+      ],
+      "transport": "Existing CP-00 private command socket, tools/cp00.py exec",
+      "privacy_review": "Both images opened with view_image: synthetic original test settings/public application catalogue only; no personal content."
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__M04__restored-launcher__run-05.png",
+      "sha256": "ad8bfcac458611ddaa063d2a5ad5ade875dc23c1d8b5ddcf453e45f6522ed922",
+      "type": "Actual application screenshot captured by agent during M04 preparation, not an owner result",
+      "run": "run-05",
+      "primary_tested_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "captured_recovery_revision": "ff520e33e136bbce11b7100c69888dedf42f7273",
+      "state": "Agent preparation: original ff520e3 native launcher left open for the owner.",
+      "display": "Private CP00-STABLE 1280x720@60Hz scale 1; WAYLAND-1 mirror",
+      "capture_time_utc": "2026-10-21T12:04:36.471326+00:00",
+      "command": [
+        "grim",
+        "-o",
+        "CP00-STABLE",
+        "/lab/m04-restored-launcher.png"
+      ],
+      "transport": "Existing CP-00 private command socket, tools/cp00.py exec",
+      "privacy_review": "Both images opened with view_image: synthetic original test settings/public application catalogue only; no personal content."
+    }
+  ]
+}

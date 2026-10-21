@@ -1,0 +1,3 @@
+[000055bfce63be90] main interface error: no suitable interface module
+[000055bfce5b3d10] main libvlc error: interface "globalhotkeys,none" initialization failed
+[000055bfce63be90] dummy interface: using the dummy interface module...

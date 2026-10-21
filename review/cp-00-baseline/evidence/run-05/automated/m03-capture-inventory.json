@@ -1,0 +1,41 @@
+{
+  "date": "2026-10-21T11:44:41.147060+00:00",
+  "captures": [
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__M03__fullscreen__run-05.png",
+      "sha256": "e4d49805595d62722a314b3868871538dff0f194b3a350c0303500cb08f55eea",
+      "type": "actual application screenshot captured by agent during preparation",
+      "state": "Agent rehearsal: dummy document in fullscreen mode 2, 1280x720; no owner result.",
+      "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "run": "run-05",
+      "capture_time_utc": "2026-10-21T11:42:05.143476+00:00",
+      "display": "Private CP00-STABLE 1280x720@60Hz scale 1, mirrored to WAYLAND-1 viewer",
+      "command": [
+        "grim",
+        "-o",
+        "CP00-STABLE",
+        "/lab/m03-fullscreen.png"
+      ],
+      "transport": "Existing CP-00 private control socket, through cp00.request/tools/cp00.py exec",
+      "privacy_review": "Both images opened with view_image. Only synthetic fixture text and inherited settings; no personal content."
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__M03__ready-settings__run-05.png",
+      "sha256": "41355b22fde0f4d3e59820d073a3bc0a7964173a597cef3179bb1c3e1d66e2a5",
+      "type": "actual application screenshot captured by agent during preparation",
+      "state": "Agent preparation: fullscreen exited to maximized mode 1, island visible; Island settings open for owner top/bottom test.",
+      "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "run": "run-05",
+      "capture_time_utc": "2026-10-21T11:42:11.081410+00:00",
+      "display": "Private CP00-STABLE 1280x720@60Hz scale 1, mirrored to WAYLAND-1 viewer",
+      "command": [
+        "grim",
+        "-o",
+        "CP00-STABLE",
+        "/lab/m03-ready-settings.png"
+      ],
+      "transport": "Existing CP-00 private control socket, through cp00.request/tools/cp00.py exec",
+      "privacy_review": "Both images opened with view_image. Only synthetic fixture text and inherited settings; no personal content."
+    }
+  ]
+}

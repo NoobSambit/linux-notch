@@ -1,0 +1,34 @@
+{
+  "recorded_at": "2026-10-21T11:56:24Z",
+  "type": "Existing nested application capture collected by agent after owner report; owner-triggered origin inferred from requested test step, file time after preparation, and no intervening agent capture action.",
+  "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M03__owner-capture__run-05.png",
+  "sha256": "65b2702b316953d2bc69fc4b53d64924387d57d38786fa486c951bcccd5b48f6",
+  "source_path": "/home/noobsambit/Documents/k4-main/scratch/cp00/lab/home/Capturas/captura-20261021-115325.png",
+  "source_mtime_utc": "2026-10-21T11:53:25.937235+00:00",
+  "dimensions": [
+    1280,
+    720
+  ],
+  "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+  "run": "run-05",
+  "preparation_date": "2026-10-21T11:45:13Z",
+  "capture_command_provenance": "The preceding owner instruction requested Todas \u2192 Captura \u2192 Guardar \u2192 Pantalla. No command transcript of the owner click is available; no exact owner invocation is invented.",
+  "monitor_context": "Prepared private CP00-STABLE 1280x720@60Hz scale 1 mirrored to WAYLAND-1; exact preparation monitor arrangement is in automated/m03-readiness.json, not a fresh inventory at capture time.",
+  "settings_observed_at": "2026-10-21T11:56:24Z",
+  "saved_dummy_settings": {
+    "posicionBarra": "abajo",
+    "reservaIsla": "reserva"
+  },
+  "settings_mtime_utc": "2026-10-21T11:52:44.296687+00:00",
+  "privacy_review": "Opened actual source with view_image. Synthetic CP-00 dummy document and harmless text only; no personal desktop content. Copied exact PNG bytes.",
+  "limitations": "The island is absent in the application-generated capture, consistent with its capture-hide path. The image alone does not prove bar position, both edge checks, fullscreen transitions or keyboard input. Final saved edge is observed as abajo; owner statement supplies the interaction result. A bar-visible owner capture has not been supplied.",
+  "payloads_live_at_recording": {
+    "server": false,
+    "compositor": false
+  },
+  "selected_source": {
+    "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "path": "/candidate",
+    "manifest": "/lab/candidate-manifest.json"
+  }
+}

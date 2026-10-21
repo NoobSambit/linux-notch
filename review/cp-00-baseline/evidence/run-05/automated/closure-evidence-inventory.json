@@ -1,0 +1,151 @@
+{
+  "date": "2026-10-21T12:43:20.130051+00:00",
+  "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+  "run": "run-05",
+  "selected_existing_runtime_images": [
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R01__recovery-candidate-settings__run-05.png",
+      "sha256": "82a3cb5b9fdc0c137db37d03893219d2acf3661f09d4e56b923fbf788eaf2f7b",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "type": "actual running application",
+      "capture_tool": "grim in private session",
+      "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+      "capture_date_utc": "2026-10-21T10:35:26.888477+00:00",
+      "test_id": "R01",
+      "state": "recovery-candidate-settings",
+      "creator": "Codex using native grim capture"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__fullscreen-on__run-05.png",
+      "sha256": "fd140a9539ff92a1a59e3b94e44a6a584471caa2be7f7deb61db00084ba0909a",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "type": "actual running application",
+      "capture_tool": "grim in private session",
+      "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+      "capture_date_utc": "2026-10-21T10:29:26.231032+00:00",
+      "test_id": "R02",
+      "state": "fullscreen-on",
+      "creator": "Codex using native grim capture"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__fullscreen-return__run-05.png",
+      "sha256": "83543701f1ff54eaeb586ac18f666df193bec73fe60ed80f1a79bc79addfabb3",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "type": "actual running application",
+      "capture_tool": "grim in private session",
+      "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+      "capture_date_utc": "2026-10-21T10:29:27.169112+00:00",
+      "test_id": "R02",
+      "state": "fullscreen-return",
+      "creator": "Codex using native grim capture"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__surface-abajo__run-05.png",
+      "sha256": "df4db7173e562fdddc6043d1960d942fc4b3cc03833f118931f5ca0ba92349af",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "type": "actual running application",
+      "capture_tool": "grim in private session",
+      "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+      "capture_date_utc": "2026-10-21T10:29:02.659429+00:00",
+      "test_id": "R02",
+      "state": "surface-abajo",
+      "creator": "Codex using native grim capture"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__R02__surface-arriba__run-05.png",
+      "sha256": "b72314a97e1b2d5947f6c6a66090f312a944d0060a7c511ca717d983a74c3bc0",
+      "dimensions": [
+        1280,
+        720
+      ],
+      "type": "actual running application",
+      "capture_tool": "grim in private session",
+      "source_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "run_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "privacy": "Dummy HOME/data only; every selected capture opened and reviewed.",
+      "capture_date_utc": "2026-10-21T10:28:51.618614+00:00",
+      "test_id": "R02",
+      "state": "surface-arriba",
+      "creator": "Codex using native grim capture"
+    }
+  ],
+  "existing_input_evidence": [
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/automated/recovery-check.json",
+      "sha256": "0e36703daf3e43f4cd4aaa1020fcc94fb71f506a1ed61596aaf40124988f2407"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/automated/capture-inventory.json",
+      "sha256": "dbb781617def87217ec480fc93ab30e3312ecc85ba277d29e7af5d6b96ed64f8"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/automated/commands.json",
+      "sha256": "efc1546ba40eb6b3df647cb29c20527a2ed575c287d1e5d9996c5e2c4673a902"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/automated/performance.json",
+      "sha256": "c0c1f0d1ff4b6275baafe174b38a1e80973167b62a88389d9e2f7df636ffdbdb"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/automated/performance-summary.md",
+      "sha256": "0345bebccc6f73dff875175749a5607ab7a81cf946481485314935566416f44a"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/automated/startup.json",
+      "sha256": "7cb7aa84568e1f342ed4ec7d62a25c4aeac399ba5378da87d4ca89a58b0c5651"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/automated/asset-inventory.json",
+      "sha256": "e66f81f62c96beac5b54667157280dc40ac1bc9ba0bb8397f9e179619b6a9e4b"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/automated/m04-return-final-state.json",
+      "sha256": "752ce3707f9f3806d6295ada38b5ee71d9a1560daccaeadb18a16d64dbf392df"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M01__owner-report__run-05.md",
+      "sha256": "5830f5224a78b26bf2a71e4a288e5b8b4df8baf7af9e6726616e3236d1ed9797"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M02__owner-report__run-05.md",
+      "sha256": "a8fd698f866ce590bc38bc8158a498783eadc128c2d983cf791e59da9f594984"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M03__owner-report__run-05.md",
+      "sha256": "c1116db7e412b52d0e35f776051a599a8cbc41d431e24819fd9310e092436b12"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M04__owner-report__run-05.md",
+      "sha256": "4d04a6000123808951e02513e2cd8d72d9ffd9abe1808b6f0626b6061d46a862"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M02__recovered-owner-capture__run-05.png",
+      "sha256": "7cb0764cf831a1b4798bb19087fde4ef44ca353f2c3d89327995e1be0648483d"
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M03__owner-capture__run-05.png",
+      "sha256": "65b2702b316953d2bc69fc4b53d64924387d57d38786fa486c951bcccd5b48f6"
+    }
+  ],
+  "inspection": "All five selected native frames and both recovered original sources were opened with view_image during closure. All listed input hashes verified. No image was generated or edited."
+}

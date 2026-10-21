@@ -1,0 +1,44 @@
+[
+  {
+    "command": [
+      "python3",
+      "/lab/runtime_control.py",
+      "ipc",
+      "call",
+      "k4.apps",
+      "close"
+    ],
+    "exit_code": 0,
+    "stdout": "\n",
+    "stderr": "",
+    "date": "2026-10-21T11:12:53.869610+00:00"
+  },
+  {
+    "command": [
+      "python3",
+      "/lab/runtime_control.py",
+      "ipc",
+      "call",
+      "k4.panel",
+      "close"
+    ],
+    "exit_code": 0,
+    "stdout": "\n",
+    "stderr": "",
+    "date": "2026-10-21T11:12:53.999190+00:00"
+  },
+  {
+    "command": [
+      "python3",
+      "/lab/runtime_control.py",
+      "ipc",
+      "call",
+      "k4",
+      "toggleLauncher"
+    ],
+    "exit_code": 0,
+    "stdout": "\n",
+    "stderr": "",
+    "date": "2026-10-21T11:12:54.104254+00:00"
+  }
+]

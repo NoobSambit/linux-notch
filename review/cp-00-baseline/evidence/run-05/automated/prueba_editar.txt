@@ -1,0 +1,4 @@
+$ python3 tools/prueba_editar.py
+141 pruebas, todas pasan.
+
+Exit: 0

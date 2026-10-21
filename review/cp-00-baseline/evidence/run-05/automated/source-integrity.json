@@ -1,0 +1,7 @@
+{
+  "baseline": "ff520e33e136bbce11b7100c69888dedf42f7273",
+  "tested_revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+  "inherited_runtime_and_helper_paths_compared": 485,
+  "changed_inherited_paths": [],
+  "method": "Git mode/type/blob identities; original runtime/helpers/license/dependencies preserved."
+}
