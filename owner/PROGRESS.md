@@ -4,7 +4,7 @@
 
 ## WHAT YOU NEED TO DO NOW
 
-M02 report received. Next owner test is M03 (screen/fullscreen), to be prepared separately; M04 and explicit Gate B remain later separate actions. The test runtime is currently stopped. The M01 checklist owner label/desktop image remains outstanding.
+Perform M03 only in the prepared aquamarine test window: Island settings → scroll to Dónde vive la barra → test Arriba and Abajo. For each edge close settings, run the existing fullscreen true/false commands from the M03 note, confirm the island returns and typing works. Finish at Abajo and take a nested Captura → Guardar → Pantalla image as in M02; report M03 PASS/FAIL/NOT TESTED/NEEDS HELP and the chosen edge. Only one physical display is available. M04 and explicit Gate B remain later; Stop remains python3 tools/cp00.py stop.
 
 Workflow: **IN PROGRESS**.
 Active checkpoint: **cp-00-baseline**.
@@ -26,8 +26,8 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ## Current handoff
 
-- Codex next: M02 owner PASS recorded for unchanged b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05. Both recorded test payloads are stopped as verified while recording the result; selected source remains b114d5a. On the next owner-testing continuation, prepare M03 only using guarded Start/demo and existing screen/fullscreen helpers, reverify isolation/identities, and provide simple steps. Retain M02 preparation evidence and all prior runs/results. M01 owner image remains outstanding. Five engineering commits are complete; only scoped administrative evidence/approval commits are authorized now. Do not change product code, repin to administrative HEAD, record Gate B, begin CP-01 or perform remote actions.
-- You next: M02 report received. Next owner test is M03 (screen/fullscreen), to be prepared separately; M04 and explicit Gate B remain later separate actions. The test runtime is currently stopped. The M01 checklist owner label/desktop image remains outstanding.
+- Codex next: Await owner M03 only for unchanged b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05. Private runtime and dummy fixture are left running with Island settings open. Reverify current exact identities, bus/socket/source using review/cp-00-baseline/evidence/run-05/automated/m03-readiness.json and owner/cp-00__M03__preparation__run-05.md. Append actual owner results; inspect/hash/collect the owner-triggered nested capture from the synthetic Capturas folder if supplied. The fixture exits fullscreen mode 2 to maximized mode 1; no restored tiling claim. Second physical display is unavailable. Preserve archived M02 preparation, all prior runs/evidence and M01/M02 PASS. M01 owner image remains outstanding. Prepare M04 only after M03; no Gate B, product/helper changes, CP-01 or remote action. Five engineering commits are complete; this is authorized administrative owner-test preparation.
+- You next: Perform M03 only in the prepared aquamarine test window: Island settings → scroll to Dónde vive la barra → test Arriba and Abajo. For each edge close settings, run the existing fullscreen true/false commands from the M03 note, confirm the island returns and typing works. Finish at Abajo and take a nested Captura → Guardar → Pantalla image as in M02; report M03 PASS/FAIL/NOT TESTED/NEEDS HELP and the chosen edge. Only one physical display is available. M04 and explicit Gate B remain later; Stop remains python3 tools/cp00.py stop.
 - Waiting/blocker: No blocker recorded; follow the next action above.
 - Test version / run: run-05
 
@@ -35,13 +35,13 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ### cp-00-baseline
 
-Next: M02 report received. Next owner test is M03 (screen/fullscreen), to be prepared separately; M04 and explicit Gate B remain later separate actions. The test runtime is currently stopped. The M01 checklist owner label/desktop image remains outstanding.
+Next: Perform M03 only in the prepared aquamarine test window: Island settings → scroll to Dónde vive la barra → test Arriba and Abajo. For each edge close settings, run the existing fullscreen true/false commands from the M03 note, confirm the island returns and typing works. Finish at Abajo and take a nested Captura → Guardar → Pantalla image as in M02; report M03 PASS/FAIL/NOT TESTED/NEEDS HELP and the chosen edge. Only one physical display is available. M04 and explicit Gate B remain later; Stop remains python3 tools/cp00.py stop.
 
 Remaining tasks: None.
 
 - **M01 PASS** — Start and stop safely (Owner-reported PASS for b114d5a / run-05: Start/Stop worked and normal desktop remained unaffected. Literal dated report saved; checklist owner label/desktop image was not supplied and remains outstanding.)
 - **M02 PASS** — Original everyday paths (Owner reports all five supplied M02 steps worked as intended on b114d5a / run-05; literal reply and interpretation preserved in the hashed owner report.)
-- **M03 NOT TESTED** — Screen and fullscreen baseline (Awaiting this owner test for b114d5a / run-05; prepare one test at a time after M02. No result or approval inferred.)
+- **M03 NOT TESTED** — Screen and fullscreen baseline (Unchanged b114d5a / run-05 isolated session and existing fullscreen fixture prepared; awaiting owner top/bottom/fullscreen-return/typing observations and a whole nested-screen capture. Conditional second physical display remains NOT TESTED — ENVIRONMENT LIMITATION: only eDP-1 is attached.)
 - **M04 NOT TESTED** — Recovery rehearsal (Awaiting this owner test for b114d5a / run-05; prepare one test at a time after M02. No result or approval inferred.)
 
 Engineering checks: A01: PASS; R01: PASS; R02: PASS; R03: PASS.

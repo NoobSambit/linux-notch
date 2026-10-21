@@ -1,0 +1,25 @@
+[
+  {
+    "command": [
+      "hyprctl",
+      "-j",
+      "clients"
+    ],
+    "exit_code": 0,
+    "stdout": "[{\n    \"address\": \"0x5603faf790d0\",\n    \"mapped\": true,\n    \"hidden\": false,\n    \"visible\": false,\n    \"acceptsInput\": false,\n    \"at\": [12, 46],\n    \"size\": [621, 662],\n    \"workspace\": {\n        \"id\": 1,\n        \"name\": \"1\"\n    },\n    \"floating\": false,\n    \"monitor\": 1,\n    \"class\": \"org.quickshell\",\n    \"title\": \"CP00 static note\",\n    \"initialClass\": \"org.quickshell\",\n    \"initialTitle\": \"CP00 static note\",\n    \"pid\": 0,\n    \"xwayland\": false,\n    \"pinned\": false,\n    \"pinFullscreened\": false,\n    \"fullscreen\": 0,\n    \"fullscreenClient\": 0,\n    \"fullscreenHandler\": \"default\",\n    \"allowedOverFullscreen\": false,\n    \"grouped\": [],\n    \"tags\": [],\n    \"swallowing\": \"0x0\",\n    \"focusHistoryID\": 1,\n    \"inhibitingIdle\": false,\n    \"xdgTag\": \"\",\n    \"xdgDescription\": \"\",\n    \"contentType\": \"none\",\n    \"tearingHint\": false,\n    \"stableId\": \"18000000\"\n},{\n    \"address\": \"0x5603fafc6d90\",\n    \"mapped\": true,\n    \"hidden\": false,\n    \"visible\": true,\n    \"acceptsInput\": true,\n    \"at\": [0, 0],\n    \"size\": [1280, 720],\n    \"workspace\": {\n        \"id\": 1,\n        \"name\": \"1\"\n    },\n    \"floating\": false,\n    \"monitor\": 1,\n    \"class\": \"org.quickshell\",\n    \"title\": \"CP00 dummy document\",\n    \"initialClass\": \"org.quickshell\",\n    \"initialTitle\": \"CP00 dummy document\",\n    \"pid\": 0,\n    \"xwayland\": false,\n    \"pinned\": false,\n    \"pinFullscreened\": false,\n    \"fullscreen\": 2,\n    \"fullscreenClient\": 2,\n    \"fullscreenHandler\": \"default\",\n    \"allowedOverFullscreen\": true,\n    \"grouped\": [],\n    \"tags\": [],\n    \"swallowing\": \"0x0\",\n    \"focusHistoryID\": 0,\n    \"inhibitingIdle\": false,\n    \"xdgTag\": \"\",\n    \"xdgDescription\": \"\",\n    \"contentType\": \"none\",\n    \"tearingHint\": false,\n    \"stableId\": \"18000001\"\n}]\n",
+    "stderr": "",
+    "date": "2026-10-21T11:42:05.106050+00:00"
+  },
+  {
+    "command": [
+      "grim",
+      "-o",
+      "CP00-STABLE",
+      "/lab/m03-fullscreen.png"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "date": "2026-10-21T11:42:05.145177+00:00"
+  }
+]

@@ -1,0 +1,11 @@
+{
+  "command": [
+    "hyprctl",
+    "eval",
+    "hl.dispatch(hl.dsp.focus({monitor=\"CP00-STABLE\"}))"
+  ],
+  "exit_code": 0,
+  "stdout": "ok\n",
+  "stderr": "",
+  "date": "2026-10-21T11:41:21.017592+00:00"
+}

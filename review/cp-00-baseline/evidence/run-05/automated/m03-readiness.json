@@ -1,0 +1,137 @@
+{
+  "recorded_at": "2026-10-21T11:43:08.817862+00:00",
+  "phase": "M03 preparation, not owner result",
+  "payloads": {
+    "server": {
+      "pid": 148069,
+      "start_ticks": "2432076",
+      "exe": "/usr/bin/python3.14",
+      "pid_namespace": "pid:[4026533645]",
+      "argv": [
+        "python3",
+        "/control.py",
+        "_server"
+      ],
+      "date": "2026-10-21T11:41:12.963188+00:00"
+    },
+    "compositor": {
+      "pid": 148074,
+      "start_ticks": "2432081",
+      "exe": "/usr/bin/Hyprland",
+      "pid_namespace": "pid:[4026533702]",
+      "argv": [
+        "Hyprland",
+        "-c",
+        "/lab/hyprland.lua"
+      ],
+      "date": "2026-10-21T11:41:13.017507+00:00"
+    }
+  },
+  "selected_source": {
+    "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "path": "/candidate",
+    "manifest": "/lab/candidate-manifest.json"
+  },
+  "personal_k4_paths_exist": {
+    "/home/noobsambit/.config/k4": false,
+    "/home/noobsambit/.local/state/k4": false,
+    "/home/noobsambit/.local/share/k4": false
+  },
+  "runtime_checks": [
+    {
+      "command": [
+        "python3",
+        "/lab/runtime_control.py",
+        "status"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"instance\": {\n    \"config_path\": \"/candidate/shell.qml\",\n    \"id\": \"k2ss99nt\",\n    \"launch_time\": \"2026-10-21T11:41:16\",\n    \"pid\": 92,\n    \"shell_id\": \"2d05d68fdebd309fd350f051a28894b6\"\n  },\n  \"process\": {\n    \"pid\": 92,\n    \"start_ticks\": \"2432476\",\n    \"exe\": \"/usr/bin/quickshell\",\n    \"argv\": [\n      \"quickshell\",\n      \"-p\",\n      \"/candidate/shell.qml\",\n      \"--no-color\"\n    ],\n    \"pid_namespace\": \"pid:[4026533645]\"\n  },\n  \"environment\": {\n    \"WAYLAND_DISPLAY\": \"wayland-1\",\n    \"HYPRLAND_INSTANCE_SIGNATURE\": \"efb50993780079460b0cbed1363e2166a2de1d9f_1792582872_910622797\",\n    \"DBUS_SESSION_BUS_ADDRESS\": \"unix:path=/tmp/dbus-DxlTOqVP6B,guid=3c78c62e9b8b56ef5f8ecc3a6ad8a4d8\",\n    \"XDG_RUNTIME_DIR\": \"/run/cp00\"\n  },\n  \"revision\": \"b114d5a1b8c3ed90e97b577e3424092a783e04ed\",\n  \"log\": \"/lab/logs/k4-1792582876920400388.txt\"\n}\n",
+      "stderr": "",
+      "date": "2026-10-21T11:43:08.896323+00:00"
+    },
+    {
+      "command": [
+        "quickshell",
+        "list",
+        "--all",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "[\n    {\n        \"config_path\": \"/candidate/shell.qml\",\n        \"id\": \"k2ss99nt\",\n        \"launch_time\": \"2026-10-21T11:41:16\",\n        \"pid\": 92,\n        \"shell_id\": \"2d05d68fdebd309fd350f051a28894b6\"\n    },\n    {\n        \"config_path\": \"/lab/fixture.qml\",\n        \"id\": \"57xs99nt\",\n        \"launch_time\": \"2026-10-21T11:41:21\",\n        \"pid\": 257,\n        \"shell_id\": \"08410f71d13f28fac8a3ef50509d74c3\"\n    }\n]\n",
+      "stderr": "",
+      "date": "2026-10-21T11:43:08.924774+00:00"
+    },
+    {
+      "command": [
+        "hyprctl",
+        "-j",
+        "clients"
+      ],
+      "exit_code": 0,
+      "stdout": "[{\n    \"address\": \"0x5603faf790d0\",\n    \"mapped\": true,\n    \"hidden\": false,\n    \"visible\": false,\n    \"acceptsInput\": false,\n    \"at\": [12, 46],\n    \"size\": [621, 662],\n    \"workspace\": {\n        \"id\": 1,\n        \"name\": \"1\"\n    },\n    \"floating\": false,\n    \"monitor\": 1,\n    \"class\": \"org.quickshell\",\n    \"title\": \"CP00 static note\",\n    \"initialClass\": \"org.quickshell\",\n    \"initialTitle\": \"CP00 static note\",\n    \"pid\": 0,\n    \"xwayland\": false,\n    \"pinned\": false,\n    \"pinFullscreened\": false,\n    \"fullscreen\": 0,\n    \"fullscreenClient\": 0,\n    \"fullscreenHandler\": \"default\",\n    \"allowedOverFullscreen\": false,\n    \"grouped\": [],\n    \"tags\": [],\n    \"swallowing\": \"0x0\",\n    \"focusHistoryID\": 1,\n    \"inhibitingIdle\": false,\n    \"xdgTag\": \"\",\n    \"xdgDescription\": \"\",\n    \"contentType\": \"none\",\n    \"tearingHint\": false,\n    \"stableId\": \"18000000\"\n},{\n    \"address\": \"0x5603fafc6d90\",\n    \"mapped\": true,\n    \"hidden\": false,\n    \"visible\": true,\n    \"acceptsInput\": true,\n    \"at\": [12, 46],\n    \"size\": [1256, 662],\n    \"workspace\": {\n        \"id\": 1,\n        \"name\": \"1\"\n    },\n    \"floating\": false,\n    \"monitor\": 1,\n    \"class\": \"org.quickshell\",\n    \"title\": \"CP00 dummy document\",\n    \"initialClass\": \"org.quickshell\",\n    \"initialTitle\": \"CP00 dummy document\",\n    \"pid\": 0,\n    \"xwayland\": false,\n    \"pinned\": false,\n    \"pinFullscreened\": false,\n    \"fullscreen\": 1,\n    \"fullscreenClient\": 1,\n    \"fullscreenHandler\": \"default\",\n    \"allowedOverFullscreen\": true,\n    \"grouped\": [],\n    \"tags\": [],\n    \"swallowing\": \"0x0\",\n    \"focusHistoryID\": 0,\n    \"inhibitingIdle\": false,\n    \"xdgTag\": \"\",\n    \"xdgDescription\": \"\",\n    \"contentType\": \"none\",\n    \"tearingHint\": false,\n    \"stableId\": \"18000001\"\n}]\n",
+      "stderr": "",
+      "date": "2026-10-21T11:43:08.931719+00:00"
+    },
+    {
+      "command": [
+        "hyprctl",
+        "-j",
+        "monitors"
+      ],
+      "exit_code": 0,
+      "stdout": "[{\n    \"id\": 1,\n    \"name\": \"CP00-STABLE\",\n    \"description\": \"\",\n    \"make\": \"\",\n    \"model\": \"\",\n    \"serial\": \"\",\n    \"width\": 1280,\n    \"height\": 720,\n    \"physicalWidth\": 0,\n    \"physicalHeight\": 0,\n    \"refreshRate\": 60.00000,\n    \"x\": 0,\n    \"y\": 0,\n    \"activeWorkspace\": {\n        \"id\": 1,\n        \"name\": \"1\"\n    },\n    \"specialWorkspace\": {\n        \"id\": 0,\n        \"name\": \"\"\n    },\n    \"reserved\": [0, 34, 0, 0],\n    \"scale\": 1,\n    \"transform\": 0,\n    \"focused\": true,\n    \"dpmsStatus\": true,\n    \"vrr\": false,\n    \"solitary\": \"0\",\n    \"solitaryBlockedBy\": [\"WINDOWED\",\"CANDIDATE\"],\n    \"activelyTearing\": false,\n    \"tearingBlockedBy\": [\"NOT_TORN\",\"USER\",\"SUPPORT\",\"CANDIDATE\"],\n    \"directScanoutTo\": \"0\",\n    \"directScanoutBlockedBy\": [\"USER\",\"MIRROR\",\"SW\",\"CANDIDATE\"],\n    \"disabled\": false,\n    \"currentFormat\": \"XRGB8888\",\n    \"mirrorOf\": \"none\",\n    \"availableModes\": [\"1920x1080@60.00Hz\"],\n    \"colorManagementPreset\": \"srgb\",\n    \"sdrBrightness\": 1,\n    \"sdrSaturation\": 1,\n    \"sdrMinLuminance\": 0.2,\n    \"sdrMaxLuminance\": 80,\n    \"hardwareCursorsInUse\": true\n}]\n",
+      "stderr": "",
+      "date": "2026-10-21T11:43:08.938571+00:00"
+    },
+    {
+      "command": [
+        "hyprctl",
+        "configerrors"
+      ],
+      "exit_code": 0,
+      "stdout": "\n\n",
+      "stderr": "",
+      "date": "2026-10-21T11:43:08.944372+00:00"
+    },
+    {
+      "command": [
+        "python3",
+        "-c",
+        "import json,os;from pathlib import Path;print(json.dumps({\"namespaces\":{k:os.readlink(\"/proc/self/ns/\"+k) for k in [\"mnt\",\"pid\",\"net\",\"ipc\",\"user\"]},\"host_paths_absent\":{p:not Path(p).exists() for p in [\"/home/noobsambit\",\"/parent\",\"/run/user/1000\",\"/run/dbus/system_bus_socket\",\"/dev/snd\",\"/dev/input\"]},\"interfaces\":Path(\"/proc/net/dev\").read_text()}))"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"namespaces\": {\"mnt\": \"mnt:[4026533586]\", \"pid\": \"pid:[4026533645]\", \"net\": \"net:[4026533647]\", \"ipc\": \"ipc:[4026533644]\", \"user\": \"user:[4026533697]\"}, \"host_paths_absent\": {\"/home/noobsambit\": true, \"/parent\": true, \"/run/user/1000\": true, \"/run/dbus/system_bus_socket\": true, \"/dev/snd\": true, \"/dev/input\": true}, \"interfaces\": \"Inter-|   Receive                                                |  Transmit\\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\\n    lo:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0\\n\"}\n",
+      "stderr": "",
+      "date": "2026-10-21T11:43:08.971027+00:00"
+    }
+  ],
+  "fullscreen_return_observation": "The existing fixture exits fullscreen mode 2 into maximized mode 1. The island returns and the dummy window is mapped. No assertion of restored tiled bounds is made.",
+  "quickshell": {
+    "command": [
+      "quickshell",
+      "list",
+      "--all",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "[\n    {\n        \"config_path\": \"/home/noobsambit/.config/quickshell/end4-pC/shell.qml\",\n        \"id\": \"xzn1r8nt\",\n        \"launch_time\": \"2026-10-21T10:26:11\",\n        \"pid\": 1293,\n        \"shell_id\": \"962f75767314addec36fdeb1bbb48f35\"\n    }\n]\n",
+    "stderr": ""
+  },
+  "notifications": {
+    "command": [
+      "busctl",
+      "--user",
+      "call",
+      "org.freedesktop.DBus",
+      "/org/freedesktop/DBus",
+      "org.freedesktop.DBus",
+      "GetNameOwner",
+      "s",
+      "org.freedesktop.Notifications"
+    ],
+    "exit_code": 0,
+    "stdout": "s \":1.14\"\n",
+    "stderr": ""
+  },
+  "host_invariants_match": true
+}
