@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
-  "workflow_status": "AWAITING WORKFLOW APPROVAL",
-  "active_checkpoint": null,
+  "workflow_status": "IN PROGRESS",
+  "active_checkpoint": "cp-00-baseline",
   "next_checkpoint": "cp-00-baseline",
   "baseline_sha": "ff520e3",
   "setup_branch": "docs/notchbar-workflow",
@@ -11,8 +11,13 @@
       "title": "Safe environment and original k4 baseline",
       "depends_on": [],
       "visual": false,
-      "status": "PLANNED",
-      "authorization": null,
+      "status": "IMPLEMENTING",
+      "authorization": {
+        "owner_quote": "I approve the established LINUX NOTCHBAR workflow and explicitly authorize **Checkpoint CP-00 ONLY**.",
+        "date": "2026-10-21T07:59:40Z",
+        "source": "Owner attachment pasted-text-1.txt in this thread; scope transcription review/cp-00-baseline/evidence/run-01/authorization.md",
+        "scope": "CP-00 only; five substantive execution commits if safe completion is possible; fewer on a genuine blocker; no live configuration, dependencies, CP-01, pushes or Gate B."
+      },
       "gate_a": null,
       "gate_b": null,
       "reference_requirements": [],
@@ -21,13 +26,30 @@
         {
           "id": "T01",
           "title": "Inventory source baseline, versions, devices, state paths, daemon ownership and dependencies; identify isolation hazards from source.",
-          "status": "PENDING",
-          "evidence": []
+          "status": "DONE",
+          "evidence": [
+            {
+              "path": "review/cp-00-baseline/evidence/run-01/automated/baseline-inventory.md",
+              "sha256": "34f584a60ac2db4286b131ed88615487ac16ba2b2b7bf2d6bd0437a3c3a6e1a6"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-01/automated/inventory.json",
+              "sha256": "dad114d2a3120e25cd4680f6b90eb586eac0b663cd812c2158351fb43a82d515"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-01/automated/source-path-audit.txt",
+              "sha256": "7383073289f6a4f71e7630a96d58442ee8d15427a81ab80a74596016c2224cef"
+            },
+            {
+              "path": "review/cp-00-baseline/evidence/run-01/automated/gates.json",
+              "sha256": "127bbc278b927c41eced207b373c18fa223a5338da244fdd170b0df9ebac5dbd"
+            }
+          ]
         },
         {
           "id": "T02",
           "title": "Prepare and prove separate test code/home/bus/Wayland context; supply guarded Start/Stop/Restore actions and rehearse dummy-state backup/restore.",
-          "status": "PENDING",
+          "status": "IN PROGRESS",
           "evidence": []
         },
         {
@@ -48,16 +70,40 @@
           "id": "A01",
           "kind": "automated",
           "title": "Run existing gates and read-only capability/path audit; record missing tools and skipped qmllint separately.",
-          "result": "NOT TESTED",
-          "reason": "Checkpoint has not started.",
-          "history": []
+          "result": "PASS",
+          "reason": "All eleven required gate commands exited 0, including installed qmllint and ffmpeg checks; missing feature dependencies remain explicitly inventoried.",
+          "history": [
+            {
+              "result": "PASS",
+              "date": "2026-10-21T08:00:00Z",
+              "revision": "6478e25c52adbbbe3e2f00e2c5cf975b09e6732b",
+              "environment": "Arch 7.2.8; i7-13700HX; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2; physical eDP-1 1920x1080 scale 1. Read-only host inventory; no app launch.",
+              "run": "run-01",
+              "command": "python3 tools/{plugins,api,guia,layouts,prueba_editar,prueba_plugins,prueba_rutas,prueba_texto,workflow,test_workflow}.py (each separately); git diff --check; read-only version/path/dependency audit (commands in inventory.json)",
+              "exit_code": 0,
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-01/automated/gates.json",
+                  "sha256": "127bbc278b927c41eced207b373c18fa223a5338da244fdd170b0df9ebac5dbd"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-01/automated/inventory.json",
+                  "sha256": "dad114d2a3120e25cd4680f6b90eb586eac0b663cd812c2158351fb43a82d515"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-01/automated/baseline-inventory.md",
+                  "sha256": "34f584a60ac2db4286b131ed88615487ac16ba2b2b7bf2d6bd0437a3c3a6e1a6"
+                }
+              ]
+            }
+          ]
         },
         {
           "id": "R01",
           "kind": "runtime",
           "title": "Prove isolated paths/services, exact-instance termination, backup and previous-version restore using dummy state; host services unchanged.",
           "result": "NOT TESTED",
-          "reason": "Checkpoint has not started.",
+          "reason": "CP-00 started; this scenario has not yet been performed.",
           "history": []
         },
         {
@@ -65,7 +111,7 @@
           "kind": "runtime",
           "title": "Record original top/bottom/dock, experimental sides, fullscreen, one/two displays where available, media/clipboard/capture and examples hola/piezas/efectos/snake.",
           "result": "NOT TESTED",
-          "reason": "Checkpoint has not started.",
+          "reason": "CP-00 started; this scenario has not yet been performed.",
           "history": []
         },
         {
@@ -73,7 +119,7 @@
           "kind": "runtime",
           "title": "Measure startup/idle/active resources with workload/duration/hardware; record Atalaya saved override versus inherited catalog effective state and closed-state GPU activity.",
           "result": "NOT TESTED",
-          "reason": "Checkpoint has not started.",
+          "reason": "CP-00 started; this scenario has not yet been performed.",
           "history": []
         },
         {
@@ -81,7 +127,7 @@
           "kind": "owner",
           "title": "Start and stop safely",
           "result": "NOT TESTED",
-          "reason": "Checkpoint has not started.",
+          "reason": "CP-00 started; this scenario has not yet been performed.",
           "history": []
         },
         {
@@ -89,7 +135,7 @@
           "kind": "owner",
           "title": "Original everyday paths",
           "result": "NOT TESTED",
-          "reason": "Checkpoint has not started.",
+          "reason": "CP-00 started; this scenario has not yet been performed.",
           "history": []
         },
         {
@@ -97,7 +143,7 @@
           "kind": "owner",
           "title": "Screen and fullscreen baseline",
           "result": "NOT TESTED",
-          "reason": "Checkpoint has not started.",
+          "reason": "CP-00 started; this scenario has not yet been performed.",
           "history": []
         },
         {
@@ -105,18 +151,25 @@
           "kind": "owner",
           "title": "Recovery rehearsal",
           "result": "NOT TESTED",
-          "reason": "Checkpoint has not started.",
+          "reason": "CP-00 started; this scenario has not yet been performed.",
           "history": []
         }
       ],
-      "runs": [],
-      "latest_run": null,
-      "branch": null,
-      "last_good_sha": null,
-      "current_task": null,
+      "runs": [
+        {
+          "id": "run-01",
+          "date": "2026-10-21T08:00:00Z",
+          "revision": "6478e25c52adbbbe3e2f00e2c5cf975b09e6732b",
+          "environment": "Arch 7.2.8; i7-13700HX; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2; physical eDP-1 1920x1080 scale 1. Read-only host inventory; no app launch."
+        }
+      ],
+      "latest_run": "run-01",
+      "branch": "checkpoint/cp-00-baseline",
+      "last_good_sha": "ff520e33e136bbce11b7100c69888dedf42f7273",
+      "current_task": "T02",
       "blocked_reason": null,
-      "next_agent_action": "Wait for explicit workflow and CP-00 authorization; then inspect safe isolation options without launching product.",
-      "next_owner_action": "Approve workflow and authorize CP-00 only; no images yet.",
+      "next_agent_action": "T02: prove namespace filesystem/service boundaries, then test an isolated Hyprland compositor. No k4 launch until the app cannot access host HOME, bus, clipboard, audio, network or compositor IPC.",
+      "next_owner_action": "No action yet. CP-00 engineering preparation is authorized; wait for verified owner-test instructions or a concrete capability request.",
       "contract": "docs/workflow/checkpoints/cp-00-baseline.md",
       "visual_brief": "docs/workflow/checkpoints/cp-00-baseline.visual.md",
       "owner_note": "owner/checkpoints/cp-00-baseline.md"

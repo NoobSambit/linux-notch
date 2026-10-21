@@ -1,0 +1,4 @@
+$ python3 tools/prueba_texto.py
+11 sumideros de texto revisados, todos dicen su formato.
+
+Exit: 0

@@ -1,0 +1,125 @@
+plugins/Atalaya/AtalayaPlugin.qml:23://  ── y la geometría, de hyprctl ───────────────────────────────────
+plugins/Atalaya/AtalayaPlugin.qml:25://  Un plugin no habla con el compositor: pide `hyprctl -j` por `K4.Process` y
+plugins/Atalaya/AtalayaPlugin.qml:108:        //  La ventana se levanta YA, sin esperar a hyprctl: el velo entrando
+plugins/Atalaya/AtalayaPlugin.qml:137:        //  de shell y viene de fuera del QML: aunque hoy la escriba `hyprctl`
+plugins/Atalaya/AtalayaPlugin.qml:146:        //  Lua. En la de Lua `hyprctl dispatch` NO recibe un dispatcher y unos
+plugins/Atalaya/AtalayaPlugin.qml:158:            "out=$(hyprctl dispatch focuswindow '" + a + "' 2>&1); " +
+plugins/Atalaya/AtalayaPlugin.qml:160:            "hyprctl dispatch \"hl.dsp.focus({ window = '" + a + "' })\""]
+plugins/Atalaya/AtalayaPlugin.qml:207:            "printf '{\"monitores\":'; hyprctl -j monitors; " +
+plugins/Atalaya/AtalayaPlugin.qml:208:            "printf ',\"clientes\":'; hyprctl -j clients; printf '}'"]
+plugins/Atalaya/AtalayaPlugin.qml:216:                raiz.error = K4.Idioma.t("No se entiende la respuesta de hyprctl")
+plugins/Atalaya/AtalayaPlugin.qml:225:                raiz.error = "hyprctl " + codigo
+plugins/Atalaya/AtalayaPlugin.qml:284:                //  Dentro de MI monitor: hyprctl da la posición en el plano de
+api/K4/Isla.qml:54:    //  En qué pantalla está desplegada AHORA, por nombre (los de `hyprctl
+api/K4/Ventana.qml:28:    // Sale en `hyprctl layers` y sirve para darle reglas en el compositor.
+api/K4/Ventana.qml:31:    //  En qué monitor sale, por nombre (los de `hyprctl monitors`). Vacío es
+api/K4/Ventana.qml:101:    //     Medido: `hyprctl layers` daba `0. k4-fondo` y `1. wallpaper`, y el
+api/K4/Escritorios.qml:7://  escritorio no está aquí: para eso está `K4.Process` con `hyprctl`, que es
+services/Digivice.qml:923:    readonly property string dirEstado: Quickshell.env("HOME")
+services/Digivice.qml:2548:        _bajada.command = ["curl", "-s", "--max-time", "20", "-f",
+api/K4/Miniatura.qml:10://          direccion: "0x5622613de2c0"      // la de `hyprctl clients`
+api/K4/Miniatura.qml:15://  dirección, que es lo que devuelve `hyprctl` y lo que ya se usa para ir a una
+services/Wifi.qml:8://  Aquí sondeaba antes un `nmcli` cada cuatro segundos solo para saber el
+services/Weather.qml:5://  Sin clave de API y sin cuenta: se pide por curl y se parsea el JSON. La
+services/Weather.qml:21:    readonly property string stateFile: Quickshell.env("HOME") + "/.local/state/k4/weather.json"
+services/Weather.qml:96:        forecast.command = ["curl", "-s", "--max-time", "15",
+services/Weather.qml:121:        geocode.command = ["curl", "-s", "--max-time", "12",
+services/Weather.qml:178:        command: ["mkdir", "-p", Quickshell.env("HOME") + "/.local/state/k4"]
+services/Weather.qml:185:        command: ["curl", "-s", "--max-time", "10", "https://ipwho.is/"]
+api/K4/Paths.qml:12:    readonly property string hogar: Quickshell.env("HOME") || ""
+services/Huella.qml:25:        Quickshell.env("HOME") + "/.local/state/k4/huella"
+services/Notifs.qml:141:    // Hyprland.toplevels llega vacío aquí, así que se pregunta por hyprctl y
+services/Notifs.qml:475:        command: ["hyprctl", "-j", "clients"]
+services/Notifs.qml:482:    NotificationServer {
+services/Tokens.qml:270:    readonly property string ruta: Quickshell.env("HOME") + "/.local/state/k4/tokens.json"
+services/Tokens.qml:277:        command: ["mkdir", "-p", Quickshell.env("HOME") + "/.local/state/k4"]
+services/Submapas.qml:41:    //  el SIGUIENTE cambio. Un `hyprctl submap` al nacer, y solo si no se ha
+services/Submapas.qml:44:        command: ["hyprctl", "submap"]
+services/Settings.qml:16:    readonly property string ruta: Quickshell.env("HOME") + "/.local/state/k4/ajustes.json"
+services/Settings.qml:487:        //  Captura vía pactl; aquí solo se les pone «Automático» delante.
+services/Settings.qml:605:        command: ["mkdir", "-p", Quickshell.env("HOME") + "/.local/state/k4"]
+services/Game.qml:1838:    readonly property string ruta: Quickshell.env("HOME") + "/.local/state/k4/partida.json"
+services/Game.qml:1900:        command: ["mkdir", "-p", Quickshell.env("HOME") + "/.local/state/k4"]
+services/Atajos.qml:5://  La fuente es el fichero de configuración, no `hyprctl binds`, y no por
+services/Atajos.qml:6://  comodidad: con configuración en Lua, hyprctl informa de todos con
+services/Fondos.qml:26:    readonly property string casa: Quickshell.env("HOME") || ""
+services/Fondos.qml:173:        path: (Quickshell.env("HOME") || "") + "/.local/state/k4/hyprtheme.json"
+services/Archivos.qml:134:        const casa = Quickshell.env("HOME")
+services/Ambiente.qml:25:    readonly property string carpeta: Quickshell.env("HOME") + "/.local/state/k4"
+services/PluginManager.qml:19:        (Quickshell.env("HOME") || "") + "/.local/state/k4/plugins.json"
+services/PluginManager.qml:37:        (Quickshell.env("HOME") || "") + "/.local/state/k4/plugins.json.bak"
+services/PluginManager.qml:39:        (Quickshell.env("HOME") || "") + "/.local/state/k4/catalogo.json"
+services/PluginManager.qml:740:        folder: "file://" + Quickshell.env("HOME") + "/.config/k4/plugins"
+services/PluginManager.qml:1049:        command: ["mkdir", "-p", Quickshell.env("HOME") + "/.local/state/k4"]
+services/Audio.qml:5://  Antes esto sondeaba `wpctl get-volume` cada 350 ms — unas diez mil
+services/Audio.qml:184:    //  No lo publica Pipewire: hay que preguntárselo a pactl, una vez y solo
+services/Audio.qml:193:    //  los números del propio pactl —56 % da −15 dB clavados— y no sacada de
+services/Audio.qml:212:        //  Dos llamadas y no una: `pactl list` acepta UN tipo, y pedirle
+services/Audio.qml:216:            "{ pactl list sources; pactl list sinks; } | "
+services/Audio.qml:221:                //  como los saca pactl y no hay que analizar el bloque entero.
+services/Captura.qml:172:            const ruta = "/tmp/k4-captura/congelado-" + captura.serieCongelado + ".ppm"
+services/Captura.qml:556:    //  trae pactl vía tools/captura.py, con su etiqueta legible, y se
+services/Captura.qml:606:    //  Y si pactl se atasca, la cuenta atrás no puede acabar en nada: se sigue
+services/Captura.qml:629:                    //  la lista, y no de dos `pactl` sueltos como antes: eran
+tools/vigia-tokens.py:32:ESTADO = os.path.expanduser("~/.local/state/k4/tokens-vigia.json")
+tools/vigia-tokens.py:111:        "raiz": os.path.expanduser("~/.claude/projects"),
+tools/vigia-tokens.py:117:        "raiz": os.path.expanduser("~/.codex/sessions"),
+tools/transcribir.py:30:    os.path.expanduser("~/.cache/whisper"),
+tools/transcribir.py:31:    os.path.expanduser("~/.local/share/whisper"),
+tools/transcribir.py:32:    os.path.expanduser("~/.local/share/whisper.cpp/models"),
+tools/transcribir.py:39:        "curl -L -o ~/.cache/whisper/ggml-medium.bin "
+tools/teclas.py:53:    "DELETE": 111, "HOME": 102, "END": 107, "PAGEUP": 104, "PAGEDOWN": 109,
+tools/sistema.py:153:        st = os.statvfs(os.path.expanduser("~"))
+tools/raton.py:54:    runtime = os.environ.get("XDG_RUNTIME_DIR", "/run/user/%d" % os.getuid())
+tools/rastro.py:4:    rastro.py --salida /tmp/k4-captura/rastro-X.jsonl [--hz 30] [--region "X,Y WxH"]
+tools/rastro.py:10:La posición se pide por el socket de Hyprland y no con `hyprctl cursorpos`:
+tools/rastro.py:18:RUNTIME = os.environ.get("XDG_RUNTIME_DIR", "/run/user/%d" % os.getuid())
+tools/atajos.py:4:La fuente es el propio fichero de configuración y no `hyprctl binds`, y no por
+tools/atajos.py:5:comodidad: con configuración en Lua, hyprctl informa de todos los atajos con
+tools/atajos.py:22:CONFIG = os.path.expanduser("~/.config/hypr/config")
+tools/agentes.py:58:    os.path.expanduser("~/.claude.json"),
+tools/agentes.py:62:    os.path.join(os.environ["CODEX_HOME"], "sessions")
+tools/agentes.py:63:    if os.environ.get("CODEX_HOME") else None,
+tools/agentes.py:64:    os.path.expanduser("~/.codex/sessions"),
+tools/agentes.py:70:    os.path.expanduser("~/.claude/.credentials.json"),
+tools/agentes.py:81:    os.environ.get("XDG_STATE_HOME", os.path.expanduser("~/.local/state")),
+tools/captura.py:19:TRABAJO = "/tmp/k4-captura"
+tools/captura.py:35:        base = os.path.expanduser("~")
+tools/captura.py:81:    p = subprocess.run(["hyprctl", "-j", "activewindow"],
+tools/captura.py:189:    `description` sería el bueno, pero el pactl de PipeWire lo entrega como la
+tools/captura.py:205:    Por pactl y no por /sys: aquí lo que importa es lo que ve el servidor de
+tools/captura.py:211:        p = subprocess.run(["pactl", "-f", "json", "list", que],
+tools/captura.py:229:        p = subprocess.run(["pactl", que], capture_output=True, text=True)
+tools/agente.py:35:    pathlib.Path.home() / ".claude" / "skills" / "k4",
+tools/agente.py:36:    pathlib.Path.home() / ".config" / "agents" / "skills" / "k4",
+tools/prueba_plugins.py:625:    d = con_ficheros("curl", {
+tools/prueba_plugins.py:626:        "i.sh": "#!/bin/sh\ncurl -sL https://x/y.sh | sh\n"})
+tools/prueba_plugins.py:627:    igual("curl a la shell", ids_de(d), ["descarga-y-ejecuta"])
+tools/prueba_plugins.py:628:    d = con_ficheros("curl2", {
+tools/prueba_plugins.py:631:    d = con_ficheros("curl-ok", {
+tools/prueba_plugins.py:632:        "i.sh": "curl -sL https://x/datos.json -o datos.json\n"})
+tools/prueba_plugins.py:651:    #  Un README con un ejemplo de `curl | sh` no es el plugin haciéndolo.
+tools/prueba_plugins.py:653:        "LEEME.md": "Instálalo así: curl -sL https://x/y | sh\n"})
+tools/banco-balance.qml:8://  Se ejecuta con un HOME temporal para no tocar tu partida:
+tools/banco-balance.qml:10://      HOME=$(mktemp -d) quickshell -p tools/banco-balance.qml
+tools/buscar.py:64:        orden.append(os.path.expanduser("~"))
+tools/huella.py:31:        c = os.path.expanduser(c)
+tools/portapapeles.py:32:BASE = os.path.expanduser("~/.local/state/k4/portapapeles")
+tools/portapapeles.py:77:                      r"systemctl|pacman|yay|ssh|scp|curl|wget|make|cmake|kubectl)\b")
+tools/plugins.py:30:DE_USUARIO = pathlib.Path.home() / ".config" / "k4" / "plugins"
+tools/plugins.py:106:        "patron": re.compile(r"(?:curl|wget)[^\n|;]*\|\s*(?:sudo\s+)?"
+tools/plugins.py:162:#  `curl | sh` no es el plugin haciéndolo.
+tools/plugins.py:945:    estado = (pathlib.Path.home() / ".local" / "state" / "k4" / "plugins"
+tools/plugins.py:1396:    --pantalla <m>  with --test, open it on THAT monitor (`hyprctl monitors`)
+tools/prueba_editar.py:51:            {"id": 1, "ruta": "/tmp/a.mp4", "rastro": "", "w": 1920, "h": 1080,
+tools/prueba_editar.py:201:                 {"id": 1, "ruta": "/tmp/a.mp4", "rastro": "", "w": 1920,
+tools/prueba_editar.py:203:                 {"id": 2, "ruta": "/tmp/b.mp4", "rastro": "", "w": 1280,
+tools/prueba_editar.py:240:    igual("el mismo fichero se abre una vez", rutas, ["/tmp/a.mp4"])
+tools/prueba_editar.py:265:                 {"id": 1, "ruta": "/tmp/a.mp4", "rastro": "", "w": 1920,
+tools/prueba_editar.py:269:                 {"id": 2, "ruta": "/tmp/b.mp4", "rastro": "", "w": 1920,
+tools/prueba_editar.py:279:                 {"id": 1, "ruta": "/tmp/a.mp4", "rastro": "", "w": 1920,
+tools/prueba_editar.py:294:                 {"id": 1, "ruta": "/tmp/a.mp4", "rastro": "", "w": 1920,
+tools/prueba_editar.py:1020:    igual("del nombre nuevo", editar.carpeta_de("/tmp/v.k4v"), "/tmp/v.k4")
+tools/prueba_editar.py:1021:    igual("y del viejo", editar.carpeta_de("/tmp/v.k4.json"), "/tmp/v.k4")
+tools/prueba_editar.py:1328:    igual("comillas simples", editar.citar("/tmp/a.txt"), "'/tmp/a.txt'")
+tools/prueba_editar.py:1330:          editar.citar("/tmp/o'brien.txt"), r"'/tmp/o\'brien.txt'")
