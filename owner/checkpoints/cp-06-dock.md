@@ -2,7 +2,7 @@
 
 ## WHAT YOU NEED TO DO NOW
 
-Wait until Codex activates this checkpoint on [Progress](../PROGRESS.md). Do not generate files or test an unfinished version yet.
+Follow the current action on [Progress](../PROGRESS.md). Use this note when Codex activates this checkpoint; test only its supplied ready version.
 
 ## What are we building, and why?
 
@@ -22,8 +22,9 @@ and evidence run. Expect the visible results in the checklist below; any remaini
 
 ## Your checklist
 
-Report each ID as **PASS / FAIL / NOT TESTED / NEEDS HELP**. Current results are on [Progress](../PROGRESS.md),
-initially all NOT TESTED. You can send results in one short message; Codex records them for you.
+Report each ID as **PASS / FAIL / NOT TESTED / NEEDS HELP**. Current results are on [Progress](../PROGRESS.md).
+You can send results in one short message; Codex records them for you.
+All `run-01` paths below are first-run examples. Use the current run and exact save folder from Codex’s handoff; never overwrite an earlier run.
 Missing equipment/software means **NOT TESTED — ENVIRONMENT LIMITATION** with a short reason.
 
 | Test | What to check |
@@ -130,7 +131,7 @@ Can you reproduce it? Yes / No / Sometimes
 ## How to approve
 
 Your earlier image approval is Gate A; it does not approve the app.
-After the requested tests, tell Codex **“I approve CP-06 Gate B for version [SHA Codex supplies], run-01.
+After the requested tests, tell Codex **“I approve CP-06 Gate B for version [SHA Codex supplies], [current run].
 My requested tests passed.”** Name any untested case honestly; required gaps must be resolved before
 approval is recorded. Or say **“Changes requested: CP-06 [test ID and problem].”**
 Approval is only for the tested version. Codex records it and prepares the next eligible checkpoint;

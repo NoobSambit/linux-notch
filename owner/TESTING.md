@@ -2,7 +2,8 @@
 
 ## WHAT YOU NEED TO DO NOW
 
-There is no test version ready yet. After you authorize CP-00, Codex prepares the safe setup.
+Check [Progress](PROGRESS.md). Test only when it identifies a ready checkpoint and Codex has supplied
+its exact run, version and tested Start/Stop/Restore actions. CP-00 prepares the initial safe setup.
 Do not run the inherited installer or replace your everyday bar to test this project.
 
 ## When Codex says a version is ready

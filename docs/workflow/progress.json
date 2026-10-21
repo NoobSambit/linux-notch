@@ -1582,5 +1582,105 @@
       "visual_brief": "docs/workflow/checkpoints/cp-10-release.visual.md",
       "owner_note": "owner/checkpoints/cp-10-release.md"
     }
-  ]
+  ],
+  "workflow_review": {
+    "date": "2026-10-21T04:59:01Z",
+    "report": "docs/workflow/ENGINEERING_AUDIT.md",
+    "reviewed_revision": "3610e20a9997ab4c1b4f4c280985be3529d34028",
+    "compared_base": "ff520e33e136bbce11b7100c69888dedf42f7273",
+    "tested_code_revision": "0c666c6719c1b4beea4b4a52056f289c19d2e870",
+    "tested_files": {
+      "tools/workflow.py": "94889301e85ee67ba9e43d166fc0f7c38141aec8c8780bb757b295c44388802b",
+      "tools/test_workflow.py": "86495c05517df19520ab8779cfc2a1ba8fe5237cb8973aeacba406af289428f5",
+      ".github/workflows/validar.yml": "2e3dff0a8465ea84110831c57ecba44d08989c1840c251d87f25abf9668b098e"
+    },
+    "commands": [
+      {
+        "command": "python3 tools/test_workflow.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "30 tests passed"
+      },
+      {
+        "command": "python3 tools/workflow.py --base-ref 3610e20",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "record and base history consistent"
+      },
+      {
+        "command": "python3 tools/workflow.py --base-ref main",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "initial workflow introduction handled"
+      },
+      {
+        "command": "python3 tools/workflow.py --render",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "owner view regenerated without status mutation"
+      },
+      {
+        "command": "python3 tools/plugins.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "31 plugins"
+      },
+      {
+        "command": "python3 tools/api.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "146 QML files"
+      },
+      {
+        "command": "python3 tools/guia.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "5 documents; qmllint available"
+      },
+      {
+        "command": "python3 tools/layouts.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "275 QML files"
+      },
+      {
+        "command": "python3 tools/prueba_editar.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "141 tests"
+      },
+      {
+        "command": "python3 tools/prueba_plugins.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "63 tests"
+      },
+      {
+        "command": "python3 tools/prueba_rutas.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "path/network/timeout checks"
+      },
+      {
+        "command": "python3 tools/prueba_texto.py",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "11 text sinks"
+      },
+      {
+        "command": "git diff --check",
+        "exit_code": 0,
+        "result": "PASS",
+        "detail": "no whitespace/conflict errors"
+      }
+    ],
+    "limitations": [
+      "Hosted CI was not run; commands were validated locally.",
+      "No CP-00/live product testing or owner approval is implied."
+    ],
+    "runtime_handle": null,
+    "recovery": "No product runtime, personal configuration or desktop service was changed; no runtime recovery action is needed.",
+    "next_agent_action": "Wait for explicit workflow approval and CP-00 authorization, then follow CP-00 isolation preflight before any product launch.",
+    "next_owner_action": "Read the independent engineering audit and decide whether to approve the workflow and authorize CP-00 only."
+  }
 }

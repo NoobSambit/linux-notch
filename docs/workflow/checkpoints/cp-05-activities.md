@@ -60,6 +60,9 @@ Record exact implemented commands/results, SHA and environment in the authoritat
 
 - **A01:** Existing gates plus deterministic media→HUD→current-media restore, stopped-media no restore, hidden expiry/coalescing, dismissed-state no reopen, critical/user/persistent priority and legacy plugin mapping.
 - **A02:** D20 owner/loss/restart guards, recording accessibility, hover never grabs keyboard, explicit shortcut/ESC/click-outside order and real-signal availability; no duplicate watcher.
+  Cover configurable entry/exit delays, pointer travel from compact surface into preview, lingering
+  pointer not restarting transient expiry, rapid leave/re-enter, and focus return after deliberate close.
+  Verify persistence of those controls and repeat the timing/focus scenarios in R03.
 
 ## Runtime verification
 

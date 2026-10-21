@@ -12,11 +12,17 @@ only after confirming its separate Wayland socket, session D-Bus and HOME-depend
 host device/service changes. A private D-Bus alone does not isolate audio/network/hardware. Inventory
 each shared capability; use fixtures/disable device-changing actions until explicitly authorized.
 
-Use a pinned checkout under `/scratch/` for test code. A different checkout, `-p`, XDG variables,
+Use a pinned checkout under the repository's ignored `scratch/` directory for test code (not filesystem
+root `/scratch`). A different checkout, `-p`, XDG variables,
 `K4_LOG=0` or a private process group alone **does not isolate** HOME-based k4 state, data-control
 clipboard, D-Bus ownership, `hyprctl` commands or personal credentials. Never repurpose the shell's HOME
 variable in ad hoc scripts. Prefer an actual test account with its own home; audit subprocess paths.
 Do not copy personal clipboard histories, credentials or plugin executables into fixtures.
+For a nested compositor, explicitly audit inherited `HYPRLAND_INSTANCE_SIGNATURE`, Wayland/runtime
+sockets, PipeWire/PulseAudio, system D-Bus and portal backends before launch. A private session bus
+does not redirect system services, and an inherited signature can still target the host compositor.
+Record each endpoint and whether it is isolated, disabled, simulated or separately authorized.
+Reverify these identities after resume; a stale terminal environment is not proof of isolation.
 
 CP-00 records code SHA, runtime/Qt/Hyprland/GPU versions, monitor geometry/scale, current notification
 owner (read-only), process inventory, state paths and approved shared capabilities. Prepare launch,

@@ -2,7 +2,7 @@
 
 ## WHAT YOU NEED TO DO NOW
 
-Nothing to generate yet. The first visual brief is [CP-03](../docs/workflow/checkpoints/cp-03-design-system.visual.md),
+Check [Progress](PROGRESS.md) for whether images are needed now. The first visual brief is [CP-03](../docs/workflow/checkpoints/cp-03-design-system.visual.md),
 after the safe setup, safety checks and file-drag test are approved. Use the active checkpoint link
 on [Progress](PROGRESS.md) when Codex requests images.
 
@@ -24,7 +24,9 @@ on [Progress](PROGRESS.md) when Codex requests images.
 6. Add a short preference in `references/NOTES.md`, or simply tell Codex which files you prefer.
 7. Send the exact “References ready” message at the end of the checkpoint brief.
 8. Codex checks the files exist, opens every image, identifies missing/contradictory details and shows
-   you a feasible selection. File presence alone is not approval. Do not start app testing yet.
+   you a feasible selection and a short explanation of sizes, colors, controls and motion derived from it.
+   Codex handles the technical design notes; you approve the look and any visible differences.
+   File presence alone is not approval. Do not start app testing yet.
 9. After reviewing that selection, say: **“I approve Gate A for CP-03, set r01, as listed by Codex,
    including the listed feasibility notes.”** Use the actual checkpoint and set. Codex records your words
    and preserves the exact approved files. Only then can visual coding start.

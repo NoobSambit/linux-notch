@@ -40,6 +40,11 @@ Statuses live only in progress.json. Complete one bounded task, verify it, then 
 | T03 | Apply approved grammar to core four-mode examples, settings-navigation sample and dock primitives; add reduced-motion resolution. | A01, R02, M01, M02 |
 | T04 | Capture dark/light/focus/large-text/opaque/motion examples, compare references and measure visual costs. | R03, M03, M04 |
 
+T01 produces the versioned [design translation](../TEMPLATES.md#design-translation-before-gate-a)
+before Gate A: measured geometry, semantic values, component/state mapping and motion/input rules.
+CP-04–09 each extend that same artifact format and identify inherited values versus new choices.
+This is the bridge from owner images to existing QML, not permission to invent missing visual direction.
+
 ## Acceptance criteria and proof mapping
 
 | ID | Required outcome | Automated/runtime/owner proof |

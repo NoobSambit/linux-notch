@@ -2,7 +2,8 @@
 
 ## WHAT YOU NEED TO DO NOW
 
-First approve the workflow and authorize CP-00 only, using the message in [Start here](../README.md). No test copy is ready yet.
+Check [Progress](../PROGRESS.md). If CP-00 is awaiting authorization, use the message in
+[Start here](../README.md) when you are ready. Test only after Codex supplies a labelled ready version.
 
 ## What are we building, and why?
 
@@ -22,8 +23,9 @@ and evidence run. Expect the visible results in the checklist below; any remaini
 
 ## Your checklist
 
-Report each ID as **PASS / FAIL / NOT TESTED / NEEDS HELP**. Current results are on [Progress](../PROGRESS.md),
-initially all NOT TESTED. You can send results in one short message; Codex records them for you.
+Report each ID as **PASS / FAIL / NOT TESTED / NEEDS HELP**. Current results are on [Progress](../PROGRESS.md).
+You can send results in one short message; Codex records them for you.
+All `run-01` paths below are first-run examples. Use the current run and exact save folder from Codex’s handoff; never overwrite an earlier run.
 Missing equipment/software means **NOT TESTED — ENVIRONMENT LIMITATION** with a short reason.
 
 | Test | What to check |
@@ -126,7 +128,7 @@ Can you reproduce it? Yes / No / Sometimes
 ## How to approve
 
 There is no image-approval step here.
-After the requested tests, tell Codex **“I approve CP-00 Gate B for version [SHA Codex supplies], run-01.
+After the requested tests, tell Codex **“I approve CP-00 Gate B for version [SHA Codex supplies], [current run].
 My requested tests passed.”** Name any untested case honestly; required gaps must be resolved before
 approval is recorded. Or say **“Changes requested: CP-00 [test ID and problem].”**
 Approval is only for the tested version. Codex records it and prepares the next eligible checkpoint;

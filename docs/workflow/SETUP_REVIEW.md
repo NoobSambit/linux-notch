@@ -1,5 +1,9 @@
 # Workflow setup review — 2026-10-20
 
+Historical setup-agent report for `3610e20`. Its claims are not independent acceptance.
+See the [engineering audit](ENGINEERING_AUDIT.md) for reproduced checker weaknesses and subsequent
+validation. Current execution/approval state is solely [progress.json](progress.json).
+
 This reviews the **workflow setup**, not CP-00 or any product implementation. All eleven checkpoints
 remain PLANNED; tasks PENDING, tests NOT TESTED, authorizations/approvals empty, active checkpoint null.
 Owner approval of this workflow and explicit CP-00 authorization are the next actions.

@@ -24,6 +24,11 @@ for touched compatibility behavior. If scope conflicts, stop that task and resol
 Throwaway layer-shell target/source; text/uri-list files, folders, multiple items, copy/move negotiation, drag-out, cancellation, missing source, keyboard fallback and same/multi-monitor matrix.
 
 Disposable spike under ignored `scratch/`; inspect Qt Drag/DropArea and Quickshell PanelWindow on the installed versions. No edits to product modules.
+Before handoff, preserve the minimal spike source (plain `.qml`/`.py`/script text), fixture generator,
+exact launch command and version/MIME/action matrix under this checkpoint's tracked
+`review/.../evidence/<run>/automated/spike/`. Execute only a disposable copy after isolation checks.
+Verify another checkout can recreate the dummy files and run the same probe; ignored scratch content
+must never be the only implementation of the experiment needed again at CP-07.
 
 ## Out of scope
 

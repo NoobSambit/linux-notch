@@ -1,13 +1,13 @@
 # Checkpoint execution workflow
 
-**Setup only, awaiting owner review. No product checkpoint has started.**
+Workflow setup does not authorize product work. Current state is in [progress.json](progress.json).
 Owner entry point: [Start here](../../owner/README.md).
 
 ## Organization and authority
 
 The approved [roadmap](../IMPLEMENTATION_PLAN.md) has eleven milestones. CP-00 through CP-10
 map one-to-one to them, preserving the early isolated Shelf spike and early design system.
-Each contract has a small task list and acceptance-to-proof table; each has a separate plain-language
+Each contract has a task list and acceptance-to-proof table; each has a separate plain-language
 owner note and a visual brief. No new PRD or parallel product specification is introduced.
 
 | Location | Responsibility |
@@ -18,13 +18,14 @@ owner note and a visual brief. No new PRD or parallel product specification is i
 | `owner/` | Simple guides and individual checkpoint instructions. `PROGRESS.md` is a generated view. |
 | `review/<checkpoint>/` | Owner reference submissions, immutable selected sets, actual app captures and test evidence. |
 | Existing `core/`, `widgets/`, `plugins/`, `api/` | Runtime code/assets; references never belong here. |
-| `/scratch/` (ignored) | Disposable runtime worktrees, fixtures and private backups; never the only copy of approved evidence. |
+| `scratch/` (ignored) | Disposable runtime worktrees, fixtures and private backups; never the only copy of approved evidence. |
 
 Why: a short agent map survives context loss; owners can stay in one folder; review media cannot be
 mistaken for application resources; one JSON record prevents diverging progress tables. A small Python
 standard-library helper validates links/records and generates the overview. No project manager service,
 Spec Kit installation, Git LFS, token pipeline, CMake rewrite or new test framework is required.
 See the source-grounded [design rationale](RESEARCH.md) and [setup review](SETUP_REVIEW.md).
+The independent [engineering audit](ENGINEERING_AUDIT.md) records subsequently reproduced gaps and fixes.
 
 ## Lifecycle and permissions
 
@@ -56,7 +57,9 @@ be deferred only under the existing specification, with reason and owner acknowl
 ## One checkpoint, end to end
 
 1. Read progress, contract, affected spec sections and current code; reconcile drift before edits.
-2. Validate dependencies and authorization. Open a branch from the last accepted checkpoint.
+2. Validate dependencies and authorization. Open `checkpoint/<checkpoint-id>` from the prior
+   checkpoint branch tip that contains its recorded approval, retaining its tested commit as
+   `last_good_sha`. CP-00 starts from the reviewed workflow branch; its recovery target is `baseline_sha`.
 3. For a visual checkpoint, activate its brief; owner submits references, agent inspects, owner grants
    Gate A. Record exact selected revision/hashes. No visual implementation before that point.
 4. Implement one task at a time. Add meaningful regression coverage at risky seams; preserve old APIs.
@@ -93,3 +96,18 @@ Run `python3 tools/workflow.py --render` after progress changes, then `python3 t
 and `git diff --check`. The helper catches structural drift; human review still checks engineering
 scope, creative detail and scenario coverage. Only the approved product documents may change product
 intent, through a recorded owner decision.
+
+The existing CI also runs `python3 tools/test_workflow.py` and
+`python3 tools/workflow.py --base-ref <PR-base-or-previous-push-SHA>`. Locally compare with the
+previous recorded checkpoint/workflow commit before handoff. This rejects erased histories and
+altered approved sets/runs; standalone validation cannot detect deletion from a previous version.
+`--render` validates first and never repairs status or grants approval.
+
+Commit product changes before the owner test, launch a clean pinned checkout of that full SHA,
+and keep later evidence/progress commits separate. The tested commit excludes its later approval
+record; this avoids a self-referential commit hash. A product change invalidates the current handoff.
+Preserve the tested commit in branch ancestry, and do not rewrite accepted history.
+If a PR is separately authorized, use the previous checkpoint branch as base until it is merged,
+link the tested SHA/run, include verification and limitations, and compare the complete diff.
+PR review, CI, Gate B, merge permission and publication permission are separate decisions.
+This workflow review does not authorize creating a remote PR, pushing or merging.

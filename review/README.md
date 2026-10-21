@@ -27,12 +27,18 @@ sets remain readable; only the recorded current approved set guides implementati
 - Track Markdown/JSON inventories, decisions, hashes and a small useful subset of selected lightweight
   PNG/JPEG/WebP references and app baseline/failure captures. Limit individual tracked review images to
   2 MiB and a checkpoint's added review media to 20 MiB; compress review copies, retain originals locally.
+  Every mandatory approved reference, design translation and essential proof must be durable, not merely
+  the most attractive subset. Prepare small candidates before Gate A; preserve the exact approved bytes.
+  The checker verifies referenced files against both working-tree and staged Git bytes.
 - Candidate/alternative/storyboard media are ignored by default. Explicitly `git add -f` only a small
   reviewed candidate needed for discussion. Approved lightweight static/keyframe copies are trackable.
 - Recordings/GIFs/archives/raw exports/temp files and `review/**/private/` are ignored. Keep videos local;
-  record descriptive path, hash, date/tool/state and how to retrieve them. They are not durable Git proof.
+  record a tracked [retrieval manifest](../docs/workflow/TEMPLATES.md) with hash, date/tool/state,
+  exact retrieval/recapture instructions and a verified access date. They are not durable Git proof.
   A checkpoint cannot depend only on a missing local video after context loss: preserve essential small
-  keyframes/logs and arrange a durable owner-approved location or recapture when needed. No LFS dependency.
+  keyframes/logs and arrange a durable owner-approved location or recapture when needed. Motion-dependent
+  approval requires the recording itself to be retrievable; keyframes alone do not prove motion.
+  Validate retrieval/checksum on a fresh checkout/session before handoff. No LFS dependency.
 - Never commit personal logs, histories, credentials or private desktop captures. Ask Codex to sanitize
   evidence before adding it; raw backups live in ignored `scratch/backups/` with restricted permissions.
 - Production artwork stays in the relevant existing runtime module, e.g. `plugins/<module>/assets/`,

@@ -60,6 +60,11 @@ New suites below are requirements for this future checkpoint, not commands claim
 Record exact implemented commands/results, SHA and environment in the authoritative test records.
 
 - **A01:** Existing gates plus new focused settings/activity/backend-payload/IPC and plugin-lifecycle fixtures; missing plugin and failed/reloaded/disabled samples included.
+  Include the roadmap's early clipboard fixtures against `tools/portapapeles.py` and
+  `services/Clipboard.qml`: text/image round trip, search/pin persistence, concealed-MIME exclusion
+  with dummy payload/disk/log checks, malformed storage and watcher lifecycle. These characterize
+  existing behavior before shared refactors; CP-08 still owns richer UX and real password-manager
+  interoperability. Record exact commands and failures per case; do not defer this safety coverage to CP-08.
 - **A02:** D20 matrix: fresh occupied/unowned bus, saved Own/External, migrated no-choice, unknown owner, name loss/race, restart and explicit change; assert no daemon takeover.
 - **A03:** D24 explicit on/off and inherited default migration, fresh off; malformed/truncated JSON recovery and stable IDs/aliases.
 - **A04:** Installer process-scope fixture with unrelated Quickshell sentinel; offline/opt-in network behavior and safe unavailable dependencies.

@@ -1,6 +1,7 @@
 # CP-03 review material
 
-Reserved folders only; no test has run and no reference is approved.
+Folders were reserved during setup. Current tests and approvals are recorded only in
+[progress.json](../../docs/workflow/progress.json); file presence is not approval.
 See [personal note](../../owner/checkpoints/cp-03-design-system.md) and [contract](../../docs/workflow/checkpoints/cp-03-design-system.md).
 
 Static owner candidates: `review/cp-03-design-system/references/submitted/`. Motion boards: `review/cp-03-design-system/references/storyboards/`. Alternatives: `review/cp-03-design-system/references/alternatives/`. Only Codex copies owner-selected files to `review/cp-03-design-system/references/approved/rNN/` after Gate A.

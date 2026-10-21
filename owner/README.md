@@ -2,11 +2,13 @@
 
 ## WHAT YOU NEED TO DO NOW
 
-Read this page and [your progress page](PROGRESS.md). Then tell Codex:
+Read [your progress page](PROGRESS.md) for the current action. If it says the workflow is awaiting
+your review, read the [engineering review](../docs/workflow/ENGINEERING_AUDIT.md). When you are ready
+to approve the workflow and start the safe baseline, tell Codex:
 
 > I approve this workflow. Start CP-00 only: prepare the safe test setup and record the original k4 baseline.
 
-No product work has started. You do not need to generate any images yet.
+That message authorizes CP-00 only. No images are needed for CP-00.
 Codex will first check that the test copy can run without disturbing your everyday desktop.
 
 ## How we work together

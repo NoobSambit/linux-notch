@@ -1,6 +1,7 @@
 # CP-06 review material
 
-Reserved folders only; no test has run and no reference is approved.
+Folders were reserved during setup. Current tests and approvals are recorded only in
+[progress.json](../../docs/workflow/progress.json); file presence is not approval.
 See [personal note](../../owner/checkpoints/cp-06-dock.md) and [contract](../../docs/workflow/checkpoints/cp-06-dock.md).
 
 Static owner candidates: `review/cp-06-dock/references/submitted/`. Motion boards: `review/cp-06-dock/references/storyboards/`. Alternatives: `review/cp-06-dock/references/alternatives/`. Only Codex copies owner-selected files to `review/cp-06-dock/references/approved/rNN/` after Gate A.

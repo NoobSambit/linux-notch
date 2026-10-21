@@ -52,6 +52,14 @@ Statuses live only in progress.json. Complete one bounded task, verify it, then 
 
 Hardcoded HOME state, session D-Bus/clipboard leakage, global installer kills, optional dependencies, unlicensed inherited media, and missing second display. A source audit is not live proof.
 
+CP-00 characterizes the inherited product; it does not certify that all inherited behavior is correct.
+R02/M02/M03 may PASS only as completed observations of their declared matrix, with known defects
+explicitly captured and assigned to the responsible later checkpoint in the run's baseline report.
+Keep any failed product scenario visible in that report; do not call it a product PASS or repair it here.
+Failure to isolate, stop, restore, capture a required observation, or obtain usable baseline measurements
+remains a failed/incomplete CP-00 gate. A defect preventing a safe/reproducible baseline blocks CP-00
+and needs an explicit scope decision. Hardware gaps follow the normal limitation rules.
+
 ## Automated verification
 
 Run all existing commands in [VERIFICATION](../VERIFICATION.md), then the following scoped checks.

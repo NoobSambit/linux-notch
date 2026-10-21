@@ -3,7 +3,7 @@
 ## Existing automated gates
 
 Run from repository root, capture stdout/stderr, exit code and versions in each evidence run.
-These are the commands in current `.github/workflows/validar.yml`; do not substitute one aggregate
+These commands run in `.github/workflows/validar.yml`; do not substitute one aggregate
 green result for acceptance-specific evidence.
 
 ```sh
@@ -16,8 +16,13 @@ python3 tools/prueba_plugins.py
 python3 tools/prueba_rutas.py
 python3 tools/prueba_texto.py
 python3 tools/workflow.py
+python3 tools/test_workflow.py
 git diff --check
 ```
+
+CI additionally compares workflow history and the diff with the PR base/previous push SHA.
+Locally use `python3 tools/workflow.py --base-ref <previous-record-commit>` before handoff.
+The checker tests use temporary repositories and synthetic records; none constitutes CP-00 evidence.
 
 `prueba_editar` uses installed ffmpeg/ffprobe for real media probes; if missing, record NOT TESTED
 and the dependency, not PASS. `guia.py` may skip QML example checks without qmllint. Preserve that
@@ -65,7 +70,16 @@ Record provenance/type in the run index. Runtime handoff, logs and comparison us
 In progress.json append test records with `id`, `kind` (automated/runtime/owner), `result`, date,
 command/steps, tested SHA/tree, environment and evidence. Keep failures when a later run passes.
 Only the latest applicable result counts for readiness; an old passing run cannot clear a new failure.
-All acceptance IDs must map to a test/evidence record before handoff. Unavailable hardware is
+All acceptance IDs and every named scenario must map to a test/evidence record before handoff.
+Before implementation, expand each task into a short ordered execution note in its run evidence:
+source seams to inspect/change, prerequisites, bounded edits, exact fixture inputs and expected outcomes,
+regression cases and evidence paths. Record the current bounded step in `next_agent_action`.
+This makes broad T02/T03 tasks resumable without changing the authoritative T IDs or creating a second
+status tracker. Derive expected behavior from the referenced specification clauses, not only the task title.
+Publish a scenario matrix when one proof ID covers multiple cases. A PASS covers the whole declared
+required matrix; partial execution stays NOT TESTED/FAIL with individual outcomes visible.
+Split conditional cases as described in [record conventions](RECORD_FORMAT.md).
+Unavailable hardware is
 NOT TESTED — ENVIRONMENT LIMITATION, not a hidden skip. For required gates arrange another test
 environment; a materially changed release promise requires an explicit DECISIONS entry.
 
@@ -74,3 +88,9 @@ test weakening. Record findings and resolutions before owner review. An agent re
 evidence, never owner approval. On owner failure reproduce the reported scenario, add a focused regression
 where useful, fix the smallest cause, rerun affected checks and previously passed dependent flows, and
 request retest of the changed run. Keep unresolved failures visible and dependencies closed.
+
+At CP-00, choose reproducible workload scripts/steps, sample duration, warmup, repetitions, tools,
+device/scale and noise controls. Record raw measurements and comparison method. Subsequent checkpoints
+reuse those conditions; derive proposed CPU/RSS/GPU/frame budgets from the measured baseline and
+record the owner's accepted tradeoffs before treating them as pass/fail thresholds. Do not defer all
+performance acceptance decisions to CP-10 or invent universal limits.
