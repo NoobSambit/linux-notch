@@ -544,9 +544,36 @@
           "id": "M03",
           "kind": "owner",
           "title": "Screen and fullscreen baseline",
-          "result": "NOT TESTED",
-          "reason": "Unchanged b114d5a / run-05 isolated session and existing fullscreen fixture prepared; awaiting owner top/bottom/fullscreen-return/typing observations and a whole nested-screen capture. Conditional second physical display remains NOT TESTED \u2014 ENVIRONMENT LIMITATION: only eDP-1 is attached.",
-          "history": []
+          "result": "PASS",
+          "reason": "Owner reports M03 went fine for the prepared single-display top/bottom/fullscreen-return/typing matrix; nested capture and final saved abajo setting preserved. Capture hides the island, so no bar-visible owner image is claimed. Conditional second physical display remains NOT TESTED \u2014 ENVIRONMENT LIMITATION.",
+          "history": [
+            {
+              "result": "PASS",
+              "date": "2026-10-21T11:56:24Z",
+              "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+              "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+              "run": "run-05",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M03__owner-report__run-05.md",
+                  "sha256": "c1116db7e412b52d0e35f776051a599a8cbc41d431e24819fd9310e092436b12"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M03__owner-capture__run-05.png",
+                  "sha256": "65b2702b316953d2bc69fc4b53d64924387d57d38786fa486c951bcccd5b48f6"
+                },
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M03__capture-provenance__run-05.json",
+                  "sha256": "3dcb420a91a6abbe507d353ac4eb92d0437b4d637de1f2afed15f751609fcd56"
+                }
+              ],
+              "steps": "Supplied M03 instructions: Arriba and Abajo placement; fullscreen true/false at each edge; island return and harmless typing; finish at Abajo and save a nested capture. Available single-display matrix only.",
+              "observed": "Owner: \"ok everything went fine\". A new 1280x720 synthetic capture was collected after preparation; final saved test edge is abajo. No additional owner interaction was directly observed by the agent.",
+              "owner_quote": "ok everything went fine",
+              "source": "Owner reply immediately after the M03 instructions in this Codex thread; date is UTC transcription time.",
+              "evidence_limitations": "The inherited capture hides the island; a bar-visible owner image has not been supplied. The image does not independently prove both positions, transitions or input. Conditional second physical display remains NOT TESTED \u2014 ENVIRONMENT LIMITATION."
+            }
+          ]
         },
         {
           "id": "M04",
@@ -634,8 +661,8 @@
       "last_good_sha": "ff520e33e136bbce11b7100c69888dedf42f7273",
       "current_task": null,
       "blocked_reason": null,
-      "next_agent_action": "Await owner M03 only for unchanged b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05. Private runtime and dummy fixture are left running with Island settings open. Reverify current exact identities, bus/socket/source using review/cp-00-baseline/evidence/run-05/automated/m03-readiness.json and owner/cp-00__M03__preparation__run-05.md. Append actual owner results; inspect/hash/collect the owner-triggered nested capture from the synthetic Capturas folder if supplied. The fixture exits fullscreen mode 2 to maximized mode 1; no restored tiling claim. Second physical display is unavailable. Preserve archived M02 preparation, all prior runs/evidence and M01/M02 PASS. M01 owner image remains outstanding. Prepare M04 only after M03; no Gate B, product/helper changes, CP-01 or remote action. Five engineering commits are complete; this is authorized administrative owner-test preparation.",
-      "next_owner_action": "Perform M03 only in the prepared aquamarine test window: Island settings \u2192 scroll to D\u00f3nde vive la barra \u2192 test Arriba and Abajo. For each edge close settings, run the existing fullscreen true/false commands from the M03 note, confirm the island returns and typing works. Finish at Abajo and take a nested Captura \u2192 Guardar \u2192 Pantalla image as in M02; report M03 PASS/FAIL/NOT TESTED/NEEDS HELP and the chosen edge. Only one physical display is available. M04 and explicit Gate B remain later; Stop remains python3 tools/cp00.py stop.",
+      "next_agent_action": "M03 owner PASS recorded for unchanged b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05 on the available single-display matrix. The new nested capture, provenance and literal report are in review/cp-00-baseline/evidence/run-05/owner/cp-00__M03__owner-report__run-05.md. Both recorded test payloads are stopped; source selection remains b114d5a. On the next continuation prepare M04 only: preserve the candidate dummy state, demonstrate guarded Restore previous using ff520e33e136bbce11b7100c69888dedf42f7273 and original-run03-complete matching dummy snapshot, record fresh identities/recovery/readbacks, and provide restored launcher/settings checks. No personal restore. Preserve all prior runs/evidence/results and M03 preparation. M01 owner image and bar-visible M03 owner image remain unsupplied; physical dual-display remains untested. Five engineering commits are complete; only administrative evidence/approval commits now. Do not grant Gate B, begin CP-01, change product/helper code or perform remote actions.",
+      "next_owner_action": "M03 report received. M04 (disposable recovery rehearsal) is the remaining owner test: once Codex prepares it, check the restored test launcher/settings and report the result. Test runtime is currently stopped. Explicit Gate B remains a separate later decision; M01 image and bar-visible M03 image remain unsupplied, with physical second-display limitations recorded.",
       "contract": "docs/workflow/checkpoints/cp-00-baseline.md",
       "visual_brief": "docs/workflow/checkpoints/cp-00-baseline.visual.md",
       "owner_note": "owner/checkpoints/cp-00-baseline.md",
