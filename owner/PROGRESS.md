@@ -4,15 +4,15 @@
 
 ## WHAT YOU NEED TO DO NOW
 
-Send exactly: I approve CP-00 Gate B for b114d5a1b8c3ed90e97b577e3424092a783e04ed, evidence run-05. This approves CP-00 only; physical dual-monitor testing remains NOT TESTED with a nonblocking CP-00-only disposition and later relevant display/release requirements remain required.
+Wait for Codex to activate this checkpoint.
 
 Workflow: **IN PROGRESS**.
-Active checkpoint: **cp-00-baseline**.
-Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
+Active checkpoint: **None**.
+Next checkpoint: [cp-01-safety](checkpoints/cp-01-safety.md).
 
 | Checkpoint | State | References | Tasks done | Tests: pass / fail / untested / help |
 | --- | --- | --- | --- | --- |
-| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | AWAITING OWNER TEST | Not required | 4/4 | 8 / 0 / 2 / 0 |
+| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | APPROVED | Not required | 4/4 | 8 / 0 / 2 / 0 |
 | [cp-01-safety — Regression and safety gates](checkpoints/cp-01-safety.md) | PLANNED | Not required | 0/4 | 0 / 0 / 11 / 0 |
 | [cp-02-dnd-spike — Isolated Shelf drag-and-drop feasibility](checkpoints/cp-02-dnd-spike.md) | PLANNED | Not required | 0/4 | 0 / 0 / 8 / 0 |
 | [cp-03-design-system — Shared design system and original visual direction](checkpoints/cp-03-design-system.md) | PLANNED | 4 images needed when activated; none approved | 0/4 | 0 / 0 / 8 / 0 |
@@ -26,16 +26,16 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ## Current handoff
 
-- Codex next: Await the owner's explicit CP-00 Gate B approval for b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05. Evidence closure PASS; eight required tests PASS; conditional physical-display cases remain NOT TESTED with approved CP-00-only dispositions. Preserve all history, the selected stopped candidate and snapshots. Do not grant Gate B, modify product/helper code, begin CP-01, push, publish, create a PR or merge.
-- You next: Send exactly: I approve CP-00 Gate B for b114d5a1b8c3ed90e97b577e3424092a783e04ed, evidence run-05. This approves CP-00 only; physical dual-monitor testing remains NOT TESTED with a nonblocking CP-00-only disposition and later relevant display/release requirements remain required.
+- Codex next: Wait for approved prerequisites and activation; then read this contract and current source.
+- You next: Wait for Codex to activate this checkpoint.
 - Waiting/blocker: No blocker recorded; follow the next action above.
-- Test version / run: run-05
+- Test version / run: No runtime handoff yet.
 
 ## Tests and remaining work
 
 ### cp-00-baseline
 
-Next: Send exactly: I approve CP-00 Gate B for b114d5a1b8c3ed90e97b577e3424092a783e04ed, evidence run-05. This approves CP-00 only; physical dual-monitor testing remains NOT TESTED with a nonblocking CP-00-only disposition and later relevant display/release requirements remain required.
+Next: No further CP-00 action required. CP-01 has not started; a separate owner instruction/authorization is needed before its implementation. Later physical-display and release requirements remain required.
 
 Remaining tasks: None.
 
@@ -46,6 +46,20 @@ Remaining tasks: None.
 - **M04 PASS** — Recovery rehearsal (Owner reports the restored original launcher/settings and test desktop are fine for run-05 M04. Literal reply preserved. Agent then returned to unchanged b114d5a with its matching candidate snapshot, verified bottom placement/rendering and stopped the private runtime. Gate B remains unrecorded.)
 
 Engineering checks: A01: PASS; R01: PASS; R02: PASS; R02-physical-2-display: NOT TESTED; R03: PASS.
+Approval: Owner approved the tested run.
+
+### cp-01-safety
+
+Next: Wait for Codex to activate this checkpoint.
+
+Remaining tasks: T01, T02, T03, T04.
+
+- **M01 NOT TESTED** — Notifications coexist (Checkpoint has not started.)
+- **M02 NOT TESTED** — Settings survive (Checkpoint has not started.)
+- **M03 NOT TESTED** — Safe update and missing services (Checkpoint has not started.)
+- **M04 NOT TESTED** — Return to last good (Checkpoint has not started.)
+
+Engineering checks: A01: NOT TESTED; A02: NOT TESTED; A03: NOT TESTED; A04: NOT TESTED; R01: NOT TESTED; R02: NOT TESTED; R03: NOT TESTED.
 Approval: Waiting; no final owner approval recorded.
 
 Codex keeps this page aligned with its [single progress record](../docs/workflow/progress.json).

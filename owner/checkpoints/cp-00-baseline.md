@@ -13,7 +13,7 @@ Start, Stop, Restore and optional harmless test fixtures. The M04 recovery copy 
 to the preserved b114d5a candidate and stopped; see the [return proof](../../review/cp-00-baseline/evidence/run-05/automated/m04-return-summary.md).
 The current results and next action are in [the generated progress view](../PROGRESS.md).
 The [run-05 evidence closure](../../review/cp-00-baseline/evidence/run-05/automated/closure-assessment.md) records the recovered screenshots, accepted evidence combination and conditional physical-display disposition.
-Gate B is still yours; no final approval has been recorded.
+The [literal owner decision](../../review/cp-00-baseline/evidence/run-05/owner/gate-b-approval.md) is preserved; consult the generated progress view for current approval and next action.
 
 ## What are we building, and why?
 

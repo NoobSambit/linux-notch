@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "workflow_status": "IN PROGRESS",
-  "active_checkpoint": "cp-00-baseline",
-  "next_checkpoint": "cp-00-baseline",
+  "active_checkpoint": null,
+  "next_checkpoint": "cp-01-safety",
   "baseline_sha": "ff520e3",
   "setup_branch": "docs/notchbar-workflow",
   "checkpoints": [
@@ -11,7 +11,7 @@
       "title": "Safe environment and original k4 baseline",
       "depends_on": [],
       "visual": false,
-      "status": "AWAITING OWNER TEST",
+      "status": "APPROVED",
       "authorization": {
         "owner_quote": "I approve the established LINUX NOTCHBAR workflow and explicitly authorize **Checkpoint CP-00 ONLY**.",
         "date": "2026-10-21T07:59:40Z",
@@ -19,7 +19,24 @@
         "scope": "CP-00 only; five substantive execution commits if safe completion is possible; fewer on a genuine blocker; no live configuration, dependencies, CP-01, pushes or Gate B."
       },
       "gate_a": null,
-      "gate_b": null,
+      "gate_b": {
+        "owner_quote": "I approve CP-00 Gate B for b114d5a1b8c3ed90e97b577e3424092a783e04ed, evidence run-05.",
+        "date": "2026-10-21T13:06:30Z",
+        "source": "Owner explicit approval message in this Codex thread; verbatim transcription in review/cp-00-baseline/evidence/run-05/owner/gate-b-approval.md",
+        "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+        "run": "run-05",
+        "scope": "CP-00 only, with evidence closure and existing CP-00-only conditional physical-display dispositions retained. No CP-01 implementation or remote/live-desktop authorization.",
+        "evidence": [
+          {
+            "path": "review/cp-00-baseline/evidence/run-05/owner/gate-b-approval.md",
+            "sha256": "d5aa8fac57d3e0f6674d5e9f77ba441c6c198cba24fa8a4bec5aff83cfafb34f"
+          }
+        ],
+        "verification": {
+          "path": "review/cp-00-baseline/evidence/run-05/automated/gate-b-record-validation.json",
+          "sha256": "d2a154b93057584898eba6f64aec6e1782a5bcf61b56d5d7d131148b9e12eccd"
+        }
+      },
       "reference_requirements": [],
       "reference_sets": [],
       "tasks": [
@@ -940,8 +957,8 @@
       "last_good_sha": "ff520e33e136bbce11b7100c69888dedf42f7273",
       "current_task": null,
       "blocked_reason": null,
-      "next_agent_action": "Await the owner's explicit CP-00 Gate B approval for b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05. Evidence closure PASS; eight required tests PASS; conditional physical-display cases remain NOT TESTED with approved CP-00-only dispositions. Preserve all history, the selected stopped candidate and snapshots. Do not grant Gate B, modify product/helper code, begin CP-01, push, publish, create a PR or merge.",
-      "next_owner_action": "Send exactly: I approve CP-00 Gate B for b114d5a1b8c3ed90e97b577e3424092a783e04ed, evidence run-05. This approves CP-00 only; physical dual-monitor testing remains NOT TESTED with a nonblocking CP-00-only disposition and later relevant display/release requirements remain required.",
+      "next_agent_action": "CP-00 is owner-approved for b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05. Preserve the unchanged tested candidate, stopped private payloads, snapshots, all histories and evidence. No CP-00 work remains. CP-01 stays PLANNED and unauthorized; do not start it, modify product/helper code, push, publish, create a PR, merge or change the live desktop. Await a separate owner instruction.",
+      "next_owner_action": "No further CP-00 action required. CP-01 has not started; a separate owner instruction/authorization is needed before its implementation. Later physical-display and release requirements remain required.",
       "contract": "docs/workflow/checkpoints/cp-00-baseline.md",
       "visual_brief": "docs/workflow/checkpoints/cp-00-baseline.visual.md",
       "owner_note": "owner/checkpoints/cp-00-baseline.md",
