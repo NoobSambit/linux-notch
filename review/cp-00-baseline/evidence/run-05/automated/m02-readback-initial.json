@@ -1,0 +1,82 @@
+[
+  {
+    "command": [
+      "python3",
+      "/lab/runtime_control.py",
+      "status"
+    ],
+    "exit_code": 0,
+    "stdout": "{\n  \"instance\": {\n    \"config_path\": \"/candidate/shell.qml\",\n    \"id\": \"k24d89nt\",\n    \"launch_time\": \"2026-10-21T11:10:16\",\n    \"pid\": 92,\n    \"shell_id\": \"2d05d68fdebd309fd350f051a28894b6\"\n  },\n  \"process\": {\n    \"pid\": 92,\n    \"start_ticks\": \"2246458\",\n    \"exe\": \"/usr/bin/quickshell\",\n    \"argv\": [\n      \"quickshell\",\n      \"-p\",\n      \"/candidate/shell.qml\",\n      \"--no-color\"\n    ],\n    \"pid_namespace\": \"pid:[4026533591]\"\n  },\n  \"environment\": {\n    \"WAYLAND_DISPLAY\": \"wayland-1\",\n    \"HYPRLAND_INSTANCE_SIGNATURE\": \"efb50993780079460b0cbed1363e2166a2de1d9f_1792581012_1939666895\",\n    \"DBUS_SESSION_BUS_ADDRESS\": \"unix:path=/tmp/dbus-F4lc0UuQy6,guid=9fe07df6c54b41cc984cc03b6ad89d94\",\n    \"XDG_RUNTIME_DIR\": \"/run/cp00\"\n  },\n  \"revision\": \"b114d5a1b8c3ed90e97b577e3424092a783e04ed\",\n  \"log\": \"/lab/logs/k4-1792581016734455176.txt\"\n}\n",
+    "stderr": "",
+    "date": "2026-10-21T11:10:33.656315+00:00"
+  },
+  {
+    "command": [
+      "quickshell",
+      "list",
+      "--all",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "[\n    {\n        \"config_path\": \"/candidate/shell.qml\",\n        \"id\": \"k24d89nt\",\n        \"launch_time\": \"2026-10-21T11:10:16\",\n        \"pid\": 92,\n        \"shell_id\": \"2d05d68fdebd309fd350f051a28894b6\"\n    },\n    {\n        \"config_path\": \"/lab/fixture.qml\",\n        \"id\": \"27ed89nt\",\n        \"launch_time\": \"2026-10-21T11:10:26\",\n        \"pid\": 254,\n        \"shell_id\": \"08410f71d13f28fac8a3ef50509d74c3\"\n    }\n]\n",
+    "stderr": "",
+    "date": "2026-10-21T11:10:33.682893+00:00"
+  },
+  {
+    "command": [
+      "playerctl",
+      "-p",
+      "vlc",
+      "metadata"
+    ],
+    "exit_code": 0,
+    "stdout": "vlc   mpris:trackid             '/org/videolan/vlc/playlist/3'\nvlc   xesam:url                 file:///lab/dummy.wav\nvlc   xesam:title               CP00 local sine track\nvlc   vlc:time                  120\nvlc   mpris:length              120000000\nvlc   vlc:length                120000\nvlc   vlc:publisher             5\n",
+    "stderr": "",
+    "date": "2026-10-21T11:10:33.690382+00:00"
+  },
+  {
+    "command": [
+      "playerctl",
+      "-p",
+      "vlc",
+      "status"
+    ],
+    "exit_code": 0,
+    "stdout": "Playing\n",
+    "stderr": "",
+    "date": "2026-10-21T11:10:33.698364+00:00"
+  },
+  {
+    "command": [
+      "wl-paste",
+      "--no-newline"
+    ],
+    "exit_code": 0,
+    "stdout": "CP00 harmless owner-test text\n",
+    "stderr": "",
+    "date": "2026-10-21T11:10:33.702629+00:00"
+  },
+  {
+    "command": [
+      "hyprctl",
+      "-j",
+      "clients"
+    ],
+    "exit_code": 0,
+    "stdout": "[]\n",
+    "stderr": "",
+    "date": "2026-10-21T11:10:33.713495+00:00"
+  },
+  {
+    "command": [
+      "grim",
+      "-o",
+      "CP00-STABLE",
+      "/lab/m02-prepared.png"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "date": "2026-10-21T11:10:33.773010+00:00"
+  }
+]

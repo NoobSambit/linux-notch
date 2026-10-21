@@ -491,16 +491,35 @@
           "id": "M01",
           "kind": "owner",
           "title": "Start and stop safely",
-          "result": "NOT TESTED",
-          "reason": "Awaiting actual owner M01\u2013M04 results for b114d5a / run-05; no agent approval or personal test claimed.",
-          "history": []
+          "result": "PASS",
+          "reason": "Owner-reported PASS for b114d5a / run-05: Start/Stop worked and normal desktop remained unaffected. Literal dated report saved; checklist owner label/desktop image was not supplied and remains outstanding.",
+          "history": [
+            {
+              "result": "PASS",
+              "date": "2026-10-21T11:15:52Z",
+              "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+              "environment": "Arch 7.2.8; Qt 6.11.2; Quickshell 0.2.1/7511545; Hyprland 0.56.2/Aquamarine 0.15.1; i7-13700HX/Intel UHD 770 i915. Private independent bwrap namespaces/bus/HOME; CP00-STABLE 1280x720/60Hz scale 1 mirrored into nested viewer. Clean app checkout b114d5a; original recovery ff520e3. Final automation has a separately recorded workflow-test fixture bookkeeping patch. All test payloads stopped.",
+              "run": "run-05",
+              "evidence": [
+                {
+                  "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M01__owner-report__run-05.md",
+                  "sha256": "5830f5224a78b26bf2a71e4a288e5b8b4df8baf7af9e6726616e3236d1ed9797"
+                }
+              ],
+              "steps": "Owner reports using CP-00 Start and Stop; no additional unreported interaction is inferred.",
+              "observed": "Owner: \"CP-00 run-05 M01: PASS. Start/Stop worked and my normal desktop remained unaffected.\"",
+              "owner_quote": "CP-00 run-05 M01: PASS. Start/Stop worked and my normal desktop remained unaffected.",
+              "source": "Owner message in this Codex thread on 2026-10-21; date is UTC transcription time, not an invented execution timestamp.",
+              "evidence_limitations": "No owner label/desktop photo or screenshot accompanied the report. That checklist attachment remains outstanding. Agent M02 preparation captures are not owner M01 evidence."
+            }
+          ]
         },
         {
           "id": "M02",
           "kind": "owner",
           "title": "Original everyday paths",
           "result": "NOT TESTED",
-          "reason": "Awaiting actual owner M01\u2013M04 results for b114d5a / run-05; no agent approval or personal test claimed.",
+          "reason": "Same pinned b114d5a / run-05 session and harmless fixtures prepared; awaiting owner M02 observation. Preparation evidence is not an owner PASS.",
           "history": []
         },
         {
@@ -508,7 +527,7 @@
           "kind": "owner",
           "title": "Screen and fullscreen baseline",
           "result": "NOT TESTED",
-          "reason": "Awaiting actual owner M01\u2013M04 results for b114d5a / run-05; no agent approval or personal test claimed.",
+          "reason": "Awaiting this owner test for b114d5a / run-05; prepare one test at a time after M02. No result or approval inferred.",
           "history": []
         },
         {
@@ -516,7 +535,7 @@
           "kind": "owner",
           "title": "Recovery rehearsal",
           "result": "NOT TESTED",
-          "reason": "Awaiting actual owner M01\u2013M04 results for b114d5a / run-05; no agent approval or personal test claimed.",
+          "reason": "Awaiting this owner test for b114d5a / run-05; prepare one test at a time after M02. No result or approval inferred.",
           "history": []
         }
       ],
@@ -597,11 +616,31 @@
       "last_good_sha": "ff520e33e136bbce11b7100c69888dedf42f7273",
       "current_task": null,
       "blocked_reason": null,
-      "next_agent_action": "Stop at CP-00 owner-testing handoff. Await M01\u2013M04 results and explicit Gate B for b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05; record only the actual later decision as a separate administrative change. No CP-01 work, push or publication. All test payloads are stopped.",
-      "next_owner_action": "Use the CP-00 owner checklist and run-05 handoff: Start, test M01\u2013M04, report PASS/FAIL/NOT TESTED/NEEDS HELP, then explicitly approve the tested SHA/run or request changes. No reference images required.",
+      "next_agent_action": "Await owner M02 only; same b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05. Private runtime and fixtures left running; exact current server/compositor/app identities, bus/socket, recovery and commands are in review/cp-00-baseline/evidence/run-05/owner/cp-00__M02__preparation__run-05.md and automated/m02-readiness.json. Revalidate handles on resume. Append the actual owner result; address the explicitly outstanding M01 owner image without inventing proof. Prepare M03 only after M02. Five engineering commits are complete; owner permits small administrative evidence/approval commits. Do not modify product code, repin to administrative HEAD, record Gate B, begin CP-01 or perform remote actions.",
+      "next_owner_action": "Perform M02 only using the prepared nested aquamarine window and the linked M02 preparation steps; report PASS/FAIL/NOT TESTED/NEEDS HELP and failed step if any. Supply the checklist M01 label/desktop image if available; its absence is recorded. Use python3 tools/cp00.py stop if needed. M03/M04 and explicit Gate B are later separate actions.",
       "contract": "docs/workflow/checkpoints/cp-00-baseline.md",
       "visual_brief": "docs/workflow/checkpoints/cp-00-baseline.visual.md",
-      "owner_note": "owner/checkpoints/cp-00-baseline.md"
+      "owner_note": "owner/checkpoints/cp-00-baseline.md",
+      "owner_test_preparation": {
+        "test": "M02",
+        "run": "run-05",
+        "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+        "date": "2026-10-21T11:15:52Z",
+        "evidence": [
+          {
+            "path": "review/cp-00-baseline/evidence/run-05/owner/cp-00__M02__preparation__run-05.md",
+            "sha256": "e5978bc202901db773fea9965608180286316caeac3025b045bf6af84cbe29b2"
+          },
+          {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/m02-readiness.json",
+            "sha256": "fb5ac1ff027aebe3d2e356d346a5f255f37e16a36a68474664e3559345e7986d"
+          },
+          {
+            "path": "review/cp-00-baseline/evidence/run-05/automated/m02-capture-inventory.json",
+            "sha256": "52a04c872c5c60fe134fe5b72f11bcae71fb3da1b4916dd96b640e52db88adb0"
+          }
+        ]
+      }
     },
     {
       "id": "cp-01-safety",

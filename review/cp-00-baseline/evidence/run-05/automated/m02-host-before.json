@@ -1,0 +1,35 @@
+{
+  "recorded_at": "2026-10-21T11:10:09.251681+00:00",
+  "personal_k4_paths_exist": {
+    "/home/noobsambit/.config/k4": false,
+    "/home/noobsambit/.local/state/k4": false,
+    "/home/noobsambit/.local/share/k4": false
+  },
+  "quickshell": {
+    "command": [
+      "quickshell",
+      "list",
+      "--all",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "[\n    {\n        \"config_path\": \"/home/noobsambit/.config/quickshell/end4-pC/shell.qml\",\n        \"id\": \"xzn1r8nt\",\n        \"launch_time\": \"2026-10-21T10:26:11\",\n        \"pid\": 1293,\n        \"shell_id\": \"962f75767314addec36fdeb1bbb48f35\"\n    }\n]\n",
+    "stderr": ""
+  },
+  "notification_owner": {
+    "command": [
+      "busctl",
+      "--user",
+      "call",
+      "org.freedesktop.DBus",
+      "/org/freedesktop/DBus",
+      "org.freedesktop.DBus",
+      "GetNameOwner",
+      "s",
+      "org.freedesktop.Notifications"
+    ],
+    "exit_code": 0,
+    "stdout": "s \":1.14\"\n",
+    "stderr": ""
+  }
+}

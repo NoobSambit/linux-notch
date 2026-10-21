@@ -1,0 +1,77 @@
+{
+  "recorded_at": "2026-10-21T11:14:19Z",
+  "captures": [
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__M02__prepared__run-05.png",
+      "sha256": "2f64aec1c95ae18cdb94dbfcd93a62d9129dd0a049f7d26a6cbc2d8954f1a57e",
+      "state": "Two dummy documents after private-output focus and fixture relaunch; before owner M02.",
+      "type": "actual application screenshot captured by agent; no owner execution claim",
+      "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "run": "run-05",
+      "display": "CP00-STABLE 1280x720 @60Hz scale 1, synthetic HOME, private bus/Wayland",
+      "command": [
+        "grim",
+        "-o",
+        "CP00-STABLE",
+        "/lab/m02-prepared.png"
+      ],
+      "capture_time_utc": "2026-10-21T11:11:40.390439+00:00",
+      "privacy_review": "Opened every image with view_image. Only synthetic documents, inherited public application list and local fixture track; no personal content.",
+      "transport": "Existing CP-00 private control socket, through cp00.request or tools/cp00.py exec; no host capture endpoint."
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__M02__panel__run-05.png",
+      "sha256": "c3de15b516c35e4d56d5051c2723cb6b36ea3346575d682e8e98a11e052f9552",
+      "state": "Settled inherited control panel with silent local track and labelled shortcuts; agent preparation.",
+      "type": "actual application screenshot captured by agent; no owner execution claim",
+      "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "run": "run-05",
+      "display": "CP00-STABLE 1280x720 @60Hz scale 1, synthetic HOME, private bus/Wayland",
+      "command": [
+        "grim",
+        "-o",
+        "CP00-STABLE",
+        "/lab/m02-panel.png"
+      ],
+      "capture_time_utc": "2026-10-21T11:11:58.407489+00:00",
+      "privacy_review": "Opened every image with view_image. Only synthetic documents, inherited public application list and local fixture track; no personal content.",
+      "transport": "Existing CP-00 private control socket, through cp00.request or tools/cp00.py exec; no host capture endpoint."
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__M02__apps__run-05.png",
+      "sha256": "d532e7fd15f1d4e6b4ffaeec63c569e8da5c78349b2dc3f1cb5c4098ef34048d",
+      "state": "Inherited Todas application drawer, including Captura; agent preparation.",
+      "type": "actual application screenshot captured by agent; no owner execution claim",
+      "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "run": "run-05",
+      "display": "CP00-STABLE 1280x720 @60Hz scale 1, synthetic HOME, private bus/Wayland",
+      "command": [
+        "grim",
+        "-o",
+        "CP00-STABLE",
+        "/lab/m02-apps.png"
+      ],
+      "capture_time_utc": "2026-10-21T11:12:22.827512+00:00",
+      "privacy_review": "Opened every image with view_image. Only synthetic documents, inherited public application list and local fixture track; no personal content.",
+      "transport": "Existing CP-00 private control socket, through cp00.request or tools/cp00.py exec; no host capture endpoint."
+    },
+    {
+      "path": "review/cp-00-baseline/evidence/run-05/application/cp-00__M02__launcher-ready__run-05.png",
+      "sha256": "eb12b45fa2f02007b897e13715e8a8d4e4d5bcaa05db2de1b849bfd6c85a0121",
+      "state": "Native launcher left open for owner M02; two dummy documents behind it.",
+      "type": "actual application screenshot captured by agent; no owner execution claim",
+      "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+      "run": "run-05",
+      "display": "CP00-STABLE 1280x720 @60Hz scale 1, synthetic HOME, private bus/Wayland",
+      "command": [
+        "grim",
+        "-o",
+        "CP00-STABLE",
+        "/lab/m02-launcher-ready.png"
+      ],
+      "capture_time_utc": "2026-10-21T11:13:29.245342+00:00",
+      "privacy_review": "Opened every image with view_image. Only synthetic documents, inherited public application list and local fixture track; no personal content.",
+      "transport": "Existing CP-00 private control socket, through cp00.request or tools/cp00.py exec; no host capture endpoint."
+    }
+  ]
+}

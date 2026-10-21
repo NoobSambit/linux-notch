@@ -9,8 +9,9 @@ Check [Progress](../PROGRESS.md). If CP-00 is awaiting authorization, use the me
 
 **b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05.**
 Use the [tested handoff](../../review/cp-00-baseline/evidence/run-05/index.md) for exact
-Start, Stop, Restore and optional harmless test fixtures. The test environment is stopped;
-your ordinary desktop was not replaced. Complete M01–M04 below and report the results.
+Start, Stop, Restore and optional harmless test fixtures. For the current one-test-at-a-time
+session, use the [M02 preparation and simple steps](../../review/cp-00-baseline/evidence/run-05/owner/cp-00__M02__preparation__run-05.md).
+The current results and next action are in [the generated progress view](../PROGRESS.md).
 Gate B is still yours; no final approval has been recorded.
 
 ## What are we building, and why?

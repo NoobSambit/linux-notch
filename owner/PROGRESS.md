@@ -4,7 +4,7 @@
 
 ## WHAT YOU NEED TO DO NOW
 
-Use the CP-00 owner checklist and run-05 handoff: Start, test M01–M04, report PASS/FAIL/NOT TESTED/NEEDS HELP, then explicitly approve the tested SHA/run or request changes. No reference images required.
+Perform M02 only using the prepared nested aquamarine window and the linked M02 preparation steps; report PASS/FAIL/NOT TESTED/NEEDS HELP and failed step if any. Supply the checklist M01 label/desktop image if available; its absence is recorded. Use python3 tools/cp00.py stop if needed. M03/M04 and explicit Gate B are later separate actions.
 
 Workflow: **IN PROGRESS**.
 Active checkpoint: **cp-00-baseline**.
@@ -12,7 +12,7 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 | Checkpoint | State | References | Tasks done | Tests: pass / fail / untested / help |
 | --- | --- | --- | --- | --- |
-| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | AWAITING OWNER TEST | Not required | 4/4 | 4 / 0 / 4 / 0 |
+| [cp-00-baseline — Safe environment and original k4 baseline](checkpoints/cp-00-baseline.md) | AWAITING OWNER TEST | Not required | 4/4 | 5 / 0 / 3 / 0 |
 | [cp-01-safety — Regression and safety gates](checkpoints/cp-01-safety.md) | PLANNED | Not required | 0/4 | 0 / 0 / 11 / 0 |
 | [cp-02-dnd-spike — Isolated Shelf drag-and-drop feasibility](checkpoints/cp-02-dnd-spike.md) | PLANNED | Not required | 0/4 | 0 / 0 / 8 / 0 |
 | [cp-03-design-system — Shared design system and original visual direction](checkpoints/cp-03-design-system.md) | PLANNED | 4 images needed when activated; none approved | 0/4 | 0 / 0 / 8 / 0 |
@@ -26,8 +26,8 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ## Current handoff
 
-- Codex next: Stop at CP-00 owner-testing handoff. Await M01–M04 results and explicit Gate B for b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05; record only the actual later decision as a separate administrative change. No CP-01 work, push or publication. All test payloads are stopped.
-- You next: Use the CP-00 owner checklist and run-05 handoff: Start, test M01–M04, report PASS/FAIL/NOT TESTED/NEEDS HELP, then explicitly approve the tested SHA/run or request changes. No reference images required.
+- Codex next: Await owner M02 only; same b114d5a1b8c3ed90e97b577e3424092a783e04ed / run-05. Private runtime and fixtures left running; exact current server/compositor/app identities, bus/socket, recovery and commands are in review/cp-00-baseline/evidence/run-05/owner/cp-00__M02__preparation__run-05.md and automated/m02-readiness.json. Revalidate handles on resume. Append the actual owner result; address the explicitly outstanding M01 owner image without inventing proof. Prepare M03 only after M02. Five engineering commits are complete; owner permits small administrative evidence/approval commits. Do not modify product code, repin to administrative HEAD, record Gate B, begin CP-01 or perform remote actions.
+- You next: Perform M02 only using the prepared nested aquamarine window and the linked M02 preparation steps; report PASS/FAIL/NOT TESTED/NEEDS HELP and failed step if any. Supply the checklist M01 label/desktop image if available; its absence is recorded. Use python3 tools/cp00.py stop if needed. M03/M04 and explicit Gate B are later separate actions.
 - Waiting/blocker: No blocker recorded; follow the next action above.
 - Test version / run: run-05
 
@@ -35,14 +35,14 @@ Next checkpoint: [cp-00-baseline](checkpoints/cp-00-baseline.md).
 
 ### cp-00-baseline
 
-Next: Use the CP-00 owner checklist and run-05 handoff: Start, test M01–M04, report PASS/FAIL/NOT TESTED/NEEDS HELP, then explicitly approve the tested SHA/run or request changes. No reference images required.
+Next: Perform M02 only using the prepared nested aquamarine window and the linked M02 preparation steps; report PASS/FAIL/NOT TESTED/NEEDS HELP and failed step if any. Supply the checklist M01 label/desktop image if available; its absence is recorded. Use python3 tools/cp00.py stop if needed. M03/M04 and explicit Gate B are later separate actions.
 
 Remaining tasks: None.
 
-- **M01 NOT TESTED** — Start and stop safely (Awaiting actual owner M01–M04 results for b114d5a / run-05; no agent approval or personal test claimed.)
-- **M02 NOT TESTED** — Original everyday paths (Awaiting actual owner M01–M04 results for b114d5a / run-05; no agent approval or personal test claimed.)
-- **M03 NOT TESTED** — Screen and fullscreen baseline (Awaiting actual owner M01–M04 results for b114d5a / run-05; no agent approval or personal test claimed.)
-- **M04 NOT TESTED** — Recovery rehearsal (Awaiting actual owner M01–M04 results for b114d5a / run-05; no agent approval or personal test claimed.)
+- **M01 PASS** — Start and stop safely (Owner-reported PASS for b114d5a / run-05: Start/Stop worked and normal desktop remained unaffected. Literal dated report saved; checklist owner label/desktop image was not supplied and remains outstanding.)
+- **M02 NOT TESTED** — Original everyday paths (Same pinned b114d5a / run-05 session and harmless fixtures prepared; awaiting owner M02 observation. Preparation evidence is not an owner PASS.)
+- **M03 NOT TESTED** — Screen and fullscreen baseline (Awaiting this owner test for b114d5a / run-05; prepare one test at a time after M02. No result or approval inferred.)
+- **M04 NOT TESTED** — Recovery rehearsal (Awaiting this owner test for b114d5a / run-05; prepare one test at a time after M02. No result or approval inferred.)
 
 Engineering checks: A01: PASS; R01: PASS; R02: PASS; R03: PASS.
 Approval: Waiting; no final owner approval recorded.

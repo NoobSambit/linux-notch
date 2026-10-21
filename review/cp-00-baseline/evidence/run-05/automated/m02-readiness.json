@@ -1,0 +1,179 @@
+{
+  "recorded_at": "2026-10-21T11:13:28.990857+00:00",
+  "personal_k4_paths_exist": {
+    "/home/noobsambit/.config/k4": false,
+    "/home/noobsambit/.local/state/k4": false,
+    "/home/noobsambit/.local/share/k4": false
+  },
+  "quickshell": {
+    "command": [
+      "quickshell",
+      "list",
+      "--all",
+      "--json"
+    ],
+    "exit_code": 0,
+    "stdout": "[\n    {\n        \"config_path\": \"/home/noobsambit/.config/quickshell/end4-pC/shell.qml\",\n        \"id\": \"xzn1r8nt\",\n        \"launch_time\": \"2026-10-21T10:26:11\",\n        \"pid\": 1293,\n        \"shell_id\": \"962f75767314addec36fdeb1bbb48f35\"\n    }\n]\n",
+    "stderr": ""
+  },
+  "notification_owner": {
+    "command": [
+      "busctl",
+      "--user",
+      "call",
+      "org.freedesktop.DBus",
+      "/org/freedesktop/DBus",
+      "org.freedesktop.DBus",
+      "GetNameOwner",
+      "s",
+      "org.freedesktop.Notifications"
+    ],
+    "exit_code": 0,
+    "stdout": "s \":1.14\"\n",
+    "stderr": ""
+  },
+  "host_invariants_match": true,
+  "selected_source": {
+    "revision": "b114d5a1b8c3ed90e97b577e3424092a783e04ed",
+    "path": "/candidate",
+    "manifest": "/lab/candidate-manifest.json"
+  },
+  "server": {
+    "pid": 129821,
+    "start_ticks": "2246056",
+    "exe": "/usr/bin/python3.14",
+    "pid_namespace": "pid:[4026533591]",
+    "argv": [
+      "python3",
+      "/control.py",
+      "_server"
+    ],
+    "date": "2026-10-21T11:10:12.765627+00:00"
+  },
+  "compositor": {
+    "pid": 129834,
+    "start_ticks": "2246067",
+    "exe": "/usr/bin/Hyprland",
+    "pid_namespace": "pid:[4026533648]",
+    "argv": [
+      "Hyprland",
+      "-c",
+      "/lab/hyprland.lua"
+    ],
+    "date": "2026-10-21T11:10:12.874383+00:00"
+  },
+  "runtime": [
+    {
+      "command": [
+        "python3",
+        "/lab/runtime_control.py",
+        "status"
+      ],
+      "exit_code": 0,
+      "stdout": "{\n  \"instance\": {\n    \"config_path\": \"/candidate/shell.qml\",\n    \"id\": \"k24d89nt\",\n    \"launch_time\": \"2026-10-21T11:10:16\",\n    \"pid\": 92,\n    \"shell_id\": \"2d05d68fdebd309fd350f051a28894b6\"\n  },\n  \"process\": {\n    \"pid\": 92,\n    \"start_ticks\": \"2246458\",\n    \"exe\": \"/usr/bin/quickshell\",\n    \"argv\": [\n      \"quickshell\",\n      \"-p\",\n      \"/candidate/shell.qml\",\n      \"--no-color\"\n    ],\n    \"pid_namespace\": \"pid:[4026533591]\"\n  },\n  \"environment\": {\n    \"WAYLAND_DISPLAY\": \"wayland-1\",\n    \"HYPRLAND_INSTANCE_SIGNATURE\": \"efb50993780079460b0cbed1363e2166a2de1d9f_1792581012_1939666895\",\n    \"DBUS_SESSION_BUS_ADDRESS\": \"unix:path=/tmp/dbus-F4lc0UuQy6,guid=9fe07df6c54b41cc984cc03b6ad89d94\",\n    \"XDG_RUNTIME_DIR\": \"/run/cp00\"\n  },\n  \"revision\": \"b114d5a1b8c3ed90e97b577e3424092a783e04ed\",\n  \"log\": \"/lab/logs/k4-1792581016734455176.txt\"\n}\n",
+      "stderr": "",
+      "date": "2026-10-21T11:13:29.083326+00:00"
+    },
+    {
+      "command": [
+        "quickshell",
+        "list",
+        "--all",
+        "--json"
+      ],
+      "exit_code": 0,
+      "stdout": "[\n    {\n        \"config_path\": \"/candidate/shell.qml\",\n        \"id\": \"k24d89nt\",\n        \"launch_time\": \"2026-10-21T11:10:16\",\n        \"pid\": 92,\n        \"shell_id\": \"2d05d68fdebd309fd350f051a28894b6\"\n    },\n    {\n        \"config_path\": \"/lab/fixture.qml\",\n        \"id\": \"abbf89nt\",\n        \"launch_time\": \"2026-10-21T11:11:35\",\n        \"pid\": 406,\n        \"shell_id\": \"08410f71d13f28fac8a3ef50509d74c3\"\n    }\n]\n",
+      "stderr": "",
+      "date": "2026-10-21T11:13:29.107980+00:00"
+    },
+    {
+      "command": [
+        "playerctl",
+        "-p",
+        "vlc",
+        "metadata"
+      ],
+      "exit_code": 0,
+      "stdout": "vlc   mpris:trackid             '/org/videolan/vlc/playlist/3'\nvlc   xesam:url                 file:///lab/dummy.wav\nvlc   xesam:title               CP00 local sine track\nvlc   vlc:time                  120\nvlc   mpris:length              120000000\nvlc   vlc:length                120000\nvlc   vlc:publisher             5\n",
+      "stderr": "",
+      "date": "2026-10-21T11:13:29.115605+00:00"
+    },
+    {
+      "command": [
+        "playerctl",
+        "-p",
+        "vlc",
+        "status"
+      ],
+      "exit_code": 0,
+      "stdout": "Playing\n",
+      "stderr": "",
+      "date": "2026-10-21T11:13:29.126315+00:00"
+    },
+    {
+      "command": [
+        "wl-paste",
+        "--no-newline"
+      ],
+      "exit_code": 0,
+      "stdout": "CP00 harmless owner-test text\n",
+      "stderr": "",
+      "date": "2026-10-21T11:13:29.131723+00:00"
+    },
+    {
+      "command": [
+        "hyprctl",
+        "-j",
+        "clients"
+      ],
+      "exit_code": 0,
+      "stdout": "[{\n    \"address\": \"0x5599508a0840\",\n    \"mapped\": true,\n    \"hidden\": false,\n    \"visible\": true,\n    \"acceptsInput\": true,\n    \"at\": [12, 46],\n    \"size\": [621, 662],\n    \"workspace\": {\n        \"id\": 1,\n        \"name\": \"1\"\n    },\n    \"floating\": false,\n    \"monitor\": 1,\n    \"class\": \"org.quickshell\",\n    \"title\": \"CP00 static note\",\n    \"initialClass\": \"org.quickshell\",\n    \"initialTitle\": \"CP00 static note\",\n    \"pid\": 0,\n    \"xwayland\": false,\n    \"pinned\": false,\n    \"pinFullscreened\": false,\n    \"fullscreen\": 0,\n    \"fullscreenClient\": 0,\n    \"fullscreenHandler\": \"default\",\n    \"allowedOverFullscreen\": true,\n    \"grouped\": [],\n    \"tags\": [],\n    \"swallowing\": \"0x0\",\n    \"focusHistoryID\": 1,\n    \"inhibitingIdle\": false,\n    \"xdgTag\": \"\",\n    \"xdgDescription\": \"\",\n    \"contentType\": \"none\",\n    \"tearingHint\": false,\n    \"stableId\": \"18000002\"\n},{\n    \"address\": \"0x55995089f490\",\n    \"mapped\": true,\n    \"hidden\": false,\n    \"visible\": true,\n    \"acceptsInput\": true,\n    \"at\": [647, 46],\n    \"size\": [621, 662],\n    \"workspace\": {\n        \"id\": 1,\n        \"name\": \"1\"\n    },\n    \"floating\": false,\n    \"monitor\": 1,\n    \"class\": \"org.quickshell\",\n    \"title\": \"CP00 dummy document\",\n    \"initialClass\": \"org.quickshell\",\n    \"initialTitle\": \"CP00 dummy document\",\n    \"pid\": 0,\n    \"xwayland\": false,\n    \"pinned\": false,\n    \"pinFullscreened\": false,\n    \"fullscreen\": 0,\n    \"fullscreenClient\": 0,\n    \"fullscreenHandler\": \"default\",\n    \"allowedOverFullscreen\": true,\n    \"grouped\": [],\n    \"tags\": [],\n    \"swallowing\": \"0x0\",\n    \"focusHistoryID\": 0,\n    \"inhibitingIdle\": false,\n    \"xdgTag\": \"\",\n    \"xdgDescription\": \"\",\n    \"contentType\": \"none\",\n    \"tearingHint\": false,\n    \"stableId\": \"18000003\"\n}]\n",
+      "stderr": "",
+      "date": "2026-10-21T11:13:29.142386+00:00"
+    },
+    {
+      "command": [
+        "hyprctl",
+        "-j",
+        "monitors"
+      ],
+      "exit_code": 0,
+      "stdout": "[{\n    \"id\": 1,\n    \"name\": \"CP00-STABLE\",\n    \"description\": \"\",\n    \"make\": \"\",\n    \"model\": \"\",\n    \"serial\": \"\",\n    \"width\": 1280,\n    \"height\": 720,\n    \"physicalWidth\": 0,\n    \"physicalHeight\": 0,\n    \"refreshRate\": 60.00000,\n    \"x\": 0,\n    \"y\": 0,\n    \"activeWorkspace\": {\n        \"id\": 1,\n        \"name\": \"1\"\n    },\n    \"specialWorkspace\": {\n        \"id\": 0,\n        \"name\": \"\"\n    },\n    \"reserved\": [0, 34, 0, 0],\n    \"scale\": 1,\n    \"transform\": 0,\n    \"focused\": true,\n    \"dpmsStatus\": true,\n    \"vrr\": false,\n    \"solitary\": \"0\",\n    \"solitaryBlockedBy\": [\"WINDOWED\",\"CANDIDATE\"],\n    \"activelyTearing\": false,\n    \"tearingBlockedBy\": [\"NOT_TORN\",\"USER\",\"SUPPORT\",\"CANDIDATE\"],\n    \"directScanoutTo\": \"0\",\n    \"directScanoutBlockedBy\": [\"USER\",\"MIRROR\",\"SW\",\"CANDIDATE\"],\n    \"disabled\": false,\n    \"currentFormat\": \"XRGB8888\",\n    \"mirrorOf\": \"none\",\n    \"availableModes\": [\"1920x1080@60.00Hz\"],\n    \"colorManagementPreset\": \"srgb\",\n    \"sdrBrightness\": 1,\n    \"sdrSaturation\": 1,\n    \"sdrMinLuminance\": 0.2,\n    \"sdrMaxLuminance\": 80,\n    \"hardwareCursorsInUse\": true\n}]\n",
+      "stderr": "",
+      "date": "2026-10-21T11:13:29.153037+00:00"
+    },
+    {
+      "command": [
+        "hyprctl",
+        "configerrors"
+      ],
+      "exit_code": 0,
+      "stdout": "\n\n",
+      "stderr": "",
+      "date": "2026-10-21T11:13:29.163617+00:00"
+    },
+    {
+      "command": [
+        "python3",
+        "-c",
+        "import os,json;from pathlib import Path;print(json.dumps({\"namespaces\":{k:os.readlink(\"/proc/self/ns/\"+k) for k in [\"mnt\",\"pid\",\"net\",\"ipc\",\"user\"]},\"host_paths_absent\":{p:not Path(p).exists() for p in [\"/home/noobsambit\",\"/parent\",\"/run/user/1000\",\"/run/dbus/system_bus_socket\",\"/dev/snd\",\"/dev/input\"]},\"interfaces\":Path(\"/proc/net/dev\").read_text()}))"
+      ],
+      "exit_code": 0,
+      "stdout": "{\"namespaces\": {\"mnt\": \"mnt:[4026533587]\", \"pid\": \"pid:[4026533591]\", \"net\": \"net:[4026533593]\", \"ipc\": \"ipc:[4026533590]\", \"user\": \"user:[4026533643]\"}, \"host_paths_absent\": {\"/home/noobsambit\": true, \"/parent\": true, \"/run/user/1000\": true, \"/run/dbus/system_bus_socket\": true, \"/dev/snd\": true, \"/dev/input\": true}, \"interfaces\": \"Inter-|   Receive                                                |  Transmit\\n face |bytes    packets errs drop fifo frame compressed multicast|bytes    packets errs drop fifo colls carrier compressed\\n    lo:       0       0    0    0    0     0          0         0        0       0    0    0    0     0       0          0\\n\"}\n",
+      "stderr": "",
+      "date": "2026-10-21T11:13:29.206324+00:00"
+    }
+  ],
+  "capture": {
+    "command": [
+      "grim",
+      "-o",
+      "CP00-STABLE",
+      "/lab/m02-launcher-ready.png"
+    ],
+    "exit_code": 0,
+    "stdout": "",
+    "stderr": "",
+    "date": "2026-10-21T11:13:29.246759+00:00"
+  }
+}
